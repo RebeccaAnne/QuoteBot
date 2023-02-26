@@ -1,0 +1,45 @@
+{
+    "description": "HOTE server",
+    "guildId": "849347713547501588",
+    "channels": {
+        "1004576660483477587": {
+            "description": "hands-of-the-emperor",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "hoteRoot"
+        },
+        "849348165006393364": {
+            "description": "lays-of-the-hearthfire",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "origin"
+        },
+        "849348269355958312": {
+            "description": "nine-worlds-discussion",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "origin"
+        },
+        "851511356179349585": {
+            "description": "nine-worlds-with-victoria",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "origin"
+        }
+    },
+    "scheduledQuotes": [
+        {
+            "description": "9 am in nine-worlds-with-victoria",
+            "time": "0 00 09 * * *",
+            "timezone":"America/Los_Angeles",
+            "channels": [
+                "851511356179349585"
+            ]
+        },
+        {
+            "description": "9 pm in discussion channels",
+            "time": "0 0 17 * * *",
+            "timezone":"America/Los_Angeles",
+            "channels": [
+                "1004576660483477587",
+                "849348165006393364"
+            ]
+        }
+    ]
+}

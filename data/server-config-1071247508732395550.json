@@ -1,0 +1,39 @@
+{
+    "description": "Alura's Test Server",
+    "guildId": "1071247508732395550",
+    "channels": {
+        "1071538235467108382": {
+            "description": "hands-of-the-emperor",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "hoteRoot"
+        },
+        "1071539009463013438": {
+            "description": "lays-of-the-hearthfire",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "origin"
+        },
+        "1071539034645614713": {
+            "description": "nine-worlds",
+            "tracerySource": "hotebot.json",
+            "traceryRoot": "origin"
+        }
+    },
+    "scheduledQuotes": [
+        {
+            "description": "even minutes in nine-worlds",
+            "time": "0 0/2 * * * *",
+            "timezone":"America/Los_Angeles",
+            "channels": [
+                "1071539034645614713"
+            ]
+        },
+        {
+            "description": "odd minutes in discussion channels",
+            "time": "0 1/2 * * * *",
+            "channels": [
+                "1071538235467108382",
+                "1071539009463013438"
+            ]
+        }
+    ]
+}
