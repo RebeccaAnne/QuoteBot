@@ -21,7 +21,9 @@ module.exports = {
 
                 console.log("Book: " + book);
 
-                let quote = tracery.createGrammar(source).flatten('#' + source[book].quotes + '#');
+                let quoteArray = source[source[book].quotes]; 
+
+                let quote = quoteArray[Math.floor(Math.random()*quoteArray.length)].quote;
                 console.log("Quote:" + quote);
 
                 return new EmbedBuilder()
