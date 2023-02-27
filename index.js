@@ -32,7 +32,7 @@ console.log("server-config files:");
 
 
 // 10 minutes
-const backofftime = 0;//10 * 1000 * 60;
+const backofftime = 10 * 1000 * 60;
 
 const sendQuote = async (guildId, channelId) => {
 
