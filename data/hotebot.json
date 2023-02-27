@@ -51,37 +51,59 @@
     },
     "atfotsquotes": [
         {
-            "quote": "There were too many days like today, where it was only now, in the quiet midnight, that he managed to get out-of-doors at all."
+            "quote": "There were too many days like today, where it was only now, in the quiet midnight, that he managed to get out-of-doors at all.",
+            "chapter": 1,
+            "percentage": 1
         },
         {
-            "quote": "Like the tui trees, blooming every year regardless of who came or did not come, Cliopher was waiting for someone.\nHis lord and friend, the Last Emperor and Lord of Zunidh whose Viceroy he was, was away. Travelling."
+            "quote": "Like the tui trees, blooming every year regardless of who came or did not come, Cliopher was waiting for someone.\nHis lord and friend, the Last Emperor and Lord of Zunidh whose Viceroy he was, was away. Travelling.",
+            "chapter": 1,
+            "percentage": 1
         },
         {
-            "quote": "“In the beginning Turtle dove down into the muck at the bottom of the sea and brought up mud to be made into land, and as a reward the Creator put him up in the sky as a constellation. It’s always a good idea to be polite to turtles, the old men say.”"
+            "quote": "“In the beginning Turtle dove down into the muck at the bottom of the sea and brought up mud to be made into land, and as a reward the Creator put him up in the sky as a constellation. It’s always a good idea to be polite to turtles, the old men say.”",
+            "chapter": 1,
+            "percentage": 1
         },
         {
-            "quote": "Cliopher was a Mdang, and he Held the Fire. He could hold this fire he had been given to hold, tend this hearth-fire at the heart of the world, and when his lord, his emperor, his Aurelius Magnus, came home, Cliopher would be waiting for him."
+            "quote": "Cliopher was a Mdang, and he Held the Fire. He could hold this fire he had been given to hold, tend this hearth-fire at the heart of the world, and when his lord, his emperor, his Aurelius Magnus, came home, Cliopher would be waiting for him.",
+            "chapter": 1,
+            "percentage": 1
         },
         {
-            "quote": "He wanted home. And he wanted people there who were not there, who could not be there, and he did not know what to do."
+            "quote": "He wanted home. And he wanted people there who were not there, who *could* not be there, and he did not know what to do.",
+            "chapter": 2,
+            "percentage": 2
         },
         {
-            "quote": "“No, sir: you don’t understand. You were the man from the proverb—the person I’d always been told not to imitate—the man who came looking for the sea—and then I learned that you found it.”"
+            "quote": "“No, sir: you don’t understand. You were the man from the proverb—the person I’d always been told not to imitate—*the man who came looking for the sea*—and then I learned that you *found it*.”",
+            "chapter": 2,
+            "percentage": 3
         },
         {
-            "quote": "“According to all our readings, in the bones and the smoke and the ink on water, in the hands of the casters and the dreams of the dream-walkers and the visions of the seers, the comet has come for you.”"
+            "quote": "“According to all our readings, in the bones and the smoke and the ink on water, in the hands of the casters and the dreams of the dream-walkers and the visions of the seers, the comet has come for you.”",
+            "chapter": 3,
+            "percentage": 4
         },
         {
-            "quote": "“I thank you for the message, although I do not know how I can be of such interest to the gods.”\nAll the stories said it was a very dangerous thing, to be of such interest to the gods."
+            "quote": "“I thank you for the message, although I do not know how I can be of such interest to the gods.”\nAll the stories said it was a very dangerous thing, to be of such interest to the gods.",
+            "chapter": 3,
+            "percentage": 4
         },
         {
-            "quote": "Even absent, he was a solid place to stand, and Cliopher wanted nothing more than to follow the star-path his Radiancy had set off upon."
+            "quote": "Even absent, he was a solid place to stand, and Cliopher wanted nothing more than to follow the star-path his Radiancy had set off upon.",
+            "chapter": 4,
+            "percentage": 4
         },
         {
-            "quote": "The sound of Islander rolled through the silent room like thunder, like the breakers on a reef."
+            "quote": "The sound of Islander rolled through the silent room like thunder, like the breakers on a reef.",
+            "chapter": 4,
+            "percentage": 4
         },
         {
-            "quote": "“The Wind That Rises At Dawn fills my sails. The Wake of the Ancestors’ Ships have I seen. The star-paths of Sky Ocean are singing to me.”"
+            "quote": "“The Wind That Rises At Dawn fills my sails. The Wake of the Ancestors’ Ships have I seen. The star-paths of Sky Ocean are singing to me.”",
+            "chapter": 4,
+            "percentage": 4
         },
         {
             "quote": "There was a story in the Lays about an irreparable loss: a pattern for resignation, dignified acceptance, strength despite adversity. Cliopher had always hated it."

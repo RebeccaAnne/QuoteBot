@@ -26,17 +26,22 @@ quoteFile[rootName].forEach(book => {
 
         quoteFile[book + "quotes"].forEach(quoteObject => {
 
+            // Italics are added for discord by surrounding with *'s. This strips those *'s for twitter.
+            // We'll need to do something more sophisticated here if the source text starts including 
+            // *'s, but for now this gets the job done
+            twitterQuote = quoteObject.quote.replace(/[*]/g, '');
+
             // Check the tweet lenght
             // A tweet is made up of the quote, two newlines, and the title
-            let tweetLength = quoteObject.quote.length + 2 + bookItem.title.length;
+            let tweetLength = twitterQuote.length + 2 + bookItem.title.length;
             if (tweetLength > 280) {
                 console.log("++++++\nQuote Too Long!\n" +
                     tweetLength + " characters!\n" +
-                    quoteObject.quote + "\n\n" +
+                    twitterQuote + "\n\n" +
                     bookItem.title + "\n++++++");
             }
 
-            twitterResult[book + "quotes"].push(quoteObject.quote);
+            twitterResult[book + "quotes"].push(twitterQuote);
         });
     }
 });
