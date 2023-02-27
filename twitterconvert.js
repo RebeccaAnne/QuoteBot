@@ -1,0 +1,46 @@
+const { quote } = require("discord.js");
+var fs = require("fs");
+
+const quoteFileName = process.argv[2];
+const rootName = process.argv[3];
+
+const quoteFile = require(quoteFileName);
+
+var twitterResult = {};
+twitterResult.origin = [];
+
+quoteFile[rootName].forEach(book => {
+
+    // Get the book from the top level array
+    twitterResult.origin.push("#" + book + "#");
+
+    // Get the  book item 
+    const bookItem = quoteFile[book];
+
+    // Add it to the twitter result surrounded by #'s. This is to support tracery as used by Cheap Bots Done Quick
+    twitterResult[book] = ["#" + book + "quotes#\n\n" + bookItem.title];
+
+    // If we haven't come across this book before, create the quote array for it.
+    if (twitterResult[book + "quotes"] == null) {
+        twitterResult[book + "quotes"] = [];
+
+        quoteFile[book + "quotes"].forEach(quoteObject => {
+
+            // Check the tweet lenght
+            // A tweet is made up of the quote, two newlines, and the title
+            let tweetLength = quoteObject.quote.length + 2 + bookItem.title.length;
+            if (tweetLength > 280) {
+                console.log("++++++\nQuote Too Long!\n" +
+                    tweetLength + " characters!\n" +
+                    quoteObject.quote + "\n\n" +
+                    bookItem.title + "\n++++++");
+            }
+
+            twitterResult[book + "quotes"].push(quoteObject.quote);
+        });
+    }
+});
+
+let createStream = fs.createWriteStream("result.json");
+createStream.write(JSON.stringify(twitterResult));
+createStream.end();
