@@ -34,7 +34,7 @@
         },
         {
             "description": "9 pm in discussion channels",
-            "time": "0 0 17 * * *",
+            "time": "0 0 21 * * *",
             "timezone":"America/Los_Angeles",
             "channels": [
                 "1004576660483477587",
