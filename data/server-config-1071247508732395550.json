@@ -20,16 +20,16 @@
     },
     "scheduledQuotes": [
         {
-            "description": "even minutes in nine-worlds",
-            "time": "0 0/2 * * * *",
+            "description": "even hours in nine-worlds",
+            "time": "0 0 0/2 * * *",
             "timezone":"America/Los_Angeles",
             "channels": [
                 "1071539034645614713"
             ]
         },
         {
-            "description": "odd minutes in discussion channels",
-            "time": "0 1/2 * * * *",
+            "description": "odd hours in discussion channels",
+            "time": "0 0 1/2 * * *",
             "channels": [
                 "1071538235467108382",
                 "1071539009463013438"
