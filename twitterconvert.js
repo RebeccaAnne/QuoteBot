@@ -26,11 +26,21 @@ quoteFile[rootName].forEach(book => {
 
         quoteFile[book + "quotes"].forEach(quoteObject => {
 
-            // Italics are added for discord by surrounding with *'s. This strips those *'s for twitter.
-            // We'll need to do something more sophisticated here if the source text starts including 
-            // *'s, but for now this gets the job done
-            twitterQuote = quoteObject.quote.replace(/[*]/g, '');
+            let twitterQuote = "";
 
+            // If we have a specialy editted twitter quote, use that
+            if (quoteObject.twitterQuote != null) {
+                twitterQuote = quoteObject.twitterQuote;
+            }
+            else {
+                // If we're using the discord quote, we need to remove any italics.
+                // Italics are marked for discord by surrounding text with *'s. This strips those *'s for twitter.
+                // We'll need to do something more sophisticated here if the source text starts including 
+                // *'s, but for now this gets the job done.
+                twitterQuote = quoteObject.quote.replace(/[*]/g, '');
+
+            }
+            
             // Check the tweet lenght
             // A tweet is made up of the quote, two newlines, and the title
             let tweetLength = twitterQuote.length + 2 + bookItem.title.length;
