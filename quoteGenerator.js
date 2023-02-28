@@ -1,7 +1,5 @@
 const path = require('node:path');
-const tracery = require('tracery-grammar');
 const { EmbedBuilder } = require('discord.js');
-
 
 module.exports = {
     generateQuote: (guildId, channelId) => {
@@ -13,23 +11,53 @@ module.exports = {
             let channel = serverConfig.channels[channelId];
 
             if (channel) {
-                console.log("channel.tracerySource: " + channel.tracerySource);
-                let source = require(path.join(__dirname, "data/" + channel.tracerySource));
+                console.log("channel.quoteSourceFile: " + channel.quoteSourceFile);
+                let source = require(path.join(__dirname, "data/" + channel.quoteSourceFile));
+                console.log("channel.quoteRoot: " + channel.quoteRoot);
 
-                console.log("channel.traceryRoot: " + channel.traceryRoot);
-                let book = tracery.createGrammar(source).flatten('#' + channel.traceryRoot + '#');
+                let quoteRoot = source[channel.quoteRoot];
+                let book = quoteRoot[Math.floor(Math.random() * quoteRoot.length)];
 
                 console.log("Book: " + book);
 
-                let quoteArray = source[source[book].quotes]; 
+                let quoteArray = source[source[book].quotes];
 
-                let quote = quoteArray[Math.floor(Math.random()*quoteArray.length)].quote;
+                let quoteObject = quoteArray[Math.floor(Math.random() * quoteArray.length)];
+                let quote = quoteObject.quote;
                 console.log("Quote:" + quote);
 
+                let description = quote + "\n";
+                let color = source[book].color;
+
+                // Build the footer. Format is:
+                //
+                // Title of the Book
+                // Chapter 4; 65%
+                //
+                // Chapter and percentage may or may not be present
+                let footerText = source[book].title;
+
+                if ((quoteObject.chapter != null) || (quoteObject.percentage != null)) {
+                    footerText += "\n";
+
+                    if (quoteObject.chapter != null) {
+                        footerText += "Chapter " + quoteObject.chapter;
+                        if (quoteObject.percentage != null)
+                        {
+                            footerText += ";  ";
+                        }
+                    }
+
+                    if(quoteObject.percentage != null)
+                    {
+                        footerText += quoteObject.percentage + "%";
+                    }
+                }
+
                 return new EmbedBuilder()
-                    .setDescription(quote + "\n")
-                    .setFooter({ text: source[book].title })
-                    .setColor(source[book].color);
+                    .setDescription(description)
+                    .setFooter({ text: footerText })
+                    .setColor(color);
             }
         }
         catch (error) {

@@ -4,23 +4,23 @@
     "channels": {
         "1004576660483477587": {
             "description": "hands-of-the-emperor",
-            "tracerySource": "hotebot.json",
-            "traceryRoot": "hoteRoot"
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "hoteRoot"
         },
         "849348165006393364": {
             "description": "lays-of-the-hearthfire",
-            "tracerySource": "hotebot.json",
-            "traceryRoot": "origin"
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "origin"
         },
         "849348269355958312": {
             "description": "nine-worlds-discussion",
-            "tracerySource": "hotebot.json",
-            "traceryRoot": "origin"
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "origin"
         },
         "851511356179349585": {
             "description": "nine-worlds-with-victoria",
-            "tracerySource": "hotebot.json",
-            "traceryRoot": "origin"
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "origin"
         }
     },
     "scheduledQuotes": [

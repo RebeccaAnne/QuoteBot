@@ -24,6 +24,21 @@
     "hoteRoot": [
         "hote"
     ],
+    "testBook": {
+        "title": "This is the Title of a Test Book",
+        "quotes": "testQuotes",
+        "color": "0x0097A7"
+    },
+    "testQuotes": [
+        {
+            "quote": "I am a long and interesting quote about many things",
+            "chapter": 5,
+            "percentage": 63
+        },
+        {
+            "quote": "This is a quote, but we don't know where it occurs in the book"
+        }
+    ],
     "fire": {
         "title": "Those Who Hold the Fire",
         "quotes": "firequotes",
