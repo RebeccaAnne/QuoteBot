@@ -32,7 +32,7 @@
     "testQuotes": [
         {
             "quote": "I am a long and interesting quote about many things",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 63
         },
         {
@@ -67,192 +67,235 @@
     "atfotsquotes": [
         {
             "quote": "There were too many days like today, where it was only now, in the quiet midnight, that he managed to get out-of-doors at all.",
-            "chapter": 1,
+            "chapter": "Chapter 1",
             "percentage": 1
         },
         {
             "quote": "Like the tui trees, blooming every year regardless of who came or did not come, Cliopher was waiting for someone.\nHis lord and friend, the Last Emperor and Lord of Zunidh whose Viceroy he was, was away. Travelling.",
-            "chapter": 1,
+            "chapter": "Chapter 1",
             "percentage": 1
         },
         {
             "quote": "“In the beginning Turtle dove down into the muck at the bottom of the sea and brought up mud to be made into land, and as a reward the Creator put him up in the sky as a constellation. It’s always a good idea to be polite to turtles, the old men say.”",
-            "chapter": 1,
+            "chapter": "Chapter 1",
             "percentage": 1
         },
         {
             "quote": "Cliopher was a Mdang, and he Held the Fire. He could hold this fire he had been given to hold, tend this hearth-fire at the heart of the world, and when his lord, his emperor, his Aurelius Magnus, came home, Cliopher would be waiting for him.",
-            "chapter": 1,
+            "chapter": "Chapter 1",
             "percentage": 1
         },
         {
             "quote": "He wanted home. And he wanted people there who were not there, who *could* not be there, and he did not know what to do.",
-            "chapter": 2,
+            "chapter": "Chapter 2",
             "percentage": 2
         },
         {
             "quote": "“No, sir: you don’t understand. You were the man from the proverb—the person I’d always been told not to imitate—*the man who came looking for the sea*—and then I learned that you *found it*.”",
-            "chapter": 2,
+            "chapter": "Chapter 2",
             "percentage": 3
         },
         {
             "quote": "“According to all our readings, in the bones and the smoke and the ink on water, in the hands of the casters and the dreams of the dream-walkers and the visions of the seers, the comet has come for you.”",
-            "chapter": 3,
+            "chapter": "Chapter 3",
             "percentage": 4
         },
         {
             "quote": "“I thank you for the message, although I do not know how I can be of such interest to the gods.”\nAll the stories said it was a very dangerous thing, to be of such interest to the gods.",
-            "chapter": 3,
+            "chapter": "Chapter 3",
             "percentage": 4
         },
         {
             "quote": "Even absent, he was a solid place to stand, and Cliopher wanted nothing more than to follow the star-path his Radiancy had set off upon.",
-            "chapter": 4,
+            "chapter": "Chapter 4",
             "percentage": 4
         },
         {
             "quote": "The sound of Islander rolled through the silent room like thunder, like the breakers on a reef.",
-            "chapter": 4,
+            "chapter": "Chapter 4",
             "percentage": 4
         },
         {
             "quote": "“The Wind That Rises At Dawn fills my sails. The Wake of the Ancestors’ Ships have I seen. The star-paths of Sky Ocean are singing to me.”",
-            "chapter": 4,
+            "chapter": "Chapter 4",
             "percentage": 4
         },
         {
             "quote": "There was a story in the *Lays* about an irreparable loss: a pattern for resignation, dignified acceptance, strength despite adversity. Cliopher had always hated it.",
-            "chapter": 4,
+            "chapter": "Chapter 4",
             "percentage": 5
         },
         {
             "quote": "He wished his Radiancy were there: to laugh with him about Prince Rufus and Princess Anastasiya, to come up with something for Melissa, to—\nTo talk to.\nAs if they were real people, with whole hearts and private lives and privacy.",
-            "chapter": 4,
+            "chapter": "Chapter 4",
             "percentage": 5
         },
         {
             "quote": "Of course his Radiancy was actually the notorious outlaw and trickster poet Fitzroy Angursell.\nOf course he was.",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 6
         },
         {
             "quote": "He did not miss things like this. He *didn’t*.\n(—He had.)",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 6
         },
         {
             "quote": "His Radiancy had trusted Cliopher to run the world in his absence, but he hadn’t trusted him with *that*.",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 6
         },
         {
             "quote": "Why hadn’t his Radiancy *told* him?\n(Why hadn’t Cliopher *guessed*?)",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 6
         },
         {
             "quote": "Ludvic sighed. “I miss him,” he said simply. “It’s not the same with him gone.”",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 7
         },
         {
             "quote": "“What do you mean?—When did *you* find out?”\nLudvic gave him one of the familiar blank-faced, laughing-eyed *looks*. “Oh, I’ve known since the beginning.”",
-            "chapter": 5,
+            "chapter": "Chapter 5",
             "percentage": 7
         },
         {
             "quote": "Did he sound jealous? He didn’t mean to. Ludvic could have—did have—his own close relationship with the lord he had served so long as well. With the man whose *friend* he was. They could both be friends.",
-            "chapter": 6,
+            "chapter": "Chapter 6",
             "percentage": 7
         },
         {
             "quote": "‘So, Fitzroy, do you think you’ve served your full sentence yet?’",
-            "chapter": 6,
+            "chapter": "Chapter 6",
             "percentage": 7
         },
         {
             "quote": "“That was when I knew. And I swore then I would always stand behind him, because I have never admired anyone so much as that moment. He had no choice to become emperor, you know. But he could have said no then, and he didn’t. He didn’t.”",
-            "chapter": 6,
+            "chapter": "Chapter 6",
             "percentage": 7
         },
         {
             "quote": "Cliopher closed his eyes. “I would have helped him, if he’d told me.”\n“You did help him,” Ludvic replied gently.",
-            "chapter": 6,
+            "chapter": "Chapter 6",
             "percentage": 7
         },
         {
             "quote": "So his lord was not what he’d thought—and so? He did not need to chase that viau, seek that sea, any longer. \nThere were other seas to seek, to find, to sail. He could be content with them.\n(All of this was a lie.)",
-            "chapter": 6,
+            "chapter": "Chapter 6",
             "percentage": 8
         },
         {
             "quote": "He might not be able to be the Last Emperor of Astandalas’ greatest friend—Fitzroy Angursell had his own great friends of the Red Company, friendships honoured and lauded in song and story—but Cliopher had done his best in his Radiancy’s service. Done *well* in that service.",
             "twitterQuote": "He might not be able to be the Last Emperor of Astandalas’ greatest friend—Fitzroy Angursell had his own great friends of the Red Company—but Cliopher had done his best in his Radiancy’s service. Done well in that service.",
-            "chapter": 7,
+            "chapter": "Chapter 7",
             "percentage": 8
         },
         {
-            "quote": "His thoughts wandered once more to his Radiancy—to Fitzroy Angursell—and his poetry. Then he looked at the painter again, her warm smile, her intense eyes, the deliberate placement of her hand on his thigh, and he felt an answering stir."
+            "quote": "His thoughts wandered once more to his Radiancy—to *Fitzroy Angursell*—and his poetry. Then he looked at the painter again, her warm smile, her intense eyes, the deliberate placement of her hand on his thigh, and he felt an answering stir.",
+            "chapter": "Chapter 7",
+            "percentage": 8
         },
         {
-            "quote": "“Oh, you know—the passage connecting your rooms to his Radiancy’s.”\n“What passage? Where?”\nRhodin snickered. “Oh, don’t be coy! How else would you attend your secret assignations?”"
+            "quote": "“Oh, *you* know—the passage connecting your rooms to his Radiancy’s.”\n“What passage? Where?”\nRhodin snickered. “Oh, don’t be coy! How else would you attend your secret assignations?”",
+            "chapter": "Chapter 8",
+            "percentage": 9
         },
         {
-            "quote": "My friend—the Impostor, you know, my correspondent?”"
+            "quote": "My friend—the Impostor, you know, my correspondent?”",
+            "chapter": "Chapter 8",
+            "percentage": 9
         },
         {
-            "quote": "“I am trying,” Cliopher said, his voice coming soft. “I am trying so hard, Rhodin.”"
+            "quote": "“I am trying,” Cliopher said, his voice coming soft. “I am trying so hard, Rhodin.”",
+            "chapter": "Chapter 8",
+            "percentage": 9
         },
         {
-            "quote": "He had wanted to sail the Wide Seas with his Radiancy beside him, as Elonoa’a had sailed with Aurelius Magnus; he had wanted to find a new island, a new star, the currents that would open up the gates between worlds."
+            "quote": "He had wanted to sail the Wide Seas with his Radiancy beside him, as Elonoa’a had sailed with Aurelius Magnus; he had wanted to find a new island, a new star, the currents that would open up the gates between worlds.",
+            "chapter": "Chapter 8",
+            "percentage": 10
         },
         {
-            "quote": "“Aya and Jiano told us to … make wishes, to the bonfire. Did you ask for yourself?”\n“No,” he said plainly, if quietly.\nRhodin nodded, entirely unsurprised, and set his hand on the door. Before he opened it, he said: “You’re allowed to.”"
+            "quote": "“Aya and Jiano told us to...make wishes, to the bonfire. Did you ask for yourself?”\n“No,” he said plainly, if quietly.\nRhodin nodded, entirely unsurprised, and set his hand on the door. Before he opened it, he said: “You’re allowed to.”",
+            "chapter": "Chapter 8",
+            "percentage": 10
         },
         {
-            "quote": "“We—those of us who are seekers after the wisdom of the Merrions—use dinosaur, or sometimes you will hear saurian, when we are speaking of the hyperintelligent telepathic cousins of the brute thunder lizards.”"
+            "quote": "His Radiancy, *Fitzroy Angursell*, could come and go as he pleased, and if it did not please him to come, well, Cliopher had no claim on him beyond the service he had already offered, and the honours he had already received in return.",
+            "chapter": "Chapter 9",
+            "percentage": 11
         },
         {
-            "quote": "His Radiancy, Fitzroy Angursell, could come and go as he pleased, and if it did not please him to come, well, Cliopher had no claim on him beyond the service he had already offered, and the honours he had already received in return."
+            "quote": "“We—those of us who are seekers after the wisdom of the Merrions—use *dinosaur*, or sometimes you will hear *saurian*, when we are speaking of the hyperintelligent telepathic cousins of the brute thunder lizards.”",
+            "chapter": "Chapter 10",
+            "percentage": 12
         },
         {
-            "quote": "What secrets did he yet hold in his heart that he himself had yet to uncover?"
+            "quote": "What secrets did *he* yet hold in his heart that he himself had yet to uncover?",
+            "chapter": "Chapter 10",
+            "percentage": 13
         },
         {
-            "quote": "“And if it is the case that he has received them, but for one reason or another has been unable to reply … I do not want him to think we have forgotten him.”"
+            "quote": "“And if it is the case that he has received them, but for one reason or another has been unable to reply...I do not want him to think we have forgotten him.”",
+            "chapter": "Chapter 11",
+            "percentage": 13
         },
         {
-            "quote": "He did not need to be embarrassed for … loving people, surely.\nAnd it was no secret that he was devoted to his Radiancy."
+            "quote": "He did not need to be embarrassed for...loving people, surely.\nAnd it was no secret that he was devoted to his Radiancy.",
+            "chapter": "Chapter 11",
+            "percentage": 13
         },
         {
-            "quote": "“Cliopher … please.” It was extremely rare for any of his Islander friends to call him Cliopher. He looked sharply at Toucan. “Cliopher. We love you as you are. Let yourself be yourself.”"
+            "quote": "“Cliopher...please.” It was extremely rare for any of his Islander friends to call him *Cliopher*. He looked sharply at Toucan. “Cliopher. We love you as you are. Let yourself be yourself.”",
+            "chapter": "Chapter 11",
+            "percentage": 14
         },
         {
-            "quote": "The rest of us say that so long as there is a tanà to light the fire, our culture will never fail. The rest of the lore-keepers keep the old ways for us all, but the tanà shows us what it means to be an Islander.”"
+            "quote": "The rest of us say that the tanà holds the heart of the islands in his hands: that so long as there is a tanà to light the fire, our culture will never fail. The rest of the lore-keepers keep the old ways for us all, but the tanà shows us what it means to be an Islander.”",
+            "twitterQuote": "The rest of us say that so long as there is a tanà to light the fire, our culture will never fail. The rest of the lore-keepers keep the old ways for us all, but the tanà shows us what it means to be an Islander.”",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "Tanaea-te imalo! Moa’a-ki imalo! Kifa’ana imai? I bring a fire for your hearth! I bring news of the Wide Seas! Have you any problems for me?"
+            "quote": "Tanaea-te imalo! Moa’a-ki imalo! Kifa’ana imai? *I bring a fire for your hearth! I bring news of the Wide Seas! Have you any problems for me?*",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "For the first time he wanted to go and not come back.\nBut of course he could not do that; not yet. His Radiancy had given him these reins of government to hold, and Cliopher knew his duty."
+            "quote": "For the first time he wanted to go and not come back.\nBut of course he could not do that; not yet. His Radiancy had given him these reins of government to hold, and Cliopher knew his duty.",
+            "chapter": "Chapter 13",
+            "percentage": 16
         },
         {
-            "quote": "One who holds the fire went as Elonoa’a went\nTo sit at the counsels of the emperors and speak for the people."
+            "quote": "*One who holds the fire went as Elonoa’a went\nTo sit at the counsels of the emperors and speak for the people.*",
+            "chapter": "Chapter 13",
+            "percentage": 16
         },
         {
-            "quote": "His voice took on the familiar teasing tone, and Cliopher could—could not handle it.\n“Bertie,” he interrupted softly, “please. I … I can’t joke about him. Not …”"
+            "quote": "His voice took on the familiar teasing tone, and Cliopher could—could not handle it.\n“Bertie,” he interrupted softly, “please. I...I can’t joke about him. Not...”",
+            "chapter": "Chapter 15",
+            "percentage": 19
         },
         {
-            "quote": "Cliopher was drowning in an ocean of light.\nHe was far below the surface, in water that was not water, in light that was not light, in a sea that was not anything he had ever known. There were voices singing.\nThe song was the song of the Lays."
+            "quote": "Cliopher was drowning in an ocean of light.\nHe was far below the surface, in water that was not water, in light that was not light, in a sea that was not anything he had ever known.\nThere were voices singing.\nThe song was the song of the *Lays*.",
+            "chapter": "Interlude i",
+            "percentage": 19
         },
         {
-            "quote": "He was dying and if he did not now sing his name he would be lost, fall to the darkness below the luminous waters, fall into the oblivion where the Old Woman Who Lives in the Deeps would ingather him to her silent company."
+            "quote": "He was dying and if he did not now sing his name he would be lost, fall to the darkness below the luminous waters, fall into the oblivion where the Old Woman Who Lives in the Deeps would ingather him to her silent company.",
+            "chapter": "Interlude i",
+            "percentage": 19
         },
         {
-            "quote": "The door opened. Cliopher stood up politely, courteously, summoning his best court-impervious expression.\nKip Mdang walked in."
+            "quote": "The door opened. Cliopher stood up politely, courteously, summoning his best court-impervious expression.\nKip Mdang walked in.",
+            "chapter": "Chapter 16",
+            "percentage": 20
         },
         {
-            "quote": "“The man known as Fitzroy Angursell is in an oubliette in the Palace: what I have learned, what I know, is that he can still be freed.”"
+            "quote": "“The man known as Fitzroy Angursell is in an oubliette in the Palace: what I have learned, what I *know*, is that he can still be freed.”",
+            "chapter": "Chapter 18",
+            "percentage": 23
         },
         {
             "quote": "His heart was hammering in his throat, with memory and desire and that hope for something he had never been able to say."
@@ -288,7 +331,7 @@
             "quote": "I hope, I think, I dare to imagine you will not think less of me for saying it is harder than I thought to be once more in the world."
         },
         {
-            "quote": "Cliopher …\nI dare to write to you as a friend. Please … please accept it as if we sat together on the sandbar at Navikiani, far out in the lagoon, far from any ears, any guards, any need to guard ourselves."
+            "quote": "Cliopher …\nI dare to write to you as a friend. Please...please accept it as if we sat together on the sandbar at Navikiani, far out in the lagoon, far from any ears, any guards, any need to guard ourselves."
         },
         {
             "quote": "You gave me that gift back, too, didn’t you? That holiday on Lesuia where I was able to remember myself.\nWe never sat beside a fire together there, did we? Not just the two of us. We should have."
@@ -300,7 +343,7 @@
             "quote": "“Do not be afraid,” the Mother of the Mountains said. “You are surrounded by magic, by the love and esteem Lord Artorin bears for you, by all the protections his love and esteem have woven around you.”"
         },
         {
-            "quote": "“I can see nothing but darkness … except that there is one tiny white thing … a shell, I think … very far in the distance.”"
+            "quote": "“I can see nothing but darkness...except that there is one tiny white thing...a shell, I think...very far in the distance.”"
         },
         {
             "quote": "The Mother of the Mountains looked up at him, her eyes full of magic, of wonder, of mystery. “And for the possibility of a tiny white shell,” she said, “you would face the certainty of darkness?”"
@@ -312,7 +355,7 @@
             "quote": "He could go home. But he didn’t want to.\nHe wanted that shell on the other side of the darkness."
         },
         {
-            "quote": "“After what happened at Woodlark … I was already almost-outcast. People knew why I’d done it, made those orders. They could … respect that someone had to. But they could not like me for it.”"
+            "quote": "“After what happened at Woodlark...I was already almost-outcast. People knew why I’d done it, made those orders. They could...respect that someone had to. But they could not like me for it.”"
         },
         {
             "quote": "The two of them sat there, two hinterland tribesmen who had learned what they had to teach until the two of them could play their games better than any of them, and now sat there opposite each other, the Viceroy and the Commander in Chief of Zunidh."
@@ -330,7 +373,7 @@
             "quote": "His Radiancy. Fitzroy Angursell. A man who had resigned himself to being considered only a god, and never again known properly and fully for himself."
         },
         {
-            "quote": "“She gave me the beads. My father carved them, when he was still an apprentice to his father, before … My mother was the one to magic them. A gift for me, from—from both of them. And then she told me his name.”"
+            "quote": "“She gave me the beads. My father carved them, when he was still an apprentice to his father, before...My mother was the one to magic them. A gift for me, from—from both of them. And then she told me his name.”"
         },
         {
             "quote": "Masseo Ironhand, who shod the horses of the wind; who had made locks that could hold a shadow hostage; who had forged swords out of starlight.\nMaybe Masseo Umrit was worthy of having Ludvic for a son. Maybe. Cliopher would have to find out."
@@ -351,7 +394,7 @@
             "quote": "“Basil,” Cliopher said, no longer easily, all the years of silence standing enormous in his throat. “Basil.”\n“Kip,” said Basil, equally hoarsely. “Kip.”"
         },
         {
-            "quote": "Kip—I—I hoped that people at home were alive, I hoped that they’d survived the Fall, I thought they must have … but I didn’t … I couldn’t see how I could go home if you weren’t there.”"
+            "quote": "Kip—I—I hoped that people at home were alive, I hoped that they’d survived the Fall, I thought they must have...but I didn’t...I couldn’t see how I could go home if you weren’t there.”"
         },
         {
             "quote": "He watched Clio splashing with his oars, scuttling across the calm, still water, the foreign trees around him, the very earth a different colour, and could only think that being a Wide Seas Islander also had to include this."
@@ -432,7 +475,7 @@
             "quote": "“You are in the company of Fitzroy Angursell. What’s the worst that could happen?”"
         },
         {
-            "quote": "“The other meaning is … archaic.”\n“I like archaic words,” his Radiancy murmured, stopping in the very middle of the stream.\n“So do I,” Cliopher admitted."
+            "quote": "“The other meaning is...archaic.”\n“I like archaic words,” his Radiancy murmured, stopping in the very middle of the stream.\n“So do I,” Cliopher admitted."
         },
         {
             "quote": "He made to let go of his Radiancy’s hand, but his Radiancy was having none of it.\nHis Radiancy, Fitzroy Angursell, was a great mage and had been on many strange adventures. If he wanted to keep holding hands …\nCliopher held hands."
@@ -447,7 +490,7 @@
             "quote": "The fanoa who had been Cliopher’s image and dream and ideal of friendship his entire life long.\nThey had been making love in the surf.\nThey were not—\nThat was not what fanoa meant. It couldn’t be. It couldn’t be."
         },
         {
-            "quote": "Cliopher had a bare moment of astonishment at realizing that his Radiancy—Fitzroy—was speaking Islander.\nA little haltingly, with hesitation, but … Islander. Islander!"
+            "quote": "Cliopher had a bare moment of astonishment at realizing that his Radiancy—Fitzroy—was speaking Islander.\nA little haltingly, with hesitation, but...Islander. Islander!"
         },
         {
             "quote": "He felt sick with loss, as if his heart had been pierced and all his wistful dreams had gushed out of it, disappearing into the sand below their feet."
@@ -465,7 +508,7 @@
             "quote": "“It’s been a great consolation and encouragement to me on my recent travels. The knowledge that you could spend so long and so much of your life at court, in the Service, and yet when the challenges came you can step up to them with the whole of yourself.”"
         },
         {
-            "quote": "“As you started to claim your culture more publicly, as we became closer friends, I conceived the idea that I wanted to … surprise you. Make it a gift.”\nCliopher stopped and regarded him, speechless.\n“I did surprise you,” Fitzroy said smugly."
+            "quote": "“As you started to claim your culture more publicly, as we became closer friends, I conceived the idea that I wanted to...surprise you. Make it a gift.”\nCliopher stopped and regarded him, speechless.\n“I did surprise you,” Fitzroy said smugly."
         },
         {
             "quote": "“Come, will you sing with me if I play? I’ve wanted—\nHe stopped, and smiled crookedly without finishing the thought.\nThere had been so many years when they could have been such better friends.\n“So have I,” he said, and left everything else unsaid."
@@ -477,7 +520,7 @@
             "quote": "“He danced the fire in the throne room of the Palace of Stars,” Fitzroy said, too proudly for Cliopher to parse. “It was one of the three most magnificent things I have ever seen”"
         },
         {
-            "quote": "“They have done so much already for Auri … They must be tired …”\n‘Resentful’ hovered in the air between them, unspoken.\n“They came for their own reasons,” Cliopher said. “They stay for love.”"
+            "quote": "“They have done so much already for Auri...They must be tired …”\n‘Resentful’ hovered in the air between them, unspoken.\n“They came for their own reasons,” Cliopher said. “They stay for love.”"
         },
         {
             "quote": "“Jullanar said it was important before you do laundry. Don’t you check your pockets first?”\n“I’ve never done my own laundry.”\n“What? Jullanar said—never mind!”"
@@ -486,13 +529,13 @@
             "quote": "“I have never been to the House of Sun. I am Cliopher Mdang of Tahivoa, tanà of Zunidh and Hands of the Emperor, and I will go there and bring you the flame you need.”"
         },
         {
-            "quote": "“I talked to the Mother of the Mountains. She told me that a great mage’s attention tangles magic around one. That your attention and … regard … had drawn magic around me.”\n“My love,” Fitzroy said, very quietly."
+            "quote": "“I talked to the Mother of the Mountains. She told me that a great mage’s attention tangles magic around one. That your attention and...regard...had drawn magic around me.”\n“My love,” Fitzroy said, very quietly."
         },
         {
             "quote": "“I don’t want to leave you,” Cliopher said helplessly, a truth he could not keep silent.\nFitzroy’s voice came out in a thin, hard tone, very unlike him. “I don’t want you to go.”"
         },
         {
-            "quote": "“I hate seeing people go,” Fitzroy said, and his voice was flat, dispirited, defeated. “Always … always. I had to give the orders, and they go, and so often they do not come back …”\n“I will come back.”\n“You cannot promise me that.”\n“I always have.”"
+            "quote": "“I hate seeing people go,” Fitzroy said, and his voice was flat, dispirited, defeated. “Always...always. I had to give the orders, and they go, and so often they do not come back …”\n“I will come back.”\n“You cannot promise me that.”\n“I always have.”"
         },
         {
             "quote": "“The Mother of the Mountains told me there was darkness before me, in the depths, in the heights, if I did not turn back.”\nFitzroy was silent for a long time.\n“Why didn’t you turn back, Kip?”\n“She said she saw a shell on the other side,” he whispered."
@@ -618,7 +661,7 @@
             "quote": "Cliopher was sure she could see into him. He did not mind: he had loved the constellation with all the love he had ever given that small toy, and he would open his heart to her."
         },
         {
-            "quote": "“Even at your most obsequious—” Fitzroy started to laugh. “Your most obsequious lasted all of an hour, that second day you were my secretary.”\n“After I looked you in the eyes.”\n“After you corrected my pronunciation, capped my joke, and … saved me.”"
+            "quote": "“Even at your most obsequious—” Fitzroy started to laugh. “Your most obsequious lasted all of an hour, that second day you were my secretary.”\n“After I looked you in the eyes.”\n“After you corrected my pronunciation, capped my joke, and...saved me.”"
         },
         {
             "quote": "“For so long all I had was that morning ritual, of you looking at me and saying ‘good morning’ when I looked at you and said ‘good morning’—that was it, Cliopher, that was all I had to remind myself that I was a person, a human being, a man.”"
@@ -633,13 +676,13 @@
             "quote": "Cliopher had never, not once, imagined that Fitzroy found him attractive."
         },
         {
-            "quote": "He had wanted to be chosen, to be equal, to be the other half of the shell that was half-formed by Fitzroy. He had not wanted … sex."
+            "quote": "He had wanted to be chosen, to be equal, to be the other half of the shell that was half-formed by Fitzroy. He had not wanted...sex."
         },
         {
             "quote": "El and Auri had made love in the foam at the edge of the sea, the air full of magic, as if they were the night and the day giving form to the lights of the sky."
         },
         {
-            "quote": "Cliopher had … literally never entertained this idea before."
+            "quote": "Cliopher had...literally never entertained this idea before."
         },
         {
             "quote": "“Fitzroy,” he said, hoarsely.\n“Yes, my lord Mdang,” Fitzroy said, his voice so much his Radiancy’s that Cliopher dropped all the husks from suddenly nerveless fingers.\nNo. He would not let this happen. They had travelled too far together to return to that."
@@ -648,7 +691,7 @@
             "quote": "Cliopher had taken the most precious thing he had ever held and dropped it."
         },
         {
-            "quote": "The great poet, whom Cliopher loved so very much, but not … apparently not in the right way. He had always loved things too much or not enough or in the wrong way."
+            "quote": "The great poet, whom Cliopher loved so very much, but not...apparently not in the right way. He had always loved things too much or not enough or in the wrong way."
         },
         {
             "quote": "He had never loved anyone as he loved Fitzroy."
@@ -663,7 +706,7 @@
             "quote": "What greater intimacy could sex possibly give? He had not magically become more intimate with Suzen—or even with Ghilly—because they’d had sex. It didn’t work like that.\nIt didn’t work like that for Cliopher."
         },
         {
-            "quote": "Cliopher did not know what to say. He had been so happy last night. He had wanted that for so long … and it had been just what he’d imagined.\nWhat he’d imagined. Not what Fitzroy had. Not what Fitzroy had wanted."
+            "quote": "Cliopher did not know what to say. He had been so happy last night. He had wanted that for so long...and it had been just what he’d imagined.\nWhat he’d imagined. Not what Fitzroy had. Not what Fitzroy had wanted."
         },
         {
             "quote": "He had wanted someone who was his, and who would choose him, as his equal, his match, his outrigger, as so much more than friend."
@@ -687,19 +730,19 @@
             "quote": "Fitzroy hesitated, as if he faced a precipice and did not dare step out.\nNo.\nFitzroy Angursell cared nothing for falling.\nHe hesitated as if he were going to have to put himself back in the cage."
         },
         {
-            "quote": "“I thought that was what you wanted,” Fitzroy said. “And what I … I wanted it, too. I wanted to … Kip, I thought … I’ve misunderstood something. What does it mean? You’re so quiet about this … it’s so important to you. I want to know. Please.”"
+            "quote": "“I thought that was what you wanted,” Fitzroy said. “And what I...I wanted it, too. I wanted to...Kip, I thought...I’ve misunderstood something. What does it mean? You’re so quiet about this...it’s so important to you. I want to know. Please.”"
         },
         {
-            "quote": "“That’s not how the Lays use it for them,” he said, very quietly. “It means … what we say it means … what I always thought it meant … is … someone you love so deeply you would leave the world to sail Sky Ocean for them.”"
+            "quote": "“That’s not how the Lays use it for them,” he said, very quietly. “It means...what we say it means...what I always thought it meant...is...someone you love so deeply you would leave the world to sail Sky Ocean for them.”"
         },
         {
-            "quote": "“A relationship like Vou’a and Ani have. Vou’a raised up the islands for Ani. She brought forth all the living creatures for him. The greatest of friends, we say, thought that’s thin. A euphemism. Fanoa means the person who is worth … everything.”"
+            "quote": "“A relationship like Vou’a and Ani have. Vou’a raised up the islands for Ani. She brought forth all the living creatures for him. The greatest of friends, we say, thought that’s thin. A euphemism. Fanoa means the person who is worth...everything.”"
         },
         {
             "quote": "“It had always been so important to me that in the stories they were not lovers. That two people could love each other like that, but it didn’t need to be about sex. That you could find someone who was your match. Your other half. You’re equal.”"
         },
         {
-            "quote": "“It’s not as if anyone uses the word. Fanoa, that is. In its social meaning. No one else will have … lost anything. They’ve all always thought me a fool for taking that meaning. Chasing a viau.” He swallowed, forced out: “It’s very old-fashioned.”"
+            "quote": "“It’s not as if anyone uses the word. Fanoa, that is. In its social meaning. No one else will have...lost anything. They’ve all always thought me a fool for taking that meaning. Chasing a viau.” He swallowed, forced out: “It’s very old-fashioned.”"
         },
         {
             "quote": "It was not fair that Fitzroy was looking at him even more softly, more tenderly, his face full of something that almost seemed like wonder."
@@ -708,7 +751,7 @@
             "quote": "Fitzroy said, still very softly, very gently: “You think of me as your equal?”\nIt was not really a question. Cliopher did not have to answer it. He spoke anyway. “I do.”"
         },
         {
-            "quote": "“You’re equal. Your match. Your … mirror, even? To bring in a Shaian conceit. The other shoe. The outrigger.” His voice warmed with something like humour, and he squeezed Cliopher’s hands. “Your other hand.”"
+            "quote": "“You’re equal. Your match. Your...mirror, even? To bring in a Shaian conceit. The other shoe. The outrigger.” His voice warmed with something like humour, and he squeezed Cliopher’s hands. “Your other hand.”"
         },
         {
             "quote": "“Why does it matter what Auri and El made of it?”\nCliopher stared at him. His heart hurt. \n“We are not Aurelius Magnus and Elonoa’a. We are ourselves. Fitzroy and Cliopher.”"
@@ -732,7 +775,7 @@
             "quote": "Cliopher drew in a deep, forceful breath, pushing against the panic and fear wanting to rise in his gorge. He would trust in Fitzroy’s magic. He would.\nThis time he was not falling alone; neither of them were."
         },
         {
-            "quote": "What was he supposed to say, if Fitzroy told him he really was a god?\nHe wasn’t. Cliopher knew that. And even if he were … well, Buru Tovo loved a god, in person and as a person, and was loved in return. It could be done."
+            "quote": "What was he supposed to say, if Fitzroy told him he really was a god?\nHe wasn’t. Cliopher knew that. And even if he were...well, Buru Tovo loved a god, in person and as a person, and was loved in return. It could be done."
         },
         {
             "quote": "“It was simpler up there, wasn’t it?”\n“Simple as the most important things. It’s like living inside a poem.” Fitzroy gave him one of those sly, wry, glinting grins. “Which even I can find tedious eventually.”"
@@ -804,7 +847,7 @@
             "quote": "“Tovo always has said that you’d come back when it was time,” the old man said. “I should know better than to wager against him.”"
         },
         {
-            "quote": "“I think,” Fitzroy said, his voice very low, and yet … certain, too, “that you have tried very hard to be of use, Kip. You give and give and give so that you can feel as if you are part of things, don’t you?”"
+            "quote": "“I think,” Fitzroy said, his voice very low, and yet...certain, too, “that you have tried very hard to be of use, Kip. You give and give and give so that you can feel as if you are part of things, don’t you?”"
         },
         {
             "quote": "“What a thought,” Fitzroy murmured, holding himself very still for a moment. Cliopher settled himself down on the deck, facing where his friend (his fanoa) leaned against the mast. “The idea,” he went on, “that we could do something because we wanted to.”"
@@ -825,7 +868,7 @@
             "quote": "“Well then,” Fitzroy said. “You don’t need to be something other than you are, Kip. You just need to be fully yourself.” His voice went soft. “Both halves, Kip. The carefully contained embers and the blazing fire.”"
         },
         {
-            "quote": "“He’s your Buru Tovo, too. It’s not really a familial title … and even if it were your—you’d still be allowed.”"
+            "quote": "“He’s your Buru Tovo, too. It’s not really a familial title...and even if it were your—you’d still be allowed.”"
         },
         {
             "quote": "“Vinyë’s made friends with my sister Melissa? How wonderful! What a splendid thing, Kip—the idea of Conju and your mother and your sister and your niece …”"
@@ -840,7 +883,7 @@
             "quote": "“Because it’s a tower?”"
         },
         {
-            "quote": "Was that still an issue? Was what Cliopher had offered not enough, after all? Should he ask?\nBut Fitzroy was smiling again, pleased with the space, the house, and … and he would say something, wouldn’t he? If he wanted—"
+            "quote": "Was that still an issue? Was what Cliopher had offered not enough, after all? Should he ask?\nBut Fitzroy was smiling again, pleased with the space, the house, and...and he would say something, wouldn’t he? If he wanted—"
         },
         {
             "quote": "“Will you be my ke’e, Cliopher Mdang?”\n“As you are mine,” Cliopher said. “My fanoa.”"
@@ -861,7 +904,7 @@
             "quote": "“There you are, Cousin Kip, your boss thinks you should let me have agency and personal judgment in order to prevent the collapse of society.”"
         },
         {
-            "quote": "“Sunset’s a bit later than the Palace … Don’t get lost?”\n“I could find you anywhere,” Fitzroy said softly.”"
+            "quote": "“Sunset’s a bit later than the Palace...Don’t get lost?”\n“I could find you anywhere,” Fitzroy said softly.”"
         },
         {
             "quote": "Fitzroy scuttled over and embraced him fiercely. “There’s no shame,” he whispered, “in loving something, however big, however small.”"
@@ -879,7 +922,7 @@
             "quote": "“You know what it is to have a truth too big, too real, too much the ground of your soul. That is what I feel for you, for calling you my fanoa.”"
         },
         {
-            "quote": "“I’m sorry I’m … like this. Too much, and not enough.” He managed a shaky laugh. “I always have been, you know.”\nFitzroy’s thumbs moved against his cheeks. “So have I,” he said softly. “Fanoa, you know.”"
+            "quote": "“I’m sorry I’m...like this. Too much, and not enough.” He managed a shaky laugh. “I always have been, you know.”\nFitzroy’s thumbs moved against his cheeks. “So have I,” he said softly. “Fanoa, you know.”"
         },
         {
             "quote": "He gently tugged on Cliopher’s head, and they touched their foreheads together. “The other half of your heart.”\n“I am the other half of yours,” Cliopher said."
@@ -921,7 +964,7 @@
             "quote": "“The man who cared so much for his people he was willing to stay in a cage until he was sure they were free? The man who learned Islander in secret just to please me? The man who always, always, always listened to me?”"
         },
         {
-            "quote": "“I can only ask you the questions, and listen to your answers.”\n“Kip, don’t … Kip, I can’t …”\n“You can,” he said relentlessly, as confidently as he had crossed Sky Ocean, as he had climbed that long stair, as he had lived in the world. “You must.”"
+            "quote": "“I can only ask you the questions, and listen to your answers.”\n“Kip, don’t...Kip, I can’t …”\n“You can,” he said relentlessly, as confidently as he had crossed Sky Ocean, as he had climbed that long stair, as he had lived in the world. “You must.”"
         },
         {
             "quote": "“You believed me, didn’t you, that there was a six-foot iguana in the bath-house.”\nThat was an unexpected sequitur, but Cliopher went with it. “Of course.”\n“People don’t, you know. Believe me when I tell such a strange and ridiculous truth as that.”"
@@ -969,7 +1012,7 @@
             "quote": "“Come with me,” Fitzroy said, his voice suddenly warm, delighted, enticing—as enticing as every story—as that picture had been—\nAnd then he was dissolving, his bones and flesh falling away, his hands no longer grasping anything but air—\nAnd he was flying."
         },
         {
-            "quote": "Cliopher found his voice. “That was … was … matter for a song.”\nFitzroy smiled at him, slow and secret, his delight welling as slowly as the light. “Yes. One day.”\n“I will help you,” Cliopher promised."
+            "quote": "Cliopher found his voice. “That was...was...matter for a song.”\nFitzroy smiled at him, slow and secret, his delight welling as slowly as the light. “Yes. One day.”\n“I will help you,” Cliopher promised."
         },
         {
             "quote": "“I’ve discovered something, Kip.”\n“Have you?”\n“I want to have adventures with you for the rest of my life.”"
@@ -978,7 +1021,7 @@
             "quote": "A flicker of an eyebrow, and all Cliopher’s fear evaporated. Fitzroy would keep him safe; or they would fight the dark and the cold together. Hand in hand, as Ani and Vou’a had once walked, the shoreline and the sea."
         },
         {
-            "quote": "“You’re so beautiful,” Cliopher blurted, and when Fitzroy gave him an incredulous look, refused to do anything but be as earnest as his heart wished. “With the shell in your hand and the magic in your face and your … your … everything …”"
+            "quote": "“You’re so beautiful,” Cliopher blurted, and when Fitzroy gave him an incredulous look, refused to do anything but be as earnest as his heart wished. “With the shell in your hand and the magic in your face and your...your...everything …”"
         },
         {
             "quote": "“Let us walk in legends, Kip Mdang.”\nCliopher’s heart was hammering. “Yes,” he breathed. “Yes. What—What is your island, Fitzroy Angursell?”\n“This one.” Fitzroy dropped his hands.\nThe fire at the heart of the world rose up."
@@ -1023,7 +1066,7 @@
             "quote": "One day that would be a beach, and his descendants would run their boats up to this island, this Navanoa, with a line or two from the Lays in their mouths.\nA new star in the sky, and a new island in the Ring.\nIt was impossible, and yet it was true."
         },
         {
-            "quote": "He did not even care that they had no food or fresh water or shade or shelter or means of leaving. They had a new island and a pair of shells for the first beads on their efanoa, and … and that was enough"
+            "quote": "He did not even care that they had no food or fresh water or shade or shelter or means of leaving. They had a new island and a pair of shells for the first beads on their efanoa, and...and that was enough"
         },
         {
             "quote": "“I—we—Fitzroy and I—my lord, that is, but—no, he’s my fanoa—we sailed Sky Ocean to the House of the Sun.” Cliopher was quite proud of himself for managing to get that all out."
@@ -1038,7 +1081,7 @@
             "quote": "“You can do better than that, Kip,” Ghilly said. “He raised an island for you, the least you could do is, I don’t know—”\n“Hang a star?” Cliopher replied, and winked at her when she stopped, flustered. “I have a great deal to tell you all.”"
         },
         {
-            "quote": "Toucan rolled his eyes. “Bertie, come help me carry Kip’s beloved … renegade.”"
+            "quote": "Toucan rolled his eyes. “Bertie, come help me carry Kip’s beloved...renegade.”"
         },
         {
             "quote": "“You know that you were going to be in the Lays from your work in the world, right?”\n“I didn’t fall into Sky Ocean on purpose, Toucan.”\nToucan laughed; and Ghilly said, “As if you wouldn’t have if you’d known it was an option!”"
@@ -1065,7 +1108,7 @@
             "quote": "“Ludvic. Ludvic. My dear Ludvic. Masseo is going to be—I am so—” He laughed, and tried to smile, and then let go of Ludvic so he could cover his face.. “I am overcome.”"
         },
         {
-            "quote": "“It was … perhaps it was wrong of me, but I … I always thought … in my culture, it is a good thing, to stand beside your … uncle.”"
+            "quote": "“It was...perhaps it was wrong of me, but I...I always thought...in my culture, it is a good thing, to stand beside your...uncle.”"
         },
         {
             "quote": "“As if I were your father’s brother. As if we were truly …”\nHe didn’t finish, or perhaps couldn’t. But Cliopher heard the unspoken word, and so did Ludvic.\n“Yes,” he said, hardly any more loudly. “As if we were.”\n“All this time?”\n“Always.”"
@@ -1182,7 +1225,7 @@
             "quote": "“One of the greatest joys of my life was the expression on your face when I asked you if you wanted to be Duke of Ikiano and you refused with language that would make a sailor blush.”"
         },
         {
-            "quote": "“Of course we can ask Jullanar’s help. She’s part of your family, your culture … our lives.”"
+            "quote": "“Of course we can ask Jullanar’s help. She’s part of your family, your culture...our lives.”"
         },
         {
             "quote": "Fitzroy gave Cliopher a very brilliant look and carefully moved the flower to his right ear.\nCliopher felt a wash of some nameless emotion—some indescribable wonder, some intense humility, some astonishing gratitude, some sort of awe."
@@ -1297,7 +1340,7 @@
             "quote": "“When I saw him, I thought he was the tanà for the whole world.”\nTovo felt his breath stop, just for a moment, at that soft statement."
         },
         {
-            "quote": "“It was out of the Lays,” Aya said again. “It should be in the Lays, Buru Tovo. It was a market like any other market, nothing of note except for the velioi guests … and yet it was then, there, here, now, that the gods asked a question.”"
+            "quote": "“It was out of the Lays,” Aya said again. “It should be in the Lays, Buru Tovo. It was a market like any other market, nothing of note except for the velioi guests...and yet it was then, there, here, now, that the gods asked a question.”"
         },
         {
             "quote": "As if Kip had decided at the age of twelve to be tanà, and followed that calling wherever it led him, refusing to take the ke'ea that others claimed was the true one unless he had decided it was also his."
@@ -1374,7 +1417,7 @@
             "quote": "You had kept an obsessive count of all the hours it had been since you became Emperor.\n(Fourteen years, four months, four days, seventeen hours, and then the Fall.)"
         },
         {
-            "quote": "A place far away, a hint of friendship and adventure … Nothing for you, but for the briefest scent of salt as the vision faded.\nYou blinked back the hint of tears before you turned.\nNot that anyone would be looking at your face, but even so. Even so."
+            "quote": "A place far away, a hint of friendship and adventure...Nothing for you, but for the briefest scent of salt as the vision faded.\nYou blinked back the hint of tears before you turned.\nNot that anyone would be looking at your face, but even so. Even so."
         },
         {
             "quote": "The Glorious One—such an absurd array of titles you possessed! Some days you felt most at home piling them up upon yourself, a child building cloud-castles, a poet spinning fancies, a fool trying on names"
@@ -1392,7 +1435,7 @@
             "quote": "Your new secretary fell rather than descended into his obeisance, eyes glimmering with welling tears. At your automatic dismissal Sayo Mdang turned and fled, writing kit forgotten on his desk and magic reverberating in the air."
         },
         {
-            "quote": "“If the taboo against looking full upon our eyes holds, see that he has all the medical and other assistance he needs. If … if it does not, inform the Master of Offices that we are pleased with his choice and duly appoint Sayo Mdang as our personal secretary.”"
+            "quote": "“If the taboo against looking full upon our eyes holds, see that he has all the medical and other assistance he needs. If...if it does not, inform the Master of Offices that we are pleased with his choice and duly appoint Sayo Mdang as our personal secretary.”"
         },
         {
             "quote": "Ludvic never let anything rock him. He had been the safe harbour in the storm after the Fall. One day he would be promoted to something more than just one of your personal guards. One day."
@@ -1413,7 +1456,7 @@
             "quote": "It was a week, a month, a year, of small miracles."
         },
         {
-            "quote": "Add Cliopher sayo Mdang into the mix, one speck in that ugly brownish-grey uniform that suited nobody, a pebble amongst all the yellow diamonds and white alabaster and jet, and the kaleidoscope slowly … stopped."
+            "quote": "Add Cliopher sayo Mdang into the mix, one speck in that ugly brownish-grey uniform that suited nobody, a pebble amongst all the yellow diamonds and white alabaster and jet, and the kaleidoscope slowly...stopped."
         },
         {
             "quote": "“Good morning, Sayo Mdang.”\nAnd, in a tiny, unbelievable gift, treason according to the absolute letter of the law, Cliopher sayo Mdang would look up after his obeisance and meet my eyes and smile and say, “Good morning, my lord.”"
@@ -1455,7 +1498,7 @@
             "quote": "You retreated from the trance but did not—could not—relinquish hold of your magic. Not this morning. Power swirled around you like your robes, crackled in the air about you, as you stood and strode through the ivory-and-ebony doors into your study."
         },
         {
-            "quote": "The Palace was behind you, the world in front of you. And if you simply … kept walking?\nNot simply. Never simply."
+            "quote": "The Palace was behind you, the world in front of you. And if you simply...kept walking?\nNot simply. Never simply."
         },
         {
             "quote": "You took a breath, tasting the air, testing the magic. Fresh air, scented not with perfumes and unguents and oils, but by the world itself."
@@ -1524,7 +1567,7 @@
             "quote": "The Hands of the Emperor. It had a good ring to it.\nIt was a way, perhaps, to touch the world neither as its tyrant nor as its god, but as a man doing my best to listen, to learn, to be."
         },
         {
-            "quote": "I closed my eyes and leaned back in my chair, the sun on my face, for a moment slouching, for a moment merely … myself.\n(And if I were humming Aurora quietly to myself, there was, for this one, shining moment, no one else to hear.)"
+            "quote": "I closed my eyes and leaned back in my chair, the sun on my face, for a moment slouching, for a moment merely...myself.\n(And if I were humming Aurora quietly to myself, there was, for this one, shining moment, no one else to hear.)"
         }
     ],
     "hotequotes": [
