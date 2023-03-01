@@ -27,7 +27,7 @@
         {
             "description": "9 am in nine-worlds-with-victoria",
             "time": "0 00 09 * * *",
-            "timezone":"America/Los_Angeles",
+            "timezone": "America/Los_Angeles",
             "channels": [
                 "851511356179349585"
             ]
@@ -35,10 +35,10 @@
         {
             "description": "9 pm in discussion channels",
             "time": "0 0 21 * * *",
-            "timezone":"America/Los_Angeles",
+            "timezone": "America/Los_Angeles",
             "channels": [
-                "849348165006393364",
-                "1004576660483477587"
+                "1004576660483477587",
+                "849348165006393364"
             ]
         }
     ]

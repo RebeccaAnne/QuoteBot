@@ -9,6 +9,9 @@ const quoteFile = require(quoteFileName);
 var twitterResult = {};
 twitterResult.origin = [];
 
+console.log(quoteFileName);
+console.log(rootName);
+
 quoteFile[rootName].forEach(book => {
 
     // Get the book from the top level array
@@ -33,12 +36,12 @@ quoteFile[rootName].forEach(book => {
                 twitterQuote = quoteObject.twitterQuote;
             }
             else {
-                // If we're using the discord quote, we need to remove any italics.
-                // Italics are marked for discord by surrounding text with *'s. This strips those *'s for twitter.
-                // We'll need to do something more sophisticated here if the source text starts including 
-                // *'s, but for now this gets the job done.
-                twitterQuote = quoteObject.quote.replace(/[*]/g, '');
-
+                // If we're using the discord quote, we need to remove any formatting.
+                // Italics are marked for discord by surrounding text with *, underlines with __. 
+                // This strips those characters for twitter. We'll need to do something more
+                // sophisticated here if the source text starts including those characters, but
+                // for now this gets the job done.
+                twitterQuote = quoteObject.quote.replace(/[*]/g, '').replace(/[__]/g, '');
             }
             
             // Check the tweet lenght
@@ -56,6 +59,6 @@ quoteFile[rootName].forEach(book => {
     }
 });
 
-let createStream = fs.createWriteStream("result.json");
+let createStream = fs.createWriteStream("twitterQuotes.json");
 createStream.write(JSON.stringify(twitterResult));
 createStream.end();
