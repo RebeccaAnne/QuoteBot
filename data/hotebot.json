@@ -1543,7 +1543,6 @@
         {
             "quote": "Fitzroy smiled slowly, like the sunrise. “Let us walk in legends, Kip Mdang.”\nCliopher’s heart was hammering. “Yes,” he breathed. “*Yes*. What—What is your island, Fitzroy Angursell?”\n“This one.” Fitzroy dropped his hands.\nThe fire at the heart of the world rose up.",
             "twitterQuote": "“Let us walk in legends, Kip Mdang.”\nCliopher’s heart was hammering. “Yes,” he breathed. “Yes. What—What is your island, Fitzroy Angursell?”\n“This one.” Fitzroy dropped his hands.\nThe fire at the heart of the world rose up."
-
         },
         {
             "quote": "He gripped the shell in his hand, himself held safe by his fanoa, and he looked up at the golden eyes so full of magic, so full of brilliant intellect and indomitable will, so full of the fundamental joy of creation.",
@@ -1662,13 +1661,11 @@
             "quote": "“It’s apparently incapable of being removed. He hoped their last efforts—which I think involved putting it on a trading ship bound across the Wide Seas—would work. But it’s got some sort of magic, and it arrived back just after you returned to Solaara.”",
             "chapter": "Chapter 70",
             "percentage": 90
-
         },
         {
             "quote": "Fitzroy appeared dazed. “Have they adopted me?”\nCliopher took his arm, and turned him gently to continue along the canal. “Yes. I think you’ll find they have.”\n“What an *amazing* thing,” Fitzroy declared.",
             "chapter": "Chapter 70",
             "percentage": 90
-
         },
         {
             "quote": "“You called him *beloved*,” Ludvic said quietly. “I heard you. You’ve loved him for a long time, Cliopher, but you did not call him that before you left.”",
@@ -2454,412 +2451,686 @@
     ],
     "hotequotes": [
         {
-            "quote": "It was an indication of Cliopher Mdang’s status in the eyes of his lord that he was given the use of a sky ship for personal business."
+            "quote": "It was an indication of Cliopher Mdang’s status in the eyes of his lord that he was given the use of a sky ship for personal business.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote": "He no longer believed one could legislate out of existence greed, or stupidity, or sheer perversity of will. \nIt reassured him that neither could one legislate out of existence love, or hope, or the desire for beauty"
+            "quote": "He no longer believed one could legislate out of existence greed, or stupidity, or sheer perversity of will. \nIt reassured him that neither could one legislate out of existence love, or hope, or the desire for beauty",
+            "chapter": "Chapter 2",
+            "percentage": 2
         },
         {
-            "quote": "No one to look on his face. No one to say his name. No one to touch him. No one to be his own, and no one else’s. No one for whom he could be himself."
+            "quote": "No one to look on his face. No one to say his name. No one to touch him. No one to be his own, and no one else’s. No one for whom he could be himself.",
+            "chapter": "Chapter 2",
+            "percentage": 3
         },
         {
-            "quote": "Surely it was only petty treason."
+            "quote": "Surely it was only *petty* treason.",
+            "chapter": "Chapter 2",
+            "percentage": 3
         },
         {
-            "quote": "“His Radiancy would not thank me to let you fall.”"
+            "quote": "“His Radiancy would not thank me to let you fall.”",
+            "chapter": "Chapter 4",
+            "percentage": 4
         },
         {
-            "quote": "A feeling of indescribable fondness welled up in him as he regarded his lord."
+            "quote": "A feeling of indescribable fondness welled up in him as he regarded his lord.",
+            "chapter": "Chapter 5",
+            "percentage": 5
         },
         {
-            "quote": "“I used to know who I was beyond my duties.”"
+            "quote": "“I used to know who I was beyond my duties.”",
+            "chapter": "Chapter 6",
+            "percentage": 7
         },
         {
-            "quote": "He walked forward to meet his Radiancy, who was coming out of the water, looking (to Cliopher) like some story of Creation as the water streaming off his dark shoulders caught the light and the three men stood awaiting his coming."
+            "quote": "He walked forward to meet his Radiancy, who was coming out of the water, looking (to Cliopher) like some story of Creation as the water streaming off his dark shoulders caught the light and the three men stood awaiting his coming.",
+            "chapter": "Chapter 6",
+            "percentage": 7
         },
         {
-            "quote": "The distant serene reserve that usually cloaked any hint of personality was gone, and in its place was an alert, amused, interested expression. \nHe looked, in short, like a man seized with an enthusiasm. \nHe was nearly unrecognizable."
+            "quote": "The distant serene reserve that usually cloaked any hint of personality was gone, and in its place was an alert, amused, *interested* expression. \nHe looked, in short, like a man seized with an enthusiasm. \nHe was nearly unrecognizable.",
+            "chapter": "Chapter 7",
+            "percentage": 7
         },
         {
-            "quote": "“Your accent has grown noticeably stronger over the course of the day, Cliopher.”\nHe hastily put his thoughts back into courtly mode. “My apologies, my—” \n“No, do not mistake me. Pray speak as your heart moves you.”"
+            "quote": "“Your accent has grown noticeably stronger over the course of the day, Cliopher.”\nHe hastily put his thoughts back into courtly mode. “My apologies, my—” \n“No, do not mistake me. Pray speak as your heart moves you.”",
+            "chapter": "Chapter 8",
+            "percentage": 10
         },
         {
-            "quote": "“You are speaking of his Radiancy!” \n“I do not forget it!”"
+            "quote": "“You are speaking of *his Radiancy*!” \n“I do not forget it!”",
+            "chapter": "Chapter 9",
+            "percentage": 10
         },
         {
-            "quote": "“Yet here you are,” his Radiancy said, smiling at him.\n“Yes, I am here,” said Cliopher, his heart singing."
+            "quote": "“Yet here you are,” his Radiancy said, smiling at him.\n“Yes, I am here,” said Cliopher, his heart singing.",
+            "chapter": "Chapter 10",
+            "percentage": 12
         },
         {
-            "quote": "“What is your name, what is your island, and what is your dance?”"
+            "quote": "“What is your name, what is your island, and what is your dance?”",
+            "chapter": "Chapter 11",
+            "percentage": 13
         },
         {
-            "quote": "“I will bring home the hearth-fire of a new life for the world.”"
+            "quote": "“I will bring home the hearth-fire of a new life for the world.”",
+            "chapter": "Chapter 11",
+            "percentage": 13
         },
         {
-            "quote": "“You will not let me give you riches or titles or lands or any of the other honours it is usual for a lord to give his loyal servants, so instead I offer you this as your friend.”"
+            "quote": "“You will not let me give you riches or titles or lands or any of the other honours it is usual for a lord to give his loyal servants, so instead I offer you this as your friend.”",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "“He called me his friend.”\n“Then you must continue to act in the office of friendship,” Cliopher said firmly."
+            "quote": "“No one will ever pay me to copy out texts, I’m afraid, but every poet should see his work in book form at least once. It is good for the soul.”",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "“No one will ever pay me to copy out texts, I’m afraid, but every poet should see his work in book form at least once. It is good for the soul.”"
+            "quote": "“He called me his *friend*.”\n“Then you must continue to act in the office of friendship,” Cliopher said firmly.",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "“I have been wondering, my lord, whether it had occurred to you to retire.”"
+            "quote": "“I have been wondering, my lord, whether it had occurred to you to retire.”",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "“I spent the night before my coronation praying for the Red Company to come take me away. They did not come: and so I became Emperor.”"
+            "quote": "“I spent the night before my coronation praying for the Red Company to come take me away. They did not come: and so I became Emperor.”",
+            "chapter": "Chapter 12",
+            "percentage": 15
         },
         {
-            "quote": "“I am a human being, Conju! I have emotions and desires and frustrations and hopes and dreams and nightmares as much as anyone else. I have things I love and things I hate, things I prefer and things I abhor, and none of it matters.”"
+            "quote": "“I am a human being, Conju! I have emotions and desires and frustrations and hopes and dreams and nightmares as much as anyone else. I have things I love and things I hate, things I prefer and things I abhor, and *none of it matters*.”",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "“You still do not know what I mean, do you? You kneel to me because you dared raise your voice to me. When have I ever given you cause to think I would punish you for speaking your mind?”"
+            "quote": "“You *still* do not know what I mean, do you? You kneel to me because you dared raise your voice to me. When have I ever given you cause to think I would punish you for speaking your mind?”",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "“Can you not understand that the walls between us are not of my making? That I do not want to be behind them? Can you not look at me and see not the Radiancy but the man?”"
+            "quote": "“Can you not understand that the walls between us are not of my making? That I do not want to be behind them? Can you not look at me and see not the Radiancy but the *man*?”",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "“It was so hard to keep fighting that I had nearly stopped. I had myself nearly convinced that it was merely the responsible thing to be so—so—so dull!”"
+            "quote": "“It was so hard to keep fighting that I had nearly stopped. I had myself nearly convinced that it was merely the responsible thing to be so—so—so *dull*!”",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "“I never thought I would be the person who chose what is comfortable.”"
+            "quote": "“I never thought I would be the person who chose what is *comfortable*.”",
+            "chapter": "Chapter 12",
+            "percentage": 16
         },
         {
-            "quote": "“Will you not call Ser Rhodin and Elish out of the rain?”\nLudvic turned his head and raised his eyebrows at him. “They would not come. He gave them a direct order to stay there. They will obey.”"
+            "quote": "“Will you not call Ser Rhodin and Elish out of the rain?”\nLudvic turned his head and raised his eyebrows at him. “They would not come. He gave them a direct order to stay there. They will obey.”",
+            "chapter": "Chapter 13",
+            "percentage": 16
         },
         {
-            "quote": "His Radiancy stood still, gazing down at him with that inscrutable expression, and then he did what Cliopher had never once seen him do: he knelt down. \n“Conju,” he said, quietly."
+            "quote": "His Radiancy stood still, gazing down at him with that inscrutable expression, and then he did what Cliopher had never once seen him do: he knelt down. \n“Conju,” he said, quietly.",
+            "chapter": "Chapter 13",
+            "percentage": 16
         },
         {
-            "quote": "“Conju, if you insist on resigning I will not force you to stay. But I will be very sorry indeed to see you go—and sorrier than I can say to have made you feel unworthy and a failure.”"
+            "quote": "“Conju, if you insist on resigning I will not force you to stay. But I will be very sorry indeed to see you go—and sorrier than I can say to have made you feel unworthy and a failure.”",
+            "chapter": "Chapter 13",
+            "percentage": 17
         },
         {
-            "quote": "“That is not what I wished for.”"
+            "quote": "“That is not what I wished for.”",
+            "chapter": "Chapter 15",
+            "percentage": 18
         },
         {
-            "quote": "“I will give you a dream, and something to remember,” she said, “and half a hundred poems for you to write to me.” \n“I hear and obey,” he said. \n“You never did,” she said, with something like amusement. “Your tides are your own, Beloved.”"
+            "quote": "“I will give you a dream, and something to remember,” she said, “and half a hundred poems for you to write to me.” \n“I hear and obey,” he said. \n“You never did,” she said, with something like amusement. “Your tides are your own, Beloved.”",
+            "chapter": "Chapter 15",
+            "percentage": 18
         },
         {
-            "quote": "“My lord, may I speak very frankly?” \nHis Radiancy turned the lion gaze on him, holding his eyes for a long moment. Cliopher felt his power like a huge reservoir behind the dam of his will. \n“Yes.”"
+            "quote": "“My lord, may I speak very frankly?” \nHis Radiancy turned the lion gaze on him, holding his eyes for a long moment. Cliopher felt his power like a huge reservoir behind the dam of his will. \n“Yes.”",
+            "chapter": "Chapter 23",
+            "percentage": 26
         },
         {
-            "quote": "“You were the first one to look at me as if I were a human being instead of a god.” \n“That was treason, my lord,” Cliopher said quietly. \nThere was another silence. “I hate my life at times, Kip.”"
+            "quote": "“You were the first one to look at me as if I were a human being instead of a god.” \n“That was treason, my lord,” Cliopher said quietly. \nThere was another silence. “I hate my life at times, Kip.”",
+            "chapter": "Chapter 23",
+            "percentage": 26
         },
         {
-            "quote": "“I have been fortunate beyond the lot of many men that not only can I, do I, admire and respect my lord and my master, but that I could, that I do, also love him.”"
+            "quote": "“I have been fortunate beyond the lot of many men that not only can I, do I, admire and respect my lord and my master, but that I could, that I do, also love him.”",
+            "chapter": "Chapter 23",
+            "percentage": 27
         },
         {
-            "quote": "“My Lord, my  ... Tor ... if you were my brother or my cousin I could not love you more.”"
+            "quote": "“My Lord, my ... Tor... if you were my brother or my cousin I could not love you more.”",
+            "chapter": "Chapter 23",
+            "percentage": 27
         },
         {
-            "quote": "“I’m a career bureaucrat, my lord, not a—”\n“You,” said his Radiancy with precision, “are not dull. Stop acting like it.”"
+            "quote": "“I’m a career bureaucrat, my lord, not a—”\n“You,” said his Radiancy with precision, “are not dull. Stop acting like it.”",
+            "chapter": "Chapter 24",
+            "percentage": 27
         },
         {
-            "quote": "“Cliopher will not wear satin.”"
+            "quote": "“Cliopher will not wear satin.”",
+            "chapter": "Chapter 25",
+            "percentage": 28
         },
         {
-            "quote": "“Whose livery is that?” \n“Yours, sir!”"
+            "quote": "“Whose livery is that?” \n“Yours, sir!”",
+            "chapter": "Chapter 26",
+            "percentage": 29
         },
         {
-            "quote": "“Your Radiancy stopped coughing and said: ‘Where am I?’ And I saluted and replied, ‘In the throne room of the Palace of Stars, Glorious One.’ ‘But this is not Ysthar,’ you said, ‘it is Zunidh. And the Empire is no more.”"
+            "quote": "“Your Radiancy stopped coughing and said: ‘Where am I?’ And I saluted and replied, ‘In the throne room of the Palace of Stars, Glorious One.’ ‘But this is not Ysthar,’ you said, ‘it is Zunidh. And the Empire is no more.”",
+            "chapter": "Chapter 27",
+            "percentage": 32
         },
         {
-            "quote": "“It is a matter of wild magic. Coincidence and serendipity are to be expected.”"
+            "quote": "“It is a matter of wild magic. Coincidence and serendipity are to be expected.”",
+            "chapter": "Chapter 27",
+            "percentage": 32
         },
         {
-            "quote": "And the centre of every gaze and every mind and every subtle line, that hundredth and last Emperor of Astandalas whom Cliopher loved."
+            "quote": "And the centre of every gaze and every mind and every subtle line, that hundredth and last Emperor of Astandalas whom Cliopher loved.",
+            "chapter": "Chapter 28",
+            "percentage": 33
         },
         {
-            "quote": "There was a glint in his Radiancy’s eyes.\nCliopher was mortally certain he was the only one in all that room looking into them."
+            "quote": "There was a glint in his Radiancy’s eyes.\nCliopher was mortally certain he was the only one in all that room looking into them.",
+            "chapter": "Chapter 28",
+            "percentage": 33
         },
         {
-            "quote": "“Indeed, the strength of social pressure is one of the greatest forces in the world. The only force that is stronger is the individual will.”"
+            "quote": "“Indeed, the strength of social pressure is one of the greatest forces in the world. The only force that is stronger is the individual will.”",
+            "chapter": "Chapter 32",
+            "percentage": 37
         },
         {
-            "quote": "“It is so much harder to stand up for a small, nearly frivolous thing. It is far easier, at least in imagination, to stand up for the great things.”"
+            "quote": "“It is so much harder to stand up for a small, nearly frivolous thing. It is far easier, at least in imagination, to stand up for the great things.”",
+            "chapter": "Chapter 32",
+            "percentage": 37
         },
         {
-            "quote": "He spent a few silent moments preparing a new pen. Then he wrote, in precise lettering, Cliopher Lord Mdang defended the people of the Vangavaye-ve against their princess. \nThere, he thought defiantly, let history read that."
+            "quote": "He spent a few silent moments preparing a new pen. Then he wrote, in precise lettering, *Cliopher Lord Mdang defended the people of the Vangavaye-ve against their princess.* \nThere, he thought defiantly, let history read that.",
+            "twitterQuote": "He spent a few silent moments preparing a new pen. Then he wrote, in precise lettering, 'Cliopher Lord Mdang defended the people of the Vangavaye-ve against their princess.' \nThere, he thought defiantly, let history read that.",
+            "chapter": "Chapter 35",
+            "percentage": 37
         },
         {
-            "quote": "“Kip,” his Radiancy said more gently. “Kip, look at me.” \n“Please, my lord,” he whispered, feeling the tears start to fall as he obeyed."
+            "quote": "“Kip,” his Radiancy said more gently. “Kip, look at me.” \n“Please, my lord,” he whispered, feeling the tears start to fall as he obeyed.",
+            "chapter": "Chapter 35",
+            "percentage": 40
         },
         {
-            "quote": "He felt himself to be entirely exposed, belly-up, defeated. He said, “They have never forgiven me for leaving.” \n“Have you ever forgiven yourself?” \nCliopher looked at him, met the lion eyes. Finally dropped his eyes in submission. “No.”"
+            "quote": "He felt himself to be entirely exposed, belly-up, defeated. He said, “They have never forgiven me for leaving.” \n“Have you ever forgiven yourself?” \nCliopher looked at him, met the lion eyes. Finally dropped his eyes in submission. “No.”",
+            "chapter": "Chapter 35",
+            "percentage": 40
         },
         {
-            "quote": "But, another part of him said, the Lord Chancellor of Zunidh was able to be his Radiancy’s friend ... and that was worth all the work and headaches and stress ..."
+            "quote": "“If I die...no, listen...if I die, I have...please...last requests...” \n“Whatever you want done, we will do,” Cliopher said recklessly, meaning every word.",
+            "chapter": "Chapter 36",
+            "percentage": 41
         },
         {
-            "quote": "“If I die ... no, listen ... if I die, I have ... please ... last requests ...” \n“Whatever you want done, we will do,” Cliopher said recklessly, meaning every word."
+            "quote": "But, another part of him said, the Lord Chancellor of Zunidh was able to be his Radiancy’s friend... and that was worth all the work and headaches and stress...",
+            "chapter": "Chapter 38",
+            "percentage": 43
         },
         {
-            "quote": "Ludvic looked up at his tone. “My lord, it is nothing for me to die in serving you.”\n“It is everything for me, Ludvic,” said his Radiancy in a low voice."
+            "quote": "Ludvic looked up at his tone. “My lord, it is nothing for me to die in serving you.”\n“It is everything for me, Ludvic,” said his Radiancy in a low voice.",
+            "chapter": "Chapter 39",
+            "percentage": 45
         },
         {
-            "quote": "“I know some of the old traditions.” \nAnd that was as much as he could say that was true, he thought, here where he chose his work over his family over and over again."
+            "quote": "“I know some of the old traditions.” \nAnd that was as much as he could say that was true, he thought, here where he chose his work over his family over and over again.",
+            "chapter": "Chapter 41",
+            "percentage": 47
         },
         {
-            "quote": "“I do not ask for your political view. I wish to know what you, Kip Mdang, think.”\nCliopher met the lion eyes steadily. “My lord, I have devoted my life to your service.” \n“And?”\n“And I think that of all people, Fitzroy Angursell should be free.”"
+            "quote": "“I do not ask for your political view. I wish to know what you, Kip Mdang, think.”\nCliopher met the lion eyes steadily. “My lord, I have devoted my life to your service.” \n“And?”\n“And I think that of all people, Fitzroy Angursell should be free.”",
+            "chapter": "Chapter 41",
+            "percentage": 47
         },
         {
-            "quote": "“The world knows your devotion, Lord Mdang.”"
+            "quote": "“The world knows your devotion, Lord Mdang.”",
+            "chapter": "Chapter 42",
+            "percentage": 48
         },
         {
-            "quote": "“To hell with the Viceroyship!”"
+            "quote": "“To hell with the Viceroyship!”",
+            "chapter": "Chapter 46",
+            "percentage": 55
         },
         {
-            "quote": "“My lord, you cannot button it away.” \n“I nearly think you said I cannot.”"
+            "quote": "“My lord, you cannot button it away.” \n“I nearly think you said I *cannot*.”",
+            "chapter": "Chapter 46",
+            "percentage": 55
         },
         {
-            "quote": "“You overreach yourself, sir. You are dismissed,” his Radiancy said icily, and that, he supposed, was that."
+            "quote": "“You overreach yourself, sir. You are dismissed,” his Radiancy said icily, and that, he supposed, was that.",
+            "chapter": "Chapter 46",
+            "percentage": 55
         },
         {
-            "quote": "“There is no way,” Ludvic burst out, “that his Radiancy would consider that treasonous from you. He loves you as a brother.” \n“He sent me away,” Cliopher whispered"
+            "quote": "“There is no way,” Ludvic burst out, “that his Radiancy would consider that treasonous from you. He loves you as a brother.” \n“He sent me away,” Cliopher whispered.",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "“Are you suggesting I go counter to a direct order?” \nThey looked at each other intently, he and Ludvic and Conju, the air heavy with anxiety and fear. Conju backed down; but Ludvic said, in his usual phlegmatic way, “How deeply do you love him?”"
+            "quote": "“Are you suggesting I go counter to a direct order?” \nThey looked at each other intently, he and Ludvic and Conju, the air heavy with anxiety and fear. Conju backed down; but Ludvic said, in his usual phlegmatic way, “How deeply do you love him?”",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "And that even if Cliopher was not Domina Black, did not walk through the world like a thunderstrike, nevertheless he could do his best, and that if that meant he was to be executed for his love, then he would do what he could beforehand."
+            "quote": "And that even if Cliopher was not Domina Black, did not walk through the world like a thunderstrike, nevertheless he could do his best, and that if that meant he was to be executed for his love, then he would do what he could beforehand.",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "If he was going to be executed for the treason of treating his Radiancy as a person he might as well go all the way with it. \nKnocked again, and this time into the ensuing silence he said: “Tor.”"
+            "quote": "If he was going to be executed for the treason of treating his Radiancy as a person he might as well go all the way with it. \nKnocked again, and this time into the ensuing silence he said: “Tor.”",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "His Radiancy stood frowning down at him, his power high and menacing. Cliopher did not try to match his stare, but thought of himself as a stone being swamped by the sea. If the sea truly wished to unseat him, he knew he would have no recourse."
+            "quote": "His Radiancy stood frowning down at him, his power high and menacing. Cliopher did not try to match his stare, but thought of himself as a stone being swamped by the sea. If the sea truly wished to unseat him, he knew he would have no recourse.",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "But the wave ebbed. Ebbed from drowning Cliopher; and ebbed, he saw, from drowning that inner man whose name he did not know, save that it was almost certainly not Tor. But he had no other name to offer him."
+            "quote": "But the wave ebbed. Ebbed from drowning Cliopher; and ebbed, he saw, from drowning that inner man whose name he did not know, save that it was almost certainly not *Tor*. But he had no other name to offer him.",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "“Tor,” he said again, very softly, “please.” \nIf he had heaved a stone through a window he could not have seen a shattering as complete as what he saw breaking in his Radiancy’s eyes."
+            "quote": "“Tor,” he said again, very softly, “please.” \nIf he had heaved a stone through a window he could not have seen a shattering as complete as what he saw breaking in his Radiancy’s eyes.",
+            "chapter": "Chapter 47",
+            "percentage": 55
         },
         {
-            "quote": "He draped him with it and then he sat down on the edge of the desk and with the cloth between them held the Last Emperor of Astandalas as he cried."
+            "quote": "He draped him with it and then he sat down on the edge of the desk and with the cloth between them held the Last Emperor of Astandalas as he cried.",
+            "chapter": "Chapter 47",
+            "percentage": 56
         },
         {
-            "quote": "“I felt like a ghost. No one could touch me, and I could touch no one. I cast no shadow, and shadows did not land on me. My slightest whim was obeyed, but any real desires I had were forbidden by the entire edifice of Schooled magic and Imperial policy.”"
+            "quote": "“I felt like a ghost. No one could touch me, and I could touch no one. I cast no shadow, and shadows did not land on me. My slightest whim was obeyed, but any real desires I had were forbidden by the entire edifice of Schooled magic and Imperial policy.”",
+            "chapter": "Chapter 48",
+            "percentage": 56
         },
         {
-            "quote": "“Everyone was terrified of me. Oh, I should clarify: not me. It was never me that anyone looked at, that anyone saw, that anyone thought about. It was always the Emperor.”"
+            "quote": "“Everyone was terrified of me. Oh, I should clarify: not *me*. It was never *me* that anyone looked at, that anyone saw, that anyone thought about. It was always *the Emperor*.”",
+            "chapter": "Chapter 48",
+            "percentage": 56
         },
         {
-            "quote": "“I hated everything about being Emperor. Everything. I hated how other people treated me, I hated how I was expected to treat other people, I hated all the taboos, I hated the total lack of privacy, I hated the magic that was turning me inside out.”"
+            "quote": "“I hated everything about being Emperor. Everything. *Everything*. I hated how other people treated me, I hated how I was expected to treat other people, I hated all the taboos, I hated the total lack of privacy, I hated the magic that was turning me inside out.”",
+            "twitterQuote": "“I hated everything about being Emperor. Everything. I hated how other people treated me, I hated how I was expected to treat other people, I hated all the taboos, I hated the total lack of privacy, I hated the magic that was turning me inside out.”",
+            "chapter": "Chapter 48",
+            "percentage": 56
         },
         {
-            "quote": "“Will you speak so to me? Will you speak so for me? Will you speak so about me?”"
+            "quote": "“Will you speak so to me? Will you speak so *for* me? Will you speak so *about* me?”",
+            "chapter": "Chapter 48",
+            "percentage": 56
         },
         {
-            "quote": "Ludvic rubbed his left hand down the long golden scars on his arm. “It seemed right to me that I should die from his touch. For so long I have felt unworthy of living when they did not.”"
+            "quote": "Ludvic rubbed his left hand down the long golden scars on his arm. “It seemed right to me that I should die from his touch. For so long I have felt unworthy of living when they did not.”",
+            "chapter": "Chapter 48",
+            "percentage": 57
         },
         {
-            "quote": "“At the end, when the priests came, I thought only that you were the Lord Chancellor, that you needed to know. Then I saw your face. I had not known you felt that way.”"
+            "quote": "“At the end, when the priests came, I thought only that you were the Lord Chancellor, that you needed to know. Then I saw your face. I had not known you felt that way.”",
+            "chapter": "Chapter 48",
+            "percentage": 57
         },
         {
-            "quote": "“You have a loving family big enough to include Conju, and Rhodin, and himself. And me. I am grateful. That is all.”"
+            "quote": "“You have a loving family big enough to include Conju, and Rhodin, and himself. And me. I am grateful. That is all.”",
+            "chapter": "Chapter 48",
+            "percentage": 57
         },
         {
-            "quote": "Ludvic looked down, as if ashamed, though to Cliopher they were banners of love to be waved proudly. No one else had ever touched the Last Emperor after he became Emperor but for the Moon. No one else had ever been touched by him."
+            "quote": "Ludvic looked down, as if ashamed, though to Cliopher they were banners of love to be waved proudly. No one else had ever touched the Last Emperor after he became Emperor but for the Moon. No one else had ever *been* touched by him.",
+            "chapter": "Chapter 49",
+            "percentage": 57
         },
         {
-            "quote": "“Tell him that the next time I see him I will ask him for his name.”"
+            "quote": "“Tell him that the next time I see him I will ask him for his name.”",
+            "chapter": "Chapter 49",
+            "percentage": 57
         },
         {
-            "quote": "“His Radiancy has instructed that you may have access to his person whenever you request it.”"
+            "quote": "“His Radiancy has instructed that you may have access to his person whenever you request it.”",
+            "chapter": "Chapter 52",
+            "percentage": 61
         },
         {
-            "quote": "“My name is Ludvic Omo. My island is Woodlark in the Azilint. We do not have your dances, but the head of my carving is Odongai.”"
+            "quote": "“My name is Ludvic Omo. My island is Woodlark in the Azilint. We do not have your dances, but the head of my carving is Odongai.”",
+            "chapter": "Chapter 53",
+            "percentage": 61
         },
         {
-            "quote": "“Lord Artorin, my boy there wants me to tell him he can claim the fire. He’s trying not to look like he already has.”"
+            "quote": "“Lord Artorin, my boy there wants me to tell him he can claim the fire. He’s trying not to look like he already has.”",
+            "chapter": "Chapter 53",
+            "percentage": 61
         },
         {
-            "quote": "Something moved in him and prompted him to say, slowly, the traditional words. “It’s a long story of the sea to tell it.” \nAfter a moment Buru Tovo replied with the equally traditional words. “We sit by the fire ready to hear it.”"
+            "quote": "Something moved in him and prompted him to say, slowly, the traditional words. “It’s a long story of the sea to tell it.” \nAfter a moment Buru Tovo replied with the equally traditional words. “We sit by the fire ready to hear it.”",
+            "chapter": "Chapter 53",
+            "percentage": 61
         },
         {
-            "quote": "“And across the Wide Seas, they said, a wall of storms.”"
+            "quote": "“And across the Wide Seas, they said, a wall of storms.”",
+            "chapter": "Chapter 54",
+            "percentage": 62
         },
         {
-            "quote": "“I should have gone. As soon as I saw the ship go I knew I should have gone ... I ...” He stopped, breath catching again. “I didn’t go. I let her go without me. I did not stand up for what I knew was the right decision.”"
+            "quote": "“I should have gone. As soon as I saw the ship go I knew I should have gone... I...” He stopped, breath catching again. “I didn’t go. I let her go without me. I did not stand up for what I knew was the right decision.”",
+            "chapter": "Chapter 54",
+            "percentage": 62
         },
         {
-            "quote": "“She sat there under an umbrella at the edge of the clearing where we worked and shouted vague instructions at me.” \n“You always respond so well to that,” his Radiancy murmured. \nCliopher smiled. “Yes, my lord.”"
+            "quote": "“She sat there under an umbrella at the edge of the clearing where we worked and shouted vague instructions at me.” \n“You always respond so well to that,” his Radiancy murmured. \nCliopher smiled. “Yes, my lord.”",
+            "chapter": "Chapter 54",
+            "percentage": 62
         },
         {
-            "quote": "Buru Tovo spoke sternly. “Her body went to the waves and her spirit to the call of her ancestors, guiding a fire-tender across the Wide Seas. She was Nga. She died valiantly. You may let her go from your hands.”"
+            "quote": "Buru Tovo spoke sternly. “Her body went to the waves and her spirit to the call of her ancestors, guiding a fire-tender across the Wide Seas. She was Nga. She died valiantly. You may let her go from your hands.”",
+            "chapter": "Chapter 54",
+            "percentage": 62
         },
         {
-            "quote": "They all looked at him. After a bit, his Radiancy said, “You’re not a wizard. You can’t tell by magic ... how did you find out where you were? For I perceive that you are now here, rather than a wild hermit on a remote isolated island.” \n“I danced.”"
+            "quote": "They all looked at him. After a bit, his Radiancy said, “You’re not a wizard. You can’t tell by magic... how did you find out where you were? For I perceive that you are now here, rather than a wild hermit on a remote isolated island.” \n“I danced.”",
+            "chapter": "Chapter 54",
+            "percentage": 63
         },
         {
-            "quote": "“It is the crescent moon four days from now,” he said. “You will dance Aōteketētana then before your community here.” \n“You will dance it in the throne room,” said his Radiancy, equally firmly, and then he smiled. “At the feet of the Sun.”"
+            "quote": "“It is the crescent moon four days from now,” he said. “You will dance Aōteketētana then before your community here.” \n“You will dance it in the throne room,” said his Radiancy, equally firmly, and then he smiled. “At the feet of the Sun.”",
+            "chapter": "Chapter 54",
+            "percentage": 63
         },
         {
-            "quote": "“Lord Lior, I would respect you more if you came right out and called me a savage.”"
+            "quote": "“Lord Lior, I would respect you more if you came right out and called me a savage.”",
+            "chapter": "Chapter 55",
+            "percentage": 64
         },
         {
-            "quote": "“I lit the first fire in the Palace after the Fall of Astandalas—and I tell you, sir, I have not let it go out since.”"
+            "quote": "“I lit the first fire in the Palace after the Fall of Astandalas—and I tell you, sir, *I have not let it go out since.*”",
+            "chapter": "Chapter 55",
+            "percentage": 64
         },
         {
-            "quote": "“From the Sun-on-Earth have I learned my destination, and with the stars of my principles to guide me, I know the way.”"
+            "quote": "“From the Sun-on-Earth have I learned my destination, and with the stars of my principles to guide me, I know the way.”",
+            "chapter": "Chapter 55",
+            "percentage": 65
         },
         {
-            "quote": "“I do not care what anyone thinks of my work except for the Sun-on-Earth and my own heart’s conscience.”"
+            "quote": "“I do not care what anyone thinks of my work except for the Sun-on-Earth and my own heart’s conscience.”",
+            "chapter": "Chapter 55",
+            "percentage": 65
         },
         {
-            "quote": "Sixteen children had she borne, and fifty-nine grandchildren in their turn, and the seed of the gardens both real and metaphorical of his grandfather were spread far and wide around the Ring and even so far as here in Solaara."
+            "quote": "Sixteen children had she borne, and fifty-nine grandchildren in their turn, and the seed of the gardens both real and metaphorical of his grandfather were spread far and wide around the Ring and even so far as here in Solaara.",
+            "chapter": "Chapter 57",
+            "percentage": 66
         },
         {
-            "quote": "He had not wanted a parade in the Vangavaye-ve. He had not wanted cheering throngs to follow him down the street. He had not even wanted things to change. \nBut he would have liked someone to say ‘congratulations’."
+            "quote": "He had not wanted a parade in the Vangavaye-ve. He had not wanted cheering throngs to follow him down the street. He had not even wanted things to change. \nBut he would have liked someone to say ‘congratulations’.",
+            "chapter": "Chapter 60",
+            "percentage": 70
         },
         {
-            "quote": "Cliopher thought again of his Radiancy, who never had anyone to hold him against his fears. Missed him suddenly, fearfully, frighteningly."
+            "quote": "Cliopher thought again of his Radiancy, who never had anyone to hold him against his fears. Missed him suddenly, fearfully, frighteningly.",
+            "chapter": "Chapter 61",
+            "percentage": 71
         },
         {
-            "quote": "“Close your eyes, Kip, and trust me.” \nCliopher had always responded well to direct orders from those he greatly respected. He closed his eyes."
+            "quote": "“Close your eyes, Kip, and *trust me*.” \nCliopher had always responded well to direct orders from those he greatly respected. He closed his eyes.",
+            "chapter": "Chapter 61",
+            "percentage": 71
         },
         {
-            "quote": "“Princess Oriana,” he said finally. “I think you had better inform his Radiancy of your opinion of me.”"
+            "quote": "“Princess Oriana,” he said finally. “I think you had better inform his Radiancy of your opinion of me.”",
+            "chapter": "Chapter 62",
+            "percentage": 72
         },
         {
-            "quote": "“That was one of the most elegant and subtle displays of power it has ever been my privilege to witness, and I must thank you for the pleasure of the experience.”"
+            "quote": "“That was one of the most elegant and subtle displays of power it has ever been my privilege to witness, and I must thank you for the pleasure of the experience.”",
+            "chapter": "Chapter 63",
+            "percentage": 72
         },
         {
-            "quote": "“His Radiancy turned Earl Baljan into a table?”\n“Yes. I didn’t know anyone could do that, outside of stories.”\nCliopher was absurdly pleased by the notion that a wizard from a book of fables would turn someone into a table on his behalf."
+            "quote": "“His Radiancy turned Earl Baljan into a table?”\n“Yes. I didn’t know anyone could do that, outside of stories.”\nCliopher was absurdly pleased by the notion that a wizard from a book of fables would turn someone into a table on *his* behalf.",
+            "chapter": "Chapter 64",
+            "percentage": 74
         },
         {
-            "quote": "Did you have any problems, Rhodin? Toucan?” \n“Hillen tried to bribe us,” Rhodin said. “Poorly.” \n“Five cases of Amboloyan wine were not sufficient?” \n“As it happens, I prefer my head.”"
+            "quote": "Did you have any problems, Rhodin? Toucan?” \n“Hillen tried to bribe us,” Rhodin said. “Poorly.” \n“Five cases of Amboloyan wine were not sufficient?” \n“As it happens, I prefer my head.”",
+            "chapter": "Chapter 66",
+            "percentage": 76
         },
         {
-            "quote": "“I do love a good parade.” \n“My lord, I will be delighted to arrange one for you on any occasion you please.” \n“Except this one?” His Radiancy laughed again."
+            "quote": "“I do love a good parade.” \n“My lord, I will be delighted to arrange one for you on any occasion you please.” \n“Except this one?” His Radiancy laughed again.",
+            "chapter": "Chapter 66",
+            "percentage": 77
         },
         {
-            "quote": "“I have entered in the Gates of the Sea. I see the harbour with the eyes of my body as well as the eyes of my heart.”"
+            "quote": "“I have entered in the Gates of the Sea. I see the harbour with the eyes of my body as well as the eyes of my heart.”",
+            "chapter": "Chapter 68",
+            "percentage": 79
         },
         {
-            "quote": "“You have always been one of the most traditional people to come here.”"
+            "quote": "“You have always been one of the most traditional people to come here.”",
+            "chapter": "Chapter 68",
+            "percentage": 79
         },
         {
-            "quote": "“I think he would like it,” Cliopher said firmly, “but even if I am wrong, I would prefer to have the place there to be rejected than not to offer it.” \nRhodin breathed in sharply. “You do know him better than anyone else.”"
+            "quote": "“I think he would like it,” Cliopher said firmly, “but even if I am wrong, I would prefer to have the place there to be rejected than not to offer it.” \nRhodin breathed in sharply. “You do know him better than anyone else.”",
+            "chapter": "Chapter 68",
+            "percentage": 80
         },
         {
-            "quote": "“His Radiancy would give you the house if you asked him.” \n“His Radiancy would probably give me an island if I asked him, but that doesn’t mean I’m going to.”"
+            "quote": "“His Radiancy would give you the house if you asked him.” \n“His Radiancy would probably give me an island if I asked him, but that doesn’t mean I’m going to.”",
+            "chapter": "Chapter 68",
+            "percentage": 81
         },
         {
-            "quote": "Rhodin said, “I do not believe that anyone would ever think for a moment that you feel anything but the greatest love and respect for his Radiancy.”"
+            "quote": "Rhodin said, “I do not believe that anyone would ever think for a moment that you feel anything but the greatest love and respect for his Radiancy.”",
+            "chapter": "Chapter 70",
+            "percentage": 85
         },
         {
-            "quote": "Rhodin caught his eye and said meaningfully, “Kip is his Radiancy’s closest friend.”"
+            "quote": "Rhodin caught his eye and said meaningfully, “Kip is his Radiancy’s closest friend.”",
+            "chapter": "Chapter 72",
+            "percentage": 88
         },
         {
-            "quote": "“There’s no blasphemy in pointing out the truth. It is blindingly obvious. When you want to share some news, it is to him you look—and when he wishes to talk, it is with you.”"
+            "quote": "“There’s no blasphemy in pointing out the truth. It is blindingly obvious. When you want to share some news, it is to him you look—and when he wishes to talk, it is with you.”",
+            "chapter": "Chapter 72",
+            "percentage": 88
         },
         {
-            "quote": "“There is no one in this world who can say I have lied to them, Aunt Hilda, and you are not the exception.”"
+            "quote": "“There is no one in this world who can say I have lied to them, Aunt Hilda, and you are not the exception.”",
+            "chapter": "Chapter 75",
+            "percentage": 91
         },
         {
-            "quote": "“We expect that only Kip, and Kip alone, knows what sacrifices he has made, and to what end. We will say only that we have never had any reason to doubt his loyalty, his service, his love, his devotion to his family, or his staunch upholding of the law.”"
+            "quote": "“We expect that only Kip, and Kip alone, knows what sacrifices he has made, and to what end. We will say only that we have never had any reason to doubt his loyalty, his service, his love, his devotion to his family, or his staunch upholding of the law.”",
+            "chapter": "Chapter 75",
+            "percentage": 91
         },
         {
-            "quote": "“I chose the latter course, and as a result have had the great pleasure and even greater good fortune of witnessing the development and coming to maturity of perhaps the finest statesman in recorded history.”"
+            "quote": "“I chose the latter course, and as a result have had the great pleasure and even greater good fortune of witnessing the development and coming to maturity of perhaps the finest statesman in recorded history.”",
+            "chapter": "Chapter 75",
+            "percentage": 91
         },
         {
-            "quote": "“I have accomplished many things as Lord of Zunidh, but it is my belief that when history judges me against the greater sweep of time, my greatest achievement will be said to be appointing Cliopher Mdang to a position of authority.”"
+            "quote": "“I have accomplished many things as Lord of Zunidh, but it is my belief that when history judges me against the greater sweep of time, my greatest achievement will be said to be appointing Cliopher Mdang to a position of authority.”",
+            "chapter": "Chapter 75",
+            "percentage": 91
         },
         {
-            "quote": "“Peace, I said, expecting none. Two weeks later Kip requested an audience and handed me the draft of an agreement between the warring parties. That agreement became the foundation for the Littleridge Treaty, and those wars have never recurred.”"
+            "quote": "“Peace, I said, expecting none. Two weeks later Kip requested an audience and handed me the draft of an agreement between the warring parties. That agreement became the foundation for the Littleridge Treaty, and those wars have never recurred.”",
+            "chapter": "Chapter 75",
+            "percentage": 92
         },
         {
-            "quote": "“Do not fret that he has left you behind, for he never has. I knew your names long before I ever stepped foot in the Vangavaye-ve; and I know the philosophies of your Lays as well as any velio might.”"
+            "quote": "“Do not fret that he has left you behind, for he never has. I knew your names long before I ever stepped foot in the Vangavaye-ve; and I know the philosophies of your *Lays* as well as any velio might.”",
+            "chapter": "Chapter 75",
+            "percentage": 92
         },
         {
-            "quote": "This day was surely a gift of the Son of Laughter."
+            "quote": "This day was surely a gift of the Son of Laughter.",
+            "chapter": "Chapter 76",
+            "percentage": 93
         },
         {
-            "quote": "Nothing was disproportionate, nothing distorted, nothing missing. Every smallest element of the design was correct, declaring his identity as a Mdang of Tahivoa in Gorjo City, whose island was Loaloa, whose dances were Aōteketētana."
+            "quote": "Nothing was disproportionate, nothing distorted, nothing missing. Every smallest element of the design was correct, declaring his identity as a Mdang of Tahivoa in Gorjo City, whose island was Loaloa, whose dances were Aōteketētana.",
+            "chapter": "Chapter 77",
+            "percentage": 94
         },
         {
-            "quote": "He did spare a thought for how likely it was that she would work to unseat him, perhaps try to have him disgraced or even assassinated. \nRhodin and Ludvic would keep him safe, he thought."
+            "quote": "He did spare a thought for how likely it was that she would work to unseat him, perhaps try to have him disgraced or even assassinated. \nRhodin and Ludvic would keep him safe, he thought.",
+            "chapter": "Chapter 77",
+            "percentage": 94
         },
         {
-            "quote": "“Your great-uncle said these were the necklaces,” Féonie said. “The efani, the efevoa, and the efetana.”"
+            "quote": "“Your great-uncle said these were the necklaces,” Féonie said. “The efani, the efevoa, and the efetana.”",
+            "chapter": "Chapter 77",
+            "percentage": 94
         },
         {
-            "quote": "But in that superlative version of his customary finery, he realized that what he looked like was the tanà, the Tender of the Fire, the advisor to chiefs and paramount chiefs—and emperors."
+            "quote": "But in that superlative version of his customary finery, he realized that what he looked like was the tanà, the Tender of the Fire, the advisor to chiefs and paramount chiefs—and emperors.",
+            "chapter": "Chapter 77",
+            "percentage": 95
         },
         {
-            "quote": "“I sing the Wide Seas!”"
+            "quote": "“I sing the Wide Seas!”",
+            "chapter": "Chapter 77",
+            "percentage": 95
         },
         {
-            "quote": "Cliopher said, “You don’t have to give me the okana, Paramount Chief, but you must know that once you have begun you must not allow the ember to go out before you have lit a new fire.” \nJiano turned to the hall. “Thus speaks the tanà!”"
+            "quote": "Cliopher said, “You don’t have to give me the okana, Paramount Chief, but you must know that once you have begun you must not allow the ember to go out before you have lit a new fire.” \nJiano turned to the hall. “Thus speaks the tanà!”",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "“Lord of Rising Stars, I offer you in my hands the Vangavaye-ve.” \n“Cliopher Mdang, what is the Vangavaye-ve?” \n“Lord of Rising Stars, the Vangavaye-ve is the home of my heart, the land of my birth, the anchorage of my soul.”"
+            "quote": "“Lord of Rising Stars, I offer you in my hands the Vangavaye-ve.” \n“Cliopher Mdang, what is the Vangavaye-ve?” \n“Lord of Rising Stars, the Vangavaye-ve is the home of my heart, the land of my birth, the anchorage of my soul.”",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "“Cliopher Mdang, offer us your hands.” \nCliopher was far from fear, far from the taboos. His gaze was held in golden brilliance. He reached forward—up—and around his trembling hands closed the beautiful long fingers of his beloved lord. "
+            "quote": "“Cliopher Mdang, offer us your hands.” \nCliopher was far from fear, far from the taboos. His gaze was held in golden brilliance. He reached forward—up—and around his trembling hands closed the beautiful long fingers of his beloved lord. ",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "He felt himself in his Radiancy's regard, the one solid rock in a tumultuous sea of responsibilities. The rock: vivid, strong, certain, sure. \nBeloved came the assurance."
+            "quote": "He heard the words. They were imprinted, he was sure, on his heart. Nothing had ever been so real as the words—except for the hands clasping his.",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "Good humour, running as a burbling current always through their interactions, the small interactions of friendship that took loyalty of vassal to lord and lord to vassal to some height beyond them as song was beyond speech."
+            "quote": "He felt himself in his Radiancy's regard, the one solid rock in a tumultuous sea of responsibilities. The rock: vivid, strong, certain, sure.\n*Beloved* came the assurance.",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "He heard the words. They were imprinted, he was sure, on his heart. Nothing had ever been so real as the words—except for the hands clasping his."
+            "quote": "Good humour, running as a burbling current always through their interactions, the small interactions of friendship that took loyalty of vassal to lord and lord to vassal to some height beyond them as song was beyond speech.",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "“I will not fail you.”"
+            "quote": "“I will not fail you.”",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "“Witness this, you people of the Vangavaye-ve. Cliopher Mdang of Tahivoa, whose island is Loaloa, whose dances are Aōteketētana, whose ancestral ship is the Ouvaye-ve, is our chosen Viceroy.”"
+            "quote": "“Witness this, you people of the Vangavaye-ve. Cliopher Mdang of Tahivoa, whose island is Loaloa, whose dances are Aōteketētana, whose ancestral ship is the Ouvaye-ve, is our chosen Viceroy.”",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "“I, Cliopher Mdang of the Vangavaye-ve, do swear upon my soul and my heart and my life that I will keep this world of yours safe while you are absent and return it hale to you when you are come home.”"
+            "quote": "“I, Cliopher Mdang of the Vangavaye-ve, do swear upon my soul and my heart and my life that I will keep this world of yours safe while you are absent and return it hale to you when you are come home.”",
+            "chapter": "Chapter 78",
+            "percentage": 96
         },
         {
-            "quote": "Cliopher knelt where he was, the tears streaming down his face, his hands in his Radiancy’s, the ember flaring softly in the shell cupped between them."
+            "quote": "Cliopher knelt where he was, the tears streaming down his face, his hands in his Radiancy’s, the ember flaring softly in the shell cupped between them.",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "Islander culture did not think it shameful to show strong emotions. It was, in fact, considered the mark of a strong soul, one to be admired, when beauty or love or grief could call forth such powerful response."
+            "quote": "Islander culture did not think it shameful to show strong emotions. It was, in fact, considered the mark of a strong soul, one to be admired, when beauty or love or grief could call forth such powerful response.",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "“There is a story I have heard of three brothers, the sons of Vonou’a. One left to see what he could see on the other side of the horizon. One left to find his heart’s desire. And one left to sit at the feet of the Sun”"
+            "quote": "“There is a story I have heard of three brothers, the sons of Vonou’a. One left to see what he could see on the other side of the horizon. One left to find his heart’s desire. And one left to sit at the feet of the Sun”",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "“I am Cliopher Mdang of Tahivoa. My island is Loaloa. My dances are Aōteketētana.”"
+            "quote": "“I am Cliopher Mdang of Tahivoa. My island is Loaloa. My dances are Aōteketētana.”",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "“I am Mdang. I hold the fire: I do not run from its burn.”"
+            "quote": "“I am Mdang. I hold the fire: I do not run from its burn.”",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "“Did you get married? It looked like you got married.”"
+            "quote": "“Did you get married? It looked like you got married.”",
+            "chapter": "Chapter 79",
+            "percentage": 97
         },
         {
-            "quote": "Cliopher heard the plinking cascades of his Radiancy’s harp, and felt his heart overflowing again with gratitude, that his family could make his Radiancy so happy, that he was so happy, that his Radiancy was happy, that his family was happy."
+            "quote": "Cliopher heard the plinking cascades of his Radiancy’s harp, and felt his heart overflowing again with gratitude, that his family could make his Radiancy so happy, that he was so happy, that his Radiancy was happy, that his family was happy.",
+            "chapter": "Chapter 79",
+            "percentage": 98
         },
         {
-            "quote": "“I feel it is a wasted day if I have not managed to discompose Kip at least once.”"
+            "quote": "“I feel it is a wasted day if I have not managed to discompose Kip at least once.”",
+            "chapter": "Chapter 79",
+            "percentage": 98
         },
         {
-            "quote": "“Come, my friends, we shall announce an amnesty on Fitzroy Angursell’s music tonight, and let us make merry in honour of the great statesman with the music of the great outlaw. There is something delicious about the whole idea.”"
+            "quote": "“Come, my friends, we shall announce an amnesty on Fitzroy Angursell’s music tonight, and let us make merry in honour of the great statesman with the music of the great outlaw. There is something delicious about the whole idea.”",
+            "chapter": "Chapter 79",
+            "percentage": 98
         },
         {
-            "quote": "“You clasped shoulders, embraced, hugged, kissed, touched foreheads, bowed over your hands—I have not—Kip, I haven’t touched anyone! I don’t know how.” \n“Here, my lord,” he said, getting up and opening his arms slightly. “I will show you.”"
+            "quote": "“You clasped shoulders, embraced, hugged, kissed, touched foreheads, bowed over your hands—I have not—Kip, I haven’t touched anyone! I don’t know *how*.” \n“Here, my lord,” he said, getting up and opening his arms slightly. “I will show you.”",
+            "chapter": "Chapter 80",
+            "percentage": 98
         },
         {
-            "quote": "‘They mean the common and ordinary good of duty honourably fulfilled, of love occasionally accompanied by quarrels, of friendships that will not fail, of a home filled with laughter and music and family.’"
+            "quote": "‘They mean the common and ordinary good of duty honourably fulfilled, of love occasionally accompanied by quarrels, of friendships that will not fail, of a home filled with laughter and music and family.’",
+            "chapter": "Chapter 80",
+            "percentage": 98
         },
         {
-            "quote": "His Radiancy regarded him solemnly for a moment, then walked forward to embrace him. “I know you will keep Zunidh safe and sound for me,” his Radiancy said, leaning forward until his forehead touched Cliopher’s in the Islander greeting."
+            "quote": "His Radiancy regarded him solemnly for a moment, then walked forward to embrace him. “I know you will keep Zunidh safe and sound for me,” his Radiancy said, leaning forward until his forehead touched Cliopher’s in the Islander greeting.",
+            "chapter": "Chapter 80",
+            "percentage": 98
         },
         {
-            "quote": "He looked back at Cliopher. “No final words, Kip?” \nCliopher felt a great rush of endearment welling up. “Have fun.” \nAnd his Radiancy laughed as he set his face to the sun and stepped alone across the threshold of his Palace for the first time."
+            "quote": "He looked back at Cliopher. “No final words, Kip?” \nCliopher felt a great rush of endearment welling up. “Have fun.” \nAnd his Radiancy laughed as he set his face to the sun and stepped alone across the threshold of his Palace for the first time.",
+            "chapter": "Chapter 80",
+            "percentage": 98
         },
         {
-            "quote": "And Cliopher with a singing heart began to explain the principles of the Great Plan, which he had developed from those fundamental teachings of the proper relations between people and communities he had long ago been taught from the Lays."
+            "quote": "And Cliopher with a singing heart began to explain the principles of the Great Plan, which he had developed from those fundamental teachings of the proper relations between people and communities he had long ago been taught from the *Lays*.",
+            "chapter": "Epilogue",
+            "percentage": 98
         }
     ]
 }
