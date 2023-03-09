@@ -21,7 +21,7 @@ module.exports = {
 
 				//BECKYTODO - I should be able to get these names from the server i think
 				channels.forEach(element => {
-					errorString += "\t#" + element.description + "\n";
+					errorString += "\t# " + element.description + "\n";
 				});
 
 				await interaction.reply({
