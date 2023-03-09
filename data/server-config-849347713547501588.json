@@ -10,17 +10,22 @@
         "849348165006393364": {
             "description": "lays-of-the-hearthfire",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "origin"
+            "quoteRoot": "laysRoot"
         },
         "849348269355958312": {
             "description": "nine-worlds-discussion",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "origin"
+            "quoteRoot": "all"
         },
         "851511356179349585": {
             "description": "nine-worlds-with-victoria",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "origin"
+            "quoteRoot": "all"
+        },
+        "850240485946818610": {
+            "description": "the-red-company",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "redCompanyRoot"
         }
     },
     "scheduledQuotes": [
@@ -37,8 +42,8 @@
             "time": "0 0 21 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
-                "849348165006393364",
-                "1004576660483477587"                
+                "1004576660483477587",
+                "849348165006393364"
             ]
         }
     ]

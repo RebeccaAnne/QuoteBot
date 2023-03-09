@@ -10,18 +10,23 @@
         "1071539009463013438": {
             "description": "lays-of-the-hearthfire",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "origin"
+            "quoteRoot": "laysRoot"
         },
         "1071539034645614713": {
             "description": "nine-worlds",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "origin"
+            "quoteRoot": "all"
+        },
+        "1083501837510000711":{
+            "description": "the-red-company",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "redCompanyRoot"
         }
     },
     "scheduledQuotes": [
         {
             "description": "even hours in nine-worlds",
-            "time": "0 0 0/2 * * *",
+            "time": "0 0/2 * * * *",
             "timezone":"America/Los_Angeles",
             "channels": [
                 "1071539034645614713"
@@ -29,10 +34,11 @@
         },
         {
             "description": "odd hours in discussion channels",
-            "time": "0 0 1/2 * * *",
+            "time": "0 1/2 * * * *",
             "channels": [
                 "1071538235467108382",
-                "1071539009463013438"
+                "1071539009463013438",
+                "1083501837510000711"
             ]
         }
     ]

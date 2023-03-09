@@ -1,5 +1,28 @@
 {
-    "origin": [
+    "all": [
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "pettytreasons",
+        "pettytreasons",
+        "pettytreasons",
+        "portrait",
+        "portrait",
+        "fire",
+        "rofa"
+    ],
+    "laysRoot": [
         "hote",
         "hote",
         "hote",
@@ -20,6 +43,9 @@
         "portrait",
         "portrait",
         "fire"
+    ],
+    "redCompanyRoot": [
+        "rofa"
     ],
     "hoteRoot": [
         "hote"
@@ -63,6 +89,11 @@
         "title": "At the Feet of the Sun",
         "quotes": "atfotsquotes",
         "color": "0x0097A7"
+    },
+    "rofa": {
+        "title": "At the Feet of the Sun",
+        "quotes": "rofaquotes",
+        "color": "0xCC0000"
     },
     "atfotsquotes": [
         {
@@ -3133,45 +3164,41 @@
             "percentage": 100
         }
     ],
-    rofaquotes:[
+    "rofaquotes": [
         {
-            "quote":"I prefer not to lie.",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "I prefer not to lie.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote":"When asked who I was, I used to tell people I could be the Prince of the White Forest, come to judge the righteousness and hospitality of those I encountered. (And indeed, I still maintain, I *could*.)",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "When asked who I was, I used to tell people I could be the Prince of the White Forest, come to judge the righteousness and hospitality of those I encountered. (And indeed, I still maintain, I *could*.)",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote":"I acknowledged the inevitable comparisons of my physiognomy to the ninety-nine Emperors of Astandalas before my time, and never negated—how could I, in any good faith?—the family resemblance.",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "I acknowledged the inevitable comparisons of my physiognomy to the ninety-nine Emperors of Astandalas before my time, and never negated—how could I, in any good faith?—the family resemblance.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote":"I never claimed other than that I was a poet, a wild mage, an anarchist, a revolutionary, and almost certainly a fool.",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "I never claimed other than that I was a poet, a wild mage, an anarchist, a revolutionary, and almost certainly a fool.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote":"I discovered early, and subsequent experience has not disproven this, that the greatest truths, most plainly spoken, are the least likely to be believed.",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "I discovered early, and subsequent experience has not disproven this, that the greatest truths, most plainly spoken, are the least likely to be believed.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         },
         {
-            "quote":"I could have told him half a dozen incredible truths, but instead, when he peered in through the entrance tunnel, saw me there in amongst the grave goods, and asked, “Who do you think you are, Fitzroy Angursell?” I was so surprised to be immediately recognized that I replied with a barefaced lie, and denied it utterly.",
-            "chapter":"Chapter 1",
-            "percentage":1
+            "quote": "I could have told him half a dozen incredible truths, but instead, when he peered in through the entrance tunnel, saw me there in amongst the grave goods, and asked, “Who do you think you are, Fitzroy Angursell?” I was so surprised to be immediately recognized that I replied with a barefaced lie, and denied it utterly.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "“I have been in the Starry Court,” I declared. “The Moon Lady offered me a place at her side, the Morning Star as my vessel. I have been adored as a god, but am now returned to the mortal lands on a quest of great moment.”\nEvery word of this, I swear, was the honest truth.",
+            "chapter": "Chapter 1",
+            "percentage": 1
         }
-        {
-            "quote":"“I have been in the Starry Court,” I declared. “The Moon Lady offered me a place at her side, the Morning Star as my vessel. I have been adored as a god, but am now returned to the mortal lands on a quest of great moment.”\nEvery word of this, I swear, was the honest truth.",
-            "chapter":"Chapter 1",
-            "percentage":1,
-        }
-        
-        
-        
-        
     ]
 }
