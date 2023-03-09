@@ -7,6 +7,11 @@
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "hoteRoot"
         },
+        "850240485946818610": {
+            "description": "the-red-company",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "redCompanyRoot"
+        },
         "849348165006393364": {
             "description": "lays-of-the-hearthfire",
             "quoteSourceFile": "hotebot.json",
@@ -17,15 +22,15 @@
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "all"
         },
+        "849350971544830013": {
+            "description": "nine-worlds-fanworks",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "all"
+        },
         "851511356179349585": {
             "description": "nine-worlds-with-victoria",
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "all"
-        },
-        "850240485946818610": {
-            "description": "the-red-company",
-            "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "redCompanyRoot"
         }
     },
     "scheduledQuotes": [
