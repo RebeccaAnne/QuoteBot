@@ -23,9 +23,13 @@ quoteFile[rootName].forEach(book => {
     // Add it to the twitter result surrounded by #'s. This is to support tracery as used by Cheap Bots Done Quick
     twitterResult[book] = ["#" + book + "quotes#\n\n" + bookItem.title];
 
+
     // If we haven't come across this book before, create the quote array for it.
     if (twitterResult[book + "quotes"] == null) {
         twitterResult[book + "quotes"] = [];
+
+        console.log(bookItem.title);
+        let count = 0;
 
         quoteFile[book + "quotes"].forEach(quoteObject => {
 
@@ -43,7 +47,7 @@ quoteFile[rootName].forEach(book => {
                 // for now this gets the job done.
                 twitterQuote = quoteObject.quote.replace(/[*]/g, '').replace(/[__]/g, '');
             }
-            
+
             // Check the tweet lenght
             // A tweet is made up of the quote, two newlines, and the title
             let tweetLength = twitterQuote.length + 2 + bookItem.title.length;
@@ -55,7 +59,9 @@ quoteFile[rootName].forEach(book => {
             }
 
             twitterResult[book + "quotes"].push(twitterQuote);
+            count++;
         });
+        console.log(count + " quotes converted")
     }
 });
 

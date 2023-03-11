@@ -7,6 +7,8 @@
         "hote",
         "hote",
         "hote",
+        "hote",
+        "atfots",
         "atfots",
         "atfots",
         "atfots",
@@ -20,6 +22,8 @@
         "portrait",
         "portrait",
         "fire",
+        "rofa",
+        "rofa",
         "rofa"
     ],
     "laysRoot": [
@@ -3269,6 +3273,130 @@
             "quote": "I was glad withal it was myself lighting the fire, for I could ensure it did not destroy those bindings as it burned down the rest. I hoped Kip would appreciate the restraint when he realized it was me.",
             "chapter": "Chapter 3",
             "percentage": 11
+        },
+        {
+            "quote": "I wished I had put back on my scarlet silk mantle but it really *wasn’t*—\nOh, the hell with prudence.",
+            "chapter": "Chapter 3",
+            "percentage": 11
+        },
+        {
+            "quote": "It’s not as if I were actually going to perform magic by means of music—though I have met a few practitioners of that and related arts—more that I was going to accompany my magic-working with music. For the effect, I suppose you could say.",
+            "chapter": "Chapter 3",
+            "percentage": 12
+        },
+        {
+            "quote": "The fire rose and my voice lifted and the darkness and the silence of the Fens broke open like a thunderbolt striking a forest into flame.",
+            "chapter": "Chapter 3",
+            "percentage": 12
+        },
+        {
+            "quote": "“Come inexplicably, do something wild and joyous and strange, and leave even more inexplicably, with only a song and the world upended to show you’ve passed by.”\nI could not help but be wholly delighted with being given this reputation, whether or not it was in fact mine.",
+            "chapter": "Chapter 3",
+            "percentage": 12        },
+        {
+            "quote": "I felt I made a very satisfying picture: a tall black-skinned man, regal of bearing, with the white tunic, and the scarlet silk mantle, and a golden harp in his hands, all against the backdrop of the black water and the rising smoke and the silvery-grey dawn.",
+            "chapter": "Chapter 4",
+            "percentage": 12
+        },
+        {
+            "quote": "“You see, once when I was younger I travelled with some friends—you will understand if I do not name them—to a country on the edge of Faery, and along the way we encountered this boy trying to sell his mother’s cow, which we needed for our own purposes, and so bargained with him to sell it to us for a handful of magic beans …”",
+            "chapter": "Chapter 4",
+            "percentage": 16
+        },
+        {
+            "quote": "Perhaps it is to *his* idea of how much time things ought to take that the Palace clock runs. He may not be a wizard of any form but his mind shapes the world even so.",
+            "chapter": "Chapter 5",
+            "percentage": 18
+        },
+        {
+            "quote": "Of course I could work with things like sails or artificial wings or gliders; but that’s not *flying*. We’ve all had the dreams: you know exactly what I mean.",
+            "chapter": "Chapter 6",
+            "percentage": 26
+        },
+        {
+            "quote": "Anyone who had doubts that I truly was Fitzroy Angursell might well still prefer to believe me a madman instead; but at least they could hardly deny that I was a madman with *style*.",
+            "chapter": "Chapter 6",
+            "percentage": 23
+        },
+        {
+            "quote": "No magic beyond the smallest actions.\nIt’s like constraining one’s poetic vision to a specific, intricate form. There was a period when I was fond of sonnets.",
+            "chapter": "Chapter 6",
+            "percentage": 24
+        },
+        {
+            "quote": "I clambered up and down the tree until I determined that it would be foolhardy in the extreme to try to jump to another. Foolish I can certainly be, and foolhardy too, but as I had neither cause nor audience I was able to resist the temptation.",
+            "chapter": "Chapter 6",
+            "percentage": 25
+        },
+        {
+            "quote": "It was quite amazing how hard it was to be on my own. I had not thought myself so dependent on company, when I yearned for solitude and privacy.",
+            "chapter": "Chapter 6",
+            "percentage": 25
+        },
+        {
+            "quote": "“I was praying to the emperor,” she said earnestly.\nThis is the problem with an official state religion. I’m not a very effective deity, I’m afraid. But what could I do but try?",
+            "chapter": "Chapter 7",
+            "percentage": 27
+        },
+        {
+            "quote": "Three days after leaving the Palace and here I was, already halfway across a different continent having adventures and assisting maidens in distress. It was all most satisfactory.",
+            "chapter": "Chapter 7",
+            "percentage": 27
+        },
+        {
+            "quote": "I thought back to the many, many conversations I’d had with Kip on the subject, and the nine-hundred-page Plan I’d dutifully read.",
+            "chapter": "Chapter 7",
+            "percentage": 28
+        },
+        {
+            "quote": "“Should I ask who you are, sir?”\n“Probably not. I promise you by the Sun and the Moon and the One Above that I mean only good to those who have asked my assistance.”\nThat was a binding oath; but it was not the first I have made to my people.",
+            "chapter": "Chapter 7",
+            "percentage": 29
+        },
+        {
+            "quote": "And after that—well, who knew? Something would happen. It always did.",
+            "chapter": "Chapter 8",
+            "percentage": 32
+        },
+        {
+            "quote": "I should perhaps state that I don’t actually like *everyone* on sight, but most people are so intriguing it is hard not to find them appealing.",
+            "chapter": "Chapter 8",
+            "percentage": 32
+        },
+        {
+            "quote": "Perhaps it’s just that I meet very interesting people.\nI’m sure that’s it. Nothing to do with most of a lifetime kept rigidly and rigorously apart from any normal interactions.",
+            "chapter": "Chapter 8",
+            "percentage": 32
+        },
+        {
+            "quote": "“It’s not me you should thank,” I replied, thinking of how hard Kip had worked to make this a reality. I had done so little besides encourage him. (And read his nine-hundred-page Plan.)",
+            "chapter": "Chapter 8",
+            "percentage": 33
+        },
+        {
+            "quote": "“Let me tell you what I see, sir: a man who has fulfilled every one of society’s expectations for him. He has left his position, very recently I would guess, and is now looking to find out who he truly is.”",
+            "chapter": "Chapter 8",
+            "percentage": 34
+        },
+        {
+            "quote": "This, this offer was not for my position, not for any good I might do, not for my authority or my dignity or my symbolic position as mediator between the human and the divine or as centre of the order of the world. This was for *me*, and me alone.\nI had not understood how humbling it was to take what was freely offered.",
+            "chapter": "Chapter 8",
+            "percentage": 34
+        },
+        {
+            "quote": "Kip had arranged such papers as I might need under a not-quite-false name, but I wasn’t sure if he would have thought of this. I began to write *Tor*, but the ink did not flow.\nIt made me, I confess, inordinately pleased that Kip had missed that one small detail.",
+            "chapter": "Chapter 8",
+            "percentage": 34
+        },
+        {
+            "quote": "I hesitated, but if it *did* accept Fitzroy Angursell...?\nAnd if it didn’t?\nTo my shame, I was not brave enough to test the magic.",
+            "chapter": "Chapter 8",
+            "percentage": 34
+        },
+        {
+            "quote": "The Postal Plan was only three hundred and twenty pages, but I had read that, too. The things I do for my people!",
+            "chapter": "Chapter 9",
+            "percentage": 34
         }
     ]
 }
