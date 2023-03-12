@@ -48,7 +48,7 @@ quoteFile[rootName].forEach(book => {
                 twitterQuote = quoteObject.quote.replace(/[*]/g, '').replace(/[__]/g, '');
             }
 
-            // Check the tweet lenght
+            // Check the tweet length
             // A tweet is made up of the quote, two newlines, and the title
             let tweetLength = twitterQuote.length + 2 + bookItem.title.length;
             if (tweetLength > 280) {
