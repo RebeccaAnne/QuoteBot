@@ -56,7 +56,7 @@ const sendQuote = async (guildId, channelId) => {
 			channel.send({ embeds: [quote] });
 		}
 	}
-	catch (error) { console.log("sendQuote failed"); }
+	catch (error) { console.log("\n+++\nsendQuote failed\n" + error + "\n+++\n"); }
 }
 
 serverConfigFiles.forEach(serverConfigFile => {
