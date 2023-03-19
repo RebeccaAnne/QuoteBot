@@ -20,7 +20,7 @@ module.exports = {
 
                 console.log("Book: " + book);
 
-                let quoteArray = source[source[book].quotes];
+                let quoteArray = source[book + "quotes"];
 
                 let quoteObject = quoteArray[Math.floor(Math.random() * quoteArray.length)];
                 let quote = quoteObject.quote;

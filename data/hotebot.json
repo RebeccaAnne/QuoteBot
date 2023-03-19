@@ -59,54 +59,32 @@
     "hoteRoot": [
         "hote"
     ],
-    "testBook": {
-        "title": "This is the Title of a Test Book",
-        "quotes": "testQuotes",
-        "color": 38823
-    },
-    "testQuotes": [
-        {
-            "quote": "I am a long and interesting quote about many things",
-            "chapter": "Chapter 5",
-            "percentage": 63
-        },
-        {
-            "quote": "This is a quote, but we don't know where it occurs in the book"
-        }
-    ],
     "fire": {
         "title": "Those Who Hold the Fire",
-        "quotes": "firequotes",
         "color": 38823
     },
     "portrait": {
         "title": "Portrait of a Wide Seas Islander",
-        "quotes": "portraitquotes",
         "color": 38823
     },
     "pettytreasons": {
         "title": "Petty Treasons",
-        "quotes": "pettytreasonsquotes",
         "color": 38823
     },
     "hote": {
         "title": "The Hands of the Emperor",
-        "quotes": "hotequotes",
         "color": 38823
     },
     "atfots": {
         "title": "At the Feet of the Sun",
-        "quotes": "atfotsquotes",
         "color": 38823
     },
     "rofa": {
         "title": "The Return of Fitzroy Angursell",
-        "quotes": "rofaquotes",
         "color": 11730944
     },
     "tower": {
         "title": "The Tower at the Edge of the World",
-        "quotes": "towerQuotes",
         "color": 11730944
     },
     "atfotsquotes": [
