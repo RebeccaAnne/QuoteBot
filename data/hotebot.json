@@ -24,7 +24,8 @@
         "fire",
         "rofa",
         "rofa",
-        "rofa"
+        "rofa",
+        "tower"
     ],
     "laysRoot": [
         "hote",
@@ -49,7 +50,11 @@
         "fire"
     ],
     "redCompanyRoot": [
-        "rofa"
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "tower"
     ],
     "hoteRoot": [
         "hote"
@@ -97,6 +102,11 @@
     "rofa": {
         "title": "The Return of Fitzroy Angursell",
         "quotes": "rofaquotes",
+        "color": 11730944
+    },
+    "tower": {
+        "title": "The Tower at the Edge of the World",
+        "quotes": "towerQuotes",
         "color": 11730944
     },
     "atfotsquotes": [
@@ -3854,6 +3864,108 @@
             "quote": "She said, “Oh, you’re impossible!” and took my arm to pull me inside.\nI followed, laughing. It’s not like I could with any honesty deny it.",
             "chapter": "Chapter 26",
             "percentage": 100
+        }
+    ],
+    "towerquotes": [
+        {
+            "quote": "In a tower at the edge of the world a young man found, one day, three items of interest: a golden key, an aphorism, and a spell.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "Westward lay the rest of the world, and the Empire of Astandalas of which he was perhaps both loneliest outpost and most loyal son, and what he thought of as the peopled lands.",
+            "chapter": "Chapter 1",
+            "percentage": 2
+        },
+        {
+            "quote": "During the night the stars went all the way down, and nothing stirred but their slow wheeling progress across three-quarters of the celestial globe.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "Despite a lifetime of discouragement, he was a curious young man.",
+            "chapter": "Chapter 1",
+            "percentage": 4
+        },
+        {
+            "quote": "The young man had been very carefully brought up. He believed that if he did not fulfil his ritual duties, the Empire would fall.",
+            "chapter": "Chapter 1",
+            "percentage": 7
+        },
+        {
+            "quote": "He kept wondering if the gargoyle was really so far down from the windowsill as it seemed; and what would happen if he fell into the Abyss.\nPerhaps he would fall for ever.",
+            "chapter": "Chapter 1",
+            "percentage": 10
+        },
+        {
+            "quote": "The way Harbut Zalarin spoke of magic was more like poetry than anything. The young man was entranced.",
+            "chapter": "Chapter 2",
+            "percentage": 31
+        },
+        {
+            "quote": "*What you name yourself you are.*\nIt had never once occurred to him that he could name himself.",
+            "chapter": "Chapter 2",
+            "percentage": 37
+        },
+        {
+            "quote": "He went to the storage room and picked through the strange items of clothing until he found a long strip of fabric, a foot wide and a dozen long, neatly folded in a basket. It was scarlet as blood, and looked startling against the dark skin of his arms and the white of his simple tunic.",
+            "chapter": "Chapter 2",
+            "percentage": 43
+        },
+        {
+            "quote": "The fabric caught him before he could quite fall, and he nodded with satisfaction that Olor had guided him so well, and dismissed as a result any further concern for his safety.",
+            "chapter": "Chapter 2",
+            "percentage": 49
+        },
+        {
+            "quote": "He stood there, mysterious golden object in one hand and loose end of the scarlet banner in the other, standing on a ledge with his back to the Abyss and his face to the tower at the edge of the world, and if perhaps he looked like Olor the Hero, he was rather less experienced in adventure.",
+            "chapter": "Chapter 2",
+            "percentage": 60
+        },
+        {
+            "quote": "He was abruptly too weary to begin guessing what else he might inadvertently disenchanted, and therefore tottered off to bed.\nIt was only when he awoke a second time, far after dawn, that he realized it was himself.",
+            "chapter": "Chapter 3",
+            "percentage": 73
+        },
+        {
+            "quote": "He knew the inner nature of the spell he had brushed against from the outside.\n*Accept what you are told*.",
+            "chapter": "Chapter 3",
+            "percentage": 77
+        },
+        {
+            "quote": "He regarded the necklace with a mixture of fascination, wariness, and another emotion for which he did not, initially, have a name.",
+            "chapter": "Chapter 3",
+            "percentage": 79
+        },
+        {
+            "quote": "For the first time he wondered what it might be like to go find out.\nThe mere thought made his hands shake.",
+            "chapter": "Chapter 3",
+            "percentage": 83
+        },
+        {
+            "quote": "The young man read the words over and over again, the thrill the lines had always given him blending with the fire in his own breast as he realized that what he felt—what caused him this fiery pain, this strange sense almost of exaltation—was anger.",
+            "chapter": "Chapter 3",
+            "percentage": 89
+        },
+        {
+            "quote": "He wrote, *Tenebra*, above the poem, and then, after a while spent staring at the list of names again, crossed it out and wrote *Aurora*, and then because the words just arrived in his mind from somewhere, added, *and the Peacock*.",
+            "chapter": "Chapter 3",
+            "percentage": 93
+        },
+        {
+            "quote": "Then, his pen suddenly scritching freely across the book, spattering ink in his excitement, he wrote: *by the revolutionary poet Fitzroy the Adventurer*.",
+            "chapter": "Chapter 3",
+            "percentage": 94
+        },
+        {
+            "quote": "Fitzroy, yes, Fitzroy was it. He rolled the sound of it in his mind and on his tongue, speaking it aloud in as many tones he could contrive. Fitzroy. Fitzroy. Fitzroy. *Fitzroy*.\nYes.",
+            "chapter": "Chapter 3",
+            "percentage": 83
+        },
+        {
+            "quote": "“I am Fitzroy. The poet. And adventurer.”",
+            "chapter": "Chapter 3",
+            "percentage": 97
         }
     ]
 }
