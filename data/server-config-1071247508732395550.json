@@ -17,17 +17,22 @@
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "all"
         },
-        "1083501837510000711":{
+        "1083501837510000711": {
             "description": "the-red-company",
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "redCompanyRoot"
+        },
+        "1088630628800540742": {
+            "description": "greenwing-and-dart",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "greenwingRoot"
         }
     },
     "scheduledQuotes": [
         {
             "description": "even hours in nine-worlds",
             "time": "0 0 0/2 * * *",
-            "timezone":"America/Los_Angeles",
+            "timezone": "America/Los_Angeles",
             "channels": [
                 "1071539034645614713"
             ]
@@ -38,7 +43,8 @@
             "channels": [
                 "1071538235467108382",
                 "1071539009463013438",
-                "1083501837510000711"
+                "1083501837510000711",
+                "1088630628800540742"
             ]
         }
     ]

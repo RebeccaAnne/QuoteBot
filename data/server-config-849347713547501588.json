@@ -7,15 +7,20 @@
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "hoteRoot"
         },
+        "849348165006393364": {
+            "description": "lays-of-the-hearthfire",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "laysRoot"
+        },
         "850240485946818610": {
             "description": "the-red-company",
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "redCompanyRoot"
         },
-        "849348165006393364": {
-            "description": "lays-of-the-hearthfire",
+        "850250431782453258": {
+            "description": "greenwing-and-dart",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "laysRoot"
+            "quoteRoot": "greenwingRoot"
         },
         "849348269355958312": {
             "description": "nine-worlds-discussion",
@@ -47,9 +52,10 @@
             "time": "0 0 21 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
-                "849348165006393364",
                 "850240485946818610",
-                "1004576660483477587"
+                "850250431782453258",
+                "1004576660483477587",
+                "849348165006393364"
             ]
         }
     ]

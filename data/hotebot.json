@@ -54,7 +54,18 @@
         "rofa",
         "rofa",
         "rofa",
-        "tower"
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "tower",
+        "tower",
+        "pali"
+    ],
+    "greenwingRoot": [
+        "stargazy"
     ],
     "hoteRoot": [
         "hote"
@@ -86,6 +97,14 @@
     "tower": {
         "title": "The Tower at the Edge of the World",
         "color": 11730944
+    },
+    "pali": {
+        "title": "The Redoubtable Pali Avramapul",
+        "color": 11730944
+    },
+    "stargazy": {
+        "title": "Stargazy Pie",
+        "color": 34324
     },
     "atfotsquotes": [
         {
@@ -2063,8 +2082,8 @@
         },
         {
             "quote": "“What does it mean, Tovo,” he whispered, “if the tana-tai is lost? What does it mean if no one is willing to hold the fire, pass it on?”",
-            "chapter":"Chapter 1",
-            "percentage":14
+            "chapter": "Chapter 1",
+            "percentage": 14
         },
         {
             "quote": "“Someone always leaves. He’ll be back when it’s time.”",
@@ -3946,6 +3965,185 @@
             "quote": "“I am Fitzroy. The poet. And adventurer.”",
             "chapter": "Chapter 3",
             "percentage": 97
+        }
+    ],
+    "paliquotes": [
+        {
+            "quote": "Pali enjoyed teaching, and enjoyed the relentless pursuit of understanding even more, but dear gods of her far-distant desert, there were aspects of being a faculty member that drove her up the wall.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "Pali could have gone seeking adventure any day she pleased.\nShe hadn’t yet pleased. She enjoyed her place, her scholarship, her students, her life.\nMostly.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "There was a word in her own language, *dzēren*, which meant happy, and also joyful, and also joyous, and also...\n*Brimful* was the best literal translation Pali had ever come up with. Brimful of joy, of happiness, of burgeoning peace, like a goblet of water overflowing, a spring rising up into an oasis. Something restorative, reflective, gentle. Quiet.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "There were few things Pali loved more than a just fight.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "The snow geese had started to pass overhead on their way to the mysterious north. Pali could never quite find it in herself to be happy when the wind was full of their cries.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "Three feathers had she been given, by a being out of a legend not a one of these historians would ever have heard tell.\nThree feathers, three wishes, and three quests.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "When the geese called she reminded herself that her pen and tongue were weapons, too, as sharp and as effective as her great-grandmother’s sword.",
+            "chapter": "Chapter 1",
+            "percentage": 2
+        },
+        {
+            "quote": "It was a good friendship she had with Professor Vane, she told herself, pushing away the pang of longing for Jullanar, her first and greatest friend. It might not be *brimful*, but it was good, and with that Pali had learned to be content.\nHappy, she reminded herself. She was happy.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "She had spent time with a powerful wild mage before, and she remembered the chaos of serendipities and inexplicable events that trailed in one’s wake.",
+            "chapter": "Chapter 2",
+            "percentage": 3
+        },
+        {
+            "quote": "To be truthful she had once promised Jullanar she would not follow every impossible quest that landed in front of her.\nShe had been very good, all these years.\nSurely she was due for an adventure. Jullanar would understand that there came a time when the impossible was the only appropriate course of action.",
+            "chapter": "Chapter 2",
+            "percentage": 3
+        },
+        {
+            "quote": "Of course, anyone who stole something from Pali Avramapul would regret it. Deeply.",
+            "chapter": "Chapter 2",
+            "percentage": 4
+        },
+        {
+            "quote": "Her feet tapped lightly as the first drops of rain, as a cricket, as the sand grains leaping across the surface of the dunes. Her blade sang in her hand, an eerie wail as it cut the cold humid air, the cry of a falcon high as a star in the sky.",
+            "chapter": "Chapter 2",
+            "percentage": 5
+        },
+        {
+            "quote": "The Siruyal had given her three feathers and three wishes and three quests.\nThe first, for glory.\nThe second, for knowledge.\nThe third, for dzēren, that brimming promise, which she had always pretended to herself was joy, for she had never wanted peace.",
+            "chapter": "Chapter 2",
+            "percentage": 5
+        },
+        {
+            "quote": "The moon was calling her tonight. That cold beautiful smile, which Pali had once punched. She clenched her fist with satisfied reminiscence.",
+            "chapter": "Chapter 2",
+            "percentage": 6
+        }
+    ],
+    "stargazyquotes": [
+        {
+            "quote": "The market town of Ragnor Bella in south Fiellan is generally considered a bucolic backwards sort of place, the sort of hometown you leave as soon as possible.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "I jerked in surprise at someone crying, “Halloo the house!” in a huge voice, and toppled off the ladder onto Mrs. Etaris, only to be caught by someone with strong hands amidst a gust of air smelling like wet wool and stable muck.\nA big buoyant laugh followed.\n“Steady there, man! You'll crush the bookmistress if you light on her!”",
+            "chapter": "Chapter 2",
+            "percentage": 4
+        },
+        {
+            "quote": "He was tall and broad-shouldered and had dark blond hair done up in the curling Beaufort style that in Morrowlea said *dandy* and in Ragnor Bella *old money*. He wore hunting breeches in a scarlet that must have been bought before the Fall, since I'd not seen anything that splendid a colour in the haberdashers of the Rondelan duchies on my tour. He had quite tremendously muscular thighs.",
+            "chapter": "Chapter 2",
+            "percentage": 4
+        },
+        {
+            "quote": "I bowed to her with all solemnity. “I had not thought of asking you advice on derring-do.”\nMrs. Etaris laughed and gestured at the crowded shelves of her bookstore. “My dear Mr. Greenwing, if there is anything I know about, it is how to have an adventure.”",
+            "chapter": "Chapter 2",
+            "percentage": 6
+        },
+        {
+            "quote": "“Jemis! Mr. Greenwing!” said the man, grabbing my arm and embracing me roughly. “You're back!”\nI took a step sideways to get back underneath the store awning. Before me was a young man in clothes as well-tailored as the Honourable Master Roald's, if less brilliant in color: dark grey wool coat, plum breeches, high polished riding boots. Silver buttons engraved with a family crest showed wealth and breeding. Snapping brown eyes under thick eyebrows suggested a temper, belied by the wide grin.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "“Good Laurre of the Summer, man, face fur!”\nHe rubbed his beard with great solemnity. “Mr. Greenwing, I shall have you to know that this is all the rage in Stoneybridge. Or was,” he added, starting to laugh, “four months ago when I left.”",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "“Mr. Dart, you are a card! The herring went the way of your duck confit: the only one who et it was Mr. Landry, and he complained it was too foreign by half.”\n“There was nothing wrong with my duck confit,” Mr. Dart said loftily, “you shall see, Miss Featherhaugh, I shall succeed in guiding the taste of the good folk of Ragnor Bella into the heights of gastronomic sophistication one of these days.”",
+            "chapter": "Chapter 4",
+            "percentage": 10
+        },
+        {
+            "quote": "It infuriated me to admit even the smallest grain of truth in the play: but the world did not bend to my will, alas. I swallowed several times, and finally I said, “It's true, I can hardly hope to win commendation from the Emperor himself for my bravery, Saya Etaris.”",
+            "chapter": "Chapter 4",
+            "percentage": 11
+        },
+        {
+            "quote": "“You smoke?” I said in astonishment. “First the beard, now the pipe--how far back in time has Stoneybridge gone? It sounds like something out of a Ystharian novel.”\n“Fewer orgies than in a Ystharian novel,” he said sadly, blowing a smoke ring with the evidence of much practice.",
+            "chapter": "Chapter 4",
+            "percentage": 12
+        },
+        {
+            "quote": "My tutor's voice came to mind: *You must discipline your thoughts, young man, or you will never be a scholar of note*. Of course, ending one's university career with one's tutor ripping one's final paper in half would do it, too, disciplined thoughts or no.",
+            "chapter": "Chapter 7",
+            "percentage": 18
+        },
+        {
+            "quote": "The highway to Astandalas the Golden had run down the centre of that enchanted wood, right through my mother's people's land. She had once even seen the Red Company go a-riding two by two one midnight by the light of the moon, the year the companions had crashed the Imperial Heir's birthday party in the Palace of Stars itself, and had never forgotten the sight--nor the secret pleasure that she had warranted a verse in one of Fitzroy Angursell's songs as a result.",
+            "chapter": "Chapter 7",
+            "percentage": 19
+        },
+        {
+            "quote": "I passed by Mrs. Etaris' house just as she was drawing the curtains against the evening. In the glow of the oil lamps her mousy hair looked auburn, and I saw the inner chamber like a play set: the lady of the house in a pale blue dress, the heavy white wool curtains with their geometric embroideries in black and red folding around her as if she were the goddess coming into her aspect as the White Lady of Winter.",
+            "chapter": "Chapter 8",
+            "percentage": 22
+        },
+        {
+            "quote": "Violet was beautiful; everyone granted her that. Part-Shaian ethnically, she had deep brown crinkled hair and deep brown limpid eyes, and skin that went from ivory to fawn over the course of the year. In the lamplight she was golden, even with the streaks of mud running across her face and the shadows from her hood.",
+            "chapter": "Chapter 9",
+            "percentage": 22
+        },
+        {
+            "quote": "“Perhaps I was more cheerful before all my friends but one looked away as the rest of the school turned against me. Before the faculty of a university so committed to the inherent equality of man they refuse external markings of wealth and honour let my fellow students *stone* me.”",
+            "chapter": "Chapter 9",
+            "percentage": 25
+        },
+        {
+            "quote": "If it had been someone else's reputation--would I have stood, as Hal had stood, to the challenge? It was only because it was my father that I had been able to stand up against Lark. My father, whose indefensible reputation I had been defending since his first death.",
+            "chapter": "Chapter 9",
+            "percentage": 26
+        },
+        {
+            "quote": "Would I have been able to say, *This is wrong*, for a complete stranger? For a story no one else knew or cared to know about? For an abstract ideal of the truth? Would I have looked in the face of my beloved and said, *This is wrong*, for anyone? Would I have found my voice if it had truly just been a matter of rhetorical sophistry?",
+            "chapter": "Chapter 9",
+            "percentage": 26
+        },
+        {
+            "quote": "I had thought Violet a better person than me, I realized. I'd thought that she would stand, where I wouldn't; thought that she would say, *For this truth I stand, and will die for it*. Thought she would cry foul for the sophistry, not needing to know it was also betrayal.",
+            "chapter": "Chapter 9",
+            "percentage": 26
+        },
+        {
+            "quote": "“I will tell you this, Miss Violet, that all the supposed disgrace brought to Jakory Greenwing was due to mistaken identity and the fact that he was on a scouting mission when the fortress of Loe was lost to the Stone Speakers by the action of a different and unrelated Jakory Greenwing. He was decorated by both the Emperor and by the Lady of Alinor for his extraordinary courage and valour.”",
+            "chapter": "Chapter 9",
+            "percentage": 27
+        },
+        {
+            "quote": "“While we are being so formal... Jemis, by what name should I remember you?”\nI twisted by lips, but merely said, quite quietly, “Mr. Greenwing.”\nShe froze, mouth parted, in almost comical surprise. I couldn't read whether it was faked or real; somehow didn't care.",
+            "chapter": "Chapter 9",
+            "percentage": 28
+        },
+        {
+            "quote": "“So. What's all this about picking mushrooms in the dark of the new moon?”\n“Oh... it's not that...”\n“Of course it's not. Come on, give. Are we going poaching, gambling, carousing, or cock-fighting?”\n“A secret society is having a meeting in the woods tonight. I thought you might like to go with me.”",
+            "chapter": "Chapter 10",
+            "percentage": 28
+        },
+        {
+            "quote": "“My brother,” he said, turning down the lamp the rest of the way and starting to set it in its travel case, then burning his finger on the chimney and cursing slightly. “I love and respect my brother very much, Jemis, but I will not let him choose my friends for me! Besides, he was great friends with your father.”",
+            "chapter": "Chapter 10",
+            "percentage": 29
         }
     ]
 }
