@@ -20,12 +20,14 @@
         "pettytreasons",
         "pettytreasons",
         "portrait",
-        "portrait",
         "fire",
         "rofa",
         "rofa",
         "rofa",
-        "tower"
+        "rofa",
+        "pali",
+        "tower",
+        "stargazy"
     ],
     "laysRoot": [
         "hote",
@@ -55,14 +57,9 @@
         "rofa",
         "rofa",
         "rofa",
-        "rofa",
-        "rofa",
-        "rofa",
-        "rofa",
-        "rofa",
-        "tower",
-        "tower",
-        "pali"
+        "pali",
+        "pali",
+        "tower"
     ],
     "greenwingRoot": [
         "stargazy"
@@ -4037,6 +4034,81 @@
             "quote": "The moon was calling her tonight. That cold beautiful smile, which Pali had once punched. She clenched her fist with satisfied reminiscence.",
             "chapter": "Chapter 2",
             "percentage": 6
+        },
+        {
+            "quote": "Pali flung out the carpet with the snap and twist that caused the magic to waken. It hovered just below her waist, the scent of her sister’s jasmine and neroli perfume, the scent of the desert, the scent of magic, full in her nose, her mouth, her heart.",
+            "chapter": "Chapter 3",
+            "percentage": 6
+        },
+        {
+            "quote": "She reached the end of the cleared road, where the snow was still banked several feet high. Pali paused there, feeling the cold wind off the mountain against her face, aware she was at a threshold.\nAnd then she laughed to herself, tapped the carpet with a firm hand, and lifted up into the untrod lands.",
+            "chapter": "Chapter 3",
+            "percentage": 6
+        },
+        {
+            "quote": "Pali lay back on the carpet and remembered other moonlit nights, and what it had been like in the Moon Lady’s country, when all was black and white and silver except for what colour they brought with them.\nBlack were the shadows, and white the moon, and silver the snow.",
+            "chapter": "Chapter 3",
+            "percentage": 6
+        },
+        {
+            "quote": "She and the moon might have been two vessels mirroring each other, sailing the sky and the land below the sky, Pali the new moon with her sword its crescent edge, her eyes on the full moon who had nearly, nearly, stolen Fitzroy Angursell’s heart away.\nShe was not usually able to think his name.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "Pali wanted to shake them into recklessness sometimes, those young men and women who studied in the quadrangles and common rooms of Stoneybridge, tell them that the adventures were *there*, that they need only leave the trodden path and they would find them.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "Domina Black of Stoneybridge did not speak of her past.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "The carpet was nearly as alive to her touch, her mood, as a living horse. For all that it had hung quietly, quiescent, on a wall for the past fifteen years, before that Pali had flown it seven days and seven nights into (and a year and an endless day back out of) the Sea of Stars above the Abyss, where things and ideas took on shapes and voices and sometimes even souls of their own. ",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "Domina Black of Stoneybridge did not speak of her past.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "“Away then, lovely one,” she said to the carpet, and gave it the equivalent of free rein.\nIt leapt forward, swooping down so that its dangling tassels scored faint lines in the snow, kicking up a wake of powdery crystals behind her to hang in the air and twinkle like fairy dust.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "Pali laughed aloud, her voice chiming silver against the white stones, the silver snow, the black sky, the moon high above, impersonal and yet, Pali knew, quite possibly watching",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "The carpet did not zigzag up this cliff: it turned vertically, and Pali had to bite her lip and trust her sister’s work, her sister’s wisdom, her sister’s skill—\nShe did not fall, not though the carpet tilted so the blood rushed into her head as she tried not to clench her jaw.\nShe did not fall.",
+            "chapter": "Chapter 3",
+            "percentage": 8
+        },
+        {
+            "quote": "“And the third quest, for … dzēren.”\nDzēren. A cup brimful of peace, joy, quietude, plenitude. She had never sought it, never wanted it, and yet—\nAnd yet that was the third quest, the one left undone, never undertaken.",
+            "chapter": "Chapter 3",
+            "percentage": 9
+        },
+        {
+            "quote": "“If you are men or the ghosts of men, what have I to fear? If you are demons or of the fairy folk, I have fought worse. If you are gods—” She could do nothing more than spread her sword and dagger wide, her smile sharp as the wind for all they could not see it below her veils. “I have slain gods before.”",
+            "chapter": "Chapter 3",
+            "percentage": 9
+        },
+        {
+            "quote": "One of her requirements in taking her endowed chair to St Erlingale’s had been the assurance that she might worship her own deities and keep her own holy days, and after some discussion about the dates and frequency of said holidays—Pali had not initially intended them as days off, but once she realized what holiday meant in Chare she was quick to establish a framework that seemed suitably religious—she had gladly ignored any invitations ‘to chapel’.",
+            "chapter": "Chapter 4",
+            "percentage": 10
+        },
+        {
+            "quote": "She had smiled one of her Warrior of the Mountains smiles at them, and they had stuttered to a halt and assured her they respected her traditions.",
+            "chapter": "Chapter 4",
+            "percentage": 10
         }
     ],
     "stargazyquotes": [
@@ -4144,6 +4216,56 @@
             "quote": "“My brother,” he said, turning down the lamp the rest of the way and starting to set it in its travel case, then burning his finger on the chimney and cursing slightly. “I love and respect my brother very much, Jemis, but I will not let him choose my friends for me! Besides, he was great friends with your father.”",
             "chapter": "Chapter 10",
             "percentage": 29
+        },
+        {
+            "quote": "“Just don't sneeze,” said Mr. Dart. “Please try not to.”\n“I always try not to,” I replied in an indignant whisper.",
+            "chapter": "Chapter 11",
+            "percentage": 32
+        },
+        {
+            "quote": "“The young men used to call it 'catching the night worms' when I was young. Though that was in Fiella-by-the-Sea; possibly they've always said 'picking mushrooms' here in Ragnor Bella.”\n“Uh,” I said, and blew my nose.",
+            "chapter": "Chapter 14",
+            "percentage": 42
+        },
+        {
+            "quote": "“Do be careful not to step on your husband's toes--he's the investigator in Ragnor Bella!”\nMrs. Etaris frowned at her. “I should be disappointed indeed were private curiosity become a crime. It would be a sign of great woe for Alinor.”",
+            "chapter": "Chapter 14",
+            "percentage": 42
+        },
+        {
+            "quote": "She was dressed in the most elegant height of fashion for a young man of the coastal city-states, in a knee-length ivory and crimson coat over black pantaloons and waistcoat. She wore a gilt-handled rapier at her belt. She did not appear to be hiding her sex; her hat was a dashing deep-brimmed tricorner with ostrich feathers tumbling down, and exquisitely feminine. The autumn style, I supposed.",
+            "chapter": "Chapter 14",
+            "percentage": 44
+        },
+        {
+            "quote": "“Jemis, I am sorry for my behavior this spring. I am sorry for what I did not say, that I did not stand behind you, that I did not prevent that travesty of scholarship from happening in the first place. I am sorry for attacking you last night-” Mrs. Etaris' eyebrow lifted, but she said nothing-- “and I am more sorry than I can say to learn the sad tale of your family history, into which I enquired at the Green Dragon last night. For all these things I apologize.”\nAnd she bowed right down to kiss my boots.",
+            "chapter": "Chapter 14",
+            "percentage": 44
+        },
+        {
+            "quote": "“Mr. Greenwing!” he cried. “The Lady's curse is come upon me!”\nHe held out his left arm, folding back a sleeve with trembling fingers, and showed to us a hand that shone white and smooth as polished marble.",
+            "chapter": "Chapter 14",
+            "percentage": 45
+        },
+        {
+            "quote": "The square was full of booths and market-day strangers. The Honourable Rag was in the midst of a crowd of fainting admirers near the fountain; he seemed to be flirting with some dairymaids as big and blond as he. (That sounded as if it ought to be a ballad...)",
+            "chapter": "Chapter 15",
+            "percentage": 45
+        },
+        {
+            "quote": "I cleared my throat reluctantly. “Not to mention the cult.”\nMrs. Etaris closed her eyes but couldn't quite control her face. “Of course there is, Mr. Greenwing. Who shall begin?”",
+            "chapter": "Chapter 15",
+            "percentage": 45
+        },
+        {
+            "quote": "“As for you, Mr. Greenwing, whatever were you thinking to take a woman into the river after a mermaid? Wanting to be in a folk tale, you boys are, half the time.”\n“We jumped out of a burning house,” I said lamely.\n“And what were you doing in there? Something foolish, no doubt.”",
+            "chapter": "Chapter 17",
+            "percentage": 55
+        },
+        {
+            "quote": "“Oh, that's what we learned at Tara. Assumptions, assurance, asininity, you name it. I'm the baron's son. Roald Ragnor.”",
+            "chapter": "Chapter 19",
+            "percentage": 60
         }
     ]
 }
