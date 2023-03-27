@@ -9,40 +9,40 @@ module.exports = {
 		.setDescription('Replies with a link to a fic from AO3'),
 	async execute(interaction) {
 
-		console.log("Getting a fic")
-		let fic = await generateFicLink();
-		console.log("Got a fic")
+		// Check that we're in the fic channel
+		let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
+
+
+		console.log(interaction.channelId);
+		console.log(serverConfig.fic.channel);
+
+		// If we're not in the fic channel return an error
+		if (interaction.channelId != serverConfig.fic.channel) {
+			await interaction.reply({
+				embeds: [new EmbedBuilder()
+					.setDescription("Please run the fic command in " + serverConfig.channels[serverConfig.fic.channel].description)],
+				ephemeral: true
+			});
+			return;
+		}
+
+		// defer the reply because the ao3 queries can take long enough to time out the regular reply
+		await interaction.deferReply();
+
+		let fic = await generateFicLink(interaction.guildId);
 		console.log(fic);
 
 		if (fic) {
 			console.log("We got a fic!")
 
-			await interaction.reply({ embeds: [fic] });
+			await interaction.editReply({ embeds: [fic] });
 		}
 		else {
-			try {
-				let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
-
-				let errorString = "No quotes available for this channel. Supported channels are: \n";
-				let channels = Object.values(serverConfig.channels);
-
-				//BECKYTODO - I should be able to get these names from the server i think
-				channels.forEach(element => {
-					errorString += "\t# " + element.description + "\n";
-				});
-
-				await interaction.reply({
-					embeds: [new EmbedBuilder()
-						.setDescription(errorString)], ephemeral: true
-				});
-
-			}
-			catch (error) {
-				await interaction.reply({
-					embeds: [new EmbedBuilder()
-						.setDescription('No quotes available for this server!')], ephemeral: true
-				});
-			}
+			await interaction.editReply({
+				embeds: [new EmbedBuilder()
+					.setDescription("Failed to get fic :( ")],
+				ephemeral: true
+			});
 		}
 	},
 };

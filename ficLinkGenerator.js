@@ -4,14 +4,19 @@ const { EmbedBuilder } = require('discord.js');
 const { accessSync } = require('node:fs');
 
 module.exports = {
-    generateFicLink: async () => {
+    generateFicLink: async (guildId) => {
 
         console.log("Finding a Fic!");
         try {
 
-            // Do a search against the Nine Worlds tag to see how many pages of fics there are
+            // Get the fandom tag from the server config
+            let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
+            let fandom = serverConfig.fic.fandom;
+            console.log("Fandom: "+ fandom);
+
+            // Do a search against the fandom tag to see how many pages of fics there are
             let search = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
-                "Nine Worlds Series - Victoria Goddard");
+                fandom);
 
             await search.update();
 
@@ -22,9 +27,10 @@ module.exports = {
             let randomPage = Math.ceil(Math.random() * search.pages)
             console.log("Random page: " + randomPage);
 
+
             // Do another search to get the fics on that page
             let pageSearch = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
-                "Nine Worlds Series - Victoria Goddard", undefined, undefined, undefined, undefined, undefined, undefined, undefined,
+                fandom, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
                 randomPage);
 
             await pageSearch.update();

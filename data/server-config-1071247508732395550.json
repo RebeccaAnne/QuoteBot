@@ -26,6 +26,11 @@
             "description": "greenwing-and-dart",
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "greenwingRoot"
+        },
+        "1090053691840659556": {
+            "description": "fanworks",
+            "quoteSourceFile": "hotebot.json",
+            "quoteRoot": "all"
         }
     },
     "scheduledQuotes": [
@@ -47,5 +52,10 @@
                 "1088630628800540742"
             ]
         }
-    ]
+    ],
+    "fic": {
+        "channel": "1090053691840659556",
+        "fandom": "Nine Worlds Series - Victoria Goddard",
+        "time": "0 * * * * *"
+    }
 }
