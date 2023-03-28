@@ -26,8 +26,10 @@
         "rofa",
         "rofa",
         "pali",
+        "pali",
         "tower",
-        "stargazy"
+        "stargazy",
+        "beesting"
     ],
     "laysRoot": [
         "hote",
@@ -62,7 +64,9 @@
         "tower"
     ],
     "greenwingRoot": [
-        "stargazy"
+        "stargazy",
+        "stargazy",
+        "beesting"
     ],
     "hoteRoot": [
         "hote"
@@ -101,6 +105,10 @@
     },
     "stargazy": {
         "title": "Stargazy Pie",
+        "color": 34324
+    },
+    "beesting": {
+        "title": "Bee Sting Cake",
         "color": 34324
     },
     "atfotsquotes": [
@@ -4109,6 +4117,61 @@
             "quote": "She had smiled one of her Warrior of the Mountains smiles at them, and they had stuttered to a halt and assured her they respected her traditions.",
             "chapter": "Chapter 4",
             "percentage": 10
+        },
+        {
+            "quote": "Perry Dart lived here, with his secret, surreptitious magic, which had trembled about him like a brewing storm.",
+            "chapter": "Chapter 4",
+            "percentage": 11
+        },
+        {
+            "quote": "She’d never seen Artorin Damara close-to, and did not know how accurate this depiction was. It could have been any man in the imperial family: it could have been a thinner version of the Emperor Eritanyr, or of his son Shallyr Silvertongue, whom she had met, or...or anyone.",
+            "chapter": "Chapter 4",
+            "percentage": 12
+        },
+        {
+            "quote": "“Anything by Fitzroy Angursell?”\n“Depends on whether you think *The Correspondence of Love and the Soul* is his work or not. Certainly it has never been attributed to him,”",
+            "chapter": "Chapter 4",
+            "percentage": 12
+        },
+        {
+            "quote": "Another woman stood on the other side, equally startled by the unexpectedly open door, as familiar as Pali’s own reflection.\n“Jullanar!” said Pali.\nAnd—“Pali!” said Jullanar of the Sea, falling into her arms. “Oh, *Pali*!”",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote": "Oh, it *was* Jullanar. Pali did not feel the shock of their first meeting, but an upwelling, an overflowing—a *brimming* of happiness.",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote": "“Oh yes, Mr. Dart was my student—I teach at Stoneybridge,” Pali explained.\nMr. Greenwing gaped at her before catching himself again. “You’re *Domina Black*?",
+            "chapter": "Chapter 5",
+            "percentage": 13
+        },
+        {
+            "quote": "He had been magnificent already, to tell the truth, but she had met gods before, and knew they asked for things mortals did not always know they gave.",
+            "chapter": "Chapter 5",
+            "percentage": 13
+        },
+        {
+            "quote": "He had only laughed, joy in his eyes, in his voice, in his whole being. And Pali had known, as she had always known such things, that she was as caught by his look, his laugh, his rich voice, as her sister Sardeet had been by the Blue Wind.",
+            "chapter": "Chapter 5",
+            "percentage": 14
+        },
+        {
+            "quote": "“I cannot offer you such a challenge to your skill myself, but I can offer you an invitation to a great adventure.”\n“What adventure?” Pali had asked, suspicious but also intrigued.\n“We three seek to stop an invading army,” Jullanar had stated baldly. “Will you help us?”",
+            "chapter": "Chapter 5",
+            "percentage": 14
+        },
+        {
+            "quote": "“Jemis takes after both of them. Brave as anything, smart as a whip, and a little … fey.”\nPali considered the look in the young man’s eyes, the gleam of mischief and the limning of something other.\n“Has he been to Fairyland?” “He has fairy blood, apparently, but no; he died and came back to life.”\nPali blinked. “How dramatic of him,” she observed, and flung herself down into one of the seats.",
+            "chapter": "Chapter 5",
+            "percentage": 14
+        },
+        {
+            "quote": "“I followed his trail, the stories of the horse running through the sky, the black-skinned wizard in sky-blue and scarlet, the magic foaming about him.”",
+            "chapter": "Chapter 5",
+            "percentage": 14
         }
     ],
     "stargazyquotes": [
@@ -4266,6 +4329,95 @@
             "quote": "“Oh, that's what we learned at Tara. Assumptions, assurance, asininity, you name it. I'm the baron's son. Roald Ragnor.”",
             "chapter": "Chapter 19",
             "percentage": 60
+        },
+        {
+            "quote": "Mrs. Etaris said, “We never do know the full stories to things, you know.”\nI was startled out of my reverie. “I beg your pardon?”\n“On adventures. We never do find out everything.”\n“Oh,” I said.",
+            "chapter": "Chapter 31",
+            "percentage": 97
+        }
+    ],
+    "beestingquotes": [
+        {
+            "quote": "Hal had stood there that first evening, unsure of how to take off his boots without assistance. He'd been embarressed by his helplessness, and I was heartened by being able to teach such an obviously grand aristocrat something useful.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "“Shall you enter your name in, Jemis, for a cake?”\n“You're the better baker, Hal.”\n“No one creams butter and honey as well as you.”\n“Why, thank you,” I replied, before catching the expression on Mrs. Buchance's face and subsiding in embarressment.",
+            "chapter": "Chapter 3",
+            "percentage": 8
+        },
+        {
+            "quote": "“She has a passionflower!” Hal cried, and plunged off the path to exaine a vine clambering up the wall. “And, oh, look, Jemis, the crimson glory vine--and isn't it a beauty.” He touched wide crimson-purple leaves with gentle hands, murmuring names as he went from wall to bed to pot.”\n“I think we've lost him,” Mr. Dart said, amused.",
+            "chapter": "Chapter 4",
+            "percentage": 12
+        },
+        {
+            "quote": "He really would have been far happier as a second son, I thought with a pang, the one who could go off on the expeditions to hunt for plants in the mysterious regions of the world. Instead he was stuck being the sponsor of said expeditions and planning an arboretum that his people would probably not let him plant himself, either.",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote":"We were who we were. Duke and hero-traitor's son, our lives shaped by fate and accidents of birth.",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote":"I felt a burning in my eyes and my throat. People--Lark--teased me for crying too easily: a poem or a song or even a nice painting could make me well up. I frowned even harder, but I was thinking of that moment, of seeing the ghost on the doorstep. He was so thin, gaunt even, but clean-shaven and smiling that familiar lop-sided grin, the smile that my mother always said was the only way I resembled him physically.",
+            "chapter": "Chapter 4",
+            "percentage": 14
+        },
+        {
+            "quote":"“What in hell is going on around here?” Hal demanded, then flushed and presented a very courtly half-bow to Mrs. Etaris. “My apologies, ma'am. I had never expected anything from Ragnor Bella.”\n“No one does,” she agreed placidly.",
+            "chapter": "Chapter 4",
+            "percentage": 16
+        },
+        {
+            "quote":"“A dragon,” Mrs. Etaris breathed. She did not look alarmed; she looked delighted. She'd looked delighted when we'd had to storm the Talgarths' house last week, too.",
+            "chapter": "Chapter 4",
+            "percentage": 16
+        },
+        {
+            
+            "quote":"“Are you certain it was a dragon, Mr. Dart?”\n“They don't exactly look like anything else,” he replied, obviously exasperated.",
+            "chapter": "Chapter 4",
+            "percentage": 16
+        },
+        {
+            
+            "quote":"Mrs. Etaris stood up. “I had a friend once who experienced a similar sort of battle madness. He'd start singing and you knew things were about to become... interesting.”",
+            "chapter": "Chapter 6",
+            "percentage": 20
+        },
+        {
+            
+            "quote":"Mrs. Etaris sighed and smiled and patted her hair into place. She was wearing a sensible light grey apron over a blue dress and did not look as if she had ever done anything more untoward than--\n--Than show a remarkable flair for espionage when sneaking around the Talgarths' manor house last week.\n“I had a somewhat *wild* youth,” she said mildly.",
+            "chapter": "Chapter 6",
+            "percentage": 20
+        },
+        {
+            
+            "quote":"“I'm so glad to know that not only am I named for a horse, but that I look as if I ought to be riding one professionally.”\n“Could be worse,” Mr. Dart said. “You could look like one, too.”\n“Thank you, Mr. Dart.”",
+            "chapter": "Chapter 8",
+            "percentage": 27
+        },
+        {
+            
+            "quote":"“I am Halioren Lord Leaveringham, the Duke of Fillering Pool,” he said, in a tone I had never heard from him before. I'd never heard *anyone* speak like that, though I'd certainly heard people try.",
+            "chapter": "Chapter 10",
+            "percentage": 32
+        },
+        {
+            
+            "quote":"“'No knocking, halloos, crying that there were elephants, nothing.'”\nI smiled at the quotation from Aurora.\n“'And not even a pot of wine for the visitor.'”\n“Whatever would we do without Fitzroy Angursell? That's all right. We brought our own.”",
+            "chapter": "Chapter 11",
+            "percentage": 34
+        },
+        {
+            
+            "quote":"“I always knew you were smart, Jemis, but that is an extraordinary achievement.”\n“We're making him blush,” said Mr. Dart.\n“Oh, that's no feat, Mr. Dart,” said Hal, and they both laughed heartily.",
+            "chapter": "Chapter 11",
+            "percentage": 36
         }
     ]
 }
