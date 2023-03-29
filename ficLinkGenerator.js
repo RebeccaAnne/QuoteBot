@@ -59,7 +59,9 @@ module.exports = {
                         .setTitle(randomWork.title)
                         .setDescription(randomWork.summary)
                         .setAuthor({ name: authors })
-                        .setURL(randomWork.url);
+                        .setURL(randomWork.url)
+                        .setFooter({ text: randomWork.updated.toDateString() })
+                        .setColor(0x666666);
 
                     return embed;
                 }

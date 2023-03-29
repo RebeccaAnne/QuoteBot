@@ -14,7 +14,6 @@ module.exports = {
 		let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
 
 		console.log(interaction.channelId);
-		console.log(serverConfig.fic.channel);
 
 		// Ao3 queries can take long enough to timeout if we don't defer the reply, make sure we're 
 		// going to have what we need before we do that though, so that if we need an error message 
