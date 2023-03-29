@@ -10,7 +10,8 @@
         "849350971544830013": {
             "description": "nine-worlds-fanworks",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "all"
+            "quoteRoot": "all",
+            "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
         },
         "851511356179349585": {
             "description": "nine-worlds-with-victoria",
@@ -52,15 +53,11 @@
             "time": "0 0 21 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
-                "850240485946818610",
                 "850250431782453258",
                 "1004576660483477587",
-                "849348165006393364"
+                "849348165006393364",
+                "850240485946818610"
             ]
         }
-    ],
-    "fic": {
-        "channel": "849350971544830013",
-        "fandom": "Nine Worlds Series - Victoria Goddard"
-    }
+    ]
 }

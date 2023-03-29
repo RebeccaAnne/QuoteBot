@@ -65,7 +65,9 @@ serverConfigFiles.forEach(serverConfigFile => {
 	console.log(serverConfigFile);
 	const serverConfig = require(filePath);
 
-	console.log("Scheduling quotes for " + serverConfig.description + ": " + serverConfig.guildId);
+	console.log("Scheduling for " + serverConfig.description + ": " + serverConfig.guildId);
+	
+	// Schedule the quotes from the "scheduledQuotes" array in the server config 
 	serverConfig.scheduledQuotes.forEach(scheduledQuote => {
 		console.log("Scheduling " + scheduledQuote.description)
 
@@ -86,6 +88,10 @@ serverConfigFiles.forEach(serverConfigFile => {
 			}
 		}, null, true, scheduledQuote.timezone);
 	})
+
+	// Schedule fic
+	// console.log("Scheduling fic");
+
 });
 
 client.once(Events.ClientReady, c => {

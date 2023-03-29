@@ -1,6 +1,7 @@
 const path = require('node:path');
 const { SlashCommandBuilder, EmbedBuilder, Message } = require('discord.js');
 const { generateQuote } = require("../quoteGenerator.js");
+const { buildError } = require('../error.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -13,29 +14,9 @@ module.exports = {
 			await interaction.reply({ embeds: [quote] });
 		}
 		else {
-			try {
-				let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
-
-				let errorString = "No quotes available for this channel. Supported channels are: \n";
-				let channels = Object.values(serverConfig.channels);
-
-				//BECKYTODO - I should be able to get these names from the server i think
-				channels.forEach(element => {
-					errorString += "\t# " + element.description + "\n";
-				});
-
-				await interaction.reply({
-					embeds: [new EmbedBuilder()
-						.setDescription(errorString)], ephemeral: true
-				});
-
-			}
-			catch (error) {
-				await interaction.reply({
-					embeds: [new EmbedBuilder()
-						.setDescription('No quotes available for this server!')], ephemeral: true
-				});
-			}
+			await interaction.reply({
+				embeds: [await buildError(interaction.guildId, interaction.channelId, "quote")], ephemeral: true
+			});
 		}
-	},
+	}
 };

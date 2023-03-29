@@ -2,6 +2,7 @@ const path = require('node:path');
 const { SlashCommandBuilder, EmbedBuilder, Message } = require('discord.js');
 const { generateQuote } = require("../quoteGenerator.js");
 const { generateFicLink } = require('../ficLinkGenerator.js');
+const { buildError } = require('../error.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -12,36 +13,35 @@ module.exports = {
 		// Check that we're in the fic channel
 		let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
 
-
 		console.log(interaction.channelId);
 		console.log(serverConfig.fic.channel);
 
-		// If we're not in the fic channel return an error
-		if (interaction.channelId != serverConfig.fic.channel) {
-			await interaction.reply({
-				embeds: [new EmbedBuilder()
-					.setDescription("Please run the fic command in " + serverConfig.channels[serverConfig.fic.channel].description)],
-				ephemeral: true
-			});
-			return;
-		}
+		// Ao3 queries can take long enough to timeout if we don't defer the reply, make sure we're 
+		// going to have what we need before we do that though, so that if we need an error message 
+		// it can be ephemeral in the common error cases
+		if ((serverConfig != undefined) &&
+			(serverConfig.channels != undefined) &&
+			(serverConfig.channels[interaction.channelId] != undefined) &&
+			(serverConfig.channels[interaction.channelId].ficFandomTag != undefined)) {
+			await interaction.deferReply();
 
-		// defer the reply because the ao3 queries can take long enough to time out the regular reply
-		await interaction.deferReply();
+			let fic = await generateFicLink(interaction.guildId, interaction.channelId);
+			console.log(fic);
+			if (fic) {
+				console.log("We got a fic!")
 
-		let fic = await generateFicLink(interaction.guildId);
-		console.log(fic);
+				await interaction.editReply({ embeds: [fic] });
+			}
+			else {
 
-		if (fic) {
-			console.log("We got a fic!")
-
-			await interaction.editReply({ embeds: [fic] });
+				await interaction.editReply({
+					embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")]
+				});
+			}
 		}
 		else {
-			await interaction.editReply({
-				embeds: [new EmbedBuilder()
-					.setDescription("Failed to get fic :( ")],
-				ephemeral: true
+			await interaction.reply({
+				embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
 			});
 		}
 	},

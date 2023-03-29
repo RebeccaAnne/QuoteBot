@@ -30,7 +30,8 @@
         "1090053691840659556": {
             "description": "fanworks",
             "quoteSourceFile": "hotebot.json",
-            "quoteRoot": "all"
+            "quoteRoot": "all",
+            "ficFandomTag":"Nine Worlds Series - Victoria Goddard"
         }
     },
     "scheduledQuotes": [
