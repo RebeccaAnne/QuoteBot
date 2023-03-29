@@ -31,12 +31,12 @@
             "description": "fanworks",
             "quoteSourceFile": "hotebot.json",
             "quoteRoot": "all",
-            "ficFandomTag":"Nine Worlds Series - Victoria Goddard"
+            "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
         }
     },
     "scheduledQuotes": [
         {
-            "description": "even hours in nine-worlds",
+            "description": "quotes even hours in nine-worlds",
             "time": "0 0 0/2 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
@@ -44,8 +44,9 @@
             ]
         },
         {
-            "description": "odd hours in discussion channels",
+            "description": "quotes odd hours in discussion channels",
             "time": "0 0 1/2 * * *",
+            "timezone": "America/Los_Angeles",
             "channels": [
                 "1071538235467108382",
                 "1071539009463013438",
@@ -54,9 +55,14 @@
             ]
         }
     ],
-    "fic": {
-        "channel": "1090053691840659556",
-        "fandom": "Nine Worlds Series - Victoria Goddard",
-        "time": "0 * * * * *"
-    }
+    "scheduledFics": [
+        {
+            "description": "fanfic every four hours",
+            "time": "0 0 0/4 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "1090053691840659556"
+            ]
+        }
+    ]
 }

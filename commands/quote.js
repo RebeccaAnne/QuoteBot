@@ -9,7 +9,7 @@ module.exports = {
 		.setDescription('Replies with a quote appropriate to the current channel'),
 	async execute(interaction) {
 
-		let quote = generateQuote(interaction.guildId, interaction.channelId);
+		let quote = await generateQuote(interaction.guildId, interaction.channelId);
 		if (quote) {
 			await interaction.reply({ embeds: [quote] });
 		}

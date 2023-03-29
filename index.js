@@ -5,6 +5,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const { token } = require('./config.json');
 const { CronJob } = require('cron');
 const { generateQuote } = require("./quoteGenerator.js");
+const { generateFicLink } = require('./ficLinkGenerator');
 
 client.commands = new Collection();
 
@@ -34,7 +35,7 @@ console.log("server-config files:");
 // 10 minutes
 const backofftime = 10 * 1000 * 60;
 
-const sendQuote = async (guildId, channelId) => {
+const sendMessage = async (guildId, channelId, generateFunction) => {
 
 	try {
 		let channel = await client.channels.fetch(channelId, { force: true });
@@ -48,15 +49,36 @@ const sendQuote = async (guildId, channelId) => {
 		console.log("Time since last message: " + difference);
 
 		if (difference < backofftime) {
-			console.log("Delaying quote by " + backofftime)
-			setTimeout(() => { sendQuote(guildId, channelId); }, backofftime)
+			console.log("Delaying message by " + backofftime)
+			setTimeout(() => { sendMessage(guildId, channelId); }, backofftime)
 		}
 		else {
-			let quote = generateQuote(guildId, channelId);
-			channel.send({ embeds: [quote] });
+			let embed = await generateFunction(guildId, channelId);
+			channel.send({ embeds: [embed] });
+			
 		}
 	}
-	catch (error) { console.log("\n+++\nsendQuote failed\n" + error + "\n+++\n"); }
+	catch (error) { console.log("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
+}
+
+const scheduleCronJobs = async (guildId, scheduleConfig, generateFunction) => {
+
+	let channelIndex = 0;
+	const job = new CronJob(scheduleConfig.time, async function () {
+
+		try {
+			let channelId = scheduleConfig.channels[channelIndex];
+			console.log("Running scheduled event in " + channelId);
+
+			await sendMessage(guildId, channelId, generateFunction);
+
+			channelIndex = (channelIndex + 1) % scheduleConfig.channels.length;
+		}
+		catch (error) {
+			console.log("Failed to send message");
+			console.log(error);
+		}
+	}, null, true, scheduleConfig.timezone);
 }
 
 serverConfigFiles.forEach(serverConfigFile => {
@@ -66,32 +88,24 @@ serverConfigFiles.forEach(serverConfigFile => {
 	const serverConfig = require(filePath);
 
 	console.log("Scheduling for " + serverConfig.description + ": " + serverConfig.guildId);
-	
-	// Schedule the quotes from the "scheduledQuotes" array in the server config 
-	serverConfig.scheduledQuotes.forEach(scheduledQuote => {
-		console.log("Scheduling " + scheduledQuote.description)
 
-		let channelIndex = 0;
-		const job = new CronJob(scheduledQuote.time, async function () {
+	// Schedule the quotes from the "scheduledQuotes" array in the server config
+	if (serverConfig.scheduledQuotes) {
+		serverConfig.scheduledQuotes.forEach(scheduledQuote => {
+			console.log("Scheduling " + scheduledQuote.description)
 
-			try {
-				let channelId = scheduledQuote.channels[channelIndex];
-				console.log("Running scheduled quote in " + serverConfig.channels[channelId].description);
+			scheduleCronJobs(serverConfig.guildId, scheduledQuote, generateQuote);
+		})
+	}
 
-				sendQuote(serverConfig.guildId, channelId);
+	// Schedule the fics from the "scheduledFics" array in the server config 
+	if (serverConfig.scheduledFics) {
+		serverConfig.scheduledFics.forEach(scheduledFic => {
+			console.log("Scheduling " + scheduledFic.description)
 
-				channelIndex = (channelIndex + 1) % scheduledQuote.channels.length;
-			}
-			catch (error) {
-				console.log("Failed to send quote");
-				console.log(error);
-			}
-		}, null, true, scheduledQuote.timezone);
-	})
-
-	// Schedule fic
-	// console.log("Scheduling fic");
-
+			scheduleCronJobs(serverConfig.guildId, scheduledFic, generateFicLink);
+		})
+	}
 });
 
 client.once(Events.ClientReady, c => {

@@ -41,7 +41,7 @@
     },
     "scheduledQuotes": [
         {
-            "description": "9 am in nine-worlds-with-victoria",
+            "description": "quotes at 9 am in nine-worlds-with-victoria",
             "time": "0 0 09 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "description": "9 pm in discussion channels",
+            "description": "quotes at 9 pm in discussion channels",
             "time": "0 0 21 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
@@ -57,6 +57,16 @@
                 "1004576660483477587",
                 "849348165006393364",
                 "850240485946818610"
+            ]
+        }
+    ],
+    "scheduledFics": [
+        {
+            "description": "fanfic at 3pm",
+            "time": "0 0 15 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "849350971544830013"
             ]
         }
     ]
