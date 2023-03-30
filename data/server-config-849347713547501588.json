@@ -4,38 +4,38 @@
     "channels": {
         "849348269355958312": {
             "description": "nine-worlds-discussion",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all"
         },
         "849350971544830013": {
             "description": "nine-worlds-fanworks",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all",
             "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
         },
         "851511356179349585": {
             "description": "nine-worlds-with-victoria",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all"
         },
         "1004576660483477587": {
             "description": "hands-of-the-emperor",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "hoteRoot"
         },
         "849348165006393364": {
             "description": "lays-of-the-hearthfire",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "laysRoot"
         },
         "850240485946818610": {
             "description": "the-red-company",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "redCompanyRoot"
         },
         "850250431782453258": {
             "description": "greenwing-and-dart",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "greenwingRoot"
         }
     },
@@ -53,10 +53,10 @@
             "time": "0 0 21 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
-                "850250431782453258",
                 "1004576660483477587",
                 "849348165006393364",
-                "850240485946818610"
+                "850240485946818610",
+                "850250431782453258"
             ]
         }
     ],

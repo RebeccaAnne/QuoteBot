@@ -11,23 +11,26 @@ module.exports = {
             let channel = serverConfig.channels[channelId];
 
             if (channel) {
-                console.log("channel.quoteSourceFile: " + channel.quoteSourceFile);
-                let source = require(path.join(__dirname, "data/" + channel.quoteSourceFile));
+                console.log("channel.rootSourceFile: " + channel.rootSourceFile);
+                let rootSourceFile = require(path.join(__dirname, "data/" + channel.rootSourceFile));
                 console.log("channel.quoteRoot: " + channel.quoteRoot);
 
-                let quoteRoot = source[channel.quoteRoot];
+                let quoteRoot = rootSourceFile[channel.quoteRoot];
                 let book = quoteRoot[Math.floor(Math.random() * quoteRoot.length)];
 
                 console.log("Book: " + book);
 
-                let quoteArray = source[book + "quotes"];
+                let bookConfig = rootSourceFile[book];
+                let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
+
+                let quoteArray = bookQuoteFile[book + "quotes"];
 
                 let quoteObject = quoteArray[Math.floor(Math.random() * quoteArray.length)];
                 let quote = quoteObject.quote;
                 console.log("Quote:" + quote);
 
                 let description = quote + "\n";
-                let color = source[book].color;
+                let color = rootSourceFile[book].color;
 
                 // Build the footer. Format is:
                 //
@@ -35,7 +38,7 @@ module.exports = {
                 // Chapter 4; 65%
                 //
                 // Chapter and percentage may or may not be present
-                let footerText = source[book].title;
+                let footerText = rootSourceFile[book].title;
 
                 if ((quoteObject.chapter != null) || (quoteObject.percentage != null)) {
                     footerText += "\n";

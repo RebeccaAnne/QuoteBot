@@ -4,32 +4,32 @@
     "channels": {
         "1071538235467108382": {
             "description": "hands-of-the-emperor",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "hoteRoot"
         },
         "1071539009463013438": {
             "description": "lays-of-the-hearthfire",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "laysRoot"
         },
         "1071539034645614713": {
             "description": "nine-worlds",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all"
         },
         "1083501837510000711": {
             "description": "the-red-company",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "redCompanyRoot"
         },
         "1088630628800540742": {
             "description": "greenwing-and-dart",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "greenwingRoot"
         },
         "1090053691840659556": {
             "description": "fanworks",
-            "quoteSourceFile": "hotebot.json",
+            "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all",
             "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
         }

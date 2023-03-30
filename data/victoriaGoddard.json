@@ -1,0 +1,124 @@
+{
+    "all": [
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "pettytreasons",
+        "pettytreasons",
+        "pettytreasons",
+        "portrait",
+        "fire",
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "pali",
+        "pali",
+        "tower",
+        "stargazy",
+        "beesting"
+    ],
+    "laysRoot": [
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "hote",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "pettytreasons",
+        "pettytreasons",
+        "pettytreasons",
+        "portrait",
+        "portrait",
+        "fire"
+    ],
+    "redCompanyRoot": [
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "rofa",
+        "pali",
+        "pali",
+        "tower"
+    ],
+    "greenwingRoot": [
+        "stargazy",
+        "stargazy",
+        "beesting"
+    ],
+    "hoteRoot": [
+        "hote"
+    ],
+    "fire": {
+        "title": "Those Who Hold the Fire",
+        "quoteSourceFile":"laysData.json",
+        "color": 38823
+    },
+    "portrait": {
+        "title": "Portrait of a Wide Seas Islander",
+        "quoteSourceFile":"laysData.json",
+        "color": 38823
+    },
+    "pettytreasons": {
+        "title": "Petty Treasons",
+        "quoteSourceFile":"laysData.json",
+        "color": 38823
+    },
+    "hote": {
+        "title": "The Hands of the Emperor",
+        "quoteSourceFile":"laysData.json",
+        "color": 38823
+    },
+    "atfots": {
+        "title": "At the Feet of the Sun",
+        "quoteSourceFile":"laysData.json",
+        "color": 38823
+    },
+    "rofa": {
+        "title": "The Return of Fitzroy Angursell",
+        "quoteSourceFile":"redCompanyData.json",
+        "color": 11730944
+    },
+    "tower": {
+        "title": "The Tower at the Edge of the World",
+        "quoteSourceFile":"redCompanyData.json",
+        "color": 11730944
+    },
+    "pali": {
+        "title": "The Redoubtable Pali Avramapul",
+        "quoteSourceFile":"redCompanyData.json",
+        "color": 11730944
+    },
+    "stargazy": {
+        "title": "Stargazy Pie",
+        "quoteSourceFile":"greenwingData.json",
+        "color": 34324
+    },
+    "beesting": {
+        "title": "Bee Sting Cake",
+        "quoteSourceFile":"greenwingData.json",
+        "color": 34324
+    }
+}

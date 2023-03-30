@@ -1,24 +1,26 @@
 const { quote } = require("discord.js");
 var fs = require("fs");
+const path = require('node:path');
 
-const quoteFileName = process.argv[2];
+const rootFileName = process.argv[2];
 const rootName = process.argv[3];
 
-const quoteFile = require(quoteFileName);
+const rootFile = require(rootFileName);
 
 var twitterResult = {};
 twitterResult.origin = [];
 
-console.log(quoteFileName);
+console.log(rootFileName);
 console.log(rootName);
 
-quoteFile[rootName].forEach(book => {
+rootFile[rootName].forEach(book => {
 
     // Get the book from the top level array
     twitterResult.origin.push("#" + book + "#");
 
     // Get the  book item 
-    const bookItem = quoteFile[book];
+    const bookItem = rootFile[book];
+    let bookQuoteFile = require(path.join(__dirname, "data/" + bookItem.quoteSourceFile));
 
     // Add it to the twitter result surrounded by #'s. This is to support tracery as used by Cheap Bots Done Quick
     twitterResult[book] = ["#" + book + "quotes#\n\n" + bookItem.title];
@@ -31,7 +33,7 @@ quoteFile[rootName].forEach(book => {
         console.log(bookItem.title);
         let count = 0;
 
-        quoteFile[book + "quotes"].forEach(quoteObject => {
+        bookQuoteFile[book + "quotes"].forEach(quoteObject => {
 
             let twitterQuote = "";
 

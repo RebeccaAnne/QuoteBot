@@ -66,7 +66,7 @@ module.exports = {
             }
         }
         else {
-            errorString = "/" + action + "failed"
+            errorString = "/" + action + " failed"
         }
 
         console.log(errorString);
