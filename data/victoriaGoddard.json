@@ -119,5 +119,10 @@
         "title": "Bee Sting Cake",
         "quoteSourceFile":"greenwingData.json",
         "color": 34324
+    },
+    "wiskeyjack": {
+        "title": "Wiskeyjack",
+        "quoteSourceFile":"greenwingData.json",
+        "color": 34324
     }
 }
