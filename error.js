@@ -19,7 +19,7 @@ module.exports = {
                 {
                     if (action == "quote") {
                         channelSupported =
-                            (channelConfig.quoteSourceFile != undefined) &&
+                            (channelConfig.rootSourceFile != undefined) &&
                             (channelConfig.quoteRoot != undefined);
                     }
                     else if (action == "fic") {
@@ -43,7 +43,7 @@ module.exports = {
             let supportedChannels = "";
             channels.forEach(channel => {
                 if ((action == "quote") &&
-                    (channel.quoteSourceFile != undefined) &&
+                    (channel.rootSourceFile != undefined) &&
                     (channel.quoteRoot != undefined)) {
                     supportedChannels += "\t# " + channel.description + "\n";
                     console.log("Found Supported channel: " + channel.description);
