@@ -36,6 +36,7 @@
     },
     "scheduledQuotes": [
         {
+            "id": "9WorldsSchedule",
             "description": "quotes even hours in nine-worlds",
             "time": "0 0 0/2 * * *",
             "timezone": "America/Los_Angeles",
@@ -44,6 +45,7 @@
             ]
         },
         {
+            "id": "discussionSchedule",
             "description": "quotes odd hours in discussion channels",
             "time": "0 0 1/2 * * *",
             "timezone": "America/Los_Angeles",
@@ -57,6 +59,7 @@
     ],
     "scheduledFics": [
         {
+            "id": "ficSchedule",
             "description": "fanfic every four hours",
             "time": "0 0 0/4 * * *",
             "timezone": "America/Los_Angeles",

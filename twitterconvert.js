@@ -25,7 +25,6 @@ rootFile[rootName].forEach(book => {
     // Add it to the twitter result surrounded by #'s. This is to support tracery as used by Cheap Bots Done Quick
     twitterResult[book] = ["#" + book + "quotes#\n\n" + bookItem.title];
 
-
     // If we haven't come across this book before, create the quote array for it.
     if (twitterResult[book + "quotes"] == null) {
         twitterResult[book + "quotes"] = [];

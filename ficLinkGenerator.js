@@ -2,6 +2,7 @@ const path = require('node:path');
 const AO3 = require('ao3');
 const { EmbedBuilder } = require('discord.js');
 const { accessSync } = require('node:fs');
+const { randomSelection } = require('./randomSelection.js');
 
 module.exports = {
     generateFicLink: async (guildId, channelId) => {
@@ -27,23 +28,22 @@ module.exports = {
                     console.log("Total results: " + search.total_results);
                     console.log("Total pages: " + search.pages);
 
-                    // Pick a random page to get a fic from (1 indexed)
-                    let randomPage = Math.ceil(Math.random() * search.pages)
-                    console.log("Random page: " + randomPage);
+                    // Reverse the index returned from randomSelection, because new fics will be added at the beginning (index 0)
+                    let ficIndex = (search.total_results - randomSelection(guildId, "fic", search.total_results));
 
+                    // Figure out what page that fic is on (1 indexed)
+                    let ficPage = Math.floor(ficIndex / 20) + 1;
+                    console.log("Page: " + ficPage);
 
                     // Do another search to get the fics on that page
                     let pageSearch = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
                         fandom, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
-                        randomPage);
+                        ficPage);
 
                     await pageSearch.update();
 
-
-                    console.log("++++++++++++++++++++++++++++");
-                    console.log(pageSearch.results.length);
-
-                    let randomWork = pageSearch.results[Math.floor(Math.random() * pageSearch.results.length)];
+                    let indexOnPage = ficIndex - (ficPage - 1) * 20;
+                    let randomWork = pageSearch.results[indexOnPage];
                     console.log(randomWork.title);
 
                     let authors = "";

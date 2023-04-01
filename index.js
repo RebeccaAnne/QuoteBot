@@ -50,29 +50,60 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 
 		if (difference < backofftime) {
 			console.log("Delaying message by " + backofftime)
-			setTimeout(() => { sendMessage(guildId, channelId); }, backofftime)
+			setTimeout(() => { sendMessage(guildId, channelId, generateFunction); }, backofftime)
 		}
 		else {
 			let embed = await generateFunction(guildId, channelId);
 			channel.send({ embeds: [embed] });
-			
+
 		}
 	}
 	catch (error) { console.log("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
 }
 
+const getCurrentChannelIndex = (guildId, scheduleConfig) => {
+
+	if (scheduleConfig.channels.length == 1) {
+		// If there's only one channel, the index is always 0
+		return 0;
+	}
+	else {
+		let channelIndex = 0;
+		let serverArrayFileName = "./arrays-" + guildId + ".json";
+
+		let serverArrays = {};
+		try {
+			serverArrays = require(serverArrayFileName);
+			console.log("Loaded serverArrays from file");
+
+			// If there's an index in the file, increment it and use the next index
+			if (serverArrays[scheduleConfig.id + "Index"] != undefined) {
+				channelIndex = (serverArrays[scheduleConfig.id + "Index"] + 1) % scheduleConfig.channels.length;
+				console.log("New index: " + channelIndex);
+			}
+		}
+		catch {
+			// We don't have a file yet, it will get created below 
+			console.log("Failed to load serverArrays from file");
+		}
+		serverArrays[scheduleConfig.id + "Index"] = channelIndex;
+
+		fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
+		return channelIndex;
+	}
+}
+
 const scheduleCronJobs = async (guildId, scheduleConfig, generateFunction) => {
 
-	let channelIndex = 0;
 	const job = new CronJob(scheduleConfig.time, async function () {
 
 		try {
+			let channelIndex = getCurrentChannelIndex(guildId, scheduleConfig);
+			console.log("Channel index: " + channelIndex);
 			let channelId = scheduleConfig.channels[channelIndex];
 			console.log("Running scheduled event in " + channelId);
 
 			await sendMessage(guildId, channelId, generateFunction);
-
-			channelIndex = (channelIndex + 1) % scheduleConfig.channels.length;
 		}
 		catch (error) {
 			console.log("Failed to send message");
