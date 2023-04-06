@@ -2,7 +2,7 @@ const path = require('node:path');
 const AO3 = require('ao3');
 const { EmbedBuilder } = require('discord.js');
 const { accessSync } = require('node:fs');
-const { randomSelection } = require('./randomSelection.js');
+const { randomIndexSelection } = require('./randomSelection.js');
 
 module.exports = {
     generateFicLink: async (guildId, channelId) => {
@@ -28,17 +28,18 @@ module.exports = {
                     console.log("Total results: " + search.total_results);
                     console.log("Total pages: " + search.pages);
 
-                    // Reverse the index returned from randomSelection, because new fics will be added at the beginning (index 0)
-                    let ficIndex = (search.total_results - randomSelection(guildId, "fic", search.total_results));
+                    // Reverse the index returned from randomIndexSelection, because new fics will be added at the beginning (index 0)
+                    let ficIndex = (search.total_results - randomIndexSelection(guildId, "fic", search.total_results));
 
                     // Figure out what page that fic is on (1 indexed)
                     let ficPage = Math.floor(ficIndex / 20) + 1;
                     console.log("Page: " + ficPage);
 
-                    // Do another search to get the fics on that page
+                    // Do another search to get the fics on that page. Sort by "created_at" so that 
+                    // the indexes don't change when a new chapter is posted to an existing fic.
                     let pageSearch = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
                         fandom, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
-                        ficPage);
+                        ficPage, "created_at");
 
                     await pageSearch.update();
 

@@ -1,6 +1,6 @@
 const path = require('node:path');
 const { EmbedBuilder } = require('discord.js');
-const { randomSelection } = require('./randomSelection.js');
+const { randomIndexSelection } = require('./randomSelection.js');
 
 module.exports = {
     generateQuote: (guildId, channelId) => {
@@ -25,7 +25,7 @@ module.exports = {
                 let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
 
                 let quoteArray = bookQuoteFile[book + "quotes"];
-                let quoteIndex = randomSelection(guildId, book, quoteArray.length);
+                let quoteIndex = randomIndexSelection(guildId, book, quoteArray.length);
 
                 let quoteObject = quoteArray[quoteIndex];
                 let quote = quoteObject.quote;

@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 module.exports = {
-    randomSelection: (guildId, arrayId, max) => {
+    randomIndexSelection: (guildId, arrayId, max) => {
 
         console.log("Random Selection!")
         let serverArrayFileName = "./arrays-" + guildId + ".json";
