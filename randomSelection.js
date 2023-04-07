@@ -1,17 +1,17 @@
 var fs = require("fs");
+const { logString } = require('./logging');
 
 module.exports = {
     randomIndexSelection: (guildId, arrayId, max) => {
 
-        console.log("Random Selection!")
+        logString("Random Selection!")
         let serverArrayFileName = "./arrays-" + guildId + ".json";
 
         let serverArrays = {};
         try {
             serverArrays = require(serverArrayFileName);
-            console.log("Loaded serverArrays from file");
         }
-        catch { console.log("Failed to load serverArrays from file"); }
+        catch { logString("Failed to load serverArrays from file"); }
 
         // Create a new array if:
         // (a) we don't have one
@@ -21,10 +21,9 @@ module.exports = {
             (serverArrays[arrayId].length == 0) ||
             (max < serverArrays[arrayId + "Max"])) {
 
-            console.log("Making a new Array!")
+            logString("Making a new Array! Id:" + arrayId + " max:" + max);
             serverArrays[arrayId] = new Array(max).fill().map((a, i) => a = i).sort(() => Math.random() - 0.5);
             serverArrays[arrayId + "Max"] = max;
-            console.log(serverArrays);
         }
         // Expand the current array if the max we're being passed is greater than the one we used to 
         // generate the current array
@@ -32,17 +31,16 @@ module.exports = {
             let oldMax = serverArrays[arrayId + "Max"];
             let newItemsNeeded = max - oldMax;
 
-            console.log("Expanding Array!")
+            logString("Expanding Array! Id:" + arrayId + " oldMax:" + oldMax + " newMax:" + max);
 
             let newItems = new Array(newItemsNeeded).fill().map((a, i) => a = i + oldMax);
             serverArrays[arrayId] = [].concat(serverArrays[arrayId], newItems).sort(() => Math.random() - 0.5);
             serverArrays[arrayId + "Max"] = max;
-            console.log(serverArrays);
         }
 
         // Pop an index off the random array
         let value = serverArrays[arrayId].pop();
-        console.log("Returning index " + value);
+        logString("Returning index " + value);
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
         return value;
     }

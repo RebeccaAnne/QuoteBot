@@ -1,15 +1,16 @@
 const path = require('node:path');
 const { EmbedBuilder } = require('discord.js');
+const { logString } = require('./logging');
 
 module.exports = {
     buildError: async (guildId, channelId, action) => {
 
-        console.log("Generating error for " + guildId + ", " + channelId + ", " + action);
+        logString("Generating error for " + guildId + ", " + channelId + ", " + action);
 
         let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
         serverSupported = serverConfig != undefined;
 
-        console.log("Server supported? " + serverSupported);
+        logString("Server supported? " + serverSupported);
 
         let channelSupported = false;
         if (serverSupported) {
@@ -29,7 +30,7 @@ module.exports = {
             }
         }
 
-        console.log("Channel supported? " + channelSupported);
+        logString("Channel supported? " + channelSupported);
 
         let errorString = ""
         if (!serverSupported) {
@@ -46,15 +47,15 @@ module.exports = {
                     (channel.rootSourceFile != undefined) &&
                     (channel.quoteRoot != undefined)) {
                     supportedChannels += "\t# " + channel.description + "\n";
-                    console.log("Found Supported channel: " + channel.description);
+                    logString("Found Supported channel: " + channel.description);
                 }
                 else if ((action == "fic") &&
                     (channel.ficFandomTag != undefined)) {
                     supportedChannels += "\t# " + channel.description + "\n";
-                    console.log("Found Supported channel: " + channel.description);
+                    logString("Found Supported channel: " + channel.description);
                 }
                 else {
-                    console.log("Unsupported channel: " + channel.description);
+                    logString("Unsupported channel: " + channel.description);
                 }
             })
 
@@ -69,7 +70,7 @@ module.exports = {
             errorString = "/" + action + " failed"
         }
 
-        console.log(errorString);
+        logString(errorString);
 
         return new EmbedBuilder()
             .setDescription(errorString)

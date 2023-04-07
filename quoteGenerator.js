@@ -1,25 +1,26 @@
 const path = require('node:path');
 const { EmbedBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
+const { logString } = require('./logging');
 
 module.exports = {
     generateQuote: (guildId, channelId) => {
 
-        console.log("Generating quote!");
-        console.log("guildId: " + guildId + " channelId: " + channelId);
+        logString("Generating quote!");
+        logString("guildId: " + guildId + " channelId: " + channelId);
         try {
             let serverConfig = require(path.join(__dirname, "data/server-config-" + guildId + ".json"));
             let channel = serverConfig.channels[channelId];
 
             if (channel) {
-                console.log("channel.rootSourceFile: " + channel.rootSourceFile);
+                logString("channel.rootSourceFile: " + channel.rootSourceFile);
                 let rootSourceFile = require(path.join(__dirname, "data/" + channel.rootSourceFile));
-                console.log("channel.quoteRoot: " + channel.quoteRoot);
+                logString("channel.quoteRoot: " + channel.quoteRoot);
 
                 let quoteRoot = rootSourceFile[channel.quoteRoot];
                 let book = quoteRoot[Math.floor(Math.random() * quoteRoot.length)];
 
-                console.log("Book: " + book);
+                logString("Book: " + book);
 
                 let bookConfig = rootSourceFile[book];
                 let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
@@ -29,7 +30,7 @@ module.exports = {
 
                 let quoteObject = quoteArray[quoteIndex];
                 let quote = quoteObject.quote;
-                console.log("Quote:" + quote);
+                logString("Quote:" + quote);
 
                 let description = quote + "\n";
                 let color = rootSourceFile[book].color;
@@ -64,7 +65,7 @@ module.exports = {
             }
         }
         catch (error) {
-            console.log("\n+++\ngenerateQuote failed\n" + error + "\n+++\n");
+            logString("\n+++\ngenerateQuote failed\n" + error + "\n+++\n");c
             return null;
         }
     }

@@ -3,11 +3,12 @@ const AO3 = require('ao3');
 const { EmbedBuilder } = require('discord.js');
 const { accessSync } = require('node:fs');
 const { randomIndexSelection } = require('./randomSelection.js');
+const { logString } = require('./logging');
 
 module.exports = {
     generateFicLink: async (guildId, channelId) => {
 
-        console.log("Finding a Fic!");
+        logString("Finding a Fic!");
         try {
 
             // Get the fandom tag from the server config
@@ -17,7 +18,7 @@ module.exports = {
             if (channel) {
                 let fandom = channel.ficFandomTag;
                 if (fandom) {
-                    console.log("Fandom: " + fandom);
+                    logString("Fandom: " + fandom);
 
                     // Do a search against the fandom tag to see how many pages of fics there are
                     let search = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
@@ -25,15 +26,15 @@ module.exports = {
 
                     await search.update();
 
-                    console.log("Total results: " + search.total_results);
-                    console.log("Total pages: " + search.pages);
+                    logString("Total results: " + search.total_results);
+                    logString("Total pages: " + search.pages);
 
                     // Reverse the index returned from randomIndexSelection, because new fics will be added at the beginning (index 0)
                     let ficIndex = (search.total_results - randomIndexSelection(guildId, "fic", search.total_results));
 
                     // Figure out what page that fic is on (1 indexed)
                     let ficPage = Math.floor(ficIndex / 20) + 1;
-                    console.log("Page: " + ficPage);
+                    logString("Page: " + ficPage);
 
                     // Do another search to get the fics on that page. Sort by "created_at" so that 
                     // the indexes don't change when a new chapter is posted to an existing fic.
@@ -45,7 +46,7 @@ module.exports = {
 
                     let indexOnPage = ficIndex - (ficPage - 1) * 20;
                     let randomWork = pageSearch.results[indexOnPage];
-                    console.log(randomWork.title);
+                    logString(randomWork.title);
 
                     let authors = "";
                     for (author of randomWork.authors) {
@@ -70,7 +71,7 @@ module.exports = {
         }
 
         catch (error) {
-            console.log("\n+++\ngenerateFicLink failed\n" + error + "\n+++\n");
+            logString("\n+++\ngenerateFicLink failed\n" + error + "\n+++\n");
             return null;
         }
     }
