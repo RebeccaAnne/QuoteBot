@@ -895,11 +895,6 @@
             "percentage": 7
         },
         {
-            "quote": "Domina Black of Stoneybridge did not speak of her past.",
-            "chapter": "Chapter 3",
-            "percentage": 7
-        },
-        {
             "quote": "“Away then, lovely one,” she said to the carpet, and gave it the equivalent of free rein.\nIt leapt forward, swooping down so that its dangling tassels scored faint lines in the snow, kicking up a wake of powdery crystals behind her to hang in the air and twinkle like fairy dust.",
             "chapter": "Chapter 3",
             "percentage": 7
@@ -1140,7 +1135,7 @@
             "percentage": 25
         },
         {
-            "quote": "The greatest difference that not one person, from the page to the Chief Librarian to the Undersecretary in Chief of the Offices of the Lords of State, had shown any inclination to being bribed.",
+            "quote": "The greatest difference was that not one person, from the page to the Chief Librarian to the Undersecretary in Chief of the Offices of the Lords of State, had shown any inclination to being bribed.",
             "chapter": "Chapter 9",
             "percentage": 26
         },
@@ -1361,11 +1356,6 @@
         },
         {
             "quote": "She kept repeating her plan to herself. Collect Jullanar. Return to Zunidh. Rescue Fitzroy. *Then* vengeance.",
-            "chapter": "Chapter 17",
-            "percentage": 44
-        },
-        {
-            "quote": "She kept repeating her plan to herself. Collect Jullanar. Return to Zunidh. Rescue Fitzroy. Then vengeance.",
             "chapter": "Chapter 17",
             "percentage": 45
         },
@@ -1625,7 +1615,7 @@
             "percentage": 68
         },
         {
-            "quote": "“I don’t get to make those choices, Pali. I don’t get to decide what topics are too personal. No, Pali. You see, when you are the head of state the assumption is that there is no privacy. No topic is taboo. If I refuse to speak about something, that is the act of a tyrant.”",
+            "quote": "“I don’t get to make those choices, Pali. I don’t get to decide what topics are *too personal*. No, Pali. You see, when you are the head of state the assumption is that there is no privacy. No topic is taboo. If I refuse to speak about something, that is the act of a tyrant.”",
             "chapter": "Chapter 25",
             "percentage": 68
         },
@@ -1715,7 +1705,7 @@
             "percentage": 75
         },
         {
-            "quote": "she was hugging to herself the idea that someone actually disliked Fitzroy’s poetry for all the right reasons.\nAnd for it to be his—the Lord Emperor’s—chief attendant, the head of his domestic household—oh, what a gift!",
+            "quote": "She was hugging to herself the idea that someone actually disliked Fitzroy’s poetry for all the right reasons.\nAnd for it to be his—the Lord Emperor’s—chief attendant, the head of his domestic household—oh, what a gift!",
             "chapter": "Chapter 28",
             "percentage": 76
         },
@@ -1845,7 +1835,7 @@
             "percentage": 85
         },
         {
-            "quote": "“You’re angry,” Sardeet observed. “You’re all knotted in yourself.”\n“I’m trying, Sardeeet,” Pali whispered. “I’m really struggling with...everything.”\n“Everything?”\nThe darkness surely hid her blush.\n“Fitzroy,” she admitted, even more quietly.",
+            "quote": "“You’re angry,” Sardeet observed. “You’re all knotted in yourself.”\n“I’m trying, Sardeeet,” Pali whispered. “I’m really struggling with...everything.”\n“Everything?”\nThe darkness surely hid her blush. “Fitzroy,” she admitted, even more quietly.",
             "chapter": "Chapter 31",
             "percentage": 86
         },
@@ -2025,7 +2015,7 @@
             "percentage": 98
         },
         {
-            "quote": "“He’s given me so much, Pali. He kept me sane.”\nPali glanced at him, and was struck by how open his face was, how human, how real.",
+            "quote": "“He’s given me so much, Pali. He kept me sane.”\nPali glanced at him, and was struck by how open his face was, how human, how *real*.",
             "chapter": "Chapter 35",
             "percentage": 98
         },
@@ -2045,12 +2035,12 @@
             "percentage": 98
         },
         {
-            "quote": "She hesitated, but the next step was...*Be generous*...and she could do that. She would. Therefore she said: “Will you tell me about your viceroy?”",
+            "quote": "She hesitated, but the next step was...*Be generous*...and she could do that. She would.\nTherefore she said: “Will you tell me about your viceroy?”",
             "chapter": "Chapter 35",
             "percentage": 98
         },
         {
-            "quote": "“Really? You’d like to hear about Kip? I didn’t think you, ah …”\n“I despise him,” she said resolutely, looking straight at him. “I have sworn vengeance upon him for the hurt he has done one of mine. If you want both of us in your life, as I presume you do—”\n“If I—yes. I do.”\n“You’ll have to convince me he’s worth it.”\n“Ah,” he said, lips twitching. “A challenge for us to share.”\nShe shrugged, elaborately nonchalant, grinning. “I was given understand that you needed a new hobby.”",
+            "quote": "“Really? You’d like to hear about Kip? I didn’t think you, ah...”\n“I despise him,” she said resolutely, looking straight at him. “I have sworn vengeance upon him for the hurt he has done one of mine. If you want both of us in your life, as I presume you do—”\n“If I—yes. I do.”\n“You’ll have to convince me he’s worth it.”\n“Ah,” he said, lips twitching. “A challenge for us to share.”\nShe shrugged, elaborately nonchalant, grinning. “I was given understand that you needed a new hobby.”",
             "chapter": "Chapter 35",
             "percentage": 98
         },
