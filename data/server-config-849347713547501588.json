@@ -37,6 +37,11 @@
             "description": "greenwing-and-dart",
             "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "greenwingRoot"
+        },
+        "863239470039564308": {
+            "description": "other-victoria-books",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "otherRoot"
         }
     },
     "scheduledQuotes": [

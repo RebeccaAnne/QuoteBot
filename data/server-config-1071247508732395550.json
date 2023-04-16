@@ -27,6 +27,11 @@
             "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "greenwingRoot"
         },
+        "1096959724844482610": {
+            "description": "other-victoria",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "otherRoot"
+        },
         "1090053691840659556": {
             "description": "fanworks",
             "rootSourceFile": "victoriaGoddard.json",
@@ -53,7 +58,8 @@
                 "1071538235467108382",
                 "1071539009463013438",
                 "1083501837510000711",
-                "1088630628800540742"
+                "1088630628800540742",
+                "1096959724844482610"
             ]
         }
     ],
