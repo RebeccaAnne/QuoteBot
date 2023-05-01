@@ -245,5 +245,87 @@
             "chapter": "Chapter 5",
             "percentage": 96
         }
+    ],
+    "warriorquotes": [
+        {
+            "quote": "Three months and three days after Sardeet-savarel had arrived, a lone rider approached the city.",
+            "chapter": "Chapter 1",
+            "percentage": 8
+        },
+        {
+            "quote": "The Warriors did not often come into the cities along the river: they were legends near as wild as the Wind Lords and the tales of the ancient days.",
+            "chapter": "Chapter 1",
+            "percentage": 8
+        },
+        {
+            "quote": "Ania and Naarun stayed as chaperones, though what they could do should the Warrior choose to flout polite behaviour they had no idea.",
+            "chapter": "Chapter 1",
+            "percentage": 9
+        },
+        {
+            "quote": "The Bride of the Wind reached out her hands in supplication, and the Warrior took them and said, “My sister, it is done.”\nSardeet-savarel cried out in a piercing voice the high ululation of grief and triumph and loss, and then she collapsed into the Warrior’s arms, sobbing.",
+            "chapter": "Chapter 1",
+            "percentage": 9
+        },
+        {
+            "quote": "“The prayers are made, the songs are sung, the sacred fires are lit, the ghosts are laid, and in seven lands the son of my sister by the Blue Wind, Arvoliin, the Flame of the Fire of Love, is named as the newest of the gods.”",
+            "chapter": "Chapter 2",
+            "percentage": 20
+        },
+        {
+            "quote": "Pali herself smiled at her sister, and Sardeet smiled back, both of them quite as if they’d forgotten that they no longer wore veils, and that all the rest could see the sisters’ amusement at their civilized disbelief.",
+            "chapter": "Chapter 2",
+            "percentage": 21
+        },
+        {
+            "quote": "Sardeet looked through the golden ears of her horse, faintly obscured as the view was by the gauze of her veil, and suddenly she tore off the veil and exclaimed: “I want to *live*.”",
+            "chapter": "Chapter 3",
+            "percentage": 25
+        },
+        {
+            "quote": "In her long solitary journeys Pali had gotten out of the habit of speaking her thoughts.",
+            "chapter": "Chapter 3",
+            "percentage": 27
+        },
+        {
+            "quote": "“I am not yet eighteen,” Sardeet whispered. “I do not want my life to be over already.”",
+            "chapter": "Chapter 3",
+            "percentage": 28
+        },
+        {
+            "quote": "“Being my sister shapes you, as you being mine shapes me, but it does not mean I cannot stand up tomorrow and say: ‘Today I will choose a different path than the one my feet have been taking’.”",
+            "chapter": "Chapter 3",
+            "percentage": 29
+        },
+        {
+            "quote": "With a curious yearning for something she could not name to herself, Sardeet flipped the dagger accurately into the centre of the target.\n“We are of the desert,” she said to the young man, who was gawping as if she’d struck him in his heart, and swung back up on her horse. “We do not miss.”",
+            "chapter": "Chapter 3",
+            "percentage": 36
+        },
+        {
+            "quote": "They watched, observed, wondered, and Pali thought of all the places she had seen, and had yet to see, and Sardeet-savarel forgot what her husband the Blue Wind had told of other worlds, and fell in love.",
+            "chapter": "Chapter 5",
+            "percentage": 48
+        },
+        {
+            "quote": "“My husband that was told me that there are other worlds. I learned twelve ways to cross the boundary between this world and them.”",
+            "chapter": "Chapter 5",
+            "percentage": 51
+        },
+        {
+            "quote": "“What will you offer me?” asked Sardeet.\n“Adventure,” he said. “Glory. Love.”\nSardeet paused a moment, and Pali knew by the sudden motion of her horse, swiftly controlled as it was, that her sister had been touched at some deep chord.",
+            "chapter": "Chapter 5",
+            "percentage": 53
+        },
+        {
+            "quote": "“As if I would give my wealth over as a dowry to a husband! What does he think I am, a fool?”",
+            "chapter": "Chapter 5",
+            "percentage": 57
+        },
+        {
+            "quote": "“I would like to see more of the world,” said Sardeet.\n“It is full of many wonders,” agreed Pali.",
+            "chapter": "Chapter 5",
+            "percentage": 59
+        }
     ]
 }

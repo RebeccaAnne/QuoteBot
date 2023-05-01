@@ -34,7 +34,8 @@
         "stargazy",
         "beesting",
         "beesting",
-        "bride"
+        "bride",
+        "warrior"
     ],
     "laysRoot": [
         "hote",
@@ -69,7 +70,8 @@
         "hote"
     ],
     "otherRoot": [
-        "bride"
+        "bride",
+        "warrior"
     ],
     "fire": {
         "title": "Those Who Hold the Fire",
@@ -128,6 +130,11 @@
     },
     "bride": {
         "title": "The Bride of the Blue Wind",
+        "quoteSourceFile": "sisters.json",
+        "color": 16760704
+    },
+    "warrior": {
+        "title": "The Warrior of the Third Veil",
         "quoteSourceFile": "sisters.json",
         "color": 16760704
     }
