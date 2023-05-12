@@ -35,7 +35,8 @@
         "beesting",
         "beesting",
         "bride",
-        "warrior"
+        "warrior",
+        "humanvoices"
     ],
     "laysRoot": [
         "hote",
@@ -71,7 +72,8 @@
     ],
     "otherRoot": [
         "bride",
-        "warrior"
+        "warrior",
+        "humanvoices"
     ],
     "fire": {
         "title": "Those Who Hold the Fire",
@@ -137,5 +139,10 @@
         "title": "The Warrior of the Third Veil",
         "quoteSourceFile": "otherVictoria.json",
         "color": 16760704
+    },
+    "humanvoices": {
+        "title": "Till Human Voices Wake Us",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 255
     }
 }
