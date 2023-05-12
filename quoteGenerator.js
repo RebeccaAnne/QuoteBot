@@ -26,7 +26,7 @@ module.exports = {
                 let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
 
                 let quoteArray = bookQuoteFile[book + "quotes"];
-                let quoteIndex = randomIndexSelection(guildId, book, quoteArray.length);
+                let quoteIndex = randomIndexSelection(guildId, book, quoteArray.length, true);
 
                 let quoteObject = quoteArray[quoteIndex];
                 let quote = quoteObject.quote;
@@ -65,7 +65,7 @@ module.exports = {
             }
         }
         catch (error) {
-            logString("\n+++\ngenerateQuote failed\n" + error + "\n+++\n");c
+            logString("\n+++\ngenerateQuote failed\n" + error + "\n+++\n");
             return null;
         }
     }

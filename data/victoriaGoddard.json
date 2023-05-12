@@ -130,12 +130,12 @@
     },
     "bride": {
         "title": "The Bride of the Blue Wind",
-        "quoteSourceFile": "sisters.json",
+        "quoteSourceFile": "otherVictoria.json",
         "color": 16760704
     },
     "warrior": {
         "title": "The Warrior of the Third Veil",
-        "quoteSourceFile": "sisters.json",
+        "quoteSourceFile": "otherVictoria.json",
         "color": 16760704
     }
 }
