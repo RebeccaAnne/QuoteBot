@@ -39,7 +39,9 @@
         "humanvoices"
     ],
     "laysRoot": [
-        "hote",
+        "atfots",
+        "atfots",
+        "atfots",
         "atfots",
         "atfots",
         "atfots",
@@ -73,6 +75,7 @@
     "otherRoot": [
         "bride",
         "warrior",
+        "humanvoices",
         "humanvoices"
     ],
     "fire": {
