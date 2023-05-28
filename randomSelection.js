@@ -21,7 +21,7 @@ module.exports = {
             (serverArrays[arrayId].length == 0) ||
             (max < serverArrays[arrayId + "Max"])) {
 
-            logString("Making a new Array! Id:" + arrayId + " max:" + max, "./arrayUpdateLog.txt");
+            logString("Making a new Array! Server: " + guildId + "Id: " + arrayId + " max: " + max, "./arrayUpdateLog.txt");
             serverArrays[arrayId] = new Array(max).fill().map((a, i) => a = i).sort(() => Math.random() - 0.5);
             serverArrays[arrayId + "Max"] = max;
         }
@@ -33,7 +33,7 @@ module.exports = {
             let oldMax = serverArrays[arrayId + "Max"];
             let newItemsNeeded = max - oldMax;
 
-            logString("Expanding Array! Id:" + arrayId + " oldMax:" + oldMax + " newMax:" + max, "./arrayUpdateLog.txt");
+            logString("Expanding Array! Server: " + guildId + "Id:" + arrayId + " oldMax: " + oldMax + " newMax: " + max, "./arrayUpdateLog.txt");
 
             let newItems = new Array(newItemsNeeded).fill().map((a, i) => a = i + oldMax);
             serverArrays[arrayId] = [].concat(serverArrays[arrayId], newItems).sort(() => Math.random() - 0.5);

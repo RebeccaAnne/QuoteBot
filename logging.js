@@ -12,9 +12,7 @@ module.exports = {
         console.log(logTimeString + logString);
 
         if (file) {
-            console.log("We have a file: " + file);
             let fileLogStream = fs.createWriteStream(file, { flags: 'a' });
-
             fileLogStream.write(logTimeString + logString + "\n");
         }
         else {
