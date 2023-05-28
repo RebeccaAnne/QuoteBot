@@ -4,5 +4,6 @@ package.json
 
 arrays-*
 log-*
+arrayUpdateLog.txt
 
 node_modules/

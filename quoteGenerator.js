@@ -18,7 +18,7 @@ module.exports = {
                 logString("channel.quoteRoot: " + channel.quoteRoot);
 
                 let quoteRoot = rootSourceFile[channel.quoteRoot];
-                let book = quoteRoot[Math.floor(Math.random() * quoteRoot.length)];
+                let book = quoteRoot[randomIndexSelection(guildId, channel.quoteRoot, quoteRoot.length)];
 
                 logString("Book: " + book);
 

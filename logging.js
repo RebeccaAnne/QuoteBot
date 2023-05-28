@@ -1,19 +1,28 @@
 var fs = require("fs");
 const dayjs = require('dayjs');
- 
+
 let logDateStamp = 0;
 let logStream;
 
 module.exports = {
-    logString: async (logString) => {
+    logString: async (logString, file) => {
 
-        console.log(logString);
+        let logTimeString = dayjs().format("YYYY-MM-DD h:mm") + "\t";
 
-        if (logDateStamp == 0) {
-            logDateStamp = Date.now();
-            logStream = fs.createWriteStream("./log-" + logDateStamp + ".txt", { flags: 'a' });
+        console.log(logTimeString + logString);
+
+        if (file) {
+            console.log("We have a file: " + file);
+            let fileLogStream = fs.createWriteStream(file, { flags: 'a' });
+
+            fileLogStream.write(logTimeString + logString + "\n");
         }
-        let logTime = dayjs();
-        logStream.write(logTime.format("YYYY-MM-DD h:mm") + "\t" + logString + "\n");
+        else {
+            if (logDateStamp == 0) {
+                logDateStamp = Date.now();
+                logStream = fs.createWriteStream("./log-" + logDateStamp + ".txt", { flags: 'a' });
+            }
+            logStream.write(logTimeString + logString + "\n");
+        }
     }
 }
