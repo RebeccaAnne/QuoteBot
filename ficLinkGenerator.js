@@ -30,7 +30,7 @@ module.exports = {
                     logString("Total pages: " + search.pages);
 
                     // Reverse the index returned from randomIndexSelection, because new fics will be added at the beginning (index 0)
-                    let ficIndex = (search.total_results - randomIndexSelection(guildId, "fic", search.total_results));
+                    let ficIndex = (search.total_results - 1 - randomIndexSelection(guildId, "fic", search.total_results));
 
                     // Figure out what page that fic is on (1 indexed)
                     let ficPage = Math.floor(ficIndex / 20) + 1;
