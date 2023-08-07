@@ -37,7 +37,8 @@
         "bride",
         "warrior",
         "humanvoices",
-        "humanvoices"
+        "humanvoices",
+        "aurelius"
     ],
     "laysRoot": [
         "atfots",
@@ -77,7 +78,8 @@
         "bride",
         "warrior",
         "humanvoices",
-        "humanvoices"
+        "humanvoices",
+        "aurelius"
     ],
     "fire": {
         "title": "Those Who Hold the Fire",
@@ -148,5 +150,10 @@
         "title": "Till Human Voices Wake Us",
         "quoteSourceFile": "otherVictoria.json",
         "color": 255
+    },
+    "aurelius": {
+        "title": "Aurelius (to be called) Magnus",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 15120384
     }
 }
