@@ -1885,16 +1885,40 @@
     ],
     "firequotes": [
         {
+            "quote": "It took maybe twenty minutes to get from Saya Dorn’s house to Uncle Lazo’s barbershop, at least the way Kip went. The adults took longer, but they were boring.",
+            "percentage": 1
+        },
+        {
             "quote": "One day people would look up to him. He’d be the tanà, and respected, and people would always listen when he talked.",
             "percentage": 1
+        },
+        {
+            "quote": "Kip liked watching people being good at what they wanted to do.",
+            "percentage": 3
+        },
+        {
+            "quote": "Kip was going to be the best tanà there had ever been.",
+            "percentage": 3
+        },
+        {
+            "quote": "He was ready. He was sure of it. He’d make *them* know he was ready, too.",
+            "percentage": 6
         },
         {
             "quote": "The tanà was not the chief or the paramount chief, the saying went, but when the tanà spoke, the chiefs listened.\nKip wanted people to listen to him.",
             "percentage": 8
         },
         {
+            "quote": "Buru Tovo wore feathers in his hair, which was a strange and rather old-fashioned custom Kip thought looked very fine.",
+            "percentage": 8
+        },
+        {
             "quote": "Not afraid. He was thirteen and a half, he had studied with Buru Tovo for more than a year and Uncle Lazo for six months. Kip was not *afraid*.\nPerhaps a little—no, a *trifle*, that was the word—just a trifle worried.",
             "percentage": 14
+        },
+        {
+            "quote": "One day, Kip would get to dance over the coals in front of everyone, on the last day of the festival, showing everything he knew and could be and was. That was what the tanà was, people said. They showed the people who they were.",
+            "percentage": 19
         },
         {
             "quote": "Buru Tovo had told him he had to go back to the city so he didn’t forget all the *modern ways*, but Kip had grown up with them, and he *wanted* the old ways.",
@@ -1925,8 +1949,12 @@
             "percentage": 45
         },
         {
-            "quote": "It was hard to go back, that’s what the *Lays* taught.",
-            "percentage": 45
+            "quote": "Fire into stone. That was why it was obsidian at the centre of his efela ko. The tanà held the fire, and obsidian was the rock made of fire.",
+            "percentage": 48
+        },
+        {
+            "quote": "It was *hard* to go back, that’s what the *Lays* taught.",
+            "percentage": 52
         },
         {
             "quote": "You did not hold the fire if you ran from its burn; but you could not hold the fire if you did not respect its flame.",

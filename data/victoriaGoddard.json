@@ -29,6 +29,9 @@
         "pali",
         "pali",
         "pali",
+        "derring-do",
+        "derring-do",
+        "derring-do",
         "tower",
         "stargazy",
         "stargazy",
@@ -65,7 +68,9 @@
         "pali",
         "pali",
         "pali",
-        "tower"
+        "tower",
+        "derring-do",
+        "derring-do"
     ],
     "greenwingRoot": [
         "stargazy",
@@ -118,6 +123,11 @@
     },
     "pali": {
         "title": "The Redoubtable Pali Avramapul",
+        "quoteSourceFile": "redCompanyData.json",
+        "color": 11730944
+    },
+    "derring-do": {
+        "title": "Derring-Do for Beginners",
         "quoteSourceFile": "redCompanyData.json",
         "color": 11730944
     },
