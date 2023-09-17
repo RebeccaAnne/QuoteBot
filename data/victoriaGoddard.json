@@ -37,6 +37,7 @@
         "stargazy",
         "beesting",
         "beesting",
+        "stone",
         "bride",
         "warrior",
         "humanvoices",
@@ -74,7 +75,14 @@
     ],
     "greenwingRoot": [
         "stargazy",
-        "beesting"
+        "stargazy",
+        "stargazy",
+        "stargazy",
+        "beesting",
+        "beesting",
+        "beesting",
+        "beesting",
+        "stone"
     ],
     "hoteRoot": [
         "hote"
@@ -111,6 +119,11 @@
         "quoteSourceFile": "laysData.json",
         "color": 38823
     },
+    "culturedays": {
+        "title": "Traditional Culture Days",
+        "quoteSourceFile": "laysData.json",
+        "color": 38823
+    },
     "rofa": {
         "title": "The Return of Fitzroy Angursell",
         "quoteSourceFile": "redCompanyData.json",
@@ -143,6 +156,11 @@
     },
     "wiskeyjack": {
         "title": "Wiskeyjack",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "stone": {
+        "title": "Stone Speaks to Stone",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },

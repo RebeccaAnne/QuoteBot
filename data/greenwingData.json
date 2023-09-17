@@ -23,12 +23,12 @@
         {
             "quote": "“Jemis! Mr. Greenwing!” said the man, grabbing my arm and embracing me roughly. “You're back!”\nI took a step sideways to get back underneath the store awning. Before me was a young man in clothes as well-tailored as the Honourable Master Roald's, if less brilliant in color: dark grey wool coat, plum breeches, high polished riding boots. Silver buttons engraved with a family crest showed wealth and breeding. Snapping brown eyes under thick eyebrows suggested a temper, belied by the wide grin.",
             "chapter": "Chapter 3",
-            "percentage": 7
+            "percentage": 6
         },
         {
             "quote": "“Good Laurre of the Summer, man, face fur!”\nHe rubbed his beard with great solemnity. “Mr. Greenwing, I shall have you to know that this is all the rage in Stoneybridge. Or was,” he added, starting to laugh, “four months ago when I left.”",
             "chapter": "Chapter 3",
-            "percentage": 7
+            "percentage": 6
         },
         {
             "quote": "“There was nothing wrong with my duck confit,” Mr. Dart said loftily, “you shall see, Miss Featherhaugh, I shall succeed in guiding the taste of the good folk of Ragnor Bella into the heights of gastronomic sophistication one of these days.”",
@@ -38,7 +38,7 @@
         {
             "quote": "It infuriated me to admit even the smallest grain of truth in the play: but the world did not bend to my will, alas. I swallowed several times, and finally I said, “It's true, I can hardly hope to win commendation from the Emperor himself for my bravery, Saya Etaris.”",
             "chapter": "Chapter 4",
-            "percentage": 11
+            "percentage": 12
         },
         {
             "quote": "“You smoke?” I said in astonishment. “First the beard, now the pipe--how far back in time has Stoneybridge gone? It sounds like something out of a Ystharian novel.”\n“Fewer orgies than in a Ystharian novel,” he said sadly, blowing a smoke ring with the evidence of much practice.",
@@ -48,10 +48,15 @@
         {
             "quote": "My tutor's voice came to mind: *You must discipline your thoughts, young man, or you will never be a scholar of note*. Of course, ending one's university career with one's tutor ripping one's final paper in half would do it, too, disciplined thoughts or no.",
             "chapter": "Chapter 7",
-            "percentage": 18
+            "percentage": 17
         },
         {
             "quote": "The highway to Astandalas the Golden had run right through my mother's people's land. She had once even seen the Red Company go a-riding two by two one midnight by the light of the moon, and had never forgotten the sight--nor the secret pleasure that she had warranted a verse in one of Fitzroy Angursell's songs as a result.",
+            "chapter": "Chapter 7",
+            "percentage": 19
+        },
+        {
+            "quote": "For all that I might prefer Morrowlea’s egalitarianism, it has to be said a bow is a very good response when you can’t think of anything else to say.",
             "chapter": "Chapter 7",
             "percentage": 19
         },
@@ -63,7 +68,7 @@
         {
             "quote": "Violet was beautiful; everyone granted her that. Part-Shaian ethnically, she had deep brown crinkled hair and deep brown limpid eyes, and skin that went from ivory to fawn over the course of the year. In the lamplight she was golden, even with the streaks of mud running across her face and the shadows from her hood.",
             "chapter": "Chapter 9",
-            "percentage": 22
+            "percentage": 24
         },
         {
             "quote": "“Perhaps I was more cheerful before all my friends but one looked away as the rest of the school turned against me. Before the faculty of a university so committed to the inherent equality of man they refuse external markings of wealth and honour let my fellow students *stone* me.”",
@@ -88,22 +93,27 @@
         {
             "quote": "“I will tell you this, Miss Violet, that all the supposed disgrace brought to Jakory Greenwing was due to mistaken identity and the fact that he was on a scouting mission when the fortress of Loe was lost to the Stone Speakers by the action of a different and unrelated Jakory Greenwing. He was decorated by both the Emperor and by the Lady of Alinor for his extraordinary courage and valour.”",
             "chapter": "Chapter 9",
-            "percentage": 27
+            "percentage": 28
         },
         {
-            "quote": "“While we are being so formal... Jemis, by what name should I remember you?”\nI twisted by lips, but merely said, quite quietly, “Mr. Greenwing.”\nShe froze, mouth parted, in almost comical surprise. I couldn't read whether it was faked or real; somehow didn't care.",
+            "quote": "“While we are being so formal... Jemis, by what name should I remember you?”\nI twisted my lips, but merely said, quite quietly, “Mr. Greenwing.”\nShe froze, mouth parted, in almost comical surprise. I couldn't read whether it was faked or real; somehow didn't care.",
             "chapter": "Chapter 9",
             "percentage": 28
         },
         {
             "quote": "“So. What's all this about picking mushrooms in the dark of the new moon?”\n“Oh... it's not that...”\n“Of course it's not. Come on, give. Are we going poaching, gambling, carousing, or cock-fighting?”\n“A secret society is having a meeting in the woods tonight. I thought you might like to go with me.”",
             "chapter": "Chapter 10",
-            "percentage": 28
+            "percentage": 29
         },
         {
             "quote": "“My brother,” he said, turning down the lamp the rest of the way and starting to set it in its travel case, then burning his finger on the chimney and cursing slightly. “I love and respect my brother very much, Jemis, but I will not let him choose my friends for me! Besides, he was great friends with your father.”",
             "chapter": "Chapter 10",
-            "percentage": 29
+            "percentage": 30
+        },
+        {
+            "quote": "“Mr. Dart, I am more grateful than I can say for your friendship. If tomorrow you decide against it—”\n“Let’s not start that again,” he said firmly.\nI stared at him, thinking belatedly that he had said *we* could go to Kingsford, *we* could write to Nên Corovel. *We* could do many things that I, Jemis Greenwing alone, could not.",
+            "chapter": "Chapter 10",
+            "percentage": 32
         },
         {
             "quote": "“Just don't sneeze,” said Mr. Dart. “Please try not to.”\n“I always try not to,” I replied in an indignant whisper.",
@@ -156,6 +166,26 @@
             "percentage": 60
         },
         {
+            "quote": "There was something in the set of her chin and the glint in her eyes that made me wonder, suddenly, why she’d hired me.",
+            "chapter": "Chapter 20",
+            "percentage": 67
+        },
+        {
+            "quote": "“What a clever disguise. However did you come to think of it?”\n“Uh... by happy coincidence, I suppose you could say.”\nShe nodded vigorously. “Serendipity. Always increases when there’s adventure afoot and magic in the air.",
+            "chapter": "Chapter 28",
+            "percentage": 88
+        },
+        {
+            "quote": "He didn’t seem inclined to move, except that his stone arm slid out of its sling and weighed down my foot. It was really quite heavy; my heart contracted that he had been bearing it so quietly.",
+            "chapter": "Chapter 29",
+            "percentage": 92
+        },
+        {
+            "quote": "“Well,” I said, trying to drawl in imitation of how I’d always imagined the debonair Fitzroy Angursell to have spoken on the eve of some grand adventure. “It looks as if we might be staging a rescue.”",
+            "chapter": "Chapter 29",
+            "percentage": 93
+        },
+        {
             "quote": "Mrs. Etaris said, “We never do know the full stories to things, you know.”\nI was startled out of my reverie. “I beg your pardon?”\n“On adventures. We never do find out everything.”",
             "chapter": "Chapter 31",
             "percentage": 97
@@ -163,9 +193,19 @@
     ],
     "beestingquotes": [
         {
+            "quote": "“I’m not recovered from last weekend’s disasters.”\n“Adventures, surely, Mr. Greenwing.”\n“If you insist, Mr. Dart.”\n“Why, yes, I believe I do. Insist, that is, on the fact of adventures.”\n“Have a seat and a gingersnap,” I said, and returned to my tallying-up of the day’s transactions.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
             "quote": "Hal had stood there that first evening, unsure of how to take off his boots without assistance. He'd been embarressed by his helplessness, and I was heartened by being able to teach such an obviously grand aristocrat something useful.",
             "chapter": "Chapter 1",
             "percentage": 3
+        },
+        {
+            "quote": "“Aha!” said Mr. Dart, shaking the hand Hal had held out in eastern fashion. “It is indeed pronounced Lingham, is it? We were talking about you just now.” \n“Were you?” Hal said doubtfully. “Seems a frightful coincidence.”\n“Nevertheless true,” Mr. Dart assured him.",
+            "chapter": "Chapter 3",
+            "percentage": 7
         },
         {
             "quote": "“Shall you enter your name in, Jemis, for a cake?”\n“You're the better baker, Hal.”\n“No one creams butter and honey as well as you.”\n“Why, thank you,” I replied, before catching the expression on Mrs. Buchance's face and subsiding in embarressment.",
@@ -208,6 +248,11 @@
             "percentage": 16
         },
         {
+            "quote": "She looked arrested at the way that Hal laughed in response. I wanted to ask why she looked so surprised, but before I could gather breath the moment passed, and Hal went on.",
+            "chapter": "Chapter 5",
+            "percentage": 17
+        },
+        {
             "quote": "Mrs. Etaris stood up. “I had a friend once who experienced a similar sort of battle madness. He'd start singing and you knew things were about to become... interesting.”",
             "chapter": "Chapter 6",
             "percentage": 20
@@ -218,6 +263,11 @@
             "percentage": 20
         },
         {
+            "quote": "“I’m sorry, Mrs. Etaris, but I simply cannot believe you had a *male* friend who sang songs into battle at Madame Clancette’s Finishing School for Girls in Fiella-by-the-Sea. Even before the Fall. Tying people up—perhaps. Creeping around houses—all right—espionage—quite likely—even tossing daggers—but *battle*?”\nMrs. Etaris smiled serenely as she set a large pot of peppermint tea on the table. “No, I suppose that was during my university years.”",
+            "chapter": "Chapter 6",
+            "percentage": 22
+        },
+        {
             "quote": "“I'm so glad to know that not only am I named for a horse, but that I look as if I ought to be riding one professionally.”\n“Could be worse,” Mr. Dart said. “You could look like one, too.”\n“Thank you, Mr. Dart.”",
             "chapter": "Chapter 8",
             "percentage": 27
@@ -226,6 +276,16 @@
             "quote": "“I am Halioren Lord Leaveringham, the Duke of Fillering Pool,” he said, in a tone I had never heard from him before. I'd never heard *anyone* speak like that, though I'd certainly heard people try.",
             "chapter": "Chapter 10",
             "percentage": 32
+        },
+        {
+            "quote": "“So they left Jack to hold the pass as long as he could, knowing that—”\n“That no one would be coming to relieve him,” Mr. Dart said quietly. Hal nodded.",
+            "chapter": "Chapter 10",
+            "percentage": 34
+        },
+        {
+            "quote": "“Sir Vorel, I will assure you once more that I will be doing *everything* in my power to redress this unspeakable travesty. My great-uncle will certainly vouch for him, and if I must go to Zunidh to seek a benediction from the Last Emperor, I shall do so.”\n“Thank you,” I said quietly, when my uncle still said nothing.",
+            "chapter": "Chapter 10",
+            "percentage": 34
         },
         {
             "quote": "“'No knocking, halloos, crying that there were elephants, nothing.'”\nI smiled at the quotation from Aurora.\n“'And not even a pot of wine for the visitor.'”\n“Whatever would we do without Fitzroy Angursell? That's all right. We brought our own.”",
@@ -243,6 +303,11 @@
             "percentage": 39
         },
         {
+            "quote": "Hal grinned. “We must all have these eccentric relatives, eh? My grandfather was something of an enigma. He’d repudiated his family, his rank, his name, everything.”\n“To be an entomologist?” This was Alinor; such things happened.\n“To be... something. He never told us the whole story.",
+            "chapter": "Chapter 13",
+            "percentage": 41
+        },
+        {
             "quote": "“Should I not be concerned that you have changed?--that you are more courteous in mortal danger than you are to your friends--that you are cynical and sarcastic and grim--when you used to be full of laughter and energy and delight and--”\n“The Jemis you knew was a delusion composed of lies, stolen magic, and drugs.”",
             "chapter": "Chapter 15",
             "percentage": 47
@@ -258,6 +323,16 @@
             "percentage": 51
         },
         {
+            "quote": "“There aren’t any bees,” I said.\n“I don’t think that’s the only problem here,” Mr. Dart said.\n“Actually, a lack of pollinators would lead to—” Hal stopped when Mr. Dart and I looked at him. “Probably not this.”",
+            "chapter": "Chapter 16",
+            "percentage": 52
+        },
+        {
+            "quote": "I was the grandson of the Marchioness of the Woods. If she was no longer capable of doing her duty (whether through disinclination, illness, enchantment, or death), then as her eldest living descendant it was my responsibility to do so.",
+            "chapter": "Chapter 16",
+            "percentage": 52
+        },
+        {
             "quote": "“You sound so surprised, Mr. Greenwing. For a day that has included a dragon's challenge, a knight, a cursed village, and mysterious warnings from a strange peasant, it would be decidedly disappointing if it did not take an even stranger turn when it came to the accomondations. You can't have been expecting things to be normal.”",
             "chapter": "Chapter 17",
             "percentage": 53
@@ -271,6 +346,11 @@
             "quote": "“Jemis' whole life appears to be something out of a tale, and we are caught up in it, Mr. Dart, as loyal friends--companions--possibly even guides.”\n“Well, loyal friends, companions, possibly even guides, do you want to sit in this cellar all night, try to escape, or see what the mysterious glow down the even-more-mysterious passage is?”",
             "chapter": "Chapter 18",
             "percentage": 55
+        },
+        {
+            "quote": "Hal and Mr. Dart exchanged glances, quite as if they had years of friendship behind them, and for a moment my heart rejoiced in the rightness of the moment.",
+            "chapter": "Chapter 21",
+            "percentage": 63
         },
         {
             "quote": "“Jullanar,” I said aloud, surprised, then flushed when Mrs. Etaris and Hal both looked at me.\nMrs. Etaris smiled. “My name? Yes; I am of the generation that made it, ah, infamous.You may notice both my husband and my sister avoid calling me by it.”\n“As if thereby they could escape either the renown, or the notoriety, of the name?”",
@@ -321,6 +401,11 @@
             "quote": "I could see the Honourable Rag's astonished and delighted grin from the light reflected on his teeth. Then he cast back his head and laughed uninhibitedly.“*Good* boy.”",
             "chapter": "Chapter 30",
             "percentage": 97
+        },
+        {
+            "quote": "He smiled at her, still regally, but with the engaging air that belonged to what I thought of as the *real* Hal. Except that Hal did not seem to feel any contradiction between being Duke and being Hal—\n—How, I wondered suddenly, could he *possibly* think I was more of a radical than he?",
+            "chapter": "Chapter 30",
+            "percentage": 98
         }
     ],
     "wiskeyjackquotes": [
@@ -328,6 +413,143 @@
             "quote": "I smiled deprecatingly. “I haven't murdered anyone. I was thrown into Yellton Gaol on the charge of murdering Fitzroy Angursell in the form of a dragon.”",
             "chapter": "Chapter 2",
             "percentage": 4
+        }
+    ],
+    "stonequotes": [
+        {
+            "quote": "Jack had studied nature poetry, but he wished for some skill at drawing beyond rough sketches to capture the beauty of the stone and the ice sculptures and the fierce falcon-hunters of the valleys.",
+            "chapter": "Chapter 1",
+            "percentage": 5
+        },
+        {
+            "quote": "The entrance had been exceptionally well hidden in the carved valley sides, but still, it had been his task to find it, and he had not.",
+            "chapter": "Chapter 1",
+            "percentage": 7
+        },
+        {
+            "quote": "Twenty people had, it appeared, vanished into the air.",
+            "chapter": "Chapter 1",
+            "percentage": 14
+        },
+        {
+            "quote": "“Stone speaks to stone, and water to water,” he whispered in Loëssie, and under his hand a latch clicked open.",
+            "chapter": "Chapter 1",
+            "percentage": 18
+        },
+        {
+            "quote": "To his eyes nothing changed. Or nothing except that his hands penetrated into the stone.",
+            "chapter": "Chapter 1",
+            "percentage": 18
+        },
+        {
+            "quote": "If he had thought about it, he would probably have thought passing through stone would be like swimming through water. It wasn’t like that; it was like he was the water and the stone was the solid body swimming through him. It was quite the most unpleasant thing he’d ever felt.",
+            "chapter": "Chapter 1",
+            "percentage": 19
+        },
+        {
+            "quote": "He pressed himself forward into the darkness, terrified that he would dissolve into some nothingness and be lost as a ghost in the mountains of the Valley folk, outside the Empire and never going home again.",
+            "chapter": "Chapter 1",
+            "percentage": 19
+        },
+        {
+            "quote": "She’s given him the book on their wedding-day, and he’d taken it with him to every campaign, on every visit home.",
+            "chapter": "Chapter 1",
+            "percentage": 20
+        },
+        {
+            "quote": "He opened his eyes, shuddering from his head to his feet, to see before him the amused face of a stone shaman.\n“Good attempt,” the man said in execrable Shaian, and the guards bound him.",
+            "chapter": "Chapter 1",
+            "percentage": 21
+        },
+        {
+            "quote": "He shivered in reaction from the passage through the stone, from being caught, from exhaustion and hunger and cold and fear and grief for all his comrades and officers. Also he shivered in rage.",
+            "chapter": "Chapter 2",
+            "percentage": 21
+        },
+        {
+            "quote": "*Stone speaks to stone, and water to water.*",
+            "chapter": "Chapter 2",
+            "percentage": 23
+        },
+        {
+            "quote": "And then, because he was not a religious man, but he was a loyal son of the Empire, and once he had lain prostrate before his Emperor and discovered he could love him, he added: “Emperor of five worlds, we fight and die for you. Remember us, Sun of Astandalas, in our darkness.”",
+            "chapter": "Chapter 2",
+            "percentage": 27
+        },
+        {
+            "quote": "Last time he was home he had begun teaching Jemis how to read the ideographs.\nNext time he would stay long enough to tell all the stories.\nNext time he would stay, period.",
+            "chapter": "Chapter 3",
+            "percentage": 40
+        },
+        {
+            "quote": "No. He would get home. He would. He had to tell Jemis about the mountains, about the carved glaciers, about what it was like over the Border.",
+            "chapter": "Chapter 3",
+            "percentage": 41
+        },
+        {
+            "quote": "*Infinite*—would Jemis know the word? He would be ten by the time Jack got home, a bright and brave lad, always asking questions, always eager to know, always determined to *find out*.",
+            "chapter": "Chapter 3",
+            "percentage": 42
+        },
+        {
+            "quote": "Far above him the sky was that infinite lake of stars. He did not dare look below him for a fire. It would not be the fire of home.",
+            "chapter": "Chapter 3",
+            "percentage": 50
+        },
+        {
+            "quote": "*O let us sing of the city of roses\nThe golden city of roses\nAnd the sun in our darkness\nThe lord of rising stars*",
+            "chapter": "Chapter 3",
+            "percentage": 53
+        },
+        {
+            "quote": "It was powdered with ice crystals, beautiful in a way, reminding him of how the Emperor’s sister had worn diamonds and silver dust in her hair when he had gone to Astandalas to be given the benediction and reward for his role in the Battle of Orkaty.",
+            "chapter": "Chapter 3",
+            "percentage": 58
+        },
+        {
+            "quote": "That time in Astandalas the Emperor, his beloved Emperor, the Lord of Rising Stars, the lord of ten thousand titles, had awarded him a great golden pectoral, the Heart of Glory, the highest honour that could be given to a soldier.",
+            "chapter": "Chapter 3",
+            "percentage": 59
+        },
+        {
+            "quote": "He had spitted the enemy with the spearhead of the banner.\nThe Emperor had told him that rarely had the Sun Banner been better honoured than in that moment.",
+            "chapter": "Chapter 3",
+            "percentage": 60
+        },
+        {
+            "quote": "The General said: “Come in, then. I am prepared to die.”\nHe spoke in Shaian, his defiance there in his calm voice, thin though it was with exhaustion and cold and fear and pain. Never had Jack admired him more.\n“General,” he said very softly, “are you prepared to live?”",
+            "chapter": "Chapter 3",
+            "percentage": 63
+        },
+        {
+            "quote": "He would get home. He had to. His son was counting on him. He had promised Olive he would come home. She had said she would wait for him.",
+            "chapter": "Chapter 4",
+            "percentage": 72
+        },
+        {
+            "quote": "*You are no coward*, he said to himself. *You were given the Heart of Glory. In his reign the Emperor has presented five—five!—and you were given one.*\nBut he could not move.",
+            "chapter": "Chapter 4",
+            "percentage": 75
+        },
+        {
+            "quote": "*Something big is coming. Sunset*...\nNot while Jack could still draw breath, not while Jack could still fight. He did not have the Sun Banner in his hand, but he held the sun in heart, the Sun-on-Earth had given him the Heart of Glory, and *he would not fail*.",
+            "chapter": "Chapter 4",
+            "percentage": 81
+        },
+        {
+            "quote": "“That is an order, Vozi.”  Vozi still looked mutinous. Jack swallowed. “It is—Vozi, it’s my duty as your officer to be first into battle, last out of it. Now: give me your sword. Go.”",
+            "chapter": "Chapter 5",
+            "percentage": 93
+        },
+        {
+            "quote": "“I’ll hold it as long as I can,” he said. The General raised his swollen, broken hand in a salute.\n“Heart of Glory. I will see you again, major, this side of the sun or t’other.”",
+            "chapter": "Chapter 5",
+            "percentage": 94
+        },
+        {
+            "quote": "A hundred men had successfully defended this pass against the First Army of Astandalas until reinforcements came.\nHe had no reinforcements coming. The General would not try; he would order the pass closed behind him.\nHe had two hairpins, a sword, a pile of stones, his book of haikus, his heart.",
+            "chapter": "Chapter 5",
+            "percentage": 97
         }
     ]
 }
