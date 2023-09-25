@@ -38,6 +38,7 @@
         "beesting",
         "beesting",
         "stone",
+        "clarysage",
         "bride",
         "warrior",
         "humanvoices",
@@ -82,7 +83,8 @@
         "beesting",
         "beesting",
         "beesting",
-        "stone"
+        "stone",
+        "clarysage"
     ],
     "hoteRoot": [
         "hote"
@@ -161,6 +163,11 @@
     },
     "stone": {
         "title": "Stone Speaks to Stone",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "clarysage": {
+        "title": "Clary Sage",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },

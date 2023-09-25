@@ -171,7 +171,7 @@
             "percentage": 67
         },
         {
-            "quote": "“What a clever disguise. However did you come to think of it?”\n“Uh... by happy coincidence, I suppose you could say.”\nShe nodded vigorously. “Serendipity. Always increases when there’s adventure afoot and magic in the air.",
+            "quote": "“What a clever disguise. However did you come to think of it?”\n“Uh... by happy coincidence, I suppose you could say.”\nShe nodded vigorously. “Serendipity. Always increases when there’s adventure afoot and magic in the air.”",
             "chapter": "Chapter 28",
             "percentage": 88
         },
@@ -193,7 +193,7 @@
     ],
     "beestingquotes": [
         {
-            "quote": "“I’m not recovered from last weekend’s disasters.”\n“Adventures, surely, Mr. Greenwing.”\n“If you insist, Mr. Dart.”\n“Why, yes, I believe I do. Insist, that is, on the fact of adventures.”\n“Have a seat and a gingersnap,” I said, and returned to my tallying-up of the day’s transactions.",
+            "quote": "“I’m not recovered from last weekend’s disasters.”\n“Adventures, surely, Mr. Greenwing.”\n“If you insist, Mr. Dart.”\n“Why, yes, I believe I do. Insist, that is, on the fact of adventures.”",
             "chapter": "Chapter 1",
             "percentage": 1
         },
@@ -550,6 +550,163 @@
             "quote": "A hundred men had successfully defended this pass against the First Army of Astandalas until reinforcements came.\nHe had no reinforcements coming. The General would not try; he would order the pass closed behind him.\nHe had two hairpins, a sword, a pile of stones, his book of haikus, his heart.",
             "chapter": "Chapter 5",
             "percentage": 97
+        }
+    ],
+    "clarysagequotes": [
+        {
+            "quote": "It wasn’t as if Hal needed the scholarship. So long as he passed, any of the universities in the Charter would most gladly take his money.\nAnd his title.\nEveryone wanted an imperial duke on their student roster.",
+            "chapter": "Chapter 1",
+            "percentage": 2
+        },
+        {
+            "quote": "The Dukes of Fillering Pool always went to either Tara or Zabour, and since Zabour had fallen into the sea during the Fall, that meant Hal was going to Tara.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "Hal couldn’t go to, say, Firbeth. Not even if it were reputed to have the best botanical gardens in Northwest Oriole.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "He’d been duke since he was seven. None of this was a surprise. It was just...he supposed it was just that he’d put off thinking about what finishing Odlington would mean.",
+            "chapter": "Chapter 1",
+            "percentage": 6
+        },
+        {
+            "quote": "It was probably mostly Hal’s fault they weren’t friends, anyway. Elly had told him he was intimidating. Which must be true, what with the title and the castle and how he sometimes got called out of class to deal with his estate.",
+            "chapter": "Chapter 1",
+            "percentage": 10
+        },
+        {
+            "quote": "It just wasn’t the same, that was all, for him and Elly. That was fair, wasn’t it? Elly didn’t get to be duke, because she wasn’t the eldest, and Hal *did*. So it was only fair Elly got things, some freedoms and indulgences, things Hal didn’t, in exchange.",
+            "chapter": "Chapter 1",
+            "percentage": 12
+        },
+        {
+            "quote": "There was no actual request there. Hal had been the recipient of more than enough pleas to be able to hear that. For a moment—just a moment—Jollimore had forgotten who he was speaking to.\nHal wanted to sit there in that moment for as long as he could",
+            "chapter": "Chapter 1",
+            "percentage": 18
+        },
+        {
+            "quote": "“Where would you go, if—if that didn’t matter?”\nHal blinked at him, as slowly as Dwile, if hardly as cat-like and content.\nSurely they knew that wasn’t how it worked? Hal had always known it *did* matter.\nHe smiled, and sipped his ale, and lied through his teeth. “Never thought about anywhere else.”",
+            "chapter": "Chapter 1",
+            "percentage": 23
+        },
+        {
+            "quote": "“Hal.”\nThere weren’t very many people who could say that to him, in that tone. Who *would* say that to him.",
+            "chapter": "Chapter 2",
+            "percentage": 37
+        },
+        {
+            "quote": "If they were on the other side of the castle, they might have seen the ghostly towers of Zabour catching the odd glint of light. The actual stones and earth had all long since disappeared under the water, but the spectre of the ancient university still hovered there.",
+            "chapter": "Chapter 2",
+            "percentage": 40
+        },
+        {
+            "quote": "*The old duke*. Never, not once, *my father*. But then Hal had some complicated feelings about the old duke, and his death, that he didn’t like thinking about if he could avoid it.",
+            "chapter": "Chapter 2",
+            "percentage": 45
+        },
+        {
+            "quote": "He always read his correspondence in the duke’s study, or rather it was his, of course, but he hadn’t ever changed out the furniture so it was always, in his mind, *the duke’s*, which...well, that was probably a little sad, wasn’t it?",
+            "chapter": "Chapter 3",
+            "percentage": 46
+        },
+        {
+            "quote": "It was because he’d forgotten his coat, probably, that she was being so informal. So familiar. Hal felt as if the rules were melting around him, as if the land was falling away under his feet, as if the very air were suddenly becoming impermeable",
+            "chapter": "Chapter 3",
+            "percentage": 55
+        },
+        {
+            "quote": "He’d just be, always, the duke. Utterly unexceptional except in the ways that he was supposed to be. He could have a hobby for plants, as his father had had for wool, and no one would think it in the least peculiar. Or rather, it would be peculiar, but in the sort of way people thought acceptably eccentric.",
+            "chapter": "Chapter 3",
+            "percentage": 59
+        },
+        {
+            "quote": "Who *was* he, if he took away the duke? Jollimore seemed to think he was someone.\nCome to that, Hal thought he was someone.",
+            "chapter": "Chapter 3",
+            "percentage": 59
+        },
+        {
+            "quote": "The people had wanted a symbol, and Hal, for all his youth, could be that. And he’d *wanted* to, had known it was his obligation and his role, and so what if he was coming to it younger than usual? Nothing about the Fall of Astandalas had been *usual*. And he'd managed. He had.",
+            "chapter": "Chapter 3",
+            "percentage": 61
+        },
+        {
+            "quote": "Morrowlea had gardens. Fields. And he would be expected—no, *required*—to work in them.",
+            "chapter": "Chapter 3",
+            "percentage": 61
+        },
+        {
+            "quote": "Imagine making friends who did not know he was the duke.",
+            "chapter": "Chapter 3",
+            "percentage": 62
+        },
+        {
+            "quote": "Hal decided to send the letter of acceptance and a promissory note for the first term’s tuition before he told anyone, and then after he did so, still didn’t tell anyone.",
+            "chapter": "Chapter 4",
+            "percentage": 63
+        },
+        {
+            "quote": "*I’ve changed my mind*, he wrote to Elly, after half a dozen false starts. *I’ve been accepted for a place at Morrowlea. They have a much better natural philosophy faculty than Tara, I’ve heard.*\nElly’s response, which was in full, *Thank the Lady!* had made him laugh so hard he’d teared up.",
+            "chapter": "Chapter 4",
+            "percentage": 66
+        },
+        {
+            "quote": "Hal sometimes had nightmares about being forced to reconquer Northwest Oriole.",
+            "chapter": "Chapter 4",
+            "percentage": 66
+        },
+        {
+            "quote": "He was surprised, still, every time he looked at the letter he’d received back from the Chancellor after he’d sent the tuition.\n*You had a harder decision than most, she’d written. I am confident you will like who you find yourself to be here.*",
+            "chapter": "Chapter 4",
+            "percentage": 69
+        },
+        {
+            "quote": "“If I’m not intimidating with my title, then I’m boring. Neither is very reassuring.”\n“When have I ever said you’re boring?”\n“Countless times.”\nShe dimpled at him, which was entirely unfair. “I’ve said you’re *being* boring, which isn’t the same.”",
+            "chapter": "Chapter 4",
+            "percentage": 77
+        },
+        {
+            "quote": "“Hal, you’re my twin—and I’m not in the least boring. Ergo you can’t be either.”\n“Your syllogism is faulty.”\n“My silliness is unflawed.”",
+            "chapter": "Chapter 4",
+            "percentage": 78
+        },
+        {
+            "quote": "“You’ll always be the duke, yes, but you’ll always be Hal, too. And Hal is an interesting, funny, friendly, intelligent, and *good* person. I can’t *wait* for you to make his proper acquaintance.”",
+            "chapter": "Chapter 4",
+            "percentage": 79
+        },
+        {
+            "quote": "It turned out it was just fine to treat people like Hal had always treated people, if perhaps with a little more warmth and a little less stiffness, and certainly a whole lot less care about the proprieties.",
+            "chapter": "Chapter 4",
+            "percentage": 83
+        },
+        {
+            "quote": "“I’m—” He only hesitated a moment. “I’m Hal.”\n“Hope,” said his first fellow student, and smiled up at him. “Would you like to walk up together?”\n“What a lovely name,” Hal said, meaning it. “I’d love to.”",
+            "chapter": "Chapter 4",
+            "percentage": 69
+        },
+        {
+            "quote": "All *had* changed, surely. Hope was talking to him, a little shyly, entirely politely, her manners a little stiff but wholly proper—but talking. To him. Without a curtsey or a grace or the slightest hint she thought Hal intimidating in the least.",
+            "chapter": "Chapter 5",
+            "percentage": 87
+        },
+        {
+            "quote": "“I can see something you’re interested in already,” she said gleefully.\nHe flushed, but he did not have to pretend, not here. “Yes. I like plants.”\n“I like stones,” she offered back, just as quietly, almost as if it were as secret a yearning as his curiosity for the gardens and the mysterious ways of the plants that grew in them.",
+            "chapter": "Chapter 5",
+            "percentage": 96
+        },
+        {
+            "quote": "“Hullo!” the newcomer said, half-bowing and then he caught himself, straightened, caught his foot on his robe, and tumbled over to sit on the floor staring up at him. He looked incredibly embarrassed. “I’m Jemis Gr—Jemis, that is. Jemis. At your service?” His voice trailed off uncertainly. “Or at least,” he added, with another startling smile, “at your feet.”",
+            "chapter": "Chapter 5",
+            "percentage": 98
+        },
+        {
+            "quote": "“Don’t worry,” he said, “my sister tells me I am not actually boring, but I expect I’m close enough to balance you out.”\nHis new roommate—new friend?—surely—surely—regarded him with thoughtful brown eyes. “Hmm,” Jemis said, apparently wholly earnest, and then he laughed merrily. “First impressions say otherwise, but I’ll let you know.”",
+            "chapter": "Chapter 5",
+            "percentage": 99
         }
     ]
 }
