@@ -67,12 +67,20 @@
         "rofa",
         "rofa",
         "rofa",
+        "rofa",
+        "rofa",
+        "pali",
+        "pali",
         "pali",
         "pali",
         "pali",
         "tower",
+        "tower",
         "derring-do",
-        "derring-do"
+        "derring-do",
+        "derring-do",
+        "derring-do",
+        "gentlemen"
     ],
     "greenwingRoot": [
         "stargazy",
@@ -143,6 +151,11 @@
     },
     "derring-do": {
         "title": "Derring-Do for Beginners",
+        "quoteSourceFile": "redCompanyData.json",
+        "color": 11730944
+    },
+    "gentlemen": {
+        "title": "In the Company of Gentlemen",
         "quoteSourceFile": "redCompanyData.json",
         "color": 11730944
     },
