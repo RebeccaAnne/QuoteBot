@@ -6,6 +6,21 @@
             "percentage": 1
         },
         {
+            "quote": "I’d begun my studies at Morrowlea reading the History of Magic, and always liked the idea of haruspexy, divination by way of birds.\nNot that it would be a good idea to try it, since my reputation was on shaky enough grounds as it was and magic was even more out of fashion in Ragnor Bella than first names. Not to mention that I had no gift at magic. Or that I changed subjects after that first course on divination. Or that— Anyhow.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "“Mr. Greenwing, lately of Morrowlea,” I replied, with my little bow.\nShe smiled in approval. “Morrowlea, indeed? Are you connected to the Arguty Greenwings?”\n“No,” said Dame Talgarth, a lie so blatant my breath caught.\nNo connection to the Arguty Greenwings. Indeed. The *bitch*.",
+            "chapter": "Chapter 1",
+            "percentage": 2
+        },
+        {
+            "quote": "“Where the figure had been bending, however, there was a pie.\nWell, I supposed it was a pie. It had a crust, at any rate.\nAnd fish heads.",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
             "quote": "I jerked in surprise at someone crying, “Halloo the house!” in a huge voice, and toppled off the ladder onto Mrs. Etaris, only to be caught by someone with strong hands amidst a gust of air smelling like wet wool and stable muck.\nA big buoyant laugh followed.\n“Steady there, man! You'll crush the bookmistress if you light on her!”",
             "chapter": "Chapter 2",
             "percentage": 4
@@ -31,6 +46,16 @@
             "percentage": 6
         },
         {
+            "quote": "“Will you regret tomorrow asking a shopkeeper’s assistant to dine with you today?”\n“Shopkeeper’s assistant, my foot. Mrs. Etaris is the hinge-pin of Ragnor Bella, and *you* went to Morrowlea on merits.",
+            "chapter": "Chapter 3",
+            "percentage": 7
+        },
+        {
+            "quote": "“Now that you’re home I needn’t go alone.”\nI hesitated before giving in. “To do what?”\nHe waggled his eyebrows again. “Will you come mushroom gathering with me this evening?”",
+            "chapter": "Chapter 3",
+            "percentage": 9
+        },
+        {
             "quote": "“There was nothing wrong with my duck confit,” Mr. Dart said loftily, “you shall see, Miss Featherhaugh, I shall succeed in guiding the taste of the good folk of Ragnor Bella into the heights of gastronomic sophistication one of these days.”",
             "chapter": "Chapter 4",
             "percentage": 10
@@ -44,6 +69,21 @@
             "quote": "“You smoke?” I said in astonishment. “First the beard, now the pipe--how far back in time has Stoneybridge gone? It sounds like something out of a Ystharian novel.”\n“Fewer orgies than in a Ystharian novel,” he said sadly, blowing a smoke ring with the evidence of much practice.",
             "chapter": "Chapter 4",
             "percentage": 12
+        },
+        {
+            "quote": "There was an entire chapter, I noted with some astonishment, on how to host an orgy. With diagrams for partner placements based on rank. Dame Talgarth’s dinner parties would probably be better attended if she included—I tore my gaze away with difficulty.",
+            "chapter": "Chapter 5",
+            "percentage": 13
+        },
+        {
+            "quote": "“I had an aunt who was a sociologist,” Mrs. Etaris said, smiling. “I always remember her saying to me, ‘My dear, do remember that gossip when well organized is sociology, and when ill regulated, slander.’”\nI looked at her. She stuck the key under the flowerpot again and smiled at me.\n“But I’m sure you already know all about that, Mr. Greenwing.”",
+            "chapter": "Chapter 5",
+            "percentage": 15
+        },
+        {
+            "quote": "I found the silver and black-lacquer image of the Moon sandwiched between a sun-in-glory for the Emperor’s Years, the main annual calendar used throughout the Empire (and which did appear to be more than a little off, since it read the 954th year of the Emperor Artorin’s reign; I wondered briefly why the maker had felt the need to include such high numerals in the first place),",
+            "chapter": "Chapter 6",
+            "percentage": 16
         },
         {
             "quote": "My tutor's voice came to mind: *You must discipline your thoughts, young man, or you will never be a scholar of note*. Of course, ending one's university career with one's tutor ripping one's final paper in half would do it, too, disciplined thoughts or no.",
@@ -61,6 +101,16 @@
             "percentage": 19
         },
         {
+            "quote": "Miss Alvorline had chosen Tara, and so with a full scholarship to any other university in Northwest Oriole open to me, I had ignored all questions of academic specialization and gone for the only one that required the abdication of one’s surname upon matriculation.",
+            "chapter": "Chapter 7",
+            "percentage": 20
+        },
+        {
+            "quote": "All my childhood memories seemed to involve him laughing, especially those from that wonderful long summer when I was nine and he was between wars, and against my mother’s token protests kept me out of the kingschool so we could spend as much time as possible together.",
+            "chapter": "Chapter 7",
+            "percentage": 21
+        },
+        {
             "quote": "I passed by Mrs. Etaris' house just as she was drawing the curtains against the evening. In the glow of the oil lamps her mousy hair looked auburn, and I saw the inner chamber like a play set: the lady of the house in a pale blue dress, the heavy white wool curtains with their geometric embroideries in black and red folding around her as if she were the goddess coming into her aspect as the White Lady of Winter.",
             "chapter": "Chapter 8",
             "percentage": 22
@@ -74,6 +124,11 @@
             "quote": "“Perhaps I was more cheerful before all my friends but one looked away as the rest of the school turned against me. Before the faculty of a university so committed to the inherent equality of man they refuse external markings of wealth and honour let my fellow students *stone* me.”",
             "chapter": "Chapter 9",
             "percentage": 25
+        },
+        {
+            "quote": "“Lark betrayed me every moment, every day. She played me for a fool, and I fell for it. I suppose the fact that you were her best friend should have made me suspicious, but I never thought you knew what she was doing … not until that moment at the end, when everyone turned against me and only Hal came down, and I looked at you—and you looked away. You looked away.”",
+            "chapter": "Chapter 9",
+            "percentage": 26
         },
         {
             "quote": "If it had been someone else's reputation--would I have stood, as Hal had stood, to the challenge? It was only because it was my father that I had been able to stand up against Lark. My father, whose indefensible reputation I had been defending since his first death.",
@@ -111,6 +166,11 @@
             "percentage": 30
         },
         {
+            "quote": "“I am not properly of your class anymore, and outside of Morrowlea’s experiments that matters. The Baron will shun you for gallivanting about with me; so will the other gentry. Dame Talgarth’s already given me the cut direct. Perry, *Mr. Dart*, you should not be seeing me.”",
+            "chapter": "Chapter 10",
+            "percentage": 30
+        },
+        {
             "quote": "“Mr. Dart, I am more grateful than I can say for your friendship. If tomorrow you decide against it—”\n“Let’s not start that again,” he said firmly.\nI stared at him, thinking belatedly that he had said *we* could go to Kingsford, *we* could write to Nên Corovel. *We* could do many things that I, Jemis Greenwing alone, could not.",
             "chapter": "Chapter 10",
             "percentage": 32
@@ -119,6 +179,41 @@
             "quote": "“Just don't sneeze,” said Mr. Dart. “Please try not to.”\n“I always try not to,” I replied in an indignant whisper.",
             "chapter": "Chapter 11",
             "percentage": 32
+        },
+        {
+            "quote": "“I trust you haven’t been picking mushrooms by the Lady’s Pools.”\nHe laughed softly. “No, no, just praying.”\nWhich I supposed *was* possible.",
+            "chapter": "Chapter 11",
+            "percentage": 33
+        },
+        {
+            "quote": "She had a human body and face, dark and luminous and beautiful, her hair a smoky black halo with a netting of tiny diamonds scattered through it. Her eyes were dark as the pools, and gleamed.\nI could see her perfectly clearly because she was robed in golden light.",
+            "chapter": "Chapter 11",
+            "percentage": 37
+        },
+        {
+            "quote": "My reason said *run*; my reason said *this is wrong*; my reason said *flee*.\nMy heart said *listen*.\nMy reason whimpered, *Where is the Lady in all this?* My reason said, *She showed herself for a purpose*. My reason said, *This is not right*.\nMy heart said, *Yes!*\nUnfortunately the majority of my time at Morrowlea had been devoted to the heart.",
+            "chapter": "Chapter 12",
+            "percentage": 38
+        },
+        {
+            "quote": "Once the commonest of sounds, the whistle to summon light.\n*Dol-fa-ti-ti-dol*\nWhistle a few notes and anyone could call light into a dark room, mage or no, before the Empire fell.\nIn the Interim it had called...other things.",
+            "chapter": "Chapter 12",
+            "percentage": 38
+        },
+        {
+            "quote": "Mr. Dart took one deliberate step forward, and as I twisted away from his grip he let go of one of my arms, reached his arm back deliberately so that for the barest moment it was illuminated by the frothy edge of the silver tide.",
+            "chapter": "Chapter 12",
+            "percentage": 39
+        },
+        {
+            "quote": "We tumbled to a halt at the bottom in a tangle of limbs and bracken, breath heaving and bones rattled, but I didn’t think I’d done more than jar myself.\n“Right ho, Mr. Dart?” I murmured when I could form words.\n“Right ho, Mr. Greenwing.”",
+            "chapter": "Chapter 13",
+            "percentage": 42
+        },
+        {
+            "quote": "“Well, well, well, if it isn’t my old runabouts. Mr. Greenwing and Mr. Dart.”",
+            "chapter": "Chapter 13",
+            "percentage": 42
         },
         {
             "quote": "“The young men used to call it 'catching the night worms' when I was young. Though that was in Fiella-by-the-Sea; possibly they've always said 'picking mushrooms' here in Ragnor Bella.”",
@@ -146,14 +241,49 @@
             "percentage": 45
         },
         {
+            "quote": "There was no reason at all to include Mrs. Etaris in the discussions, except that—well, except that she seemed to be thoroughly in the thick of things, and she was protecting me against her husband and my uncle—and to be honest, I liked her.",
+            "chapter": "Chapter 15",
+            "percentage": 46
+        },
+        {
             "quote": "The Honourable Rag was in the midst of a crowd of fainting admirers near the fountain; he seemed to be flirting with some dairymaids as big and blond as he. (That sounded as if it ought to be a ballad...)",
             "chapter": "Chapter 15",
-            "percentage": 45
+            "percentage": 46
         },
         {
             "quote": "I cleared my throat reluctantly. “Not to mention the cult.”\nMrs. Etaris closed her eyes but couldn't quite control her face. “Of course there is, Mr. Greenwing. Who shall begin?”",
             "chapter": "Chapter 15",
-            "percentage": 45
+            "percentage": 46
+        },
+        {
+            "quote": "I realized the woman before me was Domina Ringley.\nShe looked transfigured, her eyes alight, her face exalted, her whole being thrumming with energy and bubbling delight. Something in me belled in response, and I stepped forward, as if she was a fire at which I could warm my hands.",
+            "chapter": "Chapter 15",
+            "percentage": 51
+        },
+        {
+            "quote": "Lark, the glory of the university—\nLark, the liar, user, and cheat.\nLark, who made sure I was utterly hers, while she played with anyone she pleased.",
+            "chapter": "Chapter 16",
+            "percentage": 52
+        },
+        {
+            "quote": "Lark, the glory of the university—\nLark, the liar, user, and cheat.\nLark, who made sure I was utterly hers, while she played with anyone she pleased.",
+            "chapter": "Chapter 16",
+            "percentage": 53
+        },
+        {
+            "quote": "Violet said, suddenly, “Is that a *person* in there?”\nI don’t know what madness seized me, except that perhaps I was fed up with being considered the foolish son of a disgraced war hero, or drugged by the woman I’d loved, or bewitched by what I’d thought a good friend, or being the risibly sneezing young Mr. Greenwing, or what—without thinking further I threw myself shoulder-first through the glass of the ground-floor conservatory, and into the house.",
+            "chapter": "Chapter 16",
+            "percentage": 53
+        },
+        {
+            "quote": "“Violet,” I said uncertainly, and then something broke above us and in the cracking of the house my own reserve snapped, and I turned to her in fury.\n“Did you *know* the whole time? About Lark giving me wireweed?”\nShe said, “Jemis, the house is *on fire*.”\n“Violet.” I glared at her, the closet door trembling in my hand, my eyes stinging. “Tell me.”\nI could see her give in.\n“Yes. I knew. I knew from the start.”",
+            "chapter": "Chapter 17",
+            "percentage": 54
+        },
+        {
+            "quote": "“I am only telling you this because we are in a burning house. She was punishing me for liking you. I did my best to stop you from being ruined,” she added, a touch more softly.\nI thought of the spring, and laughed bitterly.",
+            "chapter": "Chapter 17",
+            "percentage": 54
         },
         {
             "quote": "“As for you, Mr. Greenwing, whatever were you thinking to take a woman into the river after a mermaid? Wanting to be in a folk tale, you boys are, half the time.”\n“We jumped out of a burning house,” I said lamely.\n“And what were you doing in there? Something foolish, no doubt.”",
@@ -161,14 +291,99 @@
             "percentage": 55
         },
         {
+            "quote": "“Jemis, you idiot!” interrupted Mr. Dart, hitting me on the shoulder. “What made you run into a house on fire?”\n“There was someone inside,” Violet said. “What would you have us do, abandon her?”\n“Not kill yourselves! And then you jumped in a flooding river! Where you might easily have drowned!”\nI remembered abruptly that Mr. Dart’s mother had drowned during the Interim, and I forestalled Violet’s next retort by saying, “You’re right, it was a bit stupid”",
+            "chapter": "Chapter 17",
+            "percentage": 56
+        },
+        {
+            "quote": "We had been very lucky in Fiellan. The roads failed, the magic failed, the lights went out—and yet. Our food had spoiled, but the crops when we planted them grew into the things we expected. All livestock and human births failed at first, but when later infants had come they were what they were supposed to be.",
+            "chapter": "Chapter 18",
+            "percentage": 57
+        },
+        {
+            "quote": "“In the Interim, the magic left the buildings and entered people. The dreams … We no longer desire to dream, in Ghilousette. We do not speak of such things. We turned outside. When you cut the bread and it screams, when you draw the water and it is blood, when you must wrestle with the wood to give it to the fire—when the world is mad, a madman seems sane.”",
+            "chapter": "Chapter 18",
+            "percentage": 57
+        },
+        {
             "quote": "“Oh, that's what we learned at Tara. Assumptions, assurance, asininity, you name it. I'm the baron's son. Roald Ragnor.”",
-            "chapter": "Chapter 19",
+            "chapter": "Chapter 18",
             "percentage": 60
+        },
+        {
+            "quote": "“How do you know all these back ways, Mrs. Etaris?”\nShe smiled at us as she stepped aside to let me ring the bell at the door. “Oh, I’ve always enjoyed exploring places, Mr. Dart. Don’t you?”",
+            "chapter": "Chapter 19",
+            "percentage": 63
         },
         {
             "quote": "There was something in the set of her chin and the glint in her eyes that made me wonder, suddenly, why she’d hired me.",
             "chapter": "Chapter 20",
             "percentage": 67
+        },
+        {
+            "quote": "“What am I supposed to say? I know what people are saying: they have been generously open. I am a traitor’s son, and obviously I am going to betray all confidences anyone places in me. Why bother finding out anything about me? It will no doubt merely accord with what they’ve already decided, which is that I’m a craven ingrate leeching off my stepfather’s wife and destroying the very fabric of society. I’m surprised no one’s suggested presenting *Three Years Gone: the Tragicomedy of the Traitor of Loe* as the Winterturn festival play, but that’s probably only because it hasn’t made it here from Ronderell yet.”",
+            "chapter": "Chapter 21",
+            "percentage": 69
+        },
+        {
+            "quote": "“I can’t stay here if all I’m doing is destroying everyone else’s reputation. Mine is … what it is, but if I’m not here people will forget your connection to me, Mrs. Buchance. My sisters will be far better off if they’re not considered relations to me. It’s not as if I have anything to offer them.”",
+            "chapter": "Chapter 21",
+            "percentage": 70
+        },
+        {
+            "quote": "“They do offer scholarships for second-degree students, Mr. Greenwing.”\n“And if I were Violet and had come First at Morrowlea, then they’d probably give me one. Since I *failed*—”\n“I didn’t come First,” Violet interrupted.\nI stared at her, and for a moment thought she meant—and then realized. I sank down on the ladder again. “You don’t mean they gave it to Lark, after all that? They couldn’t have. They couldn’t have.”\nViolet took a deep breath. “No, Jemis. They gave it to you.”",
+            "chapter": "Chapter 21",
+            "percentage": 70
+        },
+        {
+            "quote": "I was crying. I couldn’t look at anyone. Thought of the coolly elegant Chancellor of Morrowlea, an expert in the nature of lightning, the founder of the radical movement from her own time as a student there. I covered my face with my hands. “She can’t have. She can’t have. I *failed*.”\n“Jemis, she did. I’m not making this up. You came First in the year at Morrowlea. You can go wherever you like.”",
+            "chapter": "Chapter 21",
+            "percentage": 70
+        },
+        {
+            "quote": "“He wanted me to adopt his name and take over his business. But I couldn’t—my father—”\n“He understood,” she said gently, reaching forward to take my hands, which she gripped tightly while staring earnestly at me. “Please don’t think you need to leave because of what people are saying.”",
+            "chapter": "Chapter 21",
+            "percentage": 71
+        },
+        {
+            "quote": "Under *Drugs, Magical Use of*, however, were three pages of explanations for what, exactly, Lark had been doing to me.",
+            "chapter": "Chapter 22",
+            "percentage": 73
+        },
+        {
+            "quote": "It was a very official-looking letter, dripping with wax seals and gilded lettering, and in the ancient ideographic script of chancellery and university documents it did, indeed, state that I, Jemis Greenwing of Ragnor Bella, Fiellan, had come First in the university, on account of my ‘courageous defence of the truth and good scholarship in the face of much outrage and intellectual, moral, and social peril’.",
+            "chapter": "Chapter 23",
+            "percentage": 74
+        },
+        {
+            "quote": "I slipped the ring on, my earlier concerns forgotten. It was a bit loose but didn’t seem entirely likely to fall off. I didn’t sneeze when I waved it experimentally in my face, so whatever it signified, it presumably wasn’t a deleterious enchantment.\nYes, I know.",
+            "chapter": "Chapter 24",
+            "percentage": 78
+        },
+        {
+            "quote": "“The pay’s the standard: your heart’s desire.”\nI paused a few heartbeats, but he seemed entirely serious; well, he would. “And the work?”\nHis turn to pause, and then he chuckled low and sinister. “Easy as serving a pie.”\nAnd that was how *I* ended up at the Talgarths’ that evening.",
+            "chapter": "Chapter 24",
+            "percentage": 78
+        },
+        {
+            "quote": "I nodded to myself, That seemed a reasonable plan: don’t sneeze, don’t draw attention, don’t try to mingle, don’t poison or enchant or drug anyone, and try to talk to Mr. Dart alone and unnoticed.",
+            "chapter": "Chapter 25",
+            "percentage": 79
+        },
+        {
+            "quote": "Mr. Dart gallantly defended my character, supported—to my surprise—by the Honourable Rag, who kept giving backhanded compliments about Morrowlea.",
+            "chapter": "Chapter 26",
+            "percentage": 82
+        },
+        {
+            "quote": "“Greenwing, you dog, you never told me you’d joined Crimson Lake. What’s been up with all the suspicious looks and elaborate obsequiousness?”",
+            "chapter": "Chapter 26",
+            "percentage": 84
+        },
+        {
+            "quote": "I made a noise of mild agreement, an emotion I didn’t really feel, and followed him out of the washroom, wondering whether it was just wealth, and handsomeness, and carriage, and rank, that made me follow him so easily against my own inclination.",
+            "chapter": "Chapter 26",
+            "percentage": 85
         },
         {
             "quote": "“What a clever disguise. However did you come to think of it?”\n“Uh... by happy coincidence, I suppose you could say.”\nShe nodded vigorously. “Serendipity. Always increases when there’s adventure afoot and magic in the air.”",
@@ -181,8 +396,28 @@
             "percentage": 92
         },
         {
+            "quote": "We stared at each other. “I shouldn’t trust you,” I said.\n“No.”\n“You keep lying to me.”\n“Yes.”\n“You’re never going to tell me the truth, are you?”\n“Probably not.”\nThere didn’t seem to be much I could do about that.",
+            "chapter": "Chapter 29",
+            "percentage": 93
+        },
+        {
             "quote": "“Well,” I said, trying to drawl in imitation of how I’d always imagined the debonair Fitzroy Angursell to have spoken on the eve of some grand adventure. “It looks as if we might be staging a rescue.”",
             "chapter": "Chapter 29",
+            "percentage": 93
+        },
+        {
+            "quote": "She pulled out a small round tin from down her bodice. I barely refrained from commenting on how much room she appeared to have down there, which on a hasty second thought was a distinctly ungentlemanly sort of thing to notice.",
+            "chapter": "Chapter 29",
+            "percentage": 93
+        },
+        {
+            "quote": "“This is all very civilized and delightful,” Mrs. Etaris burst in, rushing back at us like a dark blue sheepdog herding her flock, “but I’m afraid we really should be going inside if we don’t want our friends and neighbours to be sacrificed to the Dark Kings.",
+            "chapter": "Chapter 29",
+            "percentage": 93
+        },
+        {
+            "quote": "Violet raised her eyebrows deprecatingly at me. “You need to find some stairs to run up for practice.”\n“I don’t really intend to make a habit of this.”\n“No? It’s ever so much fun.”",
+            "chapter": "Chapter 30",
             "percentage": 93
         },
         {
