@@ -46,7 +46,7 @@
             "percentage": 6
         },
         {
-            "quote": "“Will you regret tomorrow asking a shopkeeper’s assistant to dine with you today?”\n“Shopkeeper’s assistant, my foot. Mrs. Etaris is the hinge-pin of Ragnor Bella, and *you* went to Morrowlea on merits.",
+            "quote": "“Will you regret tomorrow asking a shopkeeper’s assistant to dine with you today?”\n“Shopkeeper’s assistant, my foot. Mrs. Etaris is the hinge-pin of Ragnor Bella, and *you* went to Morrowlea on merits.”",
             "chapter": "Chapter 3",
             "percentage": 7
         },
@@ -433,9 +433,34 @@
             "percentage": 1
         },
         {
+            "quote": "“You could put an advertisement in the paper.” “‘Item: young man of excellent education and difficult family seeks wealthy bride. Tendency to social disaster mostly counterbalanced by skill at crossword puzzles and cross-country running.’”",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
             "quote": "Hal had stood there that first evening, unsure of how to take off his boots without assistance. He'd been embarressed by his helplessness, and I was heartened by being able to teach such an obviously grand aristocrat something useful.",
             "chapter": "Chapter 1",
             "percentage": 3
+        },
+        {
+            "quote": "“I hear you’ve been out, ah, running, Greenwing,” the Honourable Rag said, tapping my pen on his teeth with a deeply irritating noise. “Practicing for one of the Fair races, are you?”\nThe footraces were invariably the province of the lower classes of Ragnor society, and all my good intentions to keep my head down, avoid giving the gossips any further ammunition, make it safely to the Winterturn Assizes, &cetera and &cetera, went out the window.\n“Why, yes, actually,” I said, firmly. “The three-mile circuit.”\n“Ah,” said the Honourable Rag, winking at Mr. Dart. “*Good boy*.”",
+            "chapter": "Chapter 1",
+            "percentage": 3
+        },
+        {
+            "quote": "“You *must* write to Hal. Immediately.”\n“What? Why?”\nHe tore a page out of my notebook and handed it to me. “Write. Now. We can still make the last post if you hurry.”\n“What am I to say in such a hurry?”\n“That you’re alive and sane and are sorry you haven’t written since June, but as you learned last week you were recovering from Lark drugging and bespelling you.”",
+            "chapter": "Chapter 2",
+            "percentage": 4
+        },
+        {
+            "quote": "Mr. Dart stayed outside, to bodily prevent the coach—which didn’t appear to have arrived yet—from leaving without my letter, I supposed. I went inside in a fit of irritation and guilt that I had alarmed him that much, as I must have done to make him so alert to Hal’s likely distress.",
+            "chapter": "Chapter 2",
+            "percentage": 5
+        },
+        {
+            "quote": "Hal opened his mouth in some shock. And, I saw, blatant relief. “Jemis?”\n“The very same.” I considered his expression. “I take it you weren’t expecting me to meet you?”\n“No, your letters must have gone astray.”\nI held up the one in my hand. “Sorry.”\nHal regarded me narrowly. “Is that truly a letter for me? I am entirely astonished. Also relieved to find you at last. I was worried you might have—” He made a face. “Anyhow, glad to be wrong there.”\nMr. Dart did not say anything, but then he didn’t have to.",
+            "chapter": "Chapter 3",
+            "percentage": 6
         },
         {
             "quote": "“Aha!” said Mr. Dart, shaking the hand Hal had held out in eastern fashion. “It is indeed pronounced Lingham, is it? We were talking about you just now.” \n“Were you?” Hal said doubtfully. “Seems a frightful coincidence.”\n“Nevertheless true,” Mr. Dart assured him.",
@@ -446,6 +471,26 @@
             "quote": "“Shall you enter your name in, Jemis, for a cake?”\n“You're the better baker, Hal.”\n“No one creams butter and honey as well as you.”\n“Why, thank you,” I replied, before catching the expression on Mrs. Buchance's face and subsiding in embarressment.",
             "chapter": "Chapter 3",
             "percentage": 8
+        },
+        {
+            "quote": "“Better not to name them aloud. We don’t want to draw their attention, if the Good Neighbours are out-and-about.”\nHal laughed. “That’s an old wives’ tale, surely.”\n“A *dragon* just flew by,” I said.",
+            "chapter": "Chapter 4",
+            "percentage": 10
+        },
+        {
+            "quote": "“Jemis—you know *me*. You could hardly think I’d be anything but honoured to know your story?”\nI seemed to be spending the afternoon in a state of excruciating embarrassment. I forced myself to meet Hal’s puzzled, unhappy expression. I swallowed dryly. “You stood up when no one else would. You helped me through a terrible time this spring. I know I should have told you earlier. I’m sorry. I’m *sorry*.”",
+            "chapter": "Chapter 4",
+            "percentage": 11
+        },
+        {
+            "quote": "Recuperating from a broken heart, what I thought was a failed degree, and—” I took a breath. Mr. Dart nodded encouragingly. “And from what turned out to be withdrawal from a serious addiction to wireweed and the effects of being ensorcelled for nearly three years.”\nHal stared. “Who could possibly—” And then, as I had, he knew. His expression hardened instantly. “Lark.” He spat several curses.",
+            "chapter": "Chapter 4",
+            "percentage": 11
+        },
+        {
+            "quote": "“She was here to *warn* you, Mr. Greenwing. Because you had no idea Lark was an Indrilline, and you humiliated her.”\n“And did a good job of it, too,” Hal growled, and then seemed to realize, as I had been trying not to, that thoroughly and publicly humiliating a member of the most powerful and feared criminal family on the continent, no matter how much she deserved it, was not perhaps a very good idea.",
+            "chapter": "Chapter 4",
+            "percentage": 11
         },
         {
             "quote": "“She has a passionflower!” Hal cried, and plunged off the path to exaine a vine clambering up the wall. “And, oh, look, Jemis, the crimson glory vine--and isn't it a beauty.” He touched wide crimson-purple leaves with gentle hands, murmuring names as he went from wall to bed to pot.”\n“I think we've lost him,” Mr. Dart said, amused.",
@@ -463,7 +508,27 @@
             "percentage": 13
         },
         {
+            "quote": "“You look as if you’ve been put to work.”\n“I have. Come help me scrub cauldrons?”\n“Witch’s cauldrons? Assuredly! Where’s your Mr. Dart?”\n“Taken the dog. Hard to wash with a petrified arm.”\n“This is the most unusual place,” Hal said as we went back insides.",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote": "When I turned he had the scouring pad in one hand, and said: “I take precedence.”\nI preferred drying, as he well knew, so I bowed as low as I could without hitting the table or stove. “As you wish, your grace.”",
+            "chapter": "Chapter 4",
+            "percentage": 13
+        },
+        {
+            "quote": "I shook my head, remembering again the only note I had ever received from my grandmother, after I had written to inform her of my mother’s passing. No salutations or words of comfort or consolation or acknowledgement. Just: *My daughter has been dead these five years since*.",
+            "chapter": "Chapter 4",
+            "percentage": 14
+        },
+        {
             "quote": "I felt a burning in my eyes and my throat. People--Lark--teased me for crying too easily: a poem or a song or even a nice painting could make me well up. I frowned even harder, but I was thinking of that moment, of seeing the ghost on the doorstep. He was so thin, gaunt even, but clean-shaven and smiling that familiar lop-sided grin, the smile that my mother always said was the only way I resembled him physically.",
+            "chapter": "Chapter 4",
+            "percentage": 14
+        },
+        {
+            "quote": "“Three weeks later they found him hanging in the forest. I found the note. But they wouldn’t let me see him.” I watched the water gurgling down the drain. “Or go to the funeral. Not that there was one. As a suicide and a traitor they buried him at a crossroads at midnight.”",
             "chapter": "Chapter 4",
             "percentage": 14
         },
@@ -473,7 +538,7 @@
             "percentage": 16
         },
         {
-            "quote": "“A dragon,” Mrs. Etaris breathed. She did not look alarmed; she looked delighted. She'd looked delighted when we'd had to storm the Talgarths' house last week, too.",
+            "quote": "“A *dragon*,” Mrs. Etaris breathed. She did not look alarmed; she looked delighted. She'd looked delighted when we'd had to storm the Talgarths' house last week, too.",
             "chapter": "Chapter 4",
             "percentage": 16
         },
@@ -483,9 +548,24 @@
             "percentage": 16
         },
         {
+            "quote": "“Do come within, gentlemen. There has been a complication and I would value your assistance.”\n“We shall most certainly be delighted,” Hal said, with a florid courtly bow.\nMrs. Etaris paused, head tilted slightly to one side. “Delight may enter into it, but then again—” She paused again, then smiled with a disquieting pleasure. “No, I think delight may indeed be involved. There is danger and derring-do and deviltry afoot, after all.”",
+            "chapter": "Chapter 4",
+            "percentage": 16
+        },
+        {
             "quote": "She looked arrested at the way that Hal laughed in response. I wanted to ask why she looked so surprised, but before I could gather breath the moment passed, and Hal went on.",
             "chapter": "Chapter 5",
             "percentage": 17
+        },
+        {
+            "quote": "Mrs. Etaris recovered her poise first. “Mr. Greenwing, you are a man of many unexpected talents. Usually one is advised to run *away* from attackers, but in this case ...”\nShe trailed off. I gazed mutely at them. My blood was thundering in my ears.",
+            "chapter": "Chapter 6",
+            "percentage": 20
+        },
+        {
+            "quote": "The events of the past five minutes seemed as if they belonged in a book I had read years ago. But I was holding the arrow and the sword and however oddly I could feel every motion in my body, and my heart surely would not have been thundering this loudly if that hadn’t happened. If I hadn’t done that. This. This.",
+            "chapter": "Chapter 6",
+            "percentage": 20
         },
         {
             "quote": "Mrs. Etaris stood up. “I had a friend once who experienced a similar sort of battle madness. He'd start singing and you knew things were about to become... interesting.”",
@@ -498,14 +578,64 @@
             "percentage": 20
         },
         {
+            "quote": "“You would be amazed at what goes on at a finishing school for young ladies, Mr. Greenwing.” Hal laughed abruptly. “My sister said the same thing. She went to Dame Elwen’s Academy in Kingsbury.”",
+            "chapter": "Chapter 6",
+            "percentage": 21
+        },
+        {
             "quote": "“I’m sorry, Mrs. Etaris, but I simply cannot believe you had a *male* friend who sang songs into battle at Madame Clancette’s Finishing School for Girls in Fiella-by-the-Sea. Even before the Fall. Tying people up—perhaps. Creeping around houses—all right—espionage—quite likely—even tossing daggers—but *battle*?”\nMrs. Etaris smiled serenely as she set a large pot of peppermint tea on the table. “No, I suppose that was during my university years.”",
             "chapter": "Chapter 6",
             "percentage": 22
         },
         {
+            "quote": "“Oh, there is always much more going on under the surface of a quiet country village than the uninitiated anticipate. Which is why I’m glad you’re here, gentlemen. The Embroidery Circle needs your assistance.”\n“Oh?” said Mr. Dart, eyebrows rising again.\n“Yes: we need you to spike a gambling ring.”",
+            "chapter": "Chapter 6",
+            "percentage": 22
+        },
+        {
+            "quote": "“She’s certainly got us hopping on behalf of this Embroidery Circle. Do you reckon they secretly run the town?” Hal asked.\n“You’ve read too many of Jemis’ romances,” Mr. Dart said severely. “The Embroidery Circle consists primarily of the wives of the most thoroughly respectable middle-class men of the town.”\nHal whooped. “In short, the answer is yes. Come now, Mr. Dart, I am an imperial duke, I know very well who really runs things.”",
+            "chapter": "Chapter 7",
+            "percentage": 23
+        },
+        {
+            "quote": "“Between the green and the white is the door. Between the race and the runner is the lock. Between the sun and the shadow is the key. In the bright heart of the dark house is the dark heart of the bright house. And therewithin, if the sap of the tree runs true, is the golden treasure of the dark woods. Bring that to me ere the Sun and the Moon are at their furthest remove.”\n“And if I do not?”\nThe dragon snorted a pouffe of white smoke that filled the air between us. “Then, sir, you will have only the dark treasure of the golden woods to comfort you.”",
+            "chapter": "Chapter 7",
+            "percentage": 24
+        },
+        {
+            "quote": "“Can we have a drink now, please?”\n“You were the one provoking dragons into giving you riddles,” Mr. Dart said.\n“It was only *one* dragon.”\n“And only *one* riddle?”",
+            "chapter": "Chapter 8",
+            "percentage": 25
+        },
+        {
+            "quote": "Hal made a face. “I’m not very good at this travelling incognito, am I?”\nSir Hamish chuckled. “I’m a portraitist, your grace. I’d hardly forget someone I’ve painted, even with the difference between sixteen and twenty-one.”",
+            "chapter": "Chapter 8",
+            "percentage": 26
+        },
+        {
             "quote": "“I'm so glad to know that not only am I named for a horse, but that I look as if I ought to be riding one professionally.”\n“Could be worse,” Mr. Dart said. “You could look like one, too.”\n“Thank you, Mr. Dart.”",
             "chapter": "Chapter 8",
             "percentage": 27
+        },
+        {
+            "quote": "You may wish to rethink your plan of calling on the Marchioness to ask her for honey. It’s quite possible she’d turn you into something, fashion or no fashion, and then where would your sister be?”\n“Duchess of Fillering Pool,” Hal said, smiling imperturbably.",
+            "chapter": "Chapter 8",
+            "percentage": 28
+        },
+        {
+            "quote": "“Hal—what—what do you mean?”\n“Unless you have any aunts or uncles?” Sir Hamish said.\n“No, my mother was an only child...”\n“And you’re *her* only child.”\n“Hal—don’t—”\n“Which makes you, if I am not much mistaken, the Viscount St-Noire.”",
+            "chapter": "Chapter 8",
+            "percentage": 28
+        },
+        {
+            "quote": "I kept trying to explain how I couldn’t possibly be a viscount (a *viscount*!), but everyone else seemed to feel the matter was settled.",
+            "chapter": "Chapter 9",
+            "percentage": 28
+        },
+        {
+            "quote": "“Not that one!”\nThere was a pause. Master Dart moved his hand to the cigar one over.\n“This one all right, Perry?” Mr. Dart was flushing pink behind his beard.\n“Er, yes, that one’s fine.”\n“You haven’t done that in ages,” Master Dart observed, carefully examining the acceptable cigar.",
+            "chapter": "Chapter 9",
+            "percentage": 29
         },
         {
             "quote": "“I am Halioren Lord Leaveringham, the Duke of Fillering Pool,” he said, in a tone I had never heard from him before. I'd never heard *anyone* speak like that, though I'd certainly heard people try.",
@@ -528,8 +658,18 @@
             "percentage": 34
         },
         {
+            "quote": "“Well, this has been a most diverting day. What did you have planned for tomorrow? Now that I know that Ragnor Bella’s reputation is entirely undeserved, I am eager to help uncover its secrets.”",
+            "chapter": "Chapter 11",
+            "percentage": 36
+        },
+        {
             "quote": "“I always knew you were smart, Jemis, but that is an extraordinary achievement.”\n“We're making him blush,” said Mr. Dart.\n“Oh, that's no feat, Mr. Dart,” said Hal, and they both laughed heartily.",
             "chapter": "Chapter 11",
+            "percentage": 36
+        },
+        {
+            "quote": "I did like little better than delving into a good library. Hunting for dragons could take many forms, after all.",
+            "chapter": "Chapter 12",
             "percentage": 36
         },
         {
@@ -538,14 +678,109 @@
             "percentage": 39
         },
         {
+            "quote": "“It’s a wet day for calling.”\n“And yet you’re here,” Sir Hamish said.\nThe Honourable Rag laughed robustly. “So I am.”\nBut he declined to explain.",
+            "chapter": "Chapter 13",
+            "percentage": 39
+        },
+        {
+            "quote": "“Penn’orth o’ herring for your thoughts?”\nThere was something so *odd* about the Honourable Rag now, I thought.\nI didn’t think I wanted to say ‘Why *are* you behaving so much as if you haven’t a thought in your brain?’ to him, and was not much more inclined towards further public discussion of my uncle, so instead I smiled with an effort of lightness. “Oh, just woolgathering, indeed.”",
+            "chapter": "Chapter 13",
+            "percentage": 39
+        },
+        {
+            "quote": "He made a careless bow to Hal, nodded at the rest of us, and loped off, tall, handsome, muscular, and confident as always.\nI sighed.",
+            "chapter": "Chapter 13",
+            "percentage": 40
+        },
+        {
             "quote": "Hal grinned. “We must all have these eccentric relatives, eh? My grandfather was something of an enigma. He’d repudiated his family, his rank, his name, everything.”\n“To be an entomologist?” This was Alinor; such things happened.\n“To be... something. He never told us the whole story.”",
             "chapter": "Chapter 13",
             "percentage": 41
         },
         {
-            "quote": "“Should I not be concerned that you have changed?--that you are more courteous in mortal danger than you are to your friends--that you are cynical and sarcastic and grim--when you used to be full of laughter and energy and delight and--”\n“The Jemis you knew was a delusion composed of lies, stolen magic, and drugs.”",
+            "quote": "“The way of the woods has many turns and few branches. The branch of the woods has many turns and few ways. The turn of the woods is the way of the branch, for good, young sir, or for ill.”\n“Whose good?” I said. “Whose ill?”\n“That is, of course, up to you.”",
+            "chapter": "Chapter 13",
+            "percentage": 43
+        },
+        {
+            "quote": "“Well, obviously the first thing to do is go to the Woods Noirell,” said Mr. Dart.\n“I don’t know my grandmother,” I replied, trying not to take my aggravation out on them.\n“What has that got to do with it? If anything, that increases the adventure.”",
+            "chapter": "Chapter 14",
+            "percentage": 43
+        },
+        {
+            "quote": "“I don’t want an adventure. I don’t want to be embroiled in the Honourable Rag’s folly, I don’t want my uncle making trouble with Mrs. Buchance for my own good, I don’t want everyone to bet on me for the Fair, I don’t want to knock on my grandmother’s door, and I sure as hell don’t want to be playing games with a dragon!”",
+            "chapter": "Chapter 14",
+            "percentage": 43
+        },
+        {
+            "quote": "Why did the world have to be so bloody confusing?",
+            "chapter": "Chapter 14",
+            "percentage": 43
+        },
+        {
+            "quote": "“How does it know I am connected to both the Woods Noirell and Arguty?”\n“Everyone knows that about you,” said Mr. Dart.\n“Even dragons?”\n“Especially dragons,” he replied with unperturbed good humour.",
+            "chapter": "Chapter 14",
+            "percentage": 44
+        },
+        {
+            "quote": "Was I not my father’s son?—He had come home to ignominy and disgrace, and he—No. No. He was the hero of Orkaty, the *hero* of Loe, the man who had come home against all the odds.",
+            "chapter": "Chapter 14",
+            "percentage": 44
+        },
+        {
+            "quote": "*Jimmy—I’m sorry. Take care of your mother. She needs you to be strong. Your papa Jack.*",
+            "chapter": "Chapter 14",
+            "percentage": 44
+        },
+        {
+            "quote": "The sun-in-glory etched into the central plaque was the size of a dinner plate, and inset with tiny yellow stones. It spattered the whole room with sunlight.\n“By the Emperor,” breathed Mr. Dart.\n“And they dare suggest your father was a coward and a traitor,” Hal said, spreading out the links in the chain so we could admire the workmanship of every detail. “Emperor Artorin presented *five* of these in his whole reign.”",
+            "chapter": "Chapter 14",
+            "percentage": 45
+        },
+        {
+            "quote": "I reached out to the crock. the smooth striations where green jade became white, feeling the carvings that were nearly invisible to the eye unless you held it to a candle.\nWhen my hand touched the jade, the red stones on my ring flared, and the ring itself felt suddenly warm. I sneezed.\n“Magic?” said Mr. Dart, eyes lighting.",
+            "chapter": "Chapter 14",
+            "percentage": 46
+        },
+        {
+            "quote": "This was not the Hildon Woods we had traversed earlier that afternoon, friendly with holly and hawthorn and the sounds of birds. It was not even like the Arguty Forest, whose trees were ancient and huge and mysterious but whose thickets were crisscrossed with paths made by animals and people, where you might turn a corner to run into bears or boars or highwaymen.\nThese were the Woods Noirell, where if you took a wrong turn you might end up in another world.",
+            "chapter": "Chapter 15",
+            "percentage": 46
+        },
+        {
+            "quote": "Nothing happened when we passed through the Sun Gate.\nNothing happened when we rode into the shadows under the trees.\nNothing happened at all, in fact.\nI was obscurely disappointed.",
             "chapter": "Chapter 15",
             "percentage": 47
+        },
+        {
+            "quote": "The deer gathered speed and with a superb thrust leaped the highway, and three things happened:\nEven as her front hooves touched the ground on the left-hand side of the road, she disappeared.\nThe rider hauled back his horse to a halt so fiercely that the great animal reared, neighing loudly, before it quite touched the road.\nAnd my ring flared hot on my finger.\n“The Emperor!” said Hal.",
+            "chapter": "Chapter 15",
+            "percentage": 48
+        },
+        {
+            "quote": "An accursed castle!—pray excuse me: *accursèd*. A knight out of an old ballad. A disappearing hind—and not just any hind, mind you, but a *white* one—I am full of astonishment and delight. How could you have even jested that you were uninterested, Jemis, I cannot imagine.”",
+            "chapter": "Chapter 15",
+            "percentage": 49
+        },
+        {
+            "quote": "“Should I not be concerned that you have changed?--that you are more courteous in mortal danger than you are to your friends--that you are cynical and sarcastic and grim--when you used to be full of laughter and energy and delight and--”\n“The Jemis you knew was a delusion composed of lies, stolen magic, and drugs.”",
+            "chapter": "Chapter 15",
+            "percentage": 49
+        },
+        {
+            "quote": "“We are going to the Castle, sir. Can you tell us the way?”\n“Why would you go to the accursèd castle?”\nI sighed. Explaining about the dragon seemed ridiculous. All of this seemed ridiculous.",
+            "chapter": "Chapter 16",
+            "percentage": 49
+        },
+        {
+            "quote": "“My stepfather had a new family. A—an *uncomplicated* new family. What was I, to him? A constant reminder that he had connected his life to a traitor, that his first marriage was unlawful, his first wife dead, his daughters illegitimate, that I was not *his* son.”",
+            "chapter": "Chapter 16",
+            "percentage": 50
+        },
+        {
+            "quote": "“I am no one important.”\nHal looked down at me, his face somewhat sympathetic. “Jemis, everyone from Yrchester south was talking about Mad Jack Greenwing’s son.”",
+            "chapter": "Chapter 16",
+            "percentage": 50
         },
         {
             "quote": "“You have heard *one* story about the Woods Noirell, I trust--and about the Castle at its heart: 'Where stood at the window, white stone and ivy, / The silent watcher'--”\n“In her high tower, / When we rode the high way / To the golden city / The city of roses'. *That* was the Castle Noirell?”\n“That was Jemis' mother!”",
@@ -553,7 +788,7 @@
             "percentage": 50
         },
         {
-            "quote": "“Will you come with me?”\nThey exchanged a look, and then Hal smiled and Mr. Dart quoted Fitzroy Angursell: “'We may be children of a lesser age, but we should not let that inconvenience us altogether.'”\n“In our search for adventure?” I said dryly.\n“In our search for greatness,” said Mr. Dart, following me.",
+            "quote": "On each side of us were the houses, windows gleaming, doors open to the lambent air, people posed as if caught in a moment of time.",
             "chapter": "Chapter 16",
             "percentage": 51
         },
@@ -568,7 +803,17 @@
             "percentage": 52
         },
         {
+            "quote": "“Will you come with me?”\nThey exchanged a look, and then Hal smiled and Mr. Dart quoted Fitzroy Angursell: “'We may be children of a lesser age, but we should not let that inconvenience us altogether.'”\n“In our search for adventure?” I said dryly.\n“In our search for greatness,” said Mr. Dart, following me.",
+            "chapter": "Chapter 16",
+            "percentage": 52
+        },
+        {
             "quote": "“You sound so surprised, Mr. Greenwing. For a day that has included a dragon's challenge, a knight, a cursed village, and mysterious warnings from a strange peasant, it would be decidedly disappointing if it did not take an even stranger turn when it came to the accomondations. You can't have been expecting things to be normal.”",
+            "chapter": "Chapter 17",
+            "percentage": 53
+        },
+        {
+            "quote": "“Come now, Mr. Greenwing, don’t be sour.”\n“Sour? *Sour*?”\n“Or have an apoplexy. You were the one who wanted an adventure.”\n“I don’t think I was.”\n“No, that’s true,” he said imperturbably; “I suppose that was me and Mrs. Etaris.”",
             "chapter": "Chapter 17",
             "percentage": 53
         },
@@ -578,9 +823,69 @@
             "percentage": 54
         },
         {
+            "quote": "“How dare you speak so to me, whelp?”\n“How dare you fail your people so utterly , madam? They stand cursed in the village below. It is your duty to redeem them.”",
+            "chapter": "Chapter 17",
+            "percentage": 55
+        },
+        {
+            "quote": "“Uvara, throw the boy and his friends in the cellars, and let them puzzle out what curse lies on this house of mine. If you succeed, boy, then perhaps we will speak again.”\n“Perhaps,” I said noncommittally, but it was drowned out by another cackle and crack of thunder.",
+            "chapter": "Chapter 17",
+            "percentage": 55
+        },
+        {
+            "quote": "I sat in the cellar sulkily for a while before I realized that was what I was doing, whereupon I decided that I was not, in fact, fifteen, and decided to stop.",
+            "chapter": "Chapter 18",
+            "percentage": 55
+        },
+        {
             "quote": "“Jemis' whole life appears to be something out of a tale, and we are caught up in it, Mr. Dart, as loyal friends--companions--possibly even guides.”\n“Well, loyal friends, companions, possibly even guides, do you want to sit in this cellar all night, try to escape, or see what the mysterious glow down the even-more-mysterious passage is?”",
             "chapter": "Chapter 18",
             "percentage": 55
+        },
+        {
+            "quote": "I did not feel very heroic, but it was nevertheless something of a disappointment to reach the source of the glow and discover no adversary nor any sign of one.\nWe did, however, find the bees.",
+            "chapter": "Chapter 18",
+            "percentage": 57
+        },
+        {
+            "quote": "Every memory of my mother seemed crowded around me, as numerous, as heartbreaking, as the thousands upon thousands of stone-still bees on the floor.",
+            "chapter": "Chapter 18",
+            "percentage": 57
+        },
+        {
+            "quote": "“My mother told me it was time to dance the Lady in, and we sang in the garden under the hawthorn blossom. It was a song she used to sing often, a lullaby, a bee song, a gardening song. We used to dance to it in the garden sometimes. That time—I remember—I remember thinking it was like the world reached out to dance with us.”",
+            "chapter": "Chapter 18",
+            "percentage": 58
+        },
+        {
+            "quote": "*Wood of the golden trees\nHome of the golden bees\nWhere lost Melmúsion\nSings one more song.\nGifts of the Lady Green\nSweetness of the seasons\nSummer in wintertime\nSings one more song.\nGifts of the Lady White\nLight in any darkness\nWinter wisdom in the spring\nSings one more song.\nHeart of the golden trees\nWood of the golden bees\nWhere lost Melmúsion\nSings one more song.”",
+            "chapter": "Chapter 18",
+            "percentage": 58
+        },
+        {
+            "quote": "“I think they want to dance with you,” said Mr. Dart in a strange voice.\nI opened my eyes to see that I had woken the bees of the Woods.",
+            "chapter": "Chapter 18",
+            "percentage": 58
+        },
+        {
+            "quote": "I sang the old song again, eyes open this time. With each verse, each iteration, the light grew stronger, the buzz grew louder, more and more bees rose from the floor, the walls, found their wings, filled the air.",
+            "chapter": "Chapter 19",
+            "percentage": 59
+        },
+        {
+            "quote": "I fell to my knees and put my hands to my face and wept for my mother, while the bees she had so loved streamed out into the Woods to start that mysterious alchemy by which they distilled the essence of summer sunlight for the long, dark nights of winter.",
+            "chapter": "Chapter 19",
+            "percentage": 59
+        },
+        {
+            "quote": "I fell to my knees and put my hands to my face and wept for my mother, while the bees she had so loved streamed out into the Woods to start that mysterious alchemy by which they distilled the essence of summer sunlight for the long, dark nights of winter.",
+            "chapter": "Chapter 19",
+            "percentage": 59
+        },
+        {
+            "quote": "“My mother died in the autumn. She always used to sing an old song to dance the Lady in, autumn and spring—the last time was that autumn. And I didn’t know—I’m so sorry—I didn’t know it was significant—I didn’t know. I will do what I can to make up for it, I promise you!” Everyone looked at me.\nAfter a moment Mr. Horne said, “Your grandfather used to follow along behind the Marchioness apologizing for her, too, when it wasn’t his fault.”",
+            "chapter": "Chapter 20",
+            "percentage": 61
         },
         {
             "quote": "Hal and Mr. Dart exchanged glances, quite as if they had years of friendship behind them, and for a moment my heart rejoiced in the rightness of the moment.",
@@ -588,59 +893,149 @@
             "percentage": 63
         },
         {
+            "quote": "I felt as if I had spent my whole summer reacting.\n*Reacting* was no way to win at Poacher, nor, as I was beginning to see, at life.",
+            "chapter": "Chapter 22",
+            "percentage": 64
+        },
+        {
+            "quote": "“I like poetry to read as much as the next man, unless that next man is Jemis in a fit of structural analysis.”",
+            "chapter": "Chapter 22",
+            "percentage": 66
+        },
+        {
             "quote": "“Jullanar,” I said aloud, surprised, then flushed when Mrs. Etaris and Hal both looked at me.\nMrs. Etaris smiled. “My name? Yes; I am of the generation that made it, ah, infamous.You may notice both my husband and my sister avoid calling me by it.”\n“As if thereby they could escape either the renown, or the notoriety, of the name?”",
             "chapter": "Chapter 23",
             "percentage": 69
         },
         {
-            "quote": "“What do you mean, it *wanted* you to say that?”\n“I'm--I'm not supposed--I'm not supposed to *listen*!”\n“Wild magic,” breathed Hal. “It must be. Mr. Dart, when did you first--”\n“I'm not supposed to talk about it!” he cried, thrusting back so hard his chair fell over.",
-            "chapter": "Chapter 23.5",
-            "percentage": 74
+            "quote": "We could hear the odd thump and scrape as Hal moved things around above us, and a snatch of him singing something by Fitzroy Angursell. Mrs. Etaris, unpacking the box of books, listened for a few moments, expression a little wistful, before she asked me to close the door at the bottom of the stairs.",
+            "chapter": "Chapter 23",
+            "percentage": 72
+        },
+        {
+            "quote": "In such little moments was friendship begun and nurtured: in conversations late into the night about the books we read; in early morning chores done so poorly at first; in our mild competition to improve so that Stable-master or Housekeeper or Cook ceased complaining about us useless first-years who didn’t know a spoon from a spatula.",
+            "chapter": "Chapter 23",
+            "percentage": 73
         },
         {
             "quote": "“*Ivailo ivaro ivo!*” I smiled foolishly when it lit again. “Oh, goodness, I don't care how unfashionable this is.”\nHal chuckled. “We'll just have to bring it back into fashion.”\n“Only if Mr. Dart will help me.”",
-            "chapter": "Chapter 23.5",
+            "chapter": "Chapter 24",
             "percentage": 76
         },
         {
-            "quote": "Inside the Woods the road gleamed as if magical; and there were fireflies.\n“Oh,” I said, and decided that every one of my critics could be right if only I could see this sort of beauty from time to time.",
+            "quote": "My father had taught me to play Poacher; to jump the Leap (throw my heart first and be sure my horse would follow); to stand up for what was right, to fight for what I believed in.\nMy mother had taught me to think through what I believed in; that life was a game of Poacher; that sometimes one had to make compromises to survive, but that one never compromised the heart of oneself, for what survived without the heart was nothing.",
             "chapter": "Chapter 25",
             "percentage": 82
+        },
+        {
+            "quote": "I was afraid that the good fortune would turn sour because so often already it had. My father’s return leading to suicide and disgrace; my love for Lark imploding into lies and criminal magic; my efforts to do the right thing, say the right thing, be the right thing, for Mr. Buchance ending ... well, ending with him deciding to give me the merest competence and me missing his funeral.",
+            "chapter": "Chapter 25",
+            "percentage": 82
+        },
+        {
+            "quote": "Another thing I had learned was people did care for me, even when it felt as though no one in the world did, and it was unkind to them to get out of all communication. How unhappy I would be never to hear from Mr. Dart or Hal again—or Marcan—or indeed Violet.",
+            "chapter": "Chapter 25",
+            "percentage": 83
+        },
+        {
+            "quote": "Was I nothing without the wireweed and the magic?\nNo.\nI was the Fiellanese scholar to Morrowlea before, and—I chuckled aloud, startling myself a little—I was Mrs. Etaris’ assistant clerk after. I was, it seemed, the Viscount St-Noire (albeit by accident of birth), and I was Mr. Dart’s friend and Hal’s, and a spite to all the smug conservatives who didn’t want anything to change simply by being who I was.",
+            "chapter": "Chapter 25",
+            "percentage": 83
+        },
+        {
+            "quote": "Inside the Woods the road gleamed as if magical; and there were fireflies.\n“Oh,” I said, and decided that every one of my critics could be right if only I could see this sort of beauty from time to time.",
+            "chapter": "Chapter 26",
+            "percentage": 83
         },
         {
             "quote": "I swore then and there that for the bees and the fireflies and the Tillarny limes I would be the Viscount St-Noire, crazy grandmother, unpleasant castle, mysterious curses, dragons, riddles, high Gothic melodrama, and all.",
-            "chapter": "Chapter 25",
-            "percentage": 82
+            "chapter": "Chapter 26",
+            "percentage": 83
+        },
+        {
+            "quote": "*And Jullanar of the Sea reaching her hand down Dipping her hand down Into the sky...*",
+            "chapter": "Chapter 26",
+            "percentage": 84
+        },
+        {
+            "quote": "“I have come to answer the riddle, O dragon.”",
+            "chapter": "Chapter 26",
+            "percentage": 84
+        },
+        {
+            "quote": "For a moment fireflies had seemed reflections rather than illuminations, for a moment the dragon seemed to be made of the spaces between things, rather than a body-in-itself. I watched as sparkling shadows turned into sparkling scales, and then coiled around the well-head as it had been coiled around the Dragon Stone.",
+            "chapter": "Chapter 26",
+            "percentage": 84
+        },
+        {
+            "quote": "I had stood up, hands shaking, knees (the shame!) trembling, voice barely sounding, and taken her speech apart point by point by point, as I had been taught to do by my tutor.\nFor that I had been stoned.\nBut also for that the senate of the university had awarded me First in the year.",
+            "chapter": "Chapter 26",
+            "percentage": 84
+        },
+        {
+            "quote": "At the Dragon Pool I stopped to greet the Green Lady and ask her blessing. I figured it couldn’t hurt—though the ruffians who used my distraction to capture me, alas, did.",
+            "chapter": "Chapter 27",
+            "percentage": 87
+        },
+        {
+            "quote": "“Now, lad, in memory of your father we’re going to let you go, but there are those out there who wouldn’t, eh?”\n“And someone wants me dead.”\nIt sounded totally incredible when I said it. But of course there *were* those who I presumed might want me dead: Lark for one, and the mysterious priests of the Dark Kings for two, and my uncle Vorel was still a contender for three.",
+            "chapter": "Chapter 27",
+            "percentage": 88
+        },
+        {
+            "quote": "How I loved running.\nThe world made sense when I ran. *I* made sense when I ran. Running, I needed to explain nothing, defend nothing, be nothing but what I was.",
+            "chapter": "Chapter 27",
+            "percentage": 89
         },
         {
             "quote": "“So, Roald, will you be following our Mr. Greenwing's example and enter your name next year?”\n“Can't run; can't cook; what would you like?”\n“Didn't you learn anything at Tara?”\nHe glanced at me, winked. “As if I'd let anyone know!”",
-            "chapter": "Chapter 27",
+            "chapter": "Chapter 28",
             "percentage": 90
         },
         {
             "quote": "“Well, gentlemen, I must say I am very impressed.”\n“You weren't expecting us to produce an edible cake?”\n“That has not yet been proven,” she retorted quickly, then caught my eye and laughed merrily. I reflected that this was the first time I'd really felt treated as an equal by the bookmistress, and inwardly rejoiced.",
-            "chapter": "Chapter 28",
+            "chapter": "Chapter 29",
             "percentage": 91
         },
         {
-            "quote": "I had no armour, shield, lance, or sword, and as for proper training, well... Dominus Lukel didn't pretend he'd ever seen a dragon, much less fought one.\nI did, however, have a cake knife.\nAnd an off-set spatula.",
+            "quote": "“I was summoned out of the Wide Dreaming to bear riddles to test the strength of the Woods in these lesser days. I was wooed with promises of the gold of the Woods. I was promised blood.”",
             "chapter": "Chapter 29",
+            "percentage": 94
+        },
+        {
+            "quote": "I had no armour, shield, lance, or sword, and as for proper training, well... Dominus Lukel didn't pretend he'd ever seen a dragon, much less fought one.\nI did, however, have a cake knife.\nAnd an off-set spatula.",
+            "chapter": "Chapter 30",
+            "percentage": 95
+        },
+        {
+            "quote": "“My uncle?”\n“He appears to be unharmed.”\nI nodded again. Swallowed what seemed to be a mixture of honey cream and blood. “The dragon?”\n“Oh, very certainly dead, Mr. Greenwing.”\nHer voice was *so* soothingly normal I looked automatically up to catch the merriment in her eyes. Her mirth was so contagious I smiled lopsidedly and raised my head to survey the scene before me.",
+            "chapter": "Chapter 30",
             "percentage": 95
         },
         {
             "quote": "Mrs. Etaris stood slightly to my right, beside the dragon's head.\nI blinked again.\nApart from her location--*right beside a dragon's head*--she looked almost--almost damnably *ordinary*. Yet she was calm, and matter-of-fact, and alone of all the people in my field of vision had been the one reaching for a weapon when the dragon arrived.",
-            "chapter": "Chapter 29",
+            "chapter": "Chapter 30",
             "percentage": 95
         },
         {
-            "quote": "I could see the Honourable Rag's astonished and delighted grin from the light reflected on his teeth. Then he cast back his head and laughed uninhibitedly.“*Good* boy.”",
-            "chapter": "Chapter 30",
-            "percentage": 97
+            "quote": "Hal bowed, bearing instantly fully ducal. “You do me honour, ma’am. Nevertheless, I have already been offered, and accepted, Jemis’—Lord St. Noire’s—offer of hospitality, which I trust he will extend through to Winterturn.”\n“*His* hospitality! He has no property of his own.”\n“He has lodging in town, ma’am, which I find most comfortable.”",
+            "chapter": "Chapter 31",
+            "percentage": 98
         },
         {
             "quote": "He smiled at her, still regally, but with the engaging air that belonged to what I thought of as the *real* Hal. Except that Hal did not seem to feel any contradiction between being Duke and being Hal—\n—How, I wondered suddenly, could he *possibly* think I was more of a radical than he?",
-            "chapter": "Chapter 30",
+            "chapter": "Chapter 31",
             "percentage": 98
+        },
+        {
+            "quote": "“You were reaching for a sword,” I blurted, though quietly.\nMrs. Etaris smiled, a little ruefully. “I was wondering if anyone noticed. It was foolish of me—it’s not as if I’ve held a sword for many years.”\n“Was it your first dragon?”\nShe laughed. “Mr. Greenwing, have I told you how much I enjoy your sense of humour?”",
+            "chapter": "Chapter 31",
+            "percentage": 98
+        },
+        {
+            "quote": "I could see the Honourable Rag's astonished and delighted grin from the light reflected on his teeth. Then he cast back his head and laughed uninhibitedly.“*Good* boy.”",
+            "chapter": "Chapter 31",
+            "percentage": 100
         }
     ],
     "wiskeyjackquotes": [
