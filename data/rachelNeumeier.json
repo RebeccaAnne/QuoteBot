@@ -1,0 +1,10 @@
+{
+    "all": [
+        "tuyo"
+    ],
+    "tuyo": {
+        "title": "Tuyo",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    }
+}

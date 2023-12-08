@@ -1,0 +1,17 @@
+{
+    "description": "Tuyo Server",
+    "guildId": "1182155789897584681",
+    "channels": {
+        "1182156731787259966": {
+            "description": "tuyo-discussion",
+            "rootSourceFile": "rachelNeumeier.json",
+            "quoteRoot": "all"
+        },
+        "1182157678940790905": {
+            "description": "fanworks",
+            "rootSourceFile": "rachelNeumeier.json",
+            "quoteRoot": "all",
+            "ficFandomTag": "Tuyo Series- Rachel Neumeier"
+        }
+    }
+}

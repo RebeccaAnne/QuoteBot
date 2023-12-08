@@ -37,6 +37,17 @@
             "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all",
             "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
+        },
+        "1182776172954783785": {
+            "description": "tuyo",
+            "rootSourceFile": "rachelNeumeier.json",
+            "quoteRoot": "all"
+        },
+        "1182777284566986793": {
+            "description": "tuyo-fanworks",
+            "rootSourceFile": "rachelNeumeier.json",
+            "quoteRoot": "all",
+            "ficFandomTag": "Tuyo Series- Rachel Neumeier"
         }
     },
     "scheduledQuotes": [
