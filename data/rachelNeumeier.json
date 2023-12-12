@@ -1,9 +1,41 @@
 {
     "all": [
-        "tuyo"
+        "tuyo",
+        "nikoles",
+        "tarashana"
     ],
     "tuyo": {
         "title": "Tuyo",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "nikoles": {
+        "title": "Nikoles",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "tarashana": {
+        "title": "Tarashana",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "keraunani": {
+        "title": "Keraunani",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "suelen": {
+        "title": "Suelen",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "tano": {
+        "title": "Tano",
+        "quoteSourceFile": "tuyoData.json",
+        "color": 7262172
+    },
+    "tasmakat": {
+        "title": "Tasmakat",
         "quoteSourceFile": "tuyoData.json",
         "color": 7262172
     }

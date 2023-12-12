@@ -72,6 +72,15 @@
                 "1088630628800540742",
                 "1096959724844482610"
             ]
+        },
+        {
+            "id": "tuyoSchedule",
+            "description": "quotes once a day for tuyo",
+            "time": "0 0 0 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "1182776172954783785"
+            ]
         }
     ],
     "scheduledFics": [

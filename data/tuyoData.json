@@ -5,5 +5,23 @@
             "chapter": "Chapter 1",
             "percentage": 1
         }
-    ]
+    ],
+    "nikolesquotes": [
+        {
+            "quote": "Nikoles Ianan’s appetite for vengeance wavered and dimmed and finally wore itself out long before the execution was meant to end.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        }
+    ],
+    "tarashanaquotes": [
+        {
+            "quote": "The first arrow missed only because the gods were kind.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        }
+    ],
+    "keraunaniquotes": [],
+    "suelenquotes": [],
+    "tano": [],
+    "tasmakat": []
 }
