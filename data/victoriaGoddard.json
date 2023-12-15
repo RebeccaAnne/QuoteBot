@@ -45,7 +45,8 @@
         "warrior",
         "humanvoices",
         "humanvoices",
-        "aurelius"
+        "aurelius",
+        "terec"
     ],
     "laysRoot": [
         "atfots",
@@ -108,7 +109,9 @@
         "warrior",
         "humanvoices",
         "humanvoices",
-        "aurelius"
+        "humanvoices",
+        "aurelius",
+        "terec"
     ],
     "fire": {
         "title": "Those Who Hold the Fire",
@@ -209,5 +212,10 @@
         "title": "Aurelius (to be called) Magnus",
         "quoteSourceFile": "otherVictoria.json",
         "color": 15120384
+    },
+    "terec": {
+        "title": "Terec and the Wild",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 6684842
     }
 }
