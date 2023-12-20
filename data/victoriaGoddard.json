@@ -39,6 +39,8 @@
         "beesting",
         "wiskeyjack",
         "wiskeyjack",
+        "blackcurrant",
+        "blackcurrant",
         "stone",
         "clarysage",
         "bride",
@@ -98,6 +100,10 @@
         "wiskeyjack",
         "wiskeyjack",
         "wiskeyjack",
+        "blackcurrant",
+        "blackcurrant",
+        "blackcurrant",
+        "blackcurrant",
         "stone",
         "clarysage"
     ],
@@ -180,6 +186,11 @@
     },
     "wiskeyjack": {
         "title": "Wiskeyjack",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "blackcurrant": {
+        "title": "Black Currant Fool",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
