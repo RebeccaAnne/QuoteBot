@@ -19,8 +19,8 @@
             "quote": "I must have jerked in outrage, for he turned quickly to look at me again.",
             "chapter": "Chapter 1",
             "percentage": 1
-        }
-        ,        {
+        },
+        {
             "quote": "He tilted his head in surprise, perhaps at my words, or perhaps because I spoke darau at all.",
             "chapter": "Chapter 1",
             "percentage": 1
@@ -34,6 +34,11 @@
             "quote": "When my brother brought word of what had happened, my mother would not think of me sitting in an uncomfortable Lau chair in a too-warm Lau tent, eating too-spicy barley stew.",
             "chapter": "Chapter 2",
             "percentage": 4
+        },
+        {
+            "quote": "Lord Aras barely flinched, though the blow left a narrow welt across his cheek. An Ugaro could hardly have taken the blow with any greater indifference. I was proud of him.",
+            "chapter": "Chapter 17",
+            "percentage": 49
         }
     ],
     "nikolesquotes": [
@@ -41,6 +46,11 @@
             "quote": "Nikoles Ianan’s appetite for vengeance wavered and dimmed and finally wore itself out long before the execution was meant to end.",
             "chapter": "Chapter 1",
             "percentage": 1
+        },
+        {
+            "quote": "If Lord Gaur tried to use these men too ruthlessly, if he tried to use his captives to bait their people into some broader trap... Nikoles didn’t know. He didn’t know what he would do. He couldn’t quite imagine standing aside a second time, letting Ugaro die because of Lau mistakes. Though whatever Lord Gaur did, he probably wouldn’t do it by *mistake*.",
+            "chapter": "Chapter 5",
+            "percentage": 49
         }
     ],
     "tarashanaquotes": [
@@ -150,8 +160,95 @@
             "percentage": 95
         }
     ],
-    "keraunaniquotes": [],
-    "suelenquotes": [],
+    "keraunaniquotes": [
+        {
+            "quote": "His own job was simple: Get to Pitasosa, find a girl, get her out of this town and away from the disaster that was about to come down like a big, big hammer on way too many people here. Marry her real quick, nice and tight and legal, so there’d be no questions later about the babe she was carrying. Then he could just set her up someplace where she’d be safe and comfortable, and he’d be done.",
+            "chapter": "Chapter 1",
+            "percentage": 1
+        },
+        {
+            "quote": "The narrowness of the windows meant that the door was the only way out of this room; not his favorite design for any room. Not that he expected any trouble here. It just wasn’t his favorite design for a room, that was all.",
+            "chapter": "Chapter 1",
+            "percentage": 2
+        },
+        {
+            "quote": "“She’s scared, but she’s not that scared.” He was smiling. “We’ve got a brave girl. She’s waiting for us to come get her. She *expects* us to come get her.”",
+            "chapter": "Chapter 4",
+            "percentage": 20
+        },
+        {
+            "quote": "She looked at him, for a second even more hesitant, but then her determination firmed up again. She asked, “Can you support a child? Two children?”—with a hand cupped over her belly, but nodding toward Pir, riding perched up in the front of the handcart now, looking ahead the way they were going, but listening close, no question about that.",
+            "chapter": "Chapter 9",
+            "percentage": 49
+        },
+        {
+            "quote": "Esau had expected to feel a lot safer once he had Keraunani through the checkpoint and across the border into the county of Sarorata. And he did, sort of. For values of *safer* that didn’t include *safe*.",
+            "chapter": "Chapter 11",
+            "percentage": 49
+        },
+        {
+            "quote": "“You’re my kid now. I’ll get you written down that way, lines laid down real clear. Blue ink. You know what that means, blue ink?”\nOf course Pir didn’t. Brat this age, not likely he’d understand something like that. Esau explained, “Blue’s for oaths. For good, that means. Red ink’s legal, red’s for contracts. Red is for something that’s got a beginning and an end. Blue’s forever. Color of the sunlit sky, see.”",
+            "chapter": "Chapter 11",
+            "percentage": 60
+        },
+        {
+            "quote": "“Any jar she picks up, the ink turns blue. She won’t let you go either. This is solid for her and me both.”",
+            "chapter": "Chapter 11",
+            "percentage": 60
+        },
+        {
+            "quote": "When your partner was a man who happened to have a good bit of nudge, the best idea was to let him lead the dance. Whatever Ates had in mind, Esau would find himself going along with it, as long as he just relaxed and let himself move exactly the way Ates wanted him to move.",
+            "chapter": "Chapter 14",
+            "percentage": 66
+        },
+        {
+            "quote": "He wasn’t the one who’d picked that target. He just let himself move. It was like reflex, like instinct, but different from either.",
+            "chapter": "Chapter 14",
+            "percentage": 67
+        },
+        {
+            "quote": "No one would ever suggest that maybe dogs hadn’t been necessary to track a couple of Lord Gaur’s soldiers; that nobody had needed a tip from local brats; that the thing about persuading the bandits into a trap near Manas hadn’t been the real plan. Or at least not the primary plan. No one would suggest that the real plan might’ve involved getting a couple of Lord Gaur’s men into the bandit’s main hideout, so that someone with a huge lot of something extra could quit looking for bandits he didn’t know and start looking for men he’d be able to find and track.",
+            "chapter": "Chapter 16",
+            "percentage": 74
+        },
+        {
+            "quote": "No one would ever say, *Good job picturing the whole cave system out plain in your mind, that was real helpful*. Because that wasn’t the kind of thing Lord Gaur’s men, or Lord Gaur himself, ever said. Anyway, maybe it hadn’t been helpful. Maybe it’d just been a way to pass the time. Esau would probably never know one way or the other. Honestly, he didn’t *want* to know one way or the other.",
+            "chapter": "Chapter 16",
+            "percentage": 75
+        },
+        {
+            "quote": "“If anything else occurs to you, then you have permission to approach me. If necessary. As a rule, it’s probably best to follow the chain of command.”\n“Yes, my lord.”",
+            "chapter": "Chapter 16",
+            "percentage": 77
+        },
+        {
+            "quote": "If his name came to mind when Lord Gaur needed a man for something peculiar, that sure would keep his life interesting. He had no doubt about that at all.",
+            "chapter": "Chapter 18",
+            "percentage": 84
+        },
+        {
+            "quote": "“It seems to me... that you reached out of darkness to give me a fragment of the sunlit sky.”",
+            "chapter": "Chapter 19",
+            "percentage": 90
+        },
+        {
+            "quote": "The Sun had long since stepped down from the heavens, passing below the earth, but he felt—she felt—they both felt—as though they moved through the brilliant warmth and light of a glorious day.",
+            "chapter": "Chapter 19",
+            "percentage": 90
+        }
+    ],
+    "suelenquotes": [
+        {
+            "quote": "Suelen couldn’t have echoed the straight-backed posture of the Ugaro if his life depended on it, so he hoped it didn’t.",
+            "chapter": "Chapter 10",
+            "percentage": 77
+        },
+        {
+            "quote": "“O Sun, beloved of my heart, this day overflows with all your gifts. I am most grateful to have been a part of it. Thank you.”",
+            "chapter": "Chapter 12",
+            "percentage": 96
+        }
+    ],
     "tanoquotes": [],
     "tasmakatquotes": []
 }
