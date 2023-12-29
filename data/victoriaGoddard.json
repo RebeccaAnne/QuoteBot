@@ -43,6 +43,8 @@
         "blackcurrant",
         "loveinamist",
         "loveinamist",
+        "plumduff",
+        "plumduff",
         "stone",
         "clarysage",
         "bride",
@@ -110,6 +112,10 @@
         "loveinamist",
         "loveinamist",
         "loveinamist",
+        "plumduff",
+        "plumduff",
+        "plumduff",
+        "plumduff",
         "stone",
         "clarysage"
     ],
@@ -202,6 +208,11 @@
     },
     "loveinamist": {
         "title": "Love-in-a-Mist",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "plumduff": {
+        "title": "Plum Duff",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
