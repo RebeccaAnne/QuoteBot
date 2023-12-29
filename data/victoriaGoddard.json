@@ -41,6 +41,8 @@
         "wiskeyjack",
         "blackcurrant",
         "blackcurrant",
+        "loveinamist",
+        "loveinamist",
         "stone",
         "clarysage",
         "bride",
@@ -104,6 +106,10 @@
         "blackcurrant",
         "blackcurrant",
         "blackcurrant",
+        "loveinamist",
+        "loveinamist",
+        "loveinamist",
+        "loveinamist",
         "stone",
         "clarysage"
     ],
@@ -191,6 +197,11 @@
     },
     "blackcurrant": {
         "title": "Black Currant Fool",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "loveinamist": {
+        "title": "Love-in-a-Mist",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
