@@ -515,7 +515,7 @@
             "percentage": 20
         },
         {
-            "quote": "Damian and Pharia had found the lost of all shapes and descriptions, from an erring husband to a sense of the miraculous, from a garden to the Moon Lady’s heart...but they had not come to find their middle son, whom Damian had never liked.",
+            "quote": "Damian and Pharia had found the lost of all shapes and descriptions, from an erring husband to a sense of the miraculous, from a garden to the Moon Lady’s heart ... but they had not come to find their middle son, whom Damian had never liked.",
             "chapter": "Chapter 4",
             "percentage": 20
         },
@@ -740,7 +740,7 @@
             "percentage": 75
         },
         {
-            "quote": "I didn’t think—couldn’t think—you would go to the final duel without telling anyone...without telling *me*...or imagine you’d go to a *play* afterwards.",
+            "quote": "I didn’t think—couldn’t think—you would go to the final duel without telling anyone ... without telling *me* ... or imagine you’d go to a *play* afterwards.",
             "chapter": "Chapter 15",
             "percentage": 75
         },
@@ -785,7 +785,7 @@
             "percentage": 84
         },
         {
-            "quote": "“I heard trees sing, before. I could hear...I heard everything as music.” Silence, a soft unfolding silence like another opening flower. “I d-didn’t realize, not until we were about eight and a half, that no one else did.”",
+            "quote": "“I heard trees sing, before. I could hear ... I heard everything as music.” Silence, a soft unfolding silence like another opening flower. “I d-didn’t realize, not until we were about eight and a half, that no one else did.”",
             "chapter": "Chapter 16",
             "percentage": 84
         },
@@ -932,7 +932,7 @@
             "percentage": 56
         },
         {
-            "quote": "He was spinning out ideas here, imagining what there might be inside his heart.\nAnd then there was a kind of—*twist*—as if something came undone, and he dropped into a place he had never before been. Never before been, but nevertheless...knew.",
+            "quote": "He was spinning out ideas here, imagining what there might be inside his heart.\nAnd then there was a kind of—*twist*—as if something came undone, and he dropped into a place he had never before been. Never before been, but nevertheless ... knew.",
             "chapter": "Chapter 3",
             "percentage": 59
         },
@@ -1104,7 +1104,7 @@
             "percentage": 14
         },
         {
-            "quote": "He wanted to go home, so intensely that he could not breathe. He sat there, longing crashing over him. He would never go home again. He would never see his father, mother, brothers, sisters... Conju.",
+            "quote": "He wanted to go home, so intensely that he could not breathe. He sat there, longing crashing over him. He would never go home again. He would never see his father, mother, brothers, sisters ... Conju.",
             "chapter": "Chapter 3",
             "percentage": 37
         },
@@ -1114,7 +1114,7 @@
             "percentage": 41
         },
         {
-            "quote": "Was there any point in keeping track, anymore? The letter had been sent, and... that was that",
+            "quote": "Was there any point in keeping track, anymore? The letter had been sent, and ... that was that",
             "chapter": "Chapter 3",
             "percentage": 42
         },
@@ -1139,12 +1139,12 @@
             "percentage": 52
         },
         {
-            "quote": "It was the Border. This side, however remote from the capital, was Astandalas: that side was... not.\nIt was perhaps the *tiniest* bit exciting.",
+            "quote": "It was the Border. This side, however remote from the capital, was Astandalas: that side was ... not.\nIt was perhaps the *tiniest* bit exciting.",
             "chapter": "Chapter 4",
             "percentage": 59
         },
         {
-            "quote": "There was a... lizard?\nA nursery tale came to his mind, swimming through the fog of his memory as this creature swam through the water, all fire twisting in the water.\nIt was a foot long or more, all tale and paddling feet, long and sinuous, burning clearly under the water, its shape outlined by its own light.\nNot a lizard, no. A salamander.\nSalamander: the elemental spirit of fire.",
+            "quote": "There was a ... lizard?\nA nursery tale came to his mind, swimming through the fog of his memory as this creature swam through the water, all fire twisting in the water.\nIt was a foot long or more, all tale and paddling feet, long and sinuous, burning clearly under the water, its shape outlined by its own light.\nNot a lizard, no. A salamander.\nSalamander: the elemental spirit of fire.",
             "chapter": "Chapter 4",
             "percentage": 68
         },
@@ -1219,11 +1219,6 @@
             "quote": "After one thousand nights and one of patience Scheherezade pressed her winding sheet against his lips until at last he was still and that story was done.",
             "chapter": "Scheherezade",
             "percentage": 9
-        },
-        {
-            "quote": "She did not know this city, was three years from any excursion outside the palace walls, a thousand nights and one night from the young woman who had planned a way to save the lives of other maidens whom the king required as unwritten parchment for his pen.",
-            "chapter": "Scheherezade",
-            "percentage": 11
         },
         {
             "quote": "She did not know this city, was three years from any excursion outside the palace walls, a thousand nights and one night from the young woman who had planned a way to save the lives of other maidens whom the king required as unwritten parchment for his pen.",
@@ -1396,11 +1391,6 @@
             "percentage": 73
         },
         {
-            "quote": "There were not so many men Will wanted to accompany him when he was feeling poetry-minded, mostly Dickon who had been his lead player and dearest friend for decades (and who was pleasantly quiet in company).",
-            "chapter": "Inkebarrow",
-            "percentage": 73
-        },
-        {
             "quote": "He sighed, not quite sure if the deeper sensation of something off-kilter was the lingering effect of the ague that had stricken him in March or merely the dislocation of not having yet written down the lines marching through his mind, or something yet more metaphysical.",
             "chapter": "Inkebarrow",
             "percentage": 76
@@ -1441,7 +1431,7 @@
             "percentage": 96
         },
         {
-            "quote": "Master Will Shakespeare, that good gentleman of Stratford, followed, humming an old tune of Robin Hood as he went. *Exit*, he thought. *Pursued by a bull*.",
+            "quote": "Master Will Shakespeare, that good gentleman of Stratford, followed, humming an old tune of Robin Hood as he went.\n*Exit*, he thought. *Pursued by a bull*.",
             "chapter": "Inkebarrow",
             "percentage": 98
         }
