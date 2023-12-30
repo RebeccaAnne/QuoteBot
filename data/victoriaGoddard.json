@@ -51,6 +51,7 @@
         "warrior",
         "humanvoices",
         "humanvoices",
+        "realms",
         "aurelius",
         "terec"
     ],
@@ -128,6 +129,7 @@
         "humanvoices",
         "humanvoices",
         "humanvoices",
+        "realms",
         "aurelius",
         "terec"
     ],
@@ -238,6 +240,11 @@
     },
     "humanvoices": {
         "title": "Till Human Voices Wake Us",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 255
+    },
+    "realms": {
+        "title": "In the Realms of Gold",
         "quoteSourceFile": "otherVictoria.json",
         "color": 255
     },
