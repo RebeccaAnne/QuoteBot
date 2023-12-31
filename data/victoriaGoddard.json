@@ -47,6 +47,7 @@
         "plumduff",
         "stone",
         "clarysage",
+        "saint",
         "bride",
         "warrior",
         "humanvoices",
@@ -118,7 +119,8 @@
         "plumduff",
         "plumduff",
         "stone",
-        "clarysage"
+        "clarysage",
+        "saint"
     ],
     "hoteRoot": [
         "hote"
@@ -225,6 +227,11 @@
     },
     "clarysage": {
         "title": "Clary Sage",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
+    "saint": {
+        "title": "The Saint of the Bookstore",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
