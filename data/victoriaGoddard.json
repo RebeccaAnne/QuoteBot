@@ -16,6 +16,7 @@
         "atfots",
         "atfots",
         "atfots",
+        "atfotsbonus",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
@@ -77,13 +78,15 @@
         "atfots",
         "atfots",
         "atfots",
+        "atfotsbonus",
+        "atfotsbonus",
+        "atfotsbonus",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
-        "portrait",
         "portrait",
         "portrait",
         "portrait",
@@ -174,6 +177,11 @@
         "color": 38823
     },
     "atfots": {
+        "title": "At the Feet of the Sun",
+        "quoteSourceFile": "laysData.json",
+        "color": 38823
+    },
+    "atfotsbonus": {
         "title": "At the Feet of the Sun",
         "quoteSourceFile": "laysData.json",
         "color": 38823
