@@ -67,12 +67,30 @@
         "atfots",
         "atfots",
         "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "atfots",
+        "pettytreasons",
+        "pettytreasons",
+        "pettytreasons",
         "pettytreasons",
         "pettytreasons",
         "pettytreasons",
         "portrait",
         "portrait",
-        "fire"
+        "portrait",
+        "portrait",
+        "fire",
+        "fire",
+        "culturedays",
+        "feonie"
     ],
     "redCompanyRoot": [
         "rofa",
@@ -162,6 +180,11 @@
     },
     "culturedays": {
         "title": "Traditional Culture Days",
+        "quoteSourceFile": "laysData.json",
+        "color": 38823
+    },
+    "feonie": {
+        "title": "Féonie and the Islander Regalia",
         "quoteSourceFile": "laysData.json",
         "color": 38823
     },
