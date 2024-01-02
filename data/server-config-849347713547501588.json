@@ -46,12 +46,21 @@
     },
     "scheduledQuotes": [
         {
-            "id": "9WorldsSchedule",
+            "id": "9WorldsVictoriaSchedule",
             "description": "quotes at 9 am in nine-worlds-with-victoria",
             "time": "0 0 09 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
                 "851511356179349585"
+            ]
+        },
+        {
+            "id": "9WorldsSchedule",
+            "description": "quotes at 3 am in nine-worlds-discussion",
+            "time": "0 0 03 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "849348269355958312"
             ]
         },
         {
