@@ -22,6 +22,7 @@
         "pettytreasons",
         "portrait",
         "fire",
+        "gameofcourts",
         "rofa",
         "rofa",
         "rofa",
@@ -193,6 +194,11 @@
     },
     "feonie": {
         "title": "Féonie and the Islander Regalia",
+        "quoteSourceFile": "laysData.json",
+        "color": 38823
+    },
+    "gameofcourts": {
+        "title": "The Game of Courts",
         "quoteSourceFile": "laysData.json",
         "color": 38823
     },
