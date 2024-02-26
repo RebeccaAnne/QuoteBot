@@ -39,8 +39,8 @@
         "stargazy",
         "beesting",
         "beesting",
-        "wiskeyjack",
-        "wiskeyjack",
+        "whiskeyjack",
+        "whiskeyjack",
         "blackcurrant",
         "blackcurrant",
         "loveinamist",
@@ -127,10 +127,10 @@
         "beesting",
         "beesting",
         "beesting",
-        "wiskeyjack",
-        "wiskeyjack",
-        "wiskeyjack",
-        "wiskeyjack",
+        "whiskeyjack",
+        "whiskeyjack",
+        "whiskeyjack",
+        "whiskeyjack",
         "blackcurrant",
         "blackcurrant",
         "blackcurrant",
@@ -240,8 +240,8 @@
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
-    "wiskeyjack": {
-        "title": "Wiskeyjack",
+    "whiskeyjack": {
+        "title": "Whiskeyjack",
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
