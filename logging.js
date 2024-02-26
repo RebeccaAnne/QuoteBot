@@ -11,16 +11,16 @@ module.exports = {
 
         console.log(logTimeString + logString);
 
-        if (file) {
-            let fileLogStream = fs.createWriteStream(file, { flags: 'a' });
-            fileLogStream.write(logTimeString + logString + "\n");
-        }
-        else {
-            if (logDateStamp == 0) {
-                logDateStamp = Date.now();
-                logStream = fs.createWriteStream("./log-" + logDateStamp + ".txt", { flags: 'a' });
-            }
-            logStream.write(logTimeString + logString + "\n");
-        }
+        // if (file) {
+        //     let fileLogStream = fs.createWriteStream(file, { flags: 'a' });
+        //     fileLogStream.write(logTimeString + logString + "\n");
+        // }
+        // else {
+        //     if (logDateStamp == 0) {
+        //         logDateStamp = Date.now();
+        //         logStream = fs.createWriteStream("./log-" + logDateStamp + ".txt", { flags: 'a' });
+        //     }
+        //     logStream.write(logTimeString + logString + "\n");
+        // }
     }
 }

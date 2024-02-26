@@ -60,7 +60,7 @@ module.exports = {
                 }
             }
 
-            const coverPath = "./data/images/" + book + ".png";
+            const coverPath = "./data/Images/" + book + ".png";
             if (fs.existsSync(coverPath)) {
 
                 const cover = new AttachmentBuilder(coverPath);
