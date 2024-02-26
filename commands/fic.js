@@ -25,11 +25,10 @@ module.exports = {
 			await interaction.deferReply();
 
 			let fic = await generateFicLink(interaction.guildId, interaction.channelId);
-			console.log(fic);
 			if (fic) {
 				console.log("We got a fic!")
 
-				await interaction.editReply({ embeds: [fic] });
+				await interaction.editReply(fic);
 			}
 			else {
 

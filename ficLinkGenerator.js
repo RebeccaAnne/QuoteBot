@@ -65,7 +65,7 @@ module.exports = {
                         .setFooter({ text: randomWork.updated.toDateString() })
                         .setColor(0x666666);
 
-                    return embed;
+                    return { embeds: [embed] };
                 }
             }
         }

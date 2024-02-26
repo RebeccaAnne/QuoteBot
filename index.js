@@ -53,8 +53,8 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 			setTimeout(() => { sendMessage(guildId, channelId, generateFunction); }, backofftime)
 		}
 		else {
-			let embed = await generateFunction(guildId, channelId);
-			channel.send({ embeds: [embed] });
+			let result = await generateFunction(guildId, channelId);
+			channel.send(result);
 
 		}
 	}

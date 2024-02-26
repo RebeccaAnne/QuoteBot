@@ -11,7 +11,7 @@ module.exports = {
 
 		let quote = await generateQuote(interaction.guildId, interaction.channelId);
 		if (quote) {
-			await interaction.reply({ embeds: [quote] });
+			await interaction.reply(quote);
 		}
 		else {
 			await interaction.reply({
