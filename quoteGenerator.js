@@ -51,7 +51,7 @@ module.exports = {
                 if (quoteObject.chapter != null) {
                     footerText += quoteObject.chapter;
                     if (quoteObject.percentage != null) {
-                        footerText += ",  ";
+                        footerText += ", ";
                     }
                 }
 
