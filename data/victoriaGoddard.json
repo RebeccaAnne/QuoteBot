@@ -55,6 +55,7 @@
         "humanvoices",
         "humanvoices",
         "realms",
+        "vlad",
         "aurelius",
         "terec",
         "boneharp",
@@ -154,16 +155,34 @@
     ],
     "otherRoot": [
         "bride",
+        "bride",
+        "bride",
+        "warrior",
+        "warrior",
         "warrior",
         "humanvoices",
         "humanvoices",
         "humanvoices",
-        "realms",
+        "humanvoices",
+        "humanvoices",
+        "humanvoices",
+        "aurelius",
+        "aurelius",
         "aurelius",
         "terec",
+        "terec",
+        "realms",
+        "realms",
+        "vlad",
+        "vlad",
         "boneharp",
         "boneharp",
-        "boneharp"
+        "boneharp",
+        "boneharp",
+        "boneharp",
+        "boneharp",
+        "boneharp",
+        "connoisseur"
     ],
     "fire": {
         "title": "Those Who Hold the Fire",
@@ -280,6 +299,11 @@
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
+    "travellersjoy": {
+        "title": "Travellers Joy",
+        "quoteSourceFile": "greenwingData.json",
+        "color": 34324
+    },
     "bride": {
         "title": "The Bride of the Blue Wind",
         "quoteSourceFile": "otherVictoria.json",
@@ -314,5 +338,15 @@
         "title": "The Bone Harp",
         "quoteSourceFile": "otherVictoria.json",
         "color": 15393224
+    },
+    "vlad": {
+        "title": "The Seven Brides-to-Be of Generalissimo Vlad",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 0
+    },
+    "connoisseur": {
+        "title": "The Connoisseur",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 6710886
     }
 }
