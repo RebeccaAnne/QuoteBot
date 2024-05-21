@@ -34,7 +34,20 @@ module.exports = {
             let quote = quoteObject.quote;
             logString("Quote:" + quote);
 
-            let description = quote + "\n";
+            let description = ""
+
+            if(rootSourceFile[book].courtesySpoilers)
+            {
+                description += "||"
+            }
+
+            description += quote;
+            if(rootSourceFile[book].courtesySpoilers)
+            {
+                description += "||"
+            }
+            description += "\n";
+
             let color = rootSourceFile[book].color;
 
             // Build the footer. Format is:
