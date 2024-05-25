@@ -385,8 +385,7 @@
     "terec2": {
         "title": "Terec and the Wall",
         "quoteSourceFile": "otherVictoria.json",
-        "color": 6684842,
-        "courtesySpoilers": true
+        "color": 6684842
     },
     "boneharp": {
         "title": "The Bone Harp",
