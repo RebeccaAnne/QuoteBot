@@ -1,6 +1,4 @@
 config.json
-package-lock.json
-package.json
 
 arrays-*
 log-*

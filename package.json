@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@atproto/api": "^0.12.25",
+    "ao3": "^1.0.4",
+    "async-mutex": "^0.4.0",
+    "cron": "^2.2.0",
+    "dayjs": "^1.11.7",
+    "discord.js": "^14.7.1",
+    "tracery-grammar": "^2.7.4"
+  },
+  "name": "quotebot",
+  "description": "Discord bot for posting quotes to a server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RebeccaAnne/QuoteBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RebeccaAnne/QuoteBot/issues"
+  },
+  "homepage": "https://github.com/RebeccaAnne/QuoteBot#readme"
+}
