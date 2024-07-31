@@ -5,8 +5,8 @@ const { randomIndexSelection } = require('./randomSelection.js');
 async function sendQuotePost() {
     const agent = new BskyAgent({ service: "https://bsky.social" });
     await agent.login({
-        identifier: process.env.BSKY_HANDLE, //"victoriagoddardbot.bsky.social",
-        password: process.env.BSKY_PASSWORD, //"idLqvJ_LW5G8U!q",
+        identifier: process.env.BSKY_HANDLE,
+        password: process.env.BSKY_PASSWORD,
     });
 
     let quote = null;
