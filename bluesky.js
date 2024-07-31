@@ -27,7 +27,20 @@ async function sendQuotePost() {
         let quoteIndex = randomIndexSelection("bluesky", book, quoteArray.length, true);
 
         quoteObject = quoteArray[quoteIndex];
-        quote = quoteObject.quote;
+
+        // If we have a specialy editted twitter quote, use that
+        if (quoteObject.twitterQuote != null) {
+            quote = quoteObject.twitterQuote;
+        }
+        else {
+            // If we're using the discord quote, we need to remove any formatting.
+            // Italics are marked for discord by surrounding text with *, underlines with __. 
+            // This strips those characters for BlueSky. We'll need to do something more
+            // sophisticated here if the source text starts including those characters, but
+            // for now this gets the job done.
+            quote = quoteObject.quote.replace(/[*]/g, '').replace(/[__]/g, '');
+        }
+
         console.log("Quote:" + quote);
         if (quote.length > 300) {
             console.log("Quote too long! " + quote.length + " characters.")
