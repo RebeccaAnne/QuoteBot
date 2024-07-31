@@ -1,0 +1,17 @@
+name: "Post to Bluesky"
+
+on: workflow_dispatch
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+      - run: npm ci
+      - name: Send post
+        run: node bluesky.js
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}

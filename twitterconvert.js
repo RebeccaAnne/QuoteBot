@@ -13,6 +13,9 @@ twitterResult.origin = [];
 console.log(rootFileName);
 console.log(rootName);
 
+let totalQuoteCount = 0;
+let totalTooLongCount = 0;
+
 rootFile[rootName].forEach(book => {
 
     // Get the book from the top level array
@@ -31,6 +34,7 @@ rootFile[rootName].forEach(book => {
 
         console.log(bookItem.title);
         let count = 0;
+        let tooLongCount = 0;
 
         bookQuoteFile[book + "quotes"].forEach(quoteObject => {
 
@@ -51,20 +55,29 @@ rootFile[rootName].forEach(book => {
 
             // Check the tweet length
             // A tweet is made up of the quote, two newlines, and the title
-            let tweetLength = twitterQuote.length + 2 + bookItem.title.length;
-            if (tweetLength > 280) {
+            let tweetLength = twitterQuote.length;// + 2 + bookItem.title.length;
+            if (tweetLength > 300) {
                 console.log("++++++\nQuote Too Long!\n" +
                     tweetLength + " characters!\n" +
                     twitterQuote + "\n\n" +
                     bookItem.title + "\n++++++");
+                tooLongCount++;
             }
-
-            twitterResult[book + "quotes"].push(twitterQuote);
-            count++;
+            else {
+                twitterResult[book + "quotes"].push(twitterQuote);
+                count++;
+            }
         });
-        console.log(count + " quotes converted")
+        console.log(count + " " + bookItem.title + " quotes converted")
+        console.log(tooLongCount + " " + bookItem.title + " quotes are too long")
+
+        totalQuoteCount += count;
+        totalTooLongCount += tooLongCount;
     }
 });
+
+console.log(totalQuoteCount + " quotes converted")
+console.log(totalTooLongCount + " quotes are too long")
 
 let createStream = fs.createWriteStream("twitterQuotes.json");
 createStream.write(JSON.stringify(twitterResult));
