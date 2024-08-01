@@ -64,9 +64,9 @@ async function sendQuotePost() {
 
         if (quoteObject.chapter != null) {
             replyText += quoteObject.chapter;
-            if (quoteObject.percentage != null) {
-                replyText += ", ";
-            }
+            //if (quoteObject.percentage != null) {
+                //replyText += ", ";
+            //}
         }
 
         // (Excluding percentage for now)
