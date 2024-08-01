@@ -11,19 +11,20 @@ async function sendQuotePost() {
 
     let quote = null;
     let book = null;
-    let quoteObject
+    let quoteObject = null;
 
     let rootSourceFile = require(path.join(__dirname, "data/" + "victoriaGoddard.json"));
     let quoteRoot = rootSourceFile["all"];
+    book = quoteRoot[randomIndexSelection("bluesky", "all", quoteRoot.length)];
+
+    console.log("Book: " + book);
+
+    let bookConfig = rootSourceFile[book];
+    let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
+
+    let quoteArray = bookQuoteFile[book + "quotes"];
+
     while (quote == null) {
-        book = quoteRoot[randomIndexSelection("bluesky", "all", quoteRoot.length)];
-
-        console.log("Book: " + book);
-
-        let bookConfig = rootSourceFile[book];
-        let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
-
-        let quoteArray = bookQuoteFile[book + "quotes"];
         let quoteIndex = randomIndexSelection("bluesky", book, quoteArray.length, true);
 
         quoteObject = quoteArray[quoteIndex];
@@ -53,9 +54,9 @@ async function sendQuotePost() {
     // Reply with book info. Format is:
     //
     // Title of the Book
-    // Chapter 4; 65%
+    // Chapter 4
     //
-    // Chapter and percentage may or may not be present
+    // (Excluding percentage for now)
     let replyText = rootSourceFile[book].title;
 
     if ((quoteObject.chapter != null) || (quoteObject.percentage != null)) {
@@ -68,9 +69,10 @@ async function sendQuotePost() {
             }
         }
 
-        if (quoteObject.percentage != null) {
-            replyText += quoteObject.percentage + "%";
-        }
+        // (Excluding percentage for now)
+        // if (quoteObject.percentage != null) {
+        //     replyText += quoteObject.percentage + "%";
+        // }
     }
 
     let reply = await agent.post({
