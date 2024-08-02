@@ -24,5 +24,6 @@ jobs:
         run: |
           git config --global user.name 'RebeccaAnne'
           git config --global user.email 'RebeccaAnne@users.noreply.github.com'
+          git add arrays-bluesky.json
           git commit -m "Bluesky Array Update"
           git push
