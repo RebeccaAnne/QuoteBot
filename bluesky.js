@@ -12,14 +12,23 @@ async function sendQuotePost() {
     let quote = null;
     let book = null;
     let quoteObject = null;
+    let bookConfig = null;
 
     let rootSourceFile = require(path.join(__dirname, "data/" + "victoriaGoddard.json"));
     let quoteRoot = rootSourceFile["all"];
-    book = quoteRoot[randomIndexSelection("bluesky", "all", quoteRoot.length)];
+    while (book == null) {
+        book = quoteRoot[randomIndexSelection("bluesky", "all", quoteRoot.length)];
+        console.log("Book: " + book);
+        
+        bookConfig = rootSourceFile[book];
+        if(bookConfig.blueskyEmbargo)
+        {
+            book = null;
+            bookConfig = null;
+            console.log(book + " is under bluesky spoiler embargo");
+        }
+    }
 
-    console.log("Book: " + book);
-
-    let bookConfig = rootSourceFile[book];
     let bookQuoteFile = require(path.join(__dirname, "data/" + bookConfig.quoteSourceFile));
 
     let quoteArray = bookQuoteFile[book + "quotes"];
@@ -65,7 +74,7 @@ async function sendQuotePost() {
         if (quoteObject.chapter != null) {
             replyText += quoteObject.chapter;
             //if (quoteObject.percentage != null) {
-                //replyText += ", ";
+            //replyText += ", ";
             //}
         }
 
