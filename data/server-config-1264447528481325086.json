@@ -1,0 +1,52 @@
+{
+    "description": "Tales by the Fire",
+    "guildId": "1264447528481325086",
+    "channels": {
+        "1264448012684628122": {
+            "description": "💫-the-nine-worlds-and-beyond",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "all",
+            "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
+        },
+        "1264448229333012480": {
+            "description": "⛵-lays-of-the-hearthfire",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "laysRoot"
+        },
+        "1264448330109292585": {
+            "description": "💥-the-red-company",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "redCompanyRoot"
+        },
+        "1264448177839542365": {
+            "description": "🦄-greenwing-and-dart",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "greenwingRoot"
+        }
+    },
+    "scheduledQuotes": [
+        {
+            "id": "discussionSchedule",
+            "description": "quotes at 9pm",
+            "time": "0 0 21 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "1264448012684628122",
+                "1264448177839542365",
+                "1264448229333012480",
+                "1264448330109292585"
+            ]
+        }
+    ],
+    "scheduledFics": [
+        {
+            "id": "ficSchedule",
+            "description": "fanfic at 9am",
+            "time": "0 0 09 * * *",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "1264448012684628122"
+            ]
+        }
+    ]
+}
