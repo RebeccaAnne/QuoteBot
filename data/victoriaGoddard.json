@@ -377,9 +377,7 @@
     "glassblower": {
         "title": "The Glassblower",
         "quoteSourceFile": "otherVictoria.json",
-        "color": 255,
-        "courtesySpoilers": true,
-        "blueskyEmbargo": true
+        "color": 255
     },
     "aurelius": {
         "title": "Aurelius (to be called) Magnus",
