@@ -11,7 +11,7 @@
         "1264448229333012480": {
             "description": "⛵-lays-of-the-hearthfire",
             "rootSourceFile": "victoriaGoddard.json",
-            "quoteRoot": "laysRoot"
+            "quoteRoot": "laysWithHoteRoot"
         },
         "1264448330109292585": {
             "description": "💥-the-red-company",
@@ -27,8 +27,8 @@
     "scheduledQuotes": [
         {
             "id": "discussionSchedule",
-            "description": "quotes at 9pm",
-            "time": "0 0 21 * * *",
+            "description": "quotes at 11pm",
+            "time": "0 0 23 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
                 "1264448012684628122",
@@ -41,8 +41,8 @@
     "scheduledFics": [
         {
             "id": "ficSchedule",
-            "description": "fanfic at 9am",
-            "time": "0 0 09 * * *",
+            "description": "fanfic at 11am",
+            "time": "0 0 11 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
                 "1264448012684628122"
