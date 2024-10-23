@@ -8,6 +8,11 @@
             "quoteRoot": "all",
             "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
         },
+        "1264448177839542365": {
+            "description": "🦄-greenwing-and-dart",
+            "rootSourceFile": "victoriaGoddard.json",
+            "quoteRoot": "greenwingRoot"
+        },
         "1264448229333012480": {
             "description": "⛵-lays-of-the-hearthfire",
             "rootSourceFile": "victoriaGoddard.json",
@@ -17,11 +22,6 @@
             "description": "💥-the-red-company",
             "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "redCompanyRoot"
-        },
-        "1264448177839542365": {
-            "description": "🦄-greenwing-and-dart",
-            "rootSourceFile": "victoriaGoddard.json",
-            "quoteRoot": "greenwingRoot"
         }
     },
     "scheduledQuotes": [
