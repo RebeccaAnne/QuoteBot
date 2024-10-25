@@ -1,9 +1,7 @@
 const path = require('node:path');
 const AO3 = require('ao3');
-const dayjs = require('dayjs');
 const fs = require("fs");
 const { EmbedBuilder } = require('discord.js');
-const { accessSync } = require('node:fs');
 const { randomIndexSelection } = require('./randomSelection.js');
 const { logString } = require('./logging');
 
@@ -25,12 +23,18 @@ updateFicCache = async (guildId, channelId) => {
         let fandom = channel.ficFandomTag;
         if (fandom) {
             logString("Fandom: " + fandom);
+            let search;
+            try {
 
-            // Do a search against the fandom tag to see how many pages of fics there are
-            let search = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
-                fandom);
+                // Do a search against the fandom tag to see how many pages of fics there are
+                search = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
+                    fandom);
 
-            await search.update();
+                await search.update();
+            }
+            catch (error) {
+                logString("\n+++\nfailed to update the fic cache\n" + error + "\n+++\n");
+            }
 
             let totalPages = search.pages;
 
@@ -101,8 +105,6 @@ updateFicCache = async (guildId, channelId) => {
                     let work;
                     let foundNewFics = false;
 
-                    // THE BUG IS THAT WE'RE GOING IN REVERSE ORDER!!
-
                     pageSearch.results.reverse();
 
                     for (work of pageSearch.results) {
@@ -124,16 +126,13 @@ updateFicCache = async (guildId, channelId) => {
                     serverArrays.mostRecentCachedFic = mostRecentCachedFic;
                     serverArrays.ficPagesCached = totalPages - pageToCache + 1;
                     pageToCache--;
+
+                    // shuffle the fics
+                    serverArrays.ficIds.sort(() => Math.random() - 0.5);
                 }
 
-                // Write the update cache to the file
+                // Write the updated cache to the file
                 fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
-
-                if (totalPages > serverArrays.ficPagesCached) {
-                    // If we still haven't cached all the fic, schedule a call to do some more in 1 minute
-                    // (A long time, so we don't get rate limited *or* create contension with 
-                    // a fic currently being requested)
-                }
             }
         }
     }
@@ -142,73 +141,56 @@ updateFicCache = async (guildId, channelId) => {
 generateFicLink = async (guildId, channelId) => {
 
     logString("Finding a Fic!");
+    await updateFicCache(guildId, channelId);
+
+    let serverArrayFileName = "./arrays-" + guildId + ".json";
+    let serverArrays = require(serverArrayFileName);
+
+    logString("There are currently " + serverArrays.ficIds.length + " fics in the cache")
+
+    let ficId = serverArrays.ficIds.pop();
+
+    let randomWork;
     try {
-
-        await updateFicCache(guildId, channelId)
-
-        // Get the fandom tag from the server config
-        let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
-
-        let channel = serverConfig.channels[channelId];
-        if (channel) {
-            let fandom = channel.ficFandomTag;
-            if (fandom) {
-                logString("Fandom: " + fandom);
-
-                // Do a search against the fandom tag to see how many pages of fics there are
-                let search = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
-                    fandom);
-
-                await search.update();
-
-                logString("Total results: " + search.total_results);
-                logString("Total pages: " + search.pages);
-
-                // Reverse the index returned from randomIndexSelection, because new fics will be added at the beginning (index 0)
-                let ficIndex = (search.total_results - 1 - randomIndexSelection(guildId, "fic", search.total_results));
-
-                // Figure out what page that fic is on (1 indexed)
-                let ficPage = Math.floor(ficIndex / 20) + 1;
-                logString("Page: " + ficPage);
-
-                // Do another search to get the fics on that page. Sort by "created_at" so that 
-                // the indexes don't change when a new chapter is posted to an existing fic.
-                let pageSearch = new AO3.Search(undefined, undefined, undefined, undefined, undefined, undefined,
-                    fandom, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
-                    ficPage, "created_at");
-
-                await pageSearch.update();
-
-                let indexOnPage = ficIndex - (ficPage - 1) * 20;
-                let randomWork = pageSearch.results[indexOnPage];
-                logString(randomWork.title);
-
-                let authors = "";
-                for (author of randomWork.authors) {
-                    if (authors) {
-                        authors += ", "
-                    }
-                    authors += author.username;
-                }
-
-                // We've got a fic, let's build an embed for it.
-                let embed = new EmbedBuilder()
-                    .setTitle(randomWork.title)
-                    .setDescription(randomWork.summary)
-                    .setAuthor({ name: authors })
-                    .setURL(randomWork.url)
-                    .setFooter({ text: randomWork.updated.toDateString() })
-                    .setColor(0x666666);
-
-                return { embeds: [embed] };
-            }
-        }
+        randomWork = new AO3.Work(ficId);
+        await randomWork.reload();
     }
-
     catch (error) {
         logString("\n+++\ngenerateFicLink failed\n" + error + "\n+++\n");
         return null;
     }
+
+    logString(randomWork.title);
+    logString(randomWork.updated);
+    logString(randomWork.edited);
+    logString(randomWork.published);
+
+    let date = randomWork.updated;
+    if (isNaN(date)) {
+        date = randomWork.published;
+    }
+
+    let authors = "";
+    for (author of randomWork.authors) {
+        if (authors) {
+            authors += ", "
+        }
+        authors += author.username;
+    }
+
+    // We've got a fic, let's build an embed for it.
+    let embed = new EmbedBuilder()
+        .setTitle(randomWork.title)
+        .setDescription(randomWork.summary)
+        .setAuthor({ name: authors })
+        .setURL(randomWork.url)
+        .setFooter({ text: date.toDateString() })
+        .setColor(0x666666);
+
+    // Write the array back to the file with the fic chosen removed
+    fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
+
+    return { embeds: [embed] };
 }
 
 module.exports = {
