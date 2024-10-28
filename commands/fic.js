@@ -3,6 +3,8 @@ const { SlashCommandBuilder, EmbedBuilder, Message } = require('discord.js');
 const { generateQuote } = require("../quoteGenerator.js");
 const { generateFicLink } = require('../ficLinkGenerator.js');
 const { buildError } = require('../error.js');
+const { logString } = require('../logging');
+
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -24,7 +26,17 @@ module.exports = {
 			(serverConfig.channels[interaction.channelId].ficFandomTag != undefined)) {
 			await interaction.deferReply();
 
-			let fic = await generateFicLink(interaction.guildId, interaction.channelId);
+			let fic;
+			try {
+				fic = await generateFicLink(interaction.guildId, interaction.channelId);
+			}
+			catch (error) {
+				logString("\n+++\ngenerateFicLink failed in fic command\n" + error + "\n+++\n");
+				await interaction.editReply({
+					embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
+				});
+			}
+
 			if (fic) {
 				console.log("We got a fic!")
 
