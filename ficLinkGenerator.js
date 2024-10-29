@@ -154,15 +154,30 @@ generateFicLink = async (guildId, channelId) => {
 
         let ficId = serverArrays.ficIds.pop();
 
+        // All kinds of wonky things happen if use the fic as loaded by id. (author notes included in the summary, 
+        // invalid dates) I don't know why. Doing a search for the title and getting the work from 
+        // there gets better results. Yes this is extremely bogus.
         let randomWork = new AO3.Work(ficId);
         await randomWork.reload();
 
-        logString(randomWork.title);
+        let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
+        let channel = serverConfig.channels[channelId];
 
-        let date = randomWork.updated;
-        if (isNaN(date)) {
-            date = randomWork.published;
+        let search = new AO3.Search(undefined, randomWork.title, undefined, undefined, undefined, undefined,
+            channel.ficFandomTag);
+
+        await search.update();
+
+        // Find the work we're looking for by matching ids. (in case there's more than one 
+        // fic with the same title) 
+        for (let work of search.results) {
+            if (ficId == work.id) {
+                randomWork = work;
+                break;
+            }
         }
+
+        logString(randomWork.title);
 
         let authors = "";
         for (author of randomWork.authors) {
@@ -178,7 +193,7 @@ generateFicLink = async (guildId, channelId) => {
             .setDescription(randomWork.summary)
             .setAuthor({ name: authors })
             .setURL(randomWork.url)
-            .setFooter({ text: date.toDateString() })
+            .setFooter({ text: randomWork.updated.toDateString() })
             .setColor(0x666666);
 
         // Write the array back to the file with the fic chosen removed
