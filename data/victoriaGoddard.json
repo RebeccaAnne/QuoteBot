@@ -84,8 +84,10 @@
         "clarysage",
         "saint",
         "travellersjoy",
+        "balancingstone",
         "bride",
         "warrior",
+        "weaver",
         "humanvoices",
         "humanvoices",
         "glassblower",
@@ -254,7 +256,8 @@
         "stone",
         "clarysage",
         "saint",
-        "travellersjoy"
+        "travellersjoy",
+        "balancingstone"
     ],
     "hoteRoot": [
         "hote"
@@ -263,11 +266,12 @@
         "bride",
         "bride",
         "bride",
-        "bride",
         "warrior",
         "warrior",
         "warrior",
-        "warrior",
+        "weaver",
+        "weaver",
+        "weaver",
         "humanvoices",
         "humanvoices",
         "humanvoices",
@@ -418,6 +422,15 @@
         "quoteSourceFile": "greenwingData.json",
         "color": 34324
     },
+    "balancingstone": {
+        "title": "Balancing Stone",
+        "quoteSourceFile": "greenwingData.json",
+        "courtesySpoilers": [
+            "849347713547501588",
+            "1071247508732395550"
+        ],
+        "color": 34324
+    },
     "bride": {
         "title": "The Bride of the Blue Wind",
         "quoteSourceFile": "otherVictoria.json",
@@ -425,6 +438,11 @@
     },
     "warrior": {
         "title": "The Warrior of the Third Veil",
+        "quoteSourceFile": "otherVictoria.json",
+        "color": 16760704
+    },
+    "weaver": {
+        "title": "The Weaver of the Middle Desert",
         "quoteSourceFile": "otherVictoria.json",
         "color": 16760704
     },

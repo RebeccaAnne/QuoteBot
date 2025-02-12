@@ -36,14 +36,15 @@ module.exports = {
 
             let description = ""
 
-            if(rootSourceFile[book].courtesySpoilers)
-            {
+            let addSpoilers = rootSourceFile[book].courtesySpoilers &&
+                rootSourceFile[book].courtesySpoilers.includes(guildId);
+
+            if (addSpoilers) {
                 description += "||"
             }
 
             description += quote;
-            if(rootSourceFile[book].courtesySpoilers)
-            {
+            if (addSpoilers) {
                 description += "||"
             }
             description += "\n";
