@@ -2054,7 +2054,12 @@
             "percentage": 68
         },
         {
-            "quote": "There was a piercing scream, followed by any number of banging doors and thumping footsteps.\nWe all looked at each other. “I think,” Mr. Dart said, putting the pipe back in his mouth, “that someone has found the body.”\nI rubbed my face in aggravation. “Why are there always so many things happening at once?”",
+            "quote": "There was a piercing scream, followed by any number of banging doors and thumping footsteps.\nWe all looked at each other. “I think,” Mr. Dart said, putting the pipe back in his mouth, “that someone has found the body.”",
+            "chapter": "Chapter 21",
+            "percentage": 77
+        },
+        {
+            "quote": "“Why are there always so many things happening at once?”",
             "chapter": "Chapter 21",
             "percentage": 77
         },
@@ -2261,7 +2266,7 @@
             "percentage": 38
         },
         {
-            "quote": "I smiled crookedly. “For good or for ill, I am my father’s son, Perry.” “Yes. I admire that.”\nI took a deep breath. For all that the Lady’s benediction might be all I *needed* (at least according to the theologians insofar as I remembered them), to have a friend, a peer, a man whom I admired, tell me *that* ...",
+            "quote": "I smiled crookedly. “For good or for ill, I am my father’s son, Perry.”\n“Yes. I admire that.”\nI took a deep breath. For all that the Lady’s benediction might be all I *needed* (at least according to the theologians insofar as I remembered them), to have a friend, a peer, a man whom I admired, tell me *that* ...",
             "chapter": "Chapter 12",
             "percentage": 38
         },
@@ -3201,6 +3206,123 @@
         {
             "quote": "Six months or so later, when Hal and Jemis and various other people stumbled out of a fold of magical space into Marcan’s bedroom, the first thing Marcan said was: “I didn’t mean you take my words so *literally*!”\nHal laughed, for Jemis couldn’t, just that moment.",
             "chapter": "Chapter 3",
+            "percentage": 99
+        }
+    ],
+    "balancingstonequotes": [
+        {
+            "quote": "Hope held resolutely onto this idea: she was certain she had a better chance of maintaining her integrity on the subject of her being quite ordinary than Jemis—or indeed, his best friend Mr. Dart—did.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 1
+        },
+        {
+            "quote": "Everything had happened to Jemis at Morrowlea and, apparently, that had continued afterwards. Hope was glad to know him, she really was, but *good Lady* could he find trouble in an empty room.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 2
+        },
+        {
+            "quote": "Mr. Dart had recently raised Jemis from the dead. How the town hadn’t focused entirely on *him* was beyond her, but perhaps that was the wild magic. If so, it was the best reason to have it that Hope had ever come across.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 3
+        },
+        {
+            "quote": "She was keeping herself and her cursed inheritance to herself, thank you very much. Or at least as best she could. Which might not be perfect but was still better than what Jemis managed, thank the Lady.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 3
+        },
+        {
+            "quote": "It was hard to feel too frightened by someone, however fierce and piratical of appearance, who smiled so readily with that self-aware, earnest, confiding expression, the one that said *Isn’t this ridiculous! Aren’t we all ridiculous! And yet here we are, so we must make the best of it.*",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 7
+        },
+        {
+            "quote": "She had enough hints to know there was *much* more to the situation here than simply—simply!—that shortly before arriving at Hillend Towers Jemis had died and been resurrected in a miracle of the Lady.\nHope wasn’t sure she could see it, personally. But Hal swore it was true, and she trusted Hal.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 13
+        },
+        {
+            "quote": "She had enough hints to know there was *much* more to the situation here than simply—simply!—that shortly before arriving at Hillend Towers Jemis had died and been resurrected in a miracle of the Lady.\nHope wasn’t sure she could see it, personally. But Hal swore it was true, and she trusted Hal.",
+            "chapter": "Chapter 1: Cardy Cakes",
+            "percentage": 13
+        },
+        {
+            "quote": "Jemis really was absurd, and it was hard not to like him for it.",
+            "chapter": "Chapter 2: The Coffin Road",
+            "percentage": 32
+        },
+        {
+            "quote": "Hope should have cut Jemis off from talking so glibly about what happened after death the first time he’d brought the subject up. Unfortunately that was some weeks ago, and he now seemed to have decided she was interested, or at least not likely to run screaming in atavistic disquiet and existential horror from the subject.",
+            "chapter": "Chapter 2: The Coffin Road",
+            "percentage": 38
+        },
+        {
+            "quote": "She had only one question whose answer she wanted to know beyond prudence or any concern about other people’s quaint rural superstitions.\n*What is my true name?*",
+            "chapter": "Chapter 2: The Coffin Road",
+            "percentage": 42
+        },
+        {
+            "quote": "The curriculum at Morrowlea was well-rounded, and Hope knew enough of fairy tales to know that blood on a stone was a sacrifice.",
+            "chapter": "Chapter 2: The Coffin Road",
+            "percentage": 43
+        },
+        {
+            "quote": "He really was a good friend, if you could overlook the utter disregard for physical safety he not infrequently displayed. Not to mention the incredible chaos that followed ineluctably in his wake. And the poetry. One could never forget the poetry.",
+            "chapter": "Chapter 2: The Coffin Road",
+            "percentage": 50
+        },
+        {
+            "quote": "Perhaps the disquieting watchfulness of the hollow road *had* been the result of Jemis’s presence? Though he was not, in himself, eerie, not to her.\nOr at least not excessively.\nOr at least, not *much* more than he had been at university.",
+            "chapter": "Chapter 3: Stone Women",
+            "percentage": 54
+        },
+        {
+            "quote": "“Hope Stornaway,” she said to the air, and to the house-sized boulder pressing up against her shoulders, and herself. “Don’t be a ninny. Are you not a *natural philosopher*?”\n“Are you indeed?” said a voice from her right. Where the drop was. Hope turned her head, and saw perched on the narrowest of ledges a bright-eyed fox with two tails.",
+            "chapter": "Chapter 3: Stone Women",
+            "percentage": 71
+        },
+        {
+            "quote": "She might herself not believe in fairy tales, but this was a talking fox. Clearly Hope was not in possession of *all* the facts.",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 72
+        },
+        {
+            "quote": "*Why* there was a magical talking fox with two tails running around south Fiellan having perplexing conversations with people was a question Hope very much wanted to know the answer to, but unlike Jemis didn’t see the point in asking directly.",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 75
+        },
+        {
+            "quote": "The fox’s questions were not quite the same as for Jemis. But though their fortunes were running in strange parallel, neither were Hope and Jemis’s situations quite the same. (Thankfully. Hope had no interest in dying before her time—and *certainly* not in coming back afterwards!)",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 78
+        },
+        {
+            "quote": "This whole situation was *absurd*. It came of going places with Jemis. She should know better by now. Everyone—even his *father* had warned her!",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 79
+        },
+        {
+            "quote": "Hope did not feel herself up to contesting Mrs. Etaris’s account of her doings. She clearly *was* out for a walk with the dog—whether she had other reasons for coming *this* way was really none of Hope’s business.",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 87
+        },
+        {
+            "quote": "“There are so very many men at Dart Hall,” she muttered, then flushed hard when Mrs. Etaris lifted her head and laughed, the sound so merry and amused Hope could not help but join in.\n“It is very true,” Mrs. Etaris said, almost as mock-seriously as Jemis could ever get, her eyes bright and dancing. “They are excellent men, to be sure. But it is a house that has been long without a woman of the family in it.”",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 90
+        },
+        {
+            "quote": "“The greatest mage and poet of the Empire of Astandalas named himself on the strength of an assertion, we might say, of the wizard Harbut Zalarin, who stated quite incontrovertibly that *what we name ourselves we are*.”\n“And who,” Hope said suspiciously, “might that be?”\nMrs. Etaris smiled, quite placidly, at her, and gently disencumbered her arm from Hope’s grip. “I think you know his name, my dear.”",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 95
+        },
+        {
+            "quote": "*On some investigation into the matter of what constitutes a magically ‘true name’, I have found the following evidence that the name I was given by my adoptive parents, Hope Stornaway, does, in truth, meet the requirements ...*",
+            "chapter": "Chapter 4: Fox Questions",
+            "percentage": 99
+        },
+        {
+            "quote": "She didn’t need faith when she had *sources*.",
+            "chapter": "Chapter 4: Fox Questions",
             "percentage": 99
         }
     ]
