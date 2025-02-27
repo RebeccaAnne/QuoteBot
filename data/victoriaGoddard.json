@@ -425,10 +425,6 @@
     "balancingstone": {
         "title": "Balancing Stone",
         "quoteSourceFile": "greenwingData.json",
-        "courtesySpoilers": [
-            "849347713547501588",
-            "1071247508732395550"
-        ],
         "color": 34324
     },
     "bride": {
