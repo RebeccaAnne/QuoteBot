@@ -7,11 +7,11 @@ const { logString } = require('./logging');
 const puppeteer = require("puppeteer");
 
 
-// This function is a remnant of the old implementation for fics, where i maintained a cache and 
-// prevented dups and all those good things. It was based on the ao3 library that stopped working.
-// Now i scrape things myself(!) but it just does a dumb random fic and doesn't do anything clever.
-// Leaving this here for now for reference if i want at some point to come back and rebuild this
-// functionality.
+// This function is a remnant of the old implementation for fics, where i maintained a cache in real 
+// time using the a03 library. That library doesn't work with ao3's current bot protection stuff, so 
+// this code doesn't work anymore. The current implementation uses the code in buildFicCache.js to build 
+// a cache offline instead using Puppeteer. Leaving this here for now for reference as i develop that 
+// code further.
 updateFicCache = async (guildId, channelId) => {
 
     logString("Building the fic cache")
@@ -142,120 +142,13 @@ updateFicCache = async (guildId, channelId) => {
 
 generateFicLink = async (guildId, channelId) => {
 
-    const browser = await puppeteer.launch({
-        headless: true,
-        defaultViewport: null,
-    });
-
     // Get the fandom from the server config
     let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
     let channel = serverConfig.channels[channelId];
-    let fandomPage = "https://archiveofourown.org/tags/" + channel.ficFandomTag + "/works";
+    let ficFandomTag = channel.ficFandomTag;
 
-    // Open a new page
-    const page = await browser.newPage();
-
-    // This lie apparently convinces ao3 that i'm not a bot and they should let me load the page
-    const ua =
-        "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.3";
-    await page.setUserAgent(ua);
-
-    // Open the link and wait until the dom content is loaded (HTML is ready)
-    console.log("Goto the main fandom page")
-    await page.goto(fandomPage, {
-        waitUntil: "domcontentloaded",
-    });
-
-    // Figure out how many fics are in this fandom
-    const ficCountInfo = await page.evaluate(() => {
-        let logstring = "Evaluating fandom Page"
-
-        // Get the header string, which looks like this:
-        // 1 - 20 of 887 Works in Nine Worlds Series - Victoria Goddard
-        let countString = document.querySelector("#main > h2").innerText.trim();
-        logstring += "\ncountString: " + countString;
-
-        // Remove everything before the " of "
-        countString = countString.slice(countString.indexOf(" of ") + 4);
-
-        // Find the next space and cut it off so we have just the fic count
-        countString = countString.slice(0, countString.indexOf(" "))
-
-        let returnObject = {
-            logstring: logstring,
-            ficCount: Number(countString)
-        }
-
-        return returnObject;
-    });
-    console.log(ficCountInfo.logstring)
-
-    // There are 20 fics per page
-    let pageCount = Math.ceil(ficCountInfo.ficCount / 20);
-
-    // Choose a random page from 1 to pagecount
-    let randomPage = Math.ceil(Math.random() * pageCount);
-
-    console.log("ficCount " + ficCountInfo.ficCount + ", pageCount " + pageCount + ", randomPage " + randomPage);
-
-    // Append the randomly selected page to the fandom link
-    fandomPage += "?page=" + randomPage;
-    console.log("Goto page " + fandomPage);
-
-    await page.goto(fandomPage, {
-        waitUntil: "domcontentloaded",
-    });
-
-    // Get the info for a random fic from this page
-    const fic = await page.evaluate(() => {
-        let ficList = document.querySelector("#main > ol.work.index.group")
-
-        // Most pages have 20 fics, but the last page may have fewer
-        let ficsOnPage = ficList.children.length;
-        let randomFicIndex = Math.floor(Math.random() * ficsOnPage);
-
-        // Get the randomly selected fic
-        let fic = ficList.children.item(randomFicIndex);
-
-        // Get the data for the fic, starting with the title and link in the header
-        let header = fic.querySelector("div > h4");
-        let title = header.children.item(0).innerText;
-        let link = header.children.item(0).href;
-
-        // The full header text is:
-        // <title> by <list of authors> [for <gift recipient>]
-        // We want to get the <list of authors> part
-        let author = header.innerText;
-
-        // Slice off the length of the title plus 4 characters for " by "
-        author = author.slice(title.length + 4)
-
-        // If there's a " for " at the end, slice that off too
-        let giftRecipientIndex = author.lastIndexOf(" for ");
-        if (giftRecipientIndex != -1) {
-            author = author.slice(0, author.lastIndexOf(" for "));
-        }
-
-        // Get the summary and date
-        let summary = fic.querySelector("blockquote").innerText;
-        let date = fic.querySelector("div > p").innerText;
-
-        let returnObject = {
-            ficsOnPage: ficsOnPage,
-            randomFic: randomFicIndex,
-            header: header.innerText,
-            title: title,
-            author: author,
-            summary: summary,
-            link: link,
-            date: date
-        }
-        return returnObject;
-    })
-    console.log(fic)
-
-    // Close the browser
-    await browser.close();
+    let ficCache = require(".\\" + ficFandomTag + ".json");
+    let fic = ficCache[randomIndexSelection(guildId, ficFandomTag, ficCache.length)];
 
     // We've got a fic, let's build an embed for it.
     let embed = new EmbedBuilder()
