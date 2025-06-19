@@ -147,7 +147,7 @@ generateFicLink = async (guildId, channelId) => {
     let channel = serverConfig.channels[channelId];
     let ficFandomTag = channel.ficFandomTag;
 
-    let ficCache = require(".\\" + ficFandomTag + ".json");
+    let ficCache = require("./" + ficFandomTag + ".json");
     let fic = ficCache[randomIndexSelection(guildId, ficFandomTag, ficCache.length)];
 
     // We've got a fic, let's build an embed for it.
