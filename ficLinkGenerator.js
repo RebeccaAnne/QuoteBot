@@ -4,7 +4,14 @@ const fs = require("fs");
 const { EmbedBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
 const { logString } = require('./logging');
+const puppeteer = require("puppeteer");
 
+
+// This function is a remnant of the old implementation for fics, where i maintained a cache and 
+// prevented dups and all those good things. It was based on the ao3 library that stopped working.
+// Now i scrape things myself(!) but it just does a dumb random fic and doesn't do anything clever.
+// Leaving this here for now for reference if i want at some point to come back and rebuild this
+// functionality.
 updateFicCache = async (guildId, channelId) => {
 
     logString("Building the fic cache")
@@ -135,74 +142,133 @@ updateFicCache = async (guildId, channelId) => {
 
 generateFicLink = async (guildId, channelId) => {
 
-    var d = require('domain').create()
-    d.on('error', function (err) {
-        // This is here to catch the http errors that get thrown out of other threads in the ao3 library.
-        logString("Error generating fic link: \n" + err)
-    })
-
-    // catch the uncaught errors in this asynchronous or synchronous code block
-    return d.run(async () => {
-
-        logString("Finding a Fic!");
-        await updateFicCache(guildId, channelId);
-
-        let serverArrayFileName = "./arrays-" + guildId + ".json";
-        let serverArrays = require(serverArrayFileName);
-
-        logString("There are currently " + serverArrays.ficIds.length + " fics in the cache")
-
-        let ficId = serverArrays.ficIds.pop();
-
-        // All kinds of wonky things happen if use the fic as loaded by id. (author notes included in the summary, 
-        // invalid dates) I don't know why. Doing a search for the title and getting the work from 
-        // there gets better results. Yes this is extremely bogus.
-        let randomWork = new AO3.Work(ficId);
-        await randomWork.reload();
-
-        let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
-        let channel = serverConfig.channels[channelId];
-
-        let search = new AO3.Search(undefined, randomWork.title, undefined, undefined, undefined, undefined,
-            channel.ficFandomTag);
-
-        await search.update();
-
-        // Find the work we're looking for by matching ids. (in case there's more than one 
-        // fic with the same title) 
-        for (let work of search.results) {
-            if (ficId == work.id) {
-                randomWork = work;
-                break;
-            }
-        }
-
-        logString(randomWork.title);
-
-        let authors = "";
-        for (author of randomWork.authors) {
-            if (authors) {
-                authors += ", "
-            }
-            authors += author.username;
-        }
-
-        // We've got a fic, let's build an embed for it.
-        let embed = new EmbedBuilder()
-            .setTitle(randomWork.title)
-            .setDescription(randomWork.summary)
-            .setAuthor({ name: authors })
-            .setURL(randomWork.url)
-            .setFooter({ text: randomWork.updated.toDateString() })
-            .setColor(0x666666);
-
-        // Write the array back to the file with the fic chosen removed
-        fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
-
-        return { embeds: [embed] };
+    const browser = await puppeteer.launch({
+        headless: true,
+        defaultViewport: null,
     });
+
+    // Get the fandom from the server config
+    let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
+    let channel = serverConfig.channels[channelId];
+    let fandomPage = "https://archiveofourown.org/tags/" + channel.ficFandomTag + "/works";
+
+    // Open a new page
+    const page = await browser.newPage();
+
+    // This lie apparently convinces ao3 that i'm not a bot and they should let me load the page
+    const ua =
+        "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.3";
+    await page.setUserAgent(ua);
+
+    // Open the link and wait until the dom content is loaded (HTML is ready)
+    console.log("Goto the main fandom page")
+    await page.goto(fandomPage, {
+        waitUntil: "domcontentloaded",
+    });
+
+    // Figure out how many fics are in this fandom
+    const ficCountInfo = await page.evaluate(() => {
+        let logstring = "Evaluating fandom Page"
+
+        // Get the header string, which looks like this:
+        // 1 - 20 of 887 Works in Nine Worlds Series - Victoria Goddard
+        let countString = document.querySelector("#main > h2").innerText.trim();
+        logstring += "\ncountString: " + countString;
+
+        // Remove everything before the " of "
+        countString = countString.slice(countString.indexOf(" of ") + 4);
+
+        // Find the next space and cut it off so we have just the fic count
+        countString = countString.slice(0, countString.indexOf(" "))
+
+        let returnObject = {
+            logstring: logstring,
+            ficCount: Number(countString)
+        }
+
+        return returnObject;
+    });
+    console.log(ficCountInfo.logstring)
+
+    // There are 20 fics per page
+    let pageCount = Math.ceil(ficCountInfo.ficCount / 20);
+
+    // Choose a random page from 1 to pagecount
+    let randomPage = Math.ceil(Math.random() * pageCount);
+
+    console.log("ficCount " + ficCountInfo.ficCount + ", pageCount " + pageCount + ", randomPage " + randomPage);
+
+    // Append the randomly selected page to the fandom link
+    fandomPage += "?page=" + randomPage;
+    console.log("Goto page " + fandomPage);
+
+    await page.goto(fandomPage, {
+        waitUntil: "domcontentloaded",
+    });
+
+    // Get the info for a random fic from this page
+    const fic = await page.evaluate(() => {
+        let ficList = document.querySelector("#main > ol.work.index.group")
+
+        // Most pages have 20 fics, but the last page may have fewer
+        let ficsOnPage = ficList.children.length;
+        let randomFicIndex = Math.floor(Math.random() * ficsOnPage);
+
+        // Get the randomly selected fic
+        let fic = ficList.children.item(randomFicIndex);
+
+        // Get the data for the fic, starting with the title and link in the header
+        let header = fic.querySelector("div > h4");
+        let title = header.children.item(0).innerText;
+        let link = header.children.item(0).href;
+
+        // The full header text is:
+        // <title> by <list of authors> [for <gift recipient>]
+        // We want to get the <list of authors> part
+        let author = header.innerText;
+
+        // Slice off the length of the title plus 4 characters for " by "
+        author = author.slice(title.length + 4)
+
+        // If there's a " for " at the end, slice that off too
+        let giftRecipientIndex = author.lastIndexOf(" for ");
+        if (giftRecipientIndex != -1) {
+            author = author.slice(0, author.lastIndexOf(" for "));
+        }
+
+        // Get the summary and date
+        let summary = fic.querySelector("blockquote").innerText;
+        let date = fic.querySelector("div > p").innerText;
+
+        let returnObject = {
+            ficsOnPage: ficsOnPage,
+            randomFic: randomFicIndex,
+            header: header.innerText,
+            title: title,
+            author: author,
+            summary: summary,
+            link: link,
+            date: date
+        }
+        return returnObject;
+    })
+    console.log(fic)
+
+    // Close the browser
+    await browser.close();
+
+    // We've got a fic, let's build an embed for it.
+    let embed = new EmbedBuilder()
+        .setTitle(fic.title)
+        .setDescription(fic.summary)
+        .setAuthor({ name: fic.author })
+        .setURL(fic.link)
+        .setFooter({ text: fic.date })
+        .setColor(0x666666);
+
+    return { embeds: [embed] };
 }
 
 module.exports = {
-    updateFicCache, generateFicLink
+    generateFicLink
 }

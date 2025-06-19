@@ -6,13 +6,13 @@
     "cron": "^2.2.0",
     "dayjs": "^1.11.7",
     "discord.js": "^14.7.1",
+    "puppeteer": "^24.10.1",
     "tracery-grammar": "^2.7.4"
   },
   "name": "quotebot",
   "description": "Discord bot for posting quotes to a server",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
