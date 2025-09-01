@@ -2,13 +2,12 @@ var fs = require("fs");
 const { logString } = require('./logging');
 
 module.exports = {
-    randomIndexSelection: (guildId, arrayId, max, updateOnNewItems) => {
+    randomIndexSelection: (guildId, arrayId, max, updateOnNewItems, regenOnEmpty = true) => {
 
         logString("Random Selection!")
 
         // Short circuit everything if they're asking for an index from an array of size 1.
-        if(max == 1)
-        {
+        if (max == 1) {
             return 0;
         }
 
@@ -25,7 +24,7 @@ module.exports = {
         // (b) the one we have is empty
         // (c) the max being passed is less than the one we used to generate the current array
         if ((serverArrays[arrayId] == null) ||
-            (serverArrays[arrayId].length == 0) ||
+            (serverArrays[arrayId].length == 0 && regenOnEmpty) ||
             (max < serverArrays[arrayId + "Max"])) {
 
             logString("Making a new Array! Server: " + guildId + " Id: " + arrayId + " max: " + max, "./arrayUpdateLog.txt");

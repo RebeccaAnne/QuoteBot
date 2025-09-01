@@ -28,7 +28,7 @@ module.exports = {
 
 			let fic;
 			try {
-				fic = await generateFicLink(interaction.guildId, interaction.channelId);
+				fic = await generateFicLink(interaction.guildId, interaction.channelId, true);
 			}
 			catch (error) {
 				logString("\n+++\ngenerateFicLink failed in fic command\n" + error + "\n+++\n");
