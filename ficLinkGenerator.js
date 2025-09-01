@@ -190,8 +190,6 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
         .setThumbnail(thumbnailUrl)
         .setColor(0x666666);
 
-    console.log(embed)
-
     return { embeds: [embed], files: thumbnailAttachement ? [thumbnailAttachement] : null };
 }
 
