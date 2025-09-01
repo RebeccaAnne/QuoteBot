@@ -42,8 +42,8 @@
     "scheduledFics": [
         {
             "id": "ficSchedule",
-            "description": "fanfic at 11am",
-            "time": "0 0 11 * * *",
+            "description": "fanfic at 11am and 5pm",
+            "time": "0 0 11,17 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
                 "1264448012684628122"
