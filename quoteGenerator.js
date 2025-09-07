@@ -14,7 +14,9 @@ module.exports = {
         let serverConfig = require(path.join(__dirname, "data/server-config-" + guildId + ".json"));
         let channel = serverConfig.channels[channelId];
 
-        logString("server: " + serverConfig.description + " channel: " + channel.description)
+        logString(
+            "server: " + serverConfig.description + " (" + guildId + "), " +
+            " channel: " + channel.description + " (" + channelId + ") ")
 
         if (channel) {
             //logString("channel.rootSourceFile: " + channel.rootSourceFile);
@@ -75,6 +77,7 @@ module.exports = {
                     footerText += quoteObject.percentage + "%";
                 }
             }
+            logString("----------------------------------------------");
 
             const coverPath = "./data/Images/" + book + ".png";
             if (fs.existsSync(coverPath)) {
