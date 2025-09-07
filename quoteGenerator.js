@@ -8,16 +8,18 @@ const { AttachmentBuilder } = require('discord.js');
 module.exports = {
     generateQuote: (guildId, channelId) => {
 
-        logString("Generating quote!");
-        logString("guildId: " + guildId + " channelId: " + channelId);
+        logString("------------Generating quote!-----------------");
+        //logString("guildId: " + guildId + " channelId: " + channelId);
         //        try {
         let serverConfig = require(path.join(__dirname, "data/server-config-" + guildId + ".json"));
         let channel = serverConfig.channels[channelId];
 
+        logString("server: " + serverConfig.description + " channel: " + channel.description)
+
         if (channel) {
-            logString("channel.rootSourceFile: " + channel.rootSourceFile);
+            //logString("channel.rootSourceFile: " + channel.rootSourceFile);
             let rootSourceFile = require(path.join(__dirname, "data/" + channel.rootSourceFile));
-            logString("channel.quoteRoot: " + channel.quoteRoot);
+            //logString("channel.quoteRoot: " + channel.quoteRoot);
 
             let quoteRoot = rootSourceFile[channel.quoteRoot];
             let book = quoteRoot[randomIndexSelection(guildId, channel.quoteRoot, quoteRoot.length)];

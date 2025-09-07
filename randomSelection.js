@@ -4,7 +4,7 @@ const { logString } = require('./logging');
 module.exports = {
     randomIndexSelection: (guildId, arrayId, max, updateOnNewItems, regenOnEmpty = true) => {
 
-        logString("Random Selection!")
+        //logString("Random Selection!")
 
         // Short circuit everything if they're asking for an index from an array of size 1.
         if (max == 1) {
@@ -48,7 +48,7 @@ module.exports = {
 
         // Pop an index off the random array
         let value = serverArrays[arrayId].pop();
-        logString("Returning index " + value);
+        //logString("Returning index " + value);
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
         return value;
     }
