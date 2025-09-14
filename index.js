@@ -54,6 +54,10 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 		}
 		else {
 			let result = await generateFunction(guildId, channelId);
+
+			result.nonce = Math.random() * 16 + " ";
+			result.enforceNonce = true;
+
 			channel.send(result);
 
 		}
