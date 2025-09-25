@@ -43,7 +43,7 @@
         {
             "id": "ficSchedule",
             "description": "fanfic at 11am and 5pm",
-            "time": "0 0 11,17 * * *",
+            "time": "0 0 11 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
                 "1264448012684628122"
