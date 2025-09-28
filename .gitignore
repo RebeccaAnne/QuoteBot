@@ -1,8 +1,9 @@
 config.json
 
-arrays-849347713547501588.json
-arrays-1071247508732395550.json
+arrays-*.json
+arrays-*.json
 log-*
 arrayUpdateLog.txt
+ArrayUpdates.json
 
 node_modules/
