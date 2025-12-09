@@ -3,6 +3,7 @@ const path = require('node:path');
 const fs = require('node:fs');
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
+//let fandomName = "Tuyo Series- Rachel Neumeier"
 let append = false;
 
 // If this is set we'll start here (working backwards). 
@@ -103,6 +104,7 @@ buildFicCache = async () => {
 
         // Append the page to the fandom link
         let fandomPage = rootFandomPage + "?page=" + iPage;
+        //fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Tuyo+Series-+Rachel+Neumeier&page=" + iPage;
         fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Nine+Worlds+Series+-+Victoria+Goddard&page=" + iPage;
         console.log("Goto page " + fandomPage);
 
