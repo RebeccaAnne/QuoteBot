@@ -1,9 +1,7 @@
-const path = require('node:path');
-const { SlashCommandBuilder, EmbedBuilder, Message } = require('discord.js');
-const { generateQuote } = require("../quoteGenerator.js");
-const { generateFicLink } = require('../ficLinkGenerator.js');
-const { buildError } = require('../error.js');
-const { logString } = require('../logging');
+path = require('node:path');
+const { SlashCommandBuilder, UserSelectMenuBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType, EmbedBuilder } = require('discord.js');
+var fs = require("fs");
+
 
 
 module.exports = {
@@ -23,75 +21,92 @@ module.exports = {
 		let optIn = interaction.options.getBoolean('opt-in');
 		let ao3UserName = interaction.options.getString('ao3-user-name');
 
-		console.log(interaction)
-		console.log(interaction.user)
-
-		interaction.reply("opt-in: " + optIn + " ao3: " + ao3UserName + " discord: " + interaction.user.globalName);
-
-		let optInFileName = "./opt-in.json";
+		let optInFileName = "opt-in.json";
 
 		let optIns = {};
 		try {
-			optIns = require(optInFileName);
+			optIns = require("../" + optInFileName);
 		}
-		catch { logString("Failed to load opt-ins from file"); }
+		catch { console.log("Failed to load opt-ins from file"); }
 
-		let userOptInStatus = optIns[interaction.user.id];
-		if (!userOptInStatus) {
-			userOptInStatus = {};
-		}
+		console.log(optIns)
 
-		if (!userOptInStatus[ao3UserName]) {
-			userOptInStatus[ao3UserName] = {}
-		}
-
-		userOptInStatus[ao3UserName].optIn = optIn;
-
-		if (!optIn) {
-			interaction.reply("opt-in: " + optIn + " ao3: " + ao3UserName + " discord: " + interaction.user.globalName);
+		if (!optIns[interaction.user.id]) {
+			optIns[interaction.user.id] = {};
+			optIns[interaction.user.id].username = interaction.user.username;
+			optIns[interaction.user.id].globalName = interaction.user.globalName;
+			optIns[interaction.user.id].ao3UserNames = {};
 		}
 
-		// // Check that we're in the fic channel
-		// let serverConfig = require(path.join(__dirname, "../data/server-config-" + interaction.guildId + ".json"));
+		if (!optIns[interaction.user.id].ao3UserNames[ao3UserName]) {
+			optIns[interaction.user.id].ao3UserNames[ao3UserName] = {}
+		}
 
-		// console.log(interaction.channelId);
+		optIns[interaction.user.id].ao3UserNames[ao3UserName].optIn = optIn;
 
-		// // Ao3 queries can take long enough to timeout if we don't defer the reply, make sure we're 
-		// // going to have what we need before we do that though, so that if we need an error message 
-		// // it can be ephemeral in the common error cases
-		// if ((serverConfig != undefined) &&
-		// 	(serverConfig.channels != undefined) &&
-		// 	(serverConfig.channels[interaction.channelId] != undefined) &&
-		// 	(serverConfig.channels[interaction.channelId].ficFandomTag != undefined)) {
-		// 	await interaction.deferReply();
+		let sendApprovalRequest = false;
+		let reply = "";
+		if (optIns[interaction.user.id].ao3UserNames[ao3UserName].approval === "Approved") {
+			reply += "Archive locked fics from **" + ao3UserName + "** have been opted";
+			reply += optIn ? " into " : " out of ";
+			reply += "quote bot fic recommendations!"
+		}
+		else if (!optIn) {
+			reply += "Archive locked fics from **" + ao3UserName + "** are not currently opted in."
+		}
+		else {
+			optIns[interaction.user.id].ao3UserNames[ao3UserName].approval = "Pending"
+			reply += "Opt-in for archive locked fics from ao3 user name **" + ao3UserName + "** is pending approval."
+			sendApprovalRequest = true;
+		}
 
-		// 	let fic;
-		// 	try {
-		// 		fic = await generateFicLink(interaction.guildId, interaction.channelId, true);
-		// 	}
-		// 	catch (error) {
-		// 		logString("\n+++\ngenerateFicLink failed in fic command\n" + error + "\n+++\n");
-		// 		await interaction.editReply({
-		// 			embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
-		// 		});
-		// 	}
+		interaction.reply({ content: reply, ephemeral: true });
 
-		// 	if (fic) {
-		// 		console.log("We got a fic!")
+		console.log(optIns);
+		fs.writeFileSync(optInFileName, JSON.stringify(optIns), () => { });
 
-		// 		await interaction.editReply(fic);
-		// 	}
-		// 	else {
+		if (sendApprovalRequest) {
+			let approvalChannel = await interaction.client.channels.fetch("1447820720892547112", { force: true });
 
-		// 		await interaction.editReply({
-		// 			embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")]
-		// 		});
-		// 	}
-		// }
-		// else {
-		// 	await interaction.reply({
-		// 		embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
-		// 	});
-		// }
+			const approve = new ButtonBuilder()
+				.setCustomId('approve')
+				.setLabel('Approve')
+				.setStyle(ButtonStyle.Primary);
+
+			const reject = new ButtonBuilder()
+				.setCustomId('reject')
+				.setLabel('Reject')
+				.setStyle(ButtonStyle.Secondary);
+
+			const buttonRow = new ActionRowBuilder()
+				.addComponents(approve, reject);
+
+			let approvalMessage = await approvalChannel.send({
+				content: `Discord User **${interaction.user.globalName}** (${interaction.user.username}) from **${interaction.guild.name}** wants to opt in ao3 user name **${ao3UserName}**!`,
+				components: [buttonRow]
+			});
+
+			// Response collector for the Buttons
+			const buttonCollector = approvalMessage.createMessageComponentCollector({ componentType: ComponentType.Button, time: 3_600_000 });
+			buttonCollector.on('collect', async buttonInteration => {
+
+				let buttonInteractionText = "Opt-in ";
+				if (buttonInteration.customId === 'approve') {
+					optIns[interaction.user.id].ao3UserNames[ao3UserName].approval = "Approved"
+					buttonInteractionText += " Approved ";
+				}
+				else if (buttonInteration.customId == 'reject') {
+					optIns[interaction.user.id].ao3UserNames[ao3UserName].approval = "Rejected"
+					buttonInteractionText += " Rejected ";
+				}
+				buttonInteractionText += "for **" + interaction.user.globalName +
+					"** (" + interaction.user.username + "): **" + ao3UserName + "**!";
+
+				console.log(optIns);
+				fs.writeFileSync(optInFileName, JSON.stringify(optIns), () => { });
+
+				await buttonInteration.update({ content: buttonInteractionText, components: [] })
+			});
+		}
 	},
 };
