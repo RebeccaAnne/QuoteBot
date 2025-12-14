@@ -1,6 +1,9 @@
 const puppeteer = require("puppeteer");
 const path = require('node:path');
 const fs = require('node:fs');
+const { getOptInAo3Names, isFicOptedIn } = require('./ficLinkGenerator.js');
+const { logString } = require("./logging.js");
+
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"
@@ -8,32 +11,10 @@ let append = false;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = undefined//42;
+let startingPage = 1; //undefined;
 
 if (process.argv[2])
     fandomName = process.argv[2]
-
-getOptInAo3Names = () => {
-
-    let optIns = {};
-    try {
-        optIns = require(".\\opt-in.json");
-    }
-    catch { console.log("Failed to load opt-ins from file"); }
-
-    let optedInAo3NameArray = []
-    for (let discordUser in optIns) {
-        for (let ao3Name in optIns[discordUser].ao3UserNames) {
-            //console.log(optIns[discordUser].ao3UserNames[ao3Name])
-            if (optIns[discordUser].ao3UserNames[ao3Name].optIn &&
-                optIns[discordUser].ao3UserNames[ao3Name].approval === "Approved") {
-                //console.log("Add " + ao3Name + "!")
-                optedInAo3NameArray.push(ao3Name)
-            }
-        }
-    }
-    return optedInAo3NameArray;
-}
 
 buildFicCache = async () => {
 
@@ -153,7 +134,7 @@ buildFicCache = async () => {
 
         // Get the info for the fics on this page
         let pageEvaluateResult = await page.evaluate((ao3OptIns) => {
-            logstring = "";
+            let logstring = "";
             let ficArray = [];
             let ficList = document.querySelector("#main > ol.work.index.group")
 
@@ -184,42 +165,9 @@ buildFicCache = async () => {
                     author = author.slice(0, author.lastIndexOf(" for "));
                 }
 
+                //TODO: Figure this out
                 let ficIsLocked = true;
 
-                let optedInAuthor = null;
-                if (ficIsLocked) {
-                    optedInAuthor = ao3OptIns.find((optedInName) => {
-                        // Split multiple authors into an array of authors
-                        let authorArray = author.split(",");
-
-                        // look for this optedInName in the array of authors
-                        return authorArray.find((splitAuthor) => {
-                            splitAuthor = splitAuthor.trim().toLowerCase();
-
-                            // If the author is of the form name1 (name2) this represents multiple ao3 psueds.
-                            // Consider this author opted-in if either name matches an opted-in username
-                            let paren1Index = splitAuthor.indexOf("(")
-                            let paren2Index = splitAuthor.indexOf(")")
-                            if (paren1Index != -1) {
-                                name1 = splitAuthor.slice(0, paren1Index).trim();
-                                name2 = splitAuthor.slice(paren1Index + 1, paren2Index).trim();
-                                return optedInName.toLowerCase() == name1.toLowerCase() ||
-                                    optedInName.toLowerCase() == name2.toLowerCase();
-                            }
-                            else {
-                                return optedInName.toLowerCase() == splitAuthor.toLowerCase();
-                            }
-                        })
-                    })
-                    //logstring += ("\nFound optedinAuthor: " + optedInAuthor);
-                }
-                if (!optedInAuthor) {
-                    logstring += "\n" + author + " is not opted in"
-                    continue;
-                }
-                else {
-                    logstring += "\n" + author + " is opted in"
-                }
 
                 // Get the summary. If this element is missing use a blank string
                 let summary = ""
@@ -236,7 +184,8 @@ buildFicCache = async () => {
                     author: author,
                     summary: summary,
                     link: link,
-                    date: date
+                    date: date,
+                    locked: ficIsLocked,
                 }
                 ficArray.push(ficObject)
             }
@@ -250,7 +199,15 @@ buildFicCache = async () => {
         console.log(pageEvaluateResult.logstring)
         console.log(pageEvaluateResult.ficArray)
 
-        ficCache = ficCache.concat(pageEvaluateResult.ficArray);
+        for (let fic of pageEvaluateResult.ficArray) {
+            if (fic.locked && !isFicOptedIn(fic.author, ao3OptIns)) {
+                console.log(fic.author + " is not opted in");
+                continue;
+            }
+            else {
+                ficCache.push(fic);
+            }
+        }
 
         console.log("Cached page " + iPage);
         console.log(ficCache.length + " fics Cached so far")
