@@ -194,7 +194,7 @@ buildFicCache = async () => {
 
                         // look for this optedInName in the array of authors
                         return authorArray.find((splitAuthor) => {
-                            splitAuthor = splitAuthor.trim();
+                            splitAuthor = splitAuthor.trim().toLowerCase();
 
                             // If the author is of the form name1 (name2) this represents multiple ao3 psueds.
                             // Consider this author opted-in if either name matches an opted-in username

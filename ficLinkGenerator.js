@@ -31,12 +31,24 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
         else { console.log("Out of Bingo Fics") }
     }
 
-    if (!fic) {
-        let ficFandomTag = channel.ficFandomTag;
-        let ficCache = require("./" + ficFandomTag + ".json");
+    let ficFandomTag = channel.ficFandomTag;
+    let ficCache = require("./" + ficFandomTag + ".json");
+    while (!fic) {
         fic = ficCache[randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, false)];
-        console.log(fic)
+        if (fic.locked) {
+            let optIns = {};
+            try {
+                optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
+            }
+            catch { console.log("Failed to load opt-ins from file"); }
+
+            optIns.find((optedInDiscordUser) => {
+                optedInDiscordUser.ao3UserNames.find((ao3User) => { })
+            });
+        }
     }
+    console.log(fic)
+
 
     let thumbnailAttachement = null;
     let thumbnailUrl = null;
