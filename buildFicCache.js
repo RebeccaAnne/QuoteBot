@@ -2,8 +2,6 @@ const puppeteer = require("puppeteer");
 const path = require('node:path');
 const fs = require('node:fs');
 const { getOptInAo3Names, isFicOptedIn } = require('./ficLinkGenerator.js');
-const { logString } = require("./logging.js");
-
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"

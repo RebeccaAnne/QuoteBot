@@ -1,0 +1,96 @@
+{
+    "849484174657323038": {
+        "username": "alura.of.ysthar",
+        "globalName": "Alura",
+        "ao3UserNames": {
+            "alurarose": {
+                "displayName": "AluraRose",
+                "approval": "Approved",
+                "scope": "all",
+                "optIn": true,
+                "timestamp": "Sat Dec 13 2025"
+            },
+            "test": {
+                "displayName": "Test",
+                "approval": "Approved",
+                "scope": [
+                    {
+                        "id": "1071247508732395550",
+                        "name": "Alura's Bot Training Grounds"
+                    }
+                ],
+                "optIn": true,
+                "timestamp": "Sat Dec 13 2025"
+            }
+        }
+    },
+    "849484174657323039": {
+        "username": "alura.of.ysthar",
+        "globalName": "Alura",
+        "ao3UserNames": {
+            "rattyjol": {
+                "displayName": "rattyjol",
+                "approval": "Approved",
+                "scope": "all",
+                "optIn": true,
+                "timestamp": "Sat Dec 13 2025"
+            }
+        }
+    },
+    "849484174657323040": {
+        "username": "alura.of.ysthar",
+        "globalName": "Alura",
+        "ao3UserNames": {
+            "suninglory": {
+                "displayName": "SunInGlory",
+                "approval": "Approved",
+                "scope": [
+                    {
+                        "id": "1071247508732395550",
+                        "name": "Alura's Bot Training Grounds"
+                    }
+                ],
+                "optIn": true,
+                "timestamp": "Sat Dec 13 2025"
+            },
+            "alfgifu": {
+                "displayName": "alfgifu",
+                "approval": "Approved",
+                "scope": [
+                    {
+                        "id": "123456789",
+                        "name": "Fake Server"
+                    }
+                ],
+                "optIn": true,
+                "timestamp": "Sat Dec 13 2025"
+            }
+        }
+    },
+    "849484174657323050": {
+        "username": "alura.of.ysthar",
+        "globalName": "Alura",
+        "ao3UserNames": {
+            "witgifu": {
+                "displayName": "Witgifu",
+                "approval": "Approved",
+                "scope": "all",
+                "optIn": false,
+                "timestamp": "Sat Dec 13 2025"
+            }
+        }
+    },
+    "849484174657323051": {
+        "username": "alura.of.ysthar",
+        "globalName": "Alura",
+        "ao3UserNames": {
+            "hermitknut": {
+                "displayName": "hermitknut",
+                "approval": "Pending",
+                "scope": "all",
+                "optIn": false,
+                "timestamp": "Sat Dec 13 2025"
+            }
+        }
+    }
+}
