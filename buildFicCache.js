@@ -6,11 +6,11 @@ const { ao3Password } = require('./config.json');
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"
-let append = true;
+let append = false;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = 1;
+let startingPage = undefined;
 
 if (process.argv[2])
     fandomName = process.argv[2]
@@ -108,15 +108,13 @@ buildFicCache = async () => {
         console.log("Current cache loaded")
     }
 
+    // Store this in a set to de-dup
     const lockedAuthors = new Set(lockedFicObject.lockedAuthors);
 
     for (let iPage = startingPage; iPage >= 1; iPage--) {
 
-        // Close the browser and wait 10 seconds so ao3 doesn't get mad at us for being a bot
+        // Close the browser so ao3 doesn't get mad at us for being a bot
         await browser.close();
-        //console.log("Waiting 10 seconds");
-        //await new Promise(resolve => setTimeout(resolve, 10000));
-        //console.log("Done Waiting")
 
         browser = await puppeteer.launch({
             headless: false,
@@ -127,7 +125,6 @@ buildFicCache = async () => {
 
         console.log("Caching page " + iPage);
 
-        // page 17
         // Append the page to the fandom link
         let fandomPage = rootFandomPage + "?page=" + iPage;
         //fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Tuyo+Series-+Rachel+Neumeier&page=" + iPage;
@@ -145,6 +142,8 @@ buildFicCache = async () => {
         await page.type('#user_session_login_small', 'ClockworkEcho');
         await page.type('#user_session_password_small', ao3Password);
         await page.click('input[type="submit"]');
+
+        // Wait 30 seconds to avoid rate limitting
         console.log("Waiting 30 seconds");
         await new Promise(resolve => setTimeout(resolve, 30000));
 
@@ -214,6 +213,8 @@ buildFicCache = async () => {
         console.log(pageEvaluateResult.logstring)
         console.log(pageEvaluateResult.ficArray)
 
+        // Sort the locked fics from the unlocked fics. Locked fics can go in the main cache if the
+        // author is opted in.
         for (let fic of pageEvaluateResult.ficArray) {
             if (fic.locked && !isFicOptedIn(fic.author, ao3OptIns)) {
                 console.log(fic.author + " is not opted in");
