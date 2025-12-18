@@ -1,6 +1,8 @@
 const puppeteer = require("puppeteer");
 const path = require('node:path');
 const fs = require('node:fs');
+const { getOptInAo3Names, isFicOptedIn } = require('./ficLinkGenerator.js');
+const { ao3Password } = require('./config.json');
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"
@@ -8,12 +10,15 @@ let append = false;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = undefined//42;
+let startingPage = 1;
 
 if (process.argv[2])
     fandomName = process.argv[2]
 
 buildFicCache = async () => {
+
+    // Get the list of ao3 names that are opted in to sharing archive locked fics
+    let ao3OptIns = getOptInAo3Names();
 
     let browser = await puppeteer.launch({
         headless: false,
@@ -21,7 +26,6 @@ buildFicCache = async () => {
     });
 
     let rootFandomPage = "https://archiveofourown.org/tags/" + fandomName + "/works";
-
 
     // Open a new page
     const page = await browser.newPage();
@@ -39,6 +43,14 @@ buildFicCache = async () => {
             waitUntil: "domcontentloaded",
         });
 
+        // Log in to ao3 in order to access archive locked fic.
+        await page.click('#login-dropdown');
+        await page.type('#user_session_login_small', 'ClockworkEcho');
+        await page.type('#user_session_password_small', ao3Password);
+        await page.click('input[type="submit"]');
+        console.log("Waiting 10 seconds");
+        await new Promise(resolve => setTimeout(resolve, 10000));
+
         // Figure out how many fics are in this fandom
         const ficCountInfo = await page.evaluate(() => {
             let logstring = "Evaluating fandom Page"
@@ -53,6 +65,9 @@ buildFicCache = async () => {
 
             // Find the next space and cut it off so we have just the fic count
             countString = countString.slice(0, countString.indexOf(" "))
+
+            // Remove commas from numbers over 1000
+            countString = countString.replace(",", "");
 
             let returnObject = {
                 logstring: logstring,
@@ -72,12 +87,20 @@ buildFicCache = async () => {
     console.log("startingPage " + startingPage);
 
     let ficCache = [];
+    let lockedFicObject = {};
+    lockedFicObject.lockedFicCache = []
+    lockedFicObject.lockedAuthors = []
 
     if (append) {
         try {
             ficCache = require(".\\" + fandomName + ".json");
         }
         catch { console.log("Failed to load fic cache from file"); }
+
+        try {
+            lockedFicObject = require(".\\" + fandomName + "-locked.json");
+        }
+        catch { console.log("Failed to load locked fic cache from file"); }
     }
 
     if (append) {
@@ -85,13 +108,13 @@ buildFicCache = async () => {
         console.log("Current cache loaded")
     }
 
+    // Store this in a set to de-dup
+    const lockedAuthors = new Set(lockedFicObject.lockedAuthors);
+
     for (let iPage = startingPage; iPage >= 1; iPage--) {
 
-        // Close the browser and wait 30 seconds so ao3 doesn't get mad at us for being a bot
+        // Close the browser so ao3 doesn't get mad at us for being a bot
         await browser.close();
-        console.log("Waiting 30 seconds");
-        await new Promise(resolve => setTimeout(resolve, 30000));
-        console.log("Done Waiting")
 
         browser = await puppeteer.launch({
             headless: false,
@@ -114,12 +137,23 @@ buildFicCache = async () => {
 
         console.log("Evaluating")
 
+        // Log in to ao3 in order to access archive locked fic.
+        await page.click('#login-dropdown');
+        await page.type('#user_session_login_small', 'ClockworkEcho');
+        await page.type('#user_session_password_small', ao3Password);
+        await page.click('input[type="submit"]');
+
+        // Wait 30 seconds to avoid rate limitting
+        console.log("Waiting 30 seconds");
+        await new Promise(resolve => setTimeout(resolve, 30000));
+
         // Get the info for the fics on this page
-        let pageArray = await page.evaluate(() => {
+        let pageEvaluateResult = await page.evaluate(() => {
+            let logstring = "";
             let ficArray = [];
             let ficList = document.querySelector("#main > ol.work.index.group")
 
-            // // Most pages have 20 fics, but the last page may have fewer
+            // Most pages have 20 fics, but the last page may have fewer
             let ficsOnPage = ficList.children.length;
 
             for (let iFic = ficsOnPage - 1; iFic >= 0; iFic--) {
@@ -127,8 +161,11 @@ buildFicCache = async () => {
                 // Get the fic
                 let fic = ficList.children.item(iFic);
 
-                // Get the data for the fic, starting with the title and link in the header
+
+                // Get the data for the fic, starting with the header
                 let header = fic.querySelector("div > h4");
+
+                // item(0) is the linked fic title
                 let title = header.children.item(0).innerText;
                 let link = header.children.item(0).href;
 
@@ -146,6 +183,15 @@ buildFicCache = async () => {
                     author = author.slice(0, author.lastIndexOf(" for "));
                 }
 
+                // Locked fics will have a little lock image in the header on ao3.
+                // Look for that image, and if it's there, set locked to true.
+                let ficIsLocked = header.querySelector("img");
+                if(ficIsLocked)
+                {
+                    // Add a lock icon to our title as well
+                    title = ":lock: " + title;
+                }
+
                 // Get the summary. If this element is missing use a blank string
                 let summary = ""
                 let summaryElement = fic.querySelector("blockquote");
@@ -161,19 +207,43 @@ buildFicCache = async () => {
                     author: author,
                     summary: summary,
                     link: link,
-                    date: date
+                    date: date,
+                    locked: !!ficIsLocked,
                 }
                 ficArray.push(ficObject)
             }
-            return ficArray;
-        })
-        console.log(pageArray)
+            let returnObject = {
+                logstring: logstring,
+                ficArray: ficArray
+            }
 
-        ficCache = ficCache.concat(pageArray);
+            return returnObject;
+        })
+        console.log(pageEvaluateResult.logstring)
+        console.log(pageEvaluateResult.ficArray)
+
+        // Sort the locked fics from the unlocked fics. Locked fics can go in the main cache if the
+        // author is opted in.
+        for (let fic of pageEvaluateResult.ficArray) {
+            if (fic.locked && !isFicOptedIn(fic.author, ao3OptIns)) {
+                console.log(fic.author + " is not opted in");
+                lockedAuthors.add(fic.author.trim())
+                lockedFicObject.lockedFicCache.push(fic);
+            }
+            else {
+                ficCache.push(fic);
+            }
+        }
+
+        lockedFicObject.lockedAuthors = Array.from(lockedAuthors);
 
         console.log("Cached page " + iPage);
         console.log(ficCache.length + " fics Cached so far")
+        console.log(lockedFicObject.lockedFicCache.length + " locked fics so far")
+        console.log(lockedFicObject.lockedAuthors.length + " locked authors so far")
+        console.log(lockedFicObject.lockedAuthors)
         fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
+        fs.writeFileSync(fandomName + "-locked.json", JSON.stringify(lockedFicObject), () => { });
     }
     // Close the browser
     await browser.close();
