@@ -24,10 +24,8 @@ getOptInAo3Names = () => {
     let optedInAo3NameArray = []
     for (let discordUser in optIns) {
         for (let ao3Name in optIns[discordUser].ao3UserNames) {
-            //console.log(optIns[discordUser].ao3UserNames[ao3Name])
             if (optIns[discordUser].ao3UserNames[ao3Name].optIn &&
                 optIns[discordUser].ao3UserNames[ao3Name].approval === APPROVED) {
-                //console.log("Add " + ao3Name + "!")
                 optedInAo3NameArray.push(optIns[discordUser].ao3UserNames[ao3Name])
             }
         }

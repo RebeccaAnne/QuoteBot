@@ -10,7 +10,7 @@ let append = false;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = undefined;
+let startingPage = 1;
 
 if (process.argv[2])
     fandomName = process.argv[2]
@@ -161,13 +161,13 @@ buildFicCache = async () => {
                 // Get the fic
                 let fic = ficList.children.item(iFic);
 
-                // Get the data for the fic, starting with the title and link in the header
+
+                // Get the data for the fic, starting with the header
                 let header = fic.querySelector("div > h4");
+
+                // item(0) is the linked fic title
                 let title = header.children.item(0).innerText;
                 let link = header.children.item(0).href;
-
-                // Locked fics will have a little lock icon indicating that they're locked.
-                let ficIsLocked = header.querySelector("img");
 
                 // The full header text is:
                 // <title> by <list of authors> [for <gift recipient>]
@@ -181,6 +181,15 @@ buildFicCache = async () => {
                 let giftRecipientIndex = author.lastIndexOf(" for ");
                 if (giftRecipientIndex != -1) {
                     author = author.slice(0, author.lastIndexOf(" for "));
+                }
+
+                // Locked fics will have a little lock image in the header on ao3.
+                // Look for that image, and if it's there, set locked to true.
+                let ficIsLocked = header.querySelector("img");
+                if(ficIsLocked)
+                {
+                    // Add a lock icon to our title as well
+                    title = ":lock: " + title;
                 }
 
                 // Get the summary. If this element is missing use a blank string
