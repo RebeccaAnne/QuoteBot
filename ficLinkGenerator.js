@@ -1,10 +1,7 @@
 const path = require('node:path');
-const AO3 = require('ao3');
-const fs = require("fs");
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
-const { logString } = require('./logging');
-const puppeteer = require("puppeteer");
+const { Mutex } = require('async-mutex');
 
 const APPROVED = "Approved"
 const REJECTED = "Rejected"
@@ -12,6 +9,15 @@ const PENDING = "Pending"
 
 const THIS_SERVER_SCOPE = "this-server";
 const ALL_SERVERS_SCOPE = "all";
+
+let optInMutex;
+
+getOptInMutex = () => {
+    if (!optInMutex) {
+        optInMutex = new Mutex();
+    }
+    return optInMutex;
+}
 
 getOptInAo3Names = () => {
 
@@ -148,5 +154,5 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 }
 
 module.exports = {
-    generateFicLink, getOptInAo3Names, isFicOptedIn
+    generateFicLink, getOptInAo3Names, isFicOptedIn, getOptInMutex
 }

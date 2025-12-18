@@ -2,7 +2,7 @@
   "dependencies": {
     "@atproto/api": "^0.12.25",
     "ao3": "^1.0.4",
-    "async-mutex": "^0.4.0",
+    "async-mutex": "^0.4.1",
     "cron": "^2.2.0",
     "dayjs": "^1.11.7",
     "discord.js": "^14.7.1",

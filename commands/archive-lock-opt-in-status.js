@@ -23,16 +23,17 @@ module.exports = {
 		}
 		catch { console.log("Failed to load opt-ins from file"); }
 
+		let hasOptIns = false;
 		let reply = "";
 		if (!optIns[interaction.user.id] || (Object.keys(optIns[interaction.user.id].ao3UserNames).length === 0)) {
-			reply = "No quote bot opt-ins for archive locked fics are registered for **" + interaction.user.username + "**. Call **/archive-lock-opt-in** to register an opt-in."
+			reply = "No quote bot opt-ins for archive locked fics are registered for **" + interaction.user.username + "**. Call `/archive-lock-opt-in` to register an opt-in."
 		}
 		else {
 			for (var ao3UserNameKey in optIns[interaction.user.id].ao3UserNames) {
 				let ao3UserNameDisplay = optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].displayName;
 				if (!optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].optIn) {
 					reply += "Ao3 username **" + ao3UserNameDisplay +
-						"** is **not** opted into quote bot recommendations for archive locked fics. To opt in call /archive-lock-opt-in. To remove quote bot's record of " + ao3UserNameDisplay + " call /archive-lock-opt-out ao3-user-name: " + ao3UserNameDisplay + " clear-all-data: true."
+						"** is **not** opted into quote bot recommendations for archive locked fics. To opt in call `/archive-lock-opt-in`. To remove quote bot's record of " + ao3UserNameDisplay + " call ```/archive-lock-opt-out ao3-user-name: " + ao3UserNameDisplay + " clear-all-data: true```"
 				}
 				else {
 					if (optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval === APPROVED) {
@@ -52,6 +53,7 @@ module.exports = {
 						else {
 							reply += "."
 						}
+						hasOptIns = true;
 					}
 					else if (optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval === PENDING) {
 						reply += "Opt in for ao3 username **" + ao3UserNameDisplay +
@@ -65,6 +67,9 @@ module.exports = {
 					}
 					reply += "\n\n";
 				}
+			}
+			if (hasOptIns) {
+				reply += " Call `/archive-lock-opt-out` to opt out of quote bot recommendations."
 			}
 		}
 
