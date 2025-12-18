@@ -1,14 +1,11 @@
 path = require('node:path');
-const { SlashCommandBuilder, UserSelectMenuBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js');
 var fs = require("fs");
-const { clear } = require('node:console');
-
-
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('archive-lock-opt-out')
-		.setDescription('Opt out of allowing quote bot to share archive locked fics')
+		.setDescription('Opt out of allowing quote bot to share your archive locked fics')
 		.addStringOption(option =>
 			option.setName('ao3-user-name')
 				.setDescription('User name of the ao3 acount to opt out')

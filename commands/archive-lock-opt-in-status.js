@@ -12,7 +12,7 @@ const PENDING = "Pending"
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('archive-lock-opt-in-status')
-		.setDescription('Shows your current status for ao3 accounts opted into sharing archive locked fics'),
+		.setDescription('Shows your current status for ao3 accounts opted into sharing your archive locked fics'),
 	async execute(interaction) {
 
 		let optInFileName = "opt-in.json";
@@ -25,15 +25,14 @@ module.exports = {
 
 		let reply = "";
 		if (!optIns[interaction.user.id] || (Object.keys(optIns[interaction.user.id].ao3UserNames).length === 0)) {
-			reply = "No quote bot opt-ins for archive locked fics are registered for **" + interaction.user.username +
-				"**. Call **/archive-lock-opt-in** to register an opt-in."
+			reply = "No quote bot opt-ins for archive locked fics are registered for **" + interaction.user.username + "**. Call **/archive-lock-opt-in** to register an opt-in."
 		}
 		else {
 			for (var ao3UserNameKey in optIns[interaction.user.id].ao3UserNames) {
 				let ao3UserNameDisplay = optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].displayName;
 				if (!optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].optIn) {
 					reply += "Ao3 username **" + ao3UserNameDisplay +
-						"** is **not** opted into quote bot recommendations for archive locked fics. To opt in call /archive-lock-opt-in. To remove quote bot's record of " + ao3UserNameDisplay + " call /archive-lock-opt-out ao3-user-name: "+ ao3UserNameDisplay +" clear-all-data: true."
+						"** is **not** opted into quote bot recommendations for archive locked fics. To opt in call /archive-lock-opt-in. To remove quote bot's record of " + ao3UserNameDisplay + " call /archive-lock-opt-out ao3-user-name: " + ao3UserNameDisplay + " clear-all-data: true."
 				}
 				else {
 					if (optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval === APPROVED) {
@@ -50,7 +49,7 @@ module.exports = {
 								}
 							}
 						}
-						else{
+						else {
 							reply += "."
 						}
 					}
