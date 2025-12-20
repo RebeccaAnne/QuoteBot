@@ -196,7 +196,7 @@ buildFicCache = async () => {
                 }
 
                 // Get the summary. If this element is missing use a blank string
-                let summary = ""
+                let summary = " "
                 let summaryElement = fic.querySelector("blockquote");
                 if (summaryElement) {
                     summary = summaryElement.innerText;

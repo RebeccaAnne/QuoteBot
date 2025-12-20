@@ -1,6 +1,7 @@
 const path = require('node:path');
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
 const { Mutex } = require('async-mutex');
 const fs = require('node:fs');
 
@@ -83,6 +84,85 @@ isFicOptedIn = (author, ao3OptIns, guildId) => {
     })
 }
 
+sendApprovalRequest = async (client, approvalRequestData) => {
+    let approvalChannel = await client.channels.fetch("1447820720892547112", { force: true });
+
+    const approve = new ButtonBuilder()
+        .setCustomId('approve')
+        .setLabel('Approve')
+        .setStyle(ButtonStyle.Primary);
+
+    const reject = new ButtonBuilder()
+        .setCustomId('reject')
+        .setLabel('Reject')
+        .setStyle(ButtonStyle.Secondary);
+
+    const buttonRow = new ActionRowBuilder()
+        .addComponents(approve, reject);
+
+    let approvalMessage = await approvalChannel.send({
+        content: `Discord User **${approvalRequestData.globalName}** (${approvalRequestData.username}) from **${approvalRequestData.guildName}** wants to opt in ao3 user name **${approvalRequestData.ao3UserNameKey}**!`,
+        components: [buttonRow]
+    });
+
+    // Response collector for the Buttons
+    const buttonCollector = approvalMessage.createMessageComponentCollector({ componentType: ComponentType.Button, time: 3_600_000 });
+    buttonCollector.on('collect', async buttonInteration => {
+        await getOptInMutex().runExclusive(async () => {
+
+            let optInFileName = "opt-in.json";
+            let optIns = {}
+            try {
+                optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
+            }
+            catch { console.log("Failed to load opt-ins from file"); }
+
+            let buttonInteractionText = "Opt-in ";
+            if (buttonInteration.customId === 'approve') {
+                optIns[approvalRequestData.userId].ao3UserNames[approvalRequestData.ao3UserNameKey].approval = APPROVED
+                buttonInteractionText += " Approved ";
+            }
+            else if (buttonInteration.customId == 'reject') {
+                optIns[approvalRequestData.userId].ao3UserNames[approvalRequestData.ao3UserNameKey].approval = REJECTED
+                buttonInteractionText += " Rejected ";
+            }
+            buttonInteractionText += "for **" + approvalRequestData.globalName +
+                "** (" + approvalRequestData.username + "): **" + approvalRequestData.ao3UserNameKey + "**!";
+
+            fs.writeFileSync(optInFileName, JSON.stringify(optIns), () => { });
+            await buttonInteration.update({ content: buttonInteractionText, components: [] })
+        });
+    });
+}
+
+sendPendingOptInRequests = async (client) => {
+
+    let optInFileName = "opt-in.json";
+    let optIns = {}
+    try {
+        optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
+    }
+    catch { console.log("Failed to load opt-ins from file"); }
+
+    for (let discordUserId in optIns) {
+
+        let discordUser = optIns[discordUserId];
+
+        for (let ao3Name in discordUser.ao3UserNames) {
+            if (discordUser.ao3UserNames[ao3Name].approval == PENDING) {
+                let approvalRequestData = {
+                    globalName: discordUser.globalName,
+                    username: discordUser.username,
+                    guildName: "Start up",
+                    ao3UserNameKey: ao3Name,
+                    userId: discordUserId
+                }
+                sendApprovalRequest(client, approvalRequestData)
+            }
+        }
+    }
+}
+
 generateFicLink = async (guildId, channelId, allowBingo = true) => {
 
     // Get the fandom from the server config
@@ -156,5 +236,5 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 }
 
 module.exports = {
-    generateFicLink, getOptInAo3Names, isFicOptedIn, getOptInMutex
+    generateFicLink, getOptInAo3Names, isFicOptedIn, getOptInMutex, sendApprovalRequest
 }

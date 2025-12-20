@@ -141,6 +141,8 @@ serverConfigFiles.forEach(serverConfigFile => {
 
 client.once(Events.ClientReady, c => {
 	logString(`Ready! Logged in as ${c.user.tag}`);
+
+	sendPendingOptInRequests(c)
 });
 
 client.on(Events.InteractionCreate, async interaction => {

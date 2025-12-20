@@ -26,12 +26,13 @@ module.exports = {
 
 			let optIns = {};
 			try {
-				optIns = require("../" + optInFileName);
+				optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
 			}
 			catch { console.log("Failed to load opt-ins from file"); }
 
 			let reply = "";
 			let madeChanges = false;
+
 			if (optIns[interaction.user.id] &&
 				optIns[interaction.user.id].ao3UserNames[ao3UserNameKey]) {
 

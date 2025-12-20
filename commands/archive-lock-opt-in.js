@@ -1,7 +1,7 @@
 path = require('node:path');
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js');
 var fs = require("fs");
-const { getOptInMutex } = require('../ficLinkGenerator.js');
+const { getOptInMutex, sendApprovalRequest } = require('../ficLinkGenerator.js');
 
 const THIS_SERVER_SCOPE = "this-server";
 const ALL_SERVERS_SCOPE = "all";
@@ -30,7 +30,7 @@ module.exports = {
 		let newScope = interaction.options.getString('scope');
 
 		let optInFileName = "opt-in.json";
-		let sendApprovalRequest = false;
+		let sendNewApprovalRequest = false;
 		await getOptInMutex().runExclusive(async () => {
 
 			let optIns = {};
@@ -55,7 +55,7 @@ module.exports = {
 				optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].displayName = ao3UserNameDisplay;
 				optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval = PENDING
 				optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].scope = []
-				sendApprovalRequest = true;
+				sendNewApprovalRequest = true;
 				console.log("New user name, send an approval request: " + ao3UserNameDisplay)
 			}
 
@@ -98,7 +98,7 @@ module.exports = {
 			if (prevApprovalStatus == REJECTED) {
 				optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval = PENDING
 				console.log("Previously rejected user name, send an approval request: " + ao3UserNameDisplay)
-				sendApprovalRequest = true
+				sendNewApprovalRequest = true
 			}
 
 			// Set optin to true and set the time stamp
@@ -154,53 +154,15 @@ module.exports = {
 		});
 
 		// If this is a new pairing, send an approval request to the test server
-		if (sendApprovalRequest) {
-			let approvalChannel = await interaction.client.channels.fetch("1447820720892547112", { force: true });
-
-			const approve = new ButtonBuilder()
-				.setCustomId('approve')
-				.setLabel('Approve')
-				.setStyle(ButtonStyle.Primary);
-
-			const reject = new ButtonBuilder()
-				.setCustomId('reject')
-				.setLabel('Reject')
-				.setStyle(ButtonStyle.Secondary);
-
-			const buttonRow = new ActionRowBuilder()
-				.addComponents(approve, reject);
-
-			let approvalMessage = await approvalChannel.send({
-				content: `Discord User **${interaction.user.globalName}** (${interaction.user.username}) from **${interaction.guild.name}** wants to opt in ao3 user name **${ao3UserNameDisplay}**!`,
-				components: [buttonRow]
-			});
-
-			// Response collector for the Buttons
-			const buttonCollector = approvalMessage.createMessageComponentCollector({ componentType: ComponentType.Button, time: 3_600_000 });
-			buttonCollector.on('collect', async buttonInteration => {
-				await getOptInMutex().runExclusive(async () => {
-
-					try {
-						optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
-					}
-					catch { console.log("Failed to load opt-ins from file"); }
-
-					let buttonInteractionText = "Opt-in ";
-					if (buttonInteration.customId === 'approve') {
-						optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval = APPROVED
-						buttonInteractionText += " Approved ";
-					}
-					else if (buttonInteration.customId == 'reject') {
-						optIns[interaction.user.id].ao3UserNames[ao3UserNameKey].approval = REJECTED
-						buttonInteractionText += " Rejected ";
-					}
-					buttonInteractionText += "for **" + interaction.user.globalName +
-						"** (" + interaction.user.username + "): **" + ao3UserNameDisplay + "**!";
-
-					fs.writeFileSync(optInFileName, JSON.stringify(optIns), () => { });
-					await buttonInteration.update({ content: buttonInteractionText, components: [] })
-				});
-			});
+		if (sendNewApprovalRequest) {
+			let approvalRequestData = {
+				globalName: interaction.user.globalName,
+				username: interaction.user.username,
+				guildName: interaction.guild.name,
+				ao3UserNameKey: ao3UserNameKey,
+				userId: interaction.user.id
+			}
+			sendApprovalRequest(interaction.client, approvalRequestData)
 		}
 	},
 	async autocomplete(interaction) {
