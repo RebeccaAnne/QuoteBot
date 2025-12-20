@@ -2,6 +2,7 @@ const path = require('node:path');
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
 const { Mutex } = require('async-mutex');
+const fs = require('node:fs');
 
 const APPROVED = "Approved"
 const REJECTED = "Rejected"
@@ -21,9 +22,10 @@ getOptInMutex = () => {
 
 getOptInAo3Names = () => {
 
+    let optInFileName = ".\\opt-in.json";
     let optIns = {};
     try {
-        optIns = require(".\\opt-in.json");
+        optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
     }
     catch { console.log("Failed to load opt-ins from file"); }
 

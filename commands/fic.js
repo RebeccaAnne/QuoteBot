@@ -1,9 +1,7 @@
 const path = require('node:path');
 const { SlashCommandBuilder, EmbedBuilder, Message } = require('discord.js');
-const { generateQuote } = require("../quoteGenerator.js");
 const { generateFicLink } = require('../ficLinkGenerator.js');
 const { buildError } = require('../error.js');
-const { logString } = require('../logging');
 
 
 module.exports = {
