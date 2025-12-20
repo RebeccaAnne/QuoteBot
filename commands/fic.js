@@ -25,15 +25,15 @@ module.exports = {
 			await interaction.deferReply();
 
 			let fic;
-			try {
+			//try {
 				fic = await generateFicLink(interaction.guildId, interaction.channelId, true);
-			}
-			catch (error) {
-				logString("\n+++\ngenerateFicLink failed in fic command\n" + error + "\n+++\n");
-				await interaction.editReply({
-					embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
-				});
-			}
+			// }
+			// catch (error) {
+			// 	logString("\n+++\ngenerateFicLink failed in fic command\n" + error + "\n+++\n");
+			// 	await interaction.editReply({
+			// 		embeds: [await buildError(interaction.guildId, interaction.channelId, "fic")], ephemeral: true
+			// 	});
+			// }
 
 			if (fic) {
 				console.log("We got a fic!")

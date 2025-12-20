@@ -24,10 +24,10 @@ getOptInAo3Names = () => {
 
     let optInFileName = ".\\opt-in.json";
     let optIns = {};
-    try {
+    //try {
         optIns = JSON.parse(fs.readFileSync(optInFileName, 'utf8'));
-    }
-    catch { console.log("Failed to load opt-ins from file"); }
+    //}
+    //catch { console.log("Failed to load opt-ins from file"); }
 
     let optedInAo3NameArray = []
     for (let discordUser in optIns) {
