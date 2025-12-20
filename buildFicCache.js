@@ -90,6 +90,8 @@ buildFicCache = async () => {
     let lockedFicObject = {};
     lockedFicObject.lockedFicCache = []
     lockedFicObject.lockedAuthors = []
+    lockedFicObject.optedInFics = []
+    lockedFicObject.optedInAuthors = []
 
     if (append) {
         try {
@@ -110,6 +112,7 @@ buildFicCache = async () => {
 
     // Store this in a set to de-dup
     const lockedAuthors = new Set(lockedFicObject.lockedAuthors);
+    const optedInAuthors = new Set(lockedFicObject.lockedAuthors);
 
     for (let iPage = startingPage; iPage >= 1; iPage--) {
 
@@ -231,17 +234,25 @@ buildFicCache = async () => {
                 lockedFicObject.lockedFicCache.push(fic);
             }
             else {
+                if(fic.locked)
+                {
+                    optedInAuthors.add(fic.author.trim())
+                    lockedFicObject.optedInFics.push(fic)
+                }
                 ficCache.push(fic);
             }
         }
 
         lockedFicObject.lockedAuthors = Array.from(lockedAuthors);
+        lockedFicObject.optedInAuthors = Array.from(optedInAuthors);
 
         console.log("Cached page " + iPage);
         console.log(ficCache.length + " fics Cached so far")
         console.log(lockedFicObject.lockedFicCache.length + " locked fics so far")
         console.log(lockedFicObject.lockedAuthors.length + " locked authors so far")
-        console.log(lockedFicObject.lockedAuthors)
+        console.log(lockedFicObject.optedInFics.length + " opted in fics so far")
+        console.log(lockedFicObject.optedInAuthors.length + " opted in authors so far")
+        //console.log(lockedFicObject.lockedAuthors)
         fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
         fs.writeFileSync(fandomName + "-locked.json", JSON.stringify(lockedFicObject), () => { });
     }

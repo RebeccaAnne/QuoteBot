@@ -51,7 +51,7 @@ module.exports = {
 							}
 						}
 						else {
-							reply += "."
+							reply += " for all quote bot servers."
 						}
 						hasOptIns = true;
 					}
