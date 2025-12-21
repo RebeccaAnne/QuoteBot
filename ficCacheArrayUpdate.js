@@ -1,7 +1,7 @@
 var fs = require("fs");
 
-let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard-old.json"
-let newCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
+let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
+let newCacheFilename = "./Nine Worlds Series - Victoria Goddard-new.json"
 let fileToUpdate = "./arrays-849347713547501588.json"
 let arrayName = "Nine Worlds Series - Victoria Goddard"
 
@@ -113,6 +113,8 @@ updateFicCacheArray = async () => {
     arrayFile[arrayName] = arrayUpdates.newArrayRandomized;
     arrayFile[arrayName + "Max"] = arrayUpdates.newArraySize;
 
+    console.log("total fic cache size: " + arrayUpdates.newArraySize)
+    console.log("current array length: " + arrayFile[arrayName].length)
 
     fs.writeFileSync("ArrayUpdates.json", JSON.stringify(arrayUpdates), () => { });
     fs.writeFileSync(fileToUpdate, JSON.stringify(arrayFile), () => { });
