@@ -13,5 +13,16 @@
             "quoteRoot": "all",
             "ficFandomTag": "Tuyo Series- Rachel Neumeier"
         }
-    }
+    },
+    "scheduledFics": [
+        {
+            "id": "ficSchedule",
+            "description": "fanfic every friday at 5",
+            "time": "0 0 5 * * 5",
+            "timezone": "America/Los_Angeles",
+            "channels": [
+                "1182157678940790905"
+            ]
+        }
+    ]
 }
