@@ -183,7 +183,7 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 
         if (randomIndex != undefined) {
             fic = ficCache[randomIndex];
-            thumbnailFileName = "TBTFBingoIcon.png"
+            thumbnailFileName = "TBTFFanoaaryIcon.png"
         }
         else { console.log("Out of Bingo Fics") }
     }

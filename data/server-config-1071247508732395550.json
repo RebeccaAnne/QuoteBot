@@ -36,7 +36,8 @@
             "description": "fanworks",
             "rootSourceFile": "victoriaGoddard.json",
             "quoteRoot": "all",
-            "ficFandomTag": "Nine Worlds Series - Victoria Goddard"
+            "ficFandomTag": "Nine Worlds Series - Victoria Goddard",
+            "bingoSpotlight": "true"
         },
         "1182776172954783785": {
             "description": "tuyo",

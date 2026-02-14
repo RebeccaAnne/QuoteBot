@@ -10,7 +10,7 @@ let append = true;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = 26;
+let startingPage = 2;
 
 if (process.argv[2])
     fandomName = process.argv[2]
