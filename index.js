@@ -38,7 +38,7 @@ const backofftime = 10 * 1000 * 60;
 
 const sendMessage = async (guildId, channelId, generateFunction) => {
 
-	try {
+	//try {
 		let channel = await client.channels.fetch(channelId, { force: true });
 		let createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
 		logString("Sending Message to " + guildId + ", " + channelId);
@@ -61,8 +61,8 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 			channel.send(result);
 
 		}
-	}
-	catch (error) { logString("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
+	//}
+	//catch (error) { logString("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
 }
 
 const getCurrentChannelIndex = (guildId, scheduleConfig) => {
