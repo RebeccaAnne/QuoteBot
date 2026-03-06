@@ -38,12 +38,21 @@ const backofftime = 10 * 1000 * 60;
 
 const sendMessage = async (guildId, channelId, generateFunction) => {
 
-	//try {
-	let channel = await client.channels.fetch(channelId, { force: true });
-	let createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
 	logString("Sending Message to " + guildId + ", " + channelId);
+
+	let channel = await client.channels.fetch(channelId, { force: true });
+
+	console.log("Last message id: " + channel.lastMessageId);
+
 	let now = Date.now();
-	let difference = now - createdTimestamp;
+	let difference = backofftime;
+	try {
+		let createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
+		difference = now - createdTimestamp;
+	}
+	catch (error) {
+		console.log("Error getting last message: " + error)
+	}
 
 	if (difference < backofftime) {
 		logString("Last Message Timestamp: " + createdTimestamp);
@@ -53,33 +62,15 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 		setTimeout(() => { sendMessage(guildId, channelId, generateFunction); }, backofftime)
 	}
 	else {
-		let result = await generateFunction(guildId, channelId);
-		result.enforceNonce = true;
+		try {
+			let result = await generateFunction(guildId, channelId);
 
-		let success = false;
-		let retries = 2;
-		while (retries && !success) {
 			result.nonce = Math.random() * 16 + " ";
-			try {
-				await channel.send(result);
-				success = true;
-			}
-			catch (error) {
-				console.log("Send message failed for scheduled post. Error: " + error)
-				console.log("Retrying... " + retries + " tries left")
-				retries--;
-				// wait a minute and try again
-				await new Promise(resolve => setTimeout(resolve, 60000));
-			}
-		}
+			result.enforceNonce = true;
 
-		// If we still haven't succeeded, give it one last try without the try/catch
-		if (!success) {
-			result.nonce = Math.random() * 16 + " ";
 			await channel.send(result);
 		}
-		//}
-		//catch (error) { logString("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
+		catch (error) { logString("\n+++\sendMessage failed\n" + error + "\n+++\n"); }
 	}
 }
 
@@ -117,16 +108,16 @@ const scheduleCronJobs = async (guildId, scheduleConfig, generateFunction) => {
 
 	const job = new CronJob(scheduleConfig.time, async function () {
 
-		//		try {
-		let channelIndex = getCurrentChannelIndex(guildId, scheduleConfig);
-		let channelId = scheduleConfig.channels[channelIndex];
-		logString("Channel index: " + channelIndex + "; Running scheduled event in " + channelId);
+		try {
+			let channelIndex = getCurrentChannelIndex(guildId, scheduleConfig);
+			let channelId = scheduleConfig.channels[channelIndex];
+			logString("Channel index: " + channelIndex + "; Running scheduled event in " + channelId);
 
-		await sendMessage(guildId, channelId, generateFunction);
-		//		}
-		//		catch (error) {
-		//			logString("CronJob failed to send message. Error: " + error);
-		//		}
+			await sendMessage(guildId, channelId, generateFunction);
+		}
+		catch (error) {
+			logString("CronJob failed to send message. Error: " + error);
+		}
 	}, null, true, scheduleConfig.timezone);
 }
 
