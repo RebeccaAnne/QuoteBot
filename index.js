@@ -52,6 +52,8 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 	}
 	catch (error) {
 		console.log("Error getting last message: " + error)
+		// Stick a delay here so I can see when this happens on this discord side
+		await new Promise(resolve => setTimeout(resolve, 60000));
 	}
 
 	if (difference < backofftime) {
