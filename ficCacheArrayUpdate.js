@@ -1,8 +1,8 @@
 var fs = require("fs");
 
-let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
-let newCacheFilename = "./Nine Worlds Series - Victoria Goddard-new.json"
-let fileToUpdate = "./arrays-849347713547501588.json"
+let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard-old.json"
+let newCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
+let fileToUpdate = "./arrays-1264447528481325086.json"
 let arrayName = "Nine Worlds Series - Victoria Goddard"
 
 getFicId = (ficLink) => {
