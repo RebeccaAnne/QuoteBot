@@ -6,7 +6,7 @@ const { ao3Password } = require('./config.json');
 
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"
-let append = true;
+let append = false;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
@@ -14,6 +14,11 @@ let startingPage = 2;
 
 if (process.argv[2])
     fandomName = process.argv[2]
+
+getFicId = (ficLink) => {
+    const ao3Link = "https://archiveofourown.org/works/"
+    return ficLink.slice(ao3Link.length);
+}
 
 buildFicCache = async () => {
 
@@ -86,7 +91,7 @@ buildFicCache = async () => {
     }
     console.log("startingPage " + startingPage);
 
-    let ficCache = [];
+    let ficCache = {};
     let lockedFicObject = {};
     lockedFicObject.lockedFicCache = []
     lockedFicObject.lockedAuthors = []
@@ -95,7 +100,7 @@ buildFicCache = async () => {
 
     if (append) {
         try {
-            ficCache = require(".\\" + fandomName + ".json");
+            ficCache = require(".\\" + fandomName + " - Ids.json");
         }
         catch { console.log("Failed to load fic cache from file"); }
 
@@ -113,6 +118,7 @@ buildFicCache = async () => {
     // Store this in a set to de-dup
     const lockedAuthors = new Set(lockedFicObject.lockedAuthors);
     const optedInAuthors = new Set(lockedFicObject.optedInAuthors);
+    let cachedFicCount = 0;
 
     for (let iPage = startingPage; iPage >= 1; iPage--) {
 
@@ -239,7 +245,8 @@ buildFicCache = async () => {
                     optedInAuthors.add(fic.author.trim())
                     lockedFicObject.optedInFics.push(fic)
                 }
-                ficCache.push(fic);
+                ficCache[getFicId(fic.link)] = fic;
+                cachedFicCount++;
             }
         }
 
@@ -247,7 +254,8 @@ buildFicCache = async () => {
         lockedFicObject.optedInAuthors = Array.from(optedInAuthors);
 
         console.log("Cached page " + iPage + ", Current results:");
-        console.log(ficCache.length + " fics Cached")
+        console.log(cachedFicCount + " fics Cached")
+        ficCache.ficCount = cachedFicCount;
         console.log(lockedFicObject.lockedFicCache.length + " locked fics")
         console.log(lockedFicObject.lockedAuthors.length + " locked authors")
         console.log(lockedFicObject.optedInFics.length + " opted in fics")

@@ -170,6 +170,15 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
     let channel = serverConfig.channels[channelId];
     let bingoSpotlight = channel.bingoSpotlight;
 
+    let serverArrayFileName = "./arrays-" + guildId + ".json";
+
+    let serverArrays = {};
+    try {
+        serverArrays = require(serverArrayFileName);
+    }
+    catch { logString("Failed to load serverArrays from file"); }
+
+
     let fic = null;
     let thumbnailFileName = null;
     if (allowBingo && bingoSpotlight) {
@@ -189,11 +198,16 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
     }
 
     let ficFandomTag = channel.ficFandomTag;
-    let ficCache = require("./" + ficFandomTag + ".json");
+    let ficCache = require("./" + ficFandomTag + " - Ids.json");
     let ao3OptIns = null;
     while (!fic) {
-        index = randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, true);
-        fic = ficCache[index];
+
+        // Pop the next id and update the file
+        let id = serverArrays[ficFandomTag].pop();
+        fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
+
+        //index = randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, true);
+        fic = ficCache[id];
         console.log(fic)
 
         // If the fic is locked, check it against the opt-ins to make sure it's okay to show it.
