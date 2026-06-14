@@ -163,7 +163,7 @@ sendPendingOptInRequests = async (client) => {
     }
 }
 
-ensureServerArray = async (guildId, ficFandomTag) => {
+ensureServerArray = async (guildId, ficFandomTag, rebuildWhenEmpty) => {
 
     let serverArrayFileName = "./arrays-" + guildId + ".json";
 
@@ -173,9 +173,10 @@ ensureServerArray = async (guildId, ficFandomTag) => {
     }
     catch { logString("Failed to load serverArrays from file"); }
 
-    let ficCache = require("./" + ficFandomTag + " - Ids.json");
+    let ficCache = require("./" + ficFandomTag + ".json");
 
-    if (!serverArrays[ficFandomTag] || serverArrays[ficFandomTag].length == 0) {
+    if (!serverArrays[ficFandomTag] ||
+        (serverArrays[ficFandomTag].length == 0 && rebuildWhenEmpty)) {
         serverArrays[ficFandomTag] = []
 
         Object.entries(ficCache).forEach(([key, value]) => {
@@ -193,15 +194,21 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
     // Get the fandom from the server config
     let serverConfig = require(path.join(__dirname, "./data/server-config-" + guildId + ".json"));
     let channel = serverConfig.channels[channelId];
-    let bingoSpotlight = channel.bingoSpotlight;
+    let bingoSpotlight = channel.bingoSpotlight && allowBingo;
 
     let serverArrayFileName = "./arrays-" + guildId + ".json";
 
-    let ficFandomTag = channel.ficFandomTag;
-    let ficCache = require("./" + ficFandomTag + " - Ids.json");
+    let ficFandomTag = ""
+    if (bingoSpotlight) {
+        ficFandomTag = "BingoSpotlight"
+    }
+    else {
+        ficFandomTag = channel.ficFandomTag;
+    }
+    let ficCache = require("./" + ficFandomTag + ".json");
     let ao3OptIns = null;
 
-    await ensureServerArray(guildId, ficFandomTag);
+    await ensureServerArray(guildId, ficFandomTag, !bingoSpotlight);
 
     let serverArrays = {};
     try {
@@ -211,23 +218,21 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 
     console.log(serverArrays[ficFandomTag])
 
-    // let fic = null;
-    // let thumbnailFileName = null;
-    // if (allowBingo && bingoSpotlight) {
+    let fic = null;
+    let thumbnailFileName = null;
+    if (allowBingo && bingoSpotlight) {
 
-    //     console.log("Bingo Fic!")
+        console.log("Bingo Fic!")
 
-    //     let ficFandomTag = "BingoSpotlight"
-    //     let ficCache = require("./" + ficFandomTag + ".json");
+        let id = serverArrays[ficFandomTag].pop();
+        fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
 
-    //     let randomIndex = randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, false);
-
-    //     if (randomIndex != undefined) {
-    //         fic = ficCache[randomIndex];
-    //         thumbnailFileName = "TBTFFanoaaryIcon.png"
-    //     }
-    //     else { console.log("Out of Bingo Fics") }
-    // }
+        if (id != undefined) {
+            fic = ficCache[id];
+            thumbnailFileName = "TBTFFanoaaryIcon.png"
+        }
+        else { console.log("Out of Bingo Fics") }
+    }
 
     while (!fic) {
 

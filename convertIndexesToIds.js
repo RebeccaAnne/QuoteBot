@@ -1,7 +1,7 @@
 var fs = require("fs");
 
-let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
-let newCacheFilename = "./Nine Worlds Series - Victoria Goddard - Ids.json"
+let oldCacheFilename = "./BingoSpotlight.json"
+let newCacheFilename = "./BingoSpotlight - Ids.json"
 
 let oldFicCache = require(oldCacheFilename);
 let newFicCache = {}
