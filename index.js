@@ -46,8 +46,9 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 
 	let now = Date.now();
 	let difference = backofftime;
+	let createdTimestamp = null;
 	try {
-		let createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
+		createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
 		difference = now - createdTimestamp;
 	}
 	catch (error) {
