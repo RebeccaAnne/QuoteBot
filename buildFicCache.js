@@ -100,7 +100,7 @@ buildFicCache = async () => {
 
     if (append) {
         try {
-            ficCache = require(".\\" + fandomName + " - Ids.json");
+            ficCache = require(".\\" + fandomName + ".json");
         }
         catch { console.log("Failed to load fic cache from file"); }
 
@@ -261,13 +261,13 @@ buildFicCache = async () => {
         console.log(lockedFicObject.optedInFics.length + " opted in fics")
         console.log(lockedFicObject.optedInAuthors.length + " opted in authors")
         //console.log(lockedFicObject.lockedAuthors)
-        fs.writeFileSync(fandomName + ".json - Ids", JSON.stringify(ficCache), () => { });
+        fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
         fs.writeFileSync(fandomName + "-locked.json", JSON.stringify(lockedFicObject), () => { });
     }
     // Close the browser
     await browser.close();
 
-    fs.writeFileSync(fandomName + " - Ids.json", JSON.stringify(ficCache), () => { });
+    fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
 
     console.log("Success! " + cachedFicCount + " total fics Cached")
 }

@@ -182,6 +182,7 @@ ensureServerArray = async (guildId, ficFandomTag, rebuildWhenEmpty) => {
         Object.entries(ficCache).forEach(([key, value]) => {
             serverArrays[ficFandomTag].push(key)
         });
+        serverArrays[ficFandomTag] = serverArrays[ficFandomTag].sort(() => Math.random() - 0.5);
         console.log("Array rebuilt")
         console.log(serverArrays[ficFandomTag])
     }
@@ -206,7 +207,6 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
         ficFandomTag = channel.ficFandomTag;
     }
     let ficCache = require("./" + ficFandomTag + ".json");
-    let ao3OptIns = null;
 
     await ensureServerArray(guildId, ficFandomTag, !bingoSpotlight);
 
@@ -215,8 +215,6 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
         serverArrays = require(serverArrayFileName);
     }
     catch { logString("Failed to load serverArrays from file"); }
-
-    console.log(serverArrays[ficFandomTag])
 
     let fic = null;
     let thumbnailFileName = null;
@@ -231,13 +229,25 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
             fic = ficCache[id];
             thumbnailFileName = "TBTFFanoaaryIcon.png"
         }
-        else { console.log("Out of Bingo Fics") }
+        else {
+            ficFandomTag = channel.ficFandomTag;
+            await ensureServerArray(guildId, ficFandomTag, !bingoSpotlight);
+            ficCache = require("./" + ficFandomTag + ".json");
+            console.log("Out of Bingo Fics")
+        }
     }
 
+    let ao3OptIns = null;
     while (!fic) {
 
         // Pop the next id and update the file
         let id = serverArrays[ficFandomTag].pop();
+
+        console.log("FicFandomTag: " + ficFandomTag)
+        console.log("serverArrays[ficFandomTag]")
+        console.log(serverArrays[ficFandomTag])
+        console.log(id)
+
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
 
         //index = randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, true);
