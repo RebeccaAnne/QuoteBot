@@ -15,6 +15,11 @@ let startingPage = 73;
 if (process.argv[2])
     fandomName = process.argv[2]
 
+getFicId = (ficLink) => {
+    const ao3Link = "https://archiveofourown.org/works/"
+    return ficLink.slice(ao3Link.length);
+}
+
 buildFicCache = async () => {
 
     // Get the list of ao3 names that are opted in to sharing archive locked fics
@@ -35,7 +40,7 @@ buildFicCache = async () => {
         "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.3";
     //await page.setUserAgent(ua);
 
-    let ficCache = [];
+    let ficCache = {};
     let lockedFicObject = {};
     lockedFicObject.lockedFicCache = []
     lockedFicObject.lockedAuthors = []
@@ -44,7 +49,7 @@ buildFicCache = async () => {
 
     if (append) {
         try {
-            ficCache = require(".\\" + fandomName + ".json");
+            ficCache = require(".\\" + fandomName + " - Ids.json");
         }
         catch { console.log("Failed to load fic cache from file"); }
 
@@ -62,18 +67,9 @@ buildFicCache = async () => {
     // Store this in a set to de-dup
     const lockedAuthors = new Set(lockedFicObject.lockedAuthors);
     const optedInAuthors = new Set(lockedFicObject.optedInAuthors);
+    let cachedFicCount = 0;
 
     for (let iPage = startingPage; iPage >= 1; iPage--) {
-
-        // Close the browser so ao3 doesn't get mad at us for being a bot
-        await browser.close();
-
-        browser = await puppeteer.launch({
-            headless: false,
-            defaultViewport: null,
-        });
-        const page = await browser.newPage();
-        //await page.setUserAgent(ua);
 
         console.log("Caching page " + iPage);
 
@@ -189,29 +185,30 @@ buildFicCache = async () => {
                     optedInAuthors.add(fic.author.trim())
                     lockedFicObject.optedInFics.push(fic)
                 }
-                ficCache.push(fic);
-            }
+                ficCache[getFicId(fic.link)] = fic;
+                cachedFicCount++;            }
         }
 
         lockedFicObject.lockedAuthors = Array.from(lockedAuthors);
         lockedFicObject.optedInAuthors = Array.from(optedInAuthors);
 
         console.log("Cached page " + iPage + ", Current results:");
-        console.log(ficCache.length + " fics Cached")
+        console.log(cachedFicCount + " fics Cached")
+        ficCache.ficCount = cachedFicCount;
         console.log(lockedFicObject.lockedFicCache.length + " locked fics")
         console.log(lockedFicObject.lockedAuthors.length + " locked authors")
         console.log(lockedFicObject.optedInFics.length + " opted in fics")
         console.log(lockedFicObject.optedInAuthors.length + " opted in authors")
         //console.log(lockedFicObject.lockedAuthors)
-        fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
+        fs.writeFileSync(fandomName + ".json - Ids", JSON.stringify(ficCache), () => { });
         fs.writeFileSync(fandomName + "-locked.json", JSON.stringify(lockedFicObject), () => { });
     }
     // Close the browser
     await browser.close();
 
-    fs.writeFileSync(fandomName + ".json", JSON.stringify(ficCache), () => { });
+    fs.writeFileSync(fandomName + " - Ids.json", JSON.stringify(ficCache), () => { });
 
-    console.log("Success! " + ficCache.length + " total fics Cached")
+    console.log("Success! " + cachedFicCount + " total fics Cached")
 }
 
 buildFicCache();
