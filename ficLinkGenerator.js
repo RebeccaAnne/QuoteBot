@@ -1,5 +1,5 @@
 const path = require('node:path');
-const { EmbedBuilder, AttachmentBuilder, WebSocketShardDestroyRecovery } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
 const { Mutex } = require('async-mutex');
@@ -220,12 +220,11 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
     let thumbnailFileName = null;
     if (bingoSpotlight) {
 
-        console.log("Bingo Fic!")
-
         let id = serverArrays[ficFandomTag].pop();
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
 
         if (id != undefined) {
+            console.log("Bingo Fic!")
             fic = ficCache[id];
             thumbnailFileName = "TBTFFanoaaryIcon.png"
         }
@@ -244,12 +243,9 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
         let id = serverArrays[ficFandomTag].pop();
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
 
-        console.log("FicFandomTag: " + ficFandomTag)
-        console.log("Id:" + id)
-        console.log("Fics remaining in cache: " + serverArrays.length())
-
         fic = ficCache[id];
         console.log(fic)
+        console.log("Fics remaining in cache: " + serverArrays[ficFandomTag].length)
 
         // If the fic is locked, check it against the opt-ins to make sure it's okay to show it.
         // The opt-in list was used at the time of fic-cache-creation, but we need to check again because
