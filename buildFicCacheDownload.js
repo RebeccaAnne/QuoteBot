@@ -85,17 +85,6 @@ buildFicCache = async () => {
 
         console.log("Evaluating")
 
-        // Log in to ao3 in order to access archive locked fic.
-        // await page.click('#login-dropdown');
-        // await page.type('#user_session_login_small', 'ClockworkEcho');
-        // await page.type('#user_session_password_small', ao3Password);
-        // await page.click('input[type="submit"]');
-
-        // // Wait 30 seconds to avoid rate limitting
-        // console.log("Waiting 30 seconds");
-        // await new Promise(resolve => setTimeout(resolve, 30000));
-        // console.log("Done waiting");
-
         // Get the info for the fics on this page
         let pageEvaluateResult = await page.evaluate(() => {
             let logstring = "";
@@ -135,8 +124,7 @@ buildFicCache = async () => {
                 // Locked fics will have a little lock image in the header on ao3.
                 // Look for that image, and if it's there, set locked to true.
                 let ficIsLocked = header.querySelector("img");
-                if(ficIsLocked)
-                {
+                if (ficIsLocked) {
                     // Add a lock icon to our title as well
                     title = ":lock: " + title;
                 }
@@ -180,13 +168,13 @@ buildFicCache = async () => {
                 lockedFicObject.lockedFicCache.push(fic);
             }
             else {
-                if(fic.locked)
-                {
+                if (fic.locked) {
                     optedInAuthors.add(fic.author.trim())
                     lockedFicObject.optedInFics.push(fic)
                 }
                 ficCache[getFicId(fic.link)] = fic;
-                cachedFicCount++;            }
+                cachedFicCount++;
+            }
         }
 
         lockedFicObject.lockedAuthors = Array.from(lockedAuthors);

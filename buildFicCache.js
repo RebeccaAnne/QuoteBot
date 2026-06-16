@@ -7,10 +7,11 @@ const { ao3Password } = require('./config.json');
 let fandomName = "Nine Worlds Series - Victoria Goddard"
 //let fandomName = "Tuyo Series- Rachel Neumeier"
 let append = false;
+let useDownloadedPages = true;
 
 // If this is set we'll start here (working backwards). 
 // Otherwise we'll start at the largest page number in the fandom tag.
-let startingPage = 2;
+let startingPage = 73;
 
 if (process.argv[2])
     fandomName = process.argv[2]
@@ -41,7 +42,7 @@ buildFicCache = async () => {
     await page.setUserAgent(ua);
 
     // If we didn't configure a starting page, figure out what the largest page number is
-    if (!startingPage) {
+    if (!startingPage && !useDownloadedPages) {
         // Open the link and wait until the dom content is loaded (HTML is ready)
         console.log("Goto the main fandom page")
         await page.goto(rootFandomPage, {
@@ -122,22 +123,30 @@ buildFicCache = async () => {
 
     for (let iPage = startingPage; iPage >= 1; iPage--) {
 
-        // Close the browser so ao3 doesn't get mad at us for being a bot
-        await browser.close();
-
-        browser = await puppeteer.launch({
-            headless: false,
-            defaultViewport: null,
-        });
-        const page = await browser.newPage();
-        await page.setUserAgent(ua);
-
         console.log("Caching page " + iPage);
+
+        if (!useDownloadedPages) {
+            // Close the browser so ao3 doesn't get mad at us for being a bot
+            await browser.close();
+
+            browser = await puppeteer.launch({
+                headless: false,
+                defaultViewport: null,
+            });
+            const page = await browser.newPage();
+            await page.setUserAgent(ua);
+        }
 
         // Append the page to the fandom link
         let fandomPage = rootFandomPage + "?page=" + iPage;
-        //fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Tuyo+Series-+Rachel+Neumeier&page=" + iPage;
-        fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Nine+Worlds+Series+-+Victoria+Goddard&page=" + iPage;
+        if (!useDownloadedPages) {
+            //fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Tuyo+Series-+Rachel+Neumeier&page=" + iPage;
+            fandomPage = "https://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Nine+Worlds+Series+-+Victoria+Goddard&page=" + iPage;
+        }
+        else {
+            //fandomPage = "http://archiveofourown.org/works?commit=Sort+and+Filter&work_search[sort_column]=created_at&tag_id=Tuyo+Series-+Rachel+Neumeier&page=" + iPage;
+            fandomPage = "file:///C:/Users/rebec/OneDrive/Desktop/Nine%20Worlds/Nine%20Worlds%20Series%20-%20Victoria%20Goddard%20-%20Works%20_%20Archive%20of%20Our%20Own%20-%20" + iPage + ".html"
+        }
         console.log("Goto page " + fandomPage);
 
         await page.goto(fandomPage, {
@@ -146,15 +155,17 @@ buildFicCache = async () => {
 
         console.log("Evaluating")
 
-        // Log in to ao3 in order to access archive locked fic.
-        await page.click('#login-dropdown');
-        await page.type('#user_session_login_small', 'ClockworkEcho');
-        await page.type('#user_session_password_small', ao3Password);
-        await page.click('input[type="submit"]');
+        if (!useDownloadedPages) {
+            // Log in to ao3 in order to access archive locked fic.
+            await page.click('#login-dropdown');
+            await page.type('#user_session_login_small', 'ClockworkEcho');
+            await page.type('#user_session_password_small', ao3Password);
+            await page.click('input[type="submit"]');
 
-        // Wait 30 seconds to avoid rate limitting
-        console.log("Waiting 30 seconds");
-        await new Promise(resolve => setTimeout(resolve, 30000));
+            // Wait 30 seconds to avoid rate limitting
+            console.log("Waiting 30 seconds");
+            await new Promise(resolve => setTimeout(resolve, 30000));
+        }
 
         // Get the info for the fics on this page
         let pageEvaluateResult = await page.evaluate(() => {
@@ -195,8 +206,7 @@ buildFicCache = async () => {
                 // Locked fics will have a little lock image in the header on ao3.
                 // Look for that image, and if it's there, set locked to true.
                 let ficIsLocked = header.querySelector("img");
-                if(ficIsLocked)
-                {
+                if (ficIsLocked) {
                     // Add a lock icon to our title as well
                     title = ":lock: " + title;
                 }
@@ -240,8 +250,7 @@ buildFicCache = async () => {
                 lockedFicObject.lockedFicCache.push(fic);
             }
             else {
-                if(fic.locked)
-                {
+                if (fic.locked) {
                     optedInAuthors.add(fic.author.trim())
                     lockedFicObject.optedInFics.push(fic)
                 }
