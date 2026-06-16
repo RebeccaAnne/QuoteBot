@@ -1,7 +1,7 @@
 var fs = require("fs");
 
-let araryFilename = "./arrays-1071247508732395550.json"
-let oldCacheFilename = "./Nine Worlds Series - Victoria Goddard.json"
+let araryFilename = "./arrays-1182155789897584681.json"
+let oldCacheFilename = "./Tuyo Series- Rachel Neumeier-old.json"
 
 let arrayFile = require(araryFilename)
 let oldFicCache = require(oldCacheFilename);
@@ -13,11 +13,11 @@ getFicId = (ficLink) => {
 
 let idArray = [];
 
-arrayFile["Nine Worlds Series - Victoria Goddard"].forEach(index => {
+arrayFile["Tuyo Series- Rachel Neumeier"].forEach(index => {
     let id = getFicId(oldFicCache[index].link)
     idArray.push(id)
 });
 
-arrayFile["Nine Worlds Series - Victoria Goddard"] = idArray;
+arrayFile["Tuyo Series- Rachel Neumeier"] = idArray;
 
 fs.writeFileSync(araryFilename, JSON.stringify(arrayFile), () => { });
