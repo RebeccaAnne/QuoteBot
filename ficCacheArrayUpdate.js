@@ -41,25 +41,13 @@ updateFicCacheArray = async () => {
         if (Number(oldFicId) < Number(newFicId)) {
             console.log(oldFicId + " deleted!")
 
-            // The fic at iOldIndex has been deleted. Update the array by: 
-
-            // (1) removing that index if present
-            newArray = newArray.filter(function (index) {
-                if (index == iOldIndex) {
-                    console.log("Removing index " + iOldIndex)
+            // The fic at iOldIndex has been deleted. Update the array by 
+            // removing that id if present
+            newArray = newArray.filter(function (id) {
+                if (id == oldFicId) {
+                    console.log("Removing id " + oldFicId)
                 }
-                return index != iOldIndex;
-            })
-
-            // (2) decreasing the index of all items at later indices  
-            newArray = newArray.map(function (index) {
-                if (index > iOldIndex) {
-                    console.log("Changing index " + index + " to " + (index - 1))
-                    return index - 1;
-                }
-                else {
-                    return index;
-                }
+                return id != oldFicId;
             })
 
             iOldIndex++;
@@ -68,21 +56,9 @@ updateFicCacheArray = async () => {
             console.log(newFicId + " added!")
 
             // The fic at iNewIndex has been inserted. Update the array by 
-
-            // (1) Increasing the value of all items at that index or later   
-            newArray = newArray.map(function (index) {
-                if (index >= iNewIndex) {
-                    console.log("Changing index " + index + " to " + (index + 1))
-                    return index + 1;
-                }
-                else {
-                    return index;
-                }
-            })
-
-            // (2) Add that index to the array  
-            console.log("Adding index " + iNewIndex)
-            newArray.push(iNewIndex);
+            // adding that id to the array  
+            console.log("Adding id " + newFicId)
+            newArray.push(newFicId);
 
             iNewIndex++;
         }
@@ -93,7 +69,7 @@ updateFicCacheArray = async () => {
         let newFicId = getFicId(newFicCache[iNewIndex].link);
         console.log("newFicId = " + newFicId + " added!");
         console.log("Adding index " + iNewIndex)
-        newArray.push(iNewIndex);
+        newArray.push(newFicId);
         iNewIndex++;
     }
 
