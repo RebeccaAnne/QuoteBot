@@ -1,5 +1,5 @@
 const path = require('node:path');
-const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder, WebSocketShardDestroyRecovery } = require('discord.js');
 const { randomIndexSelection } = require('./randomSelection.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
 const { Mutex } = require('async-mutex');
@@ -218,7 +218,7 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 
     let fic = null;
     let thumbnailFileName = null;
-    if (allowBingo && bingoSpotlight) {
+    if (bingoSpotlight) {
 
         console.log("Bingo Fic!")
 
@@ -242,15 +242,12 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
 
         // Pop the next id and update the file
         let id = serverArrays[ficFandomTag].pop();
-
-        console.log("FicFandomTag: " + ficFandomTag)
-        console.log("serverArrays[ficFandomTag]")
-        console.log(serverArrays[ficFandomTag])
-        console.log(id)
-
         fs.writeFileSync(serverArrayFileName, JSON.stringify(serverArrays), () => { });
 
-        //index = randomIndexSelection(guildId, ficFandomTag, ficCache.length, false, true);
+        console.log("FicFandomTag: " + ficFandomTag)
+        console.log("Id:" + id)
+        console.log("Fics remaining in cache: " + serverArrays.length())
+
         fic = ficCache[id];
         console.log(fic)
 

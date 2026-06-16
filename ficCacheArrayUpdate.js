@@ -42,7 +42,7 @@ updateFicCacheArray = async () => {
             console.log(oldFicId + " deleted!")
 
             // The fic at iOldIndex has been deleted. Update the array by 
-            // removing that index if present
+            // removing that id if present
             newArray = newArray.filter(function (id) {
                 if (id == oldFicId) {
                     console.log("Removing id " + oldFicId)
