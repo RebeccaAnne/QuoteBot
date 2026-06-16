@@ -171,7 +171,7 @@ ensureServerArray = async (guildId, ficFandomTag, rebuildWhenEmpty) => {
     try {
         serverArrays = require(serverArrayFileName);
     }
-    catch { logString("Failed to load serverArrays from file"); }
+    catch { console.log("Failed to load serverArrays from file"); }
 
     let ficCache = require("./" + ficFandomTag + ".json");
 
@@ -214,7 +214,7 @@ generateFicLink = async (guildId, channelId, allowBingo = true) => {
     try {
         serverArrays = require(serverArrayFileName);
     }
-    catch { logString("Failed to load serverArrays from file"); }
+    catch { console.log("Failed to load serverArrays from file"); }
 
     let fic = null;
     let thumbnailFileName = null;
