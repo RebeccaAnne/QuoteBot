@@ -87,5 +87,14 @@
                 "849350971544830013"
             ]
         }
-    ]
+    ],
+    "scheduledFicReminder": {
+        "id": "ficReminderSchedule",
+        "description": "reminder",
+        "time": "1 0 15 1 2,6,10 *",
+        "timezone": "America/Los_Angeles",
+        "channels": [
+            "849350971544830013"
+        ]
+    }
 }

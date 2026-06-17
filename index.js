@@ -124,6 +124,10 @@ const scheduleCronJobs = async (guildId, scheduleConfig, generateFunction) => {
 	}, null, true, scheduleConfig.timezone);
 }
 
+generateFicReminder = async (guildId, channelId) => {
+	return "-# **Reminder**: By default Quote Bot chooses fics from those that are not archive locked on ao3. Archive lock your fics but want to be included in Quote Bot recs? Call `/archive-lock-opt-in` in any channel to opt in. The bot will reply only to you."
+}
+
 serverConfigFiles.forEach(serverConfigFile => {
 
 	const filePath = path.join(dataPath, serverConfigFile);
@@ -141,13 +145,19 @@ serverConfigFiles.forEach(serverConfigFile => {
 		})
 	}
 
-	// Schedule the fics from the "scheduledFics" array in the server config 
+	// Schedule the fics from the "scheduledFics" array in the server config
 	if (serverConfig.scheduledFics) {
 		serverConfig.scheduledFics.forEach(scheduledFic => {
 			logString("Scheduling " + scheduledFic.description)
 
 			scheduleCronJobs(serverConfig.guildId, scheduledFic, generateFicLink);
 		})
+	}
+
+	// Schedule the fic reminder from the "scheduledFicReminder" in the server config 
+	if (serverConfig.scheduledFicReminder) {
+		logString("Scheduling " + serverConfig.scheduledFicReminder.description)
+		scheduleCronJobs(serverConfig.guildId, serverConfig.scheduledFicReminder, generateFicReminder);
 	}
 });
 

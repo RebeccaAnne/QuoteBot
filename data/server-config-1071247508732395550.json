@@ -94,5 +94,14 @@
                 "1090053691840659556"
             ]
         }
-    ]
+    ],
+    "scheduledFicReminder": {
+        "id": "ficReminderSchedule",
+        "description": "reminder",
+        "time": "1 0 0 * * *",
+        "timezone": "America/Los_Angeles",
+        "channels": [
+            "1090053691840659556"
+        ]
+    }
 }
