@@ -88,6 +88,7 @@
         {
             "id": "ficSchedule",
             "description": "fanfic every four hours",
+            "timex": "0 * * * * *",
             "time": "0 0 0/4 * * *",
             "timezone": "America/Los_Angeles",
             "channels": [
@@ -98,6 +99,7 @@
     "scheduledFicReminder": {
         "id": "ficReminderSchedule",
         "description": "reminder",
+        "timex": "1 * * * * *",
         "time": "1 0 0 * * *",
         "timezone": "America/Los_Angeles",
         "channels": [

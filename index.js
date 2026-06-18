@@ -47,9 +47,15 @@ const sendMessage = async (guildId, channelId, generateFunction) => {
 	let now = Date.now();
 	let difference = backofftime;
 	let createdTimestamp = null;
+	let lastMessage = null;
 	try {
-		createdTimestamp = (await channel.messages.fetch(channel.lastMessageId)).createdTimestamp;
-		difference = now - createdTimestamp;
+		lastMessage = await channel.messages.fetch(channel.lastMessageId)
+
+		// If this message didn't come from us, check how long it's been (for backoff)
+		// If it did come from us don't (to support the fic reminder case)
+		if (lastMessage.author.id != '1071248853304627304') {
+			difference = now - lastMessage.createdTimestamp;
+		}
 	}
 	catch (error) {
 		console.log("Error getting last message: " + error)
